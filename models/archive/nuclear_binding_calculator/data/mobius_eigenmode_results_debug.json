@@ -1,0 +1,138 @@
+{
+  "theory": "Freeman M\u00f6bius Eigenmode Theory",
+  "validation_date": "2025-08",
+  "parameters": {
+    "length": 6.283185307179586,
+    "width": 0.2,
+    "radius": 1.0,
+    "curvature_ratio": 0.2
+  },
+  "eigenmode_statistics": {
+    "total_modes": 15,
+    "even_modes": 7,
+    "odd_modes": 8,
+    "frequency_range": [
+      0.0,
+      39.29536470972386
+    ],
+    "average_leakage": 1.3026622173061786,
+    "leakage_range": [
+      0.004,
+      4.395782281403106
+    ]
+  },
+  "validation_results": {
+    "has_even_odd_separation": true,
+    "lowest_mode_minimal_leakage": true,
+    "shows_avoided_crossings": "True",
+    "curvature_correction_applied": true,
+    "leakage_scales_with_curvature": "True"
+  },
+  "two_component_coupling": {
+    "even_modes": 7,
+    "odd_modes": 8,
+    "coupled_frequencies": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.8659306503521301,
+      0.8659306503521301,
+      0.8659336616470835,
+      0.8659336616470835,
+      0.8659391443539773
+    ],
+    "coupling_strength": 0.1,
+    "frequency_splitting": 0.0
+  },
+  "success_rate": 1.0,
+  "status": "VALIDATED",
+  "freeman_predictions": {
+    "imperfect_null_confirmed": true,
+    "even_odd_ladders": true,
+    "curvature_leakage": "True"
+  },
+  "eigenmode_details": [
+    {
+      "frequency": 0.0,
+      "eigenvalue": 0.0,
+      "mode_type": "even",
+      "longitudinal_index": 0,
+      "transverse_index": 0,
+      "leakage_amplitude": 0.004
+    },
+    {
+      "frequency": 0.8660254037844386,
+      "eigenvalue": 1.0,
+      "mode_type": "even",
+      "longitudinal_index": -1,
+      "transverse_index": 0,
+      "leakage_amplitude": 0.004
+    },
+    {
+      "frequency": 0.8660254037844386,
+      "eigenvalue": 1.0,
+      "mode_type": "even",
+      "longitudinal_index": 1,
+      "transverse_index": 0,
+      "leakage_amplitude": 0.004
+    },
+    {
+      "frequency": 1.9364916731037085,
+      "eigenvalue": 4.0,
+      "mode_type": "even",
+      "longitudinal_index": -2,
+      "transverse_index": 0,
+      "leakage_amplitude": 0.004
+    },
+    {
+      "frequency": 1.9364916731037085,
+      "eigenvalue": 4.0,
+      "mode_type": "even",
+      "longitudinal_index": 2,
+      "transverse_index": 0,
+      "leakage_amplitude": 0.004
+    },
+    {
+      "frequency": 7.853981633974483,
+      "eigenvalue": 61.93502750680849,
+      "mode_type": "odd",
+      "longitudinal_index": 0,
+      "transverse_index": 0,
+      "leakage_amplitude": 0.3019076686874385
+    },
+    {
+      "frequency": 7.980289938768421,
+      "eigenvalue": 63.93502750680849,
+      "mode_type": "odd",
+      "longitudinal_index": 1,
+      "transverse_index": 0,
+      "leakage_amplitude": 0.8951202551219842
+    },
+    {
+      "frequency": 8.227091071989449,
+      "eigenvalue": 67.9350275068085,
+      "mode_type": "odd",
+      "longitudinal_index": 2,
+      "transverse_index": 0,
+      "leakage_amplitude": 1.4805274903092662
+    },
+    {
+      "frequency": 15.731818395444119,
+      "eigenvalue": 247.74011002723395,
+      "mode_type": "even",
+      "longitudinal_index": -1,
+      "transverse_index": 1,
+      "leakage_amplitude": 1.050064997438943
+    },
+    {
+      "frequency": 15.826879352141216,
+      "eigenvalue": 250.74011002723395,
+      "mode_type": "even",
+      "longitudinal_index": -2,
+      "transverse_index": 1,
+      "leakage_amplitude": 2.080078284309487
+    }
+  ]
+}

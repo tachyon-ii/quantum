@@ -1,0 +1,35 @@
+# HERA Explorer Configuration
+
+# Data parameters
+sqrt_s: 318.0  # Center of mass energy
+
+# Kinematic cuts
+q2_min: 0.15
+q2_max: 30000
+x_min: null
+x_max: null
+y_max: 0.7
+
+# Analysis parameters
+baseline_method: spline  # polynomial, spline, moving_average, none
+polynomial_degree: 4
+spline_smoothing: 0.01
+moving_average_window: 5
+
+# Frequency analysis
+freq_min: 2.0   # 1/period_max
+freq_max: 50.0  # 1/period_min
+n_frequencies: 1000
+
+# Significance testing
+significance_levels: [0.9, 0.99, 0.999]
+n_bootstrap: 1000
+
+# Processing
+min_points: 10  # Minimum points per Q² slice
+chunk_size: null  # For memory management
+
+# Output
+save_figures: true
+figure_format: [pdf, png]
+export_format: csv  # csv, json, latex

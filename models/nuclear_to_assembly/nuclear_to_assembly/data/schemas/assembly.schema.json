@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nuclear.to/assembly.schema.json",
+  "title": "Nucleon Assembly",
+  "type": "object",
+  "required": ["name", "nucleons", "bonds"],
+  "properties": {
+    "name": { "type": "string" },
+    "nucleons": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/pose" }
+    },
+    "bonds": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/bond" }
+    }
+  },
+  "$defs": {
+    "face": {
+      "enum": [
+        "S+X","S-X","S+Y","S-Y","S+Z","S-Z",
+        "H+++","H++-","H+-+","H-++","H+--","H-+-","H--+","H---"
+      ]
+    },
+    "port": {
+      "type": "object",
+      "required": ["face","phase"],
+      "properties": {
+        "face": { "$ref": "#/$defs/face" },
+        "phase": { "enum": ["A","B"] }
+      }
+    },
+    "pose": {
+      "title": "Nucleon Pose (inlined)",
+      "type": "object",
+      "required": ["id","kind","R","t","ports"],
+      "properties": {
+        "id":   { "type": "string" },
+        "kind": { "enum": ["proton","neutron"] },
+        "R": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": { "type": "number" }
+          }
+        },
+        "t": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": { "type": "number" }
+        },
+        "ports": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/port" }
+        }
+      }
+    },
+    "bond": {
+      "type": "object",
+      "required": ["n1","face1","n2","face2"],
+      "properties": {
+        "n1":    { "type": "string" },
+        "face1": { "$ref": "#/$defs/face" },
+        "n2":    { "type": "string" },
+        "face2": { "$ref": "#/$defs/face" }
+      }
+    }
+  }
+}
+

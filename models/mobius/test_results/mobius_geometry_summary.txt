@@ -1,0 +1,12 @@
+MÖBIUS STRIP GEOMETRIC ANALYSIS
+================================
+
+Total parameter range: 0 to 12.566 (should be 4π = 12.566)
+Number of data points: 50
+Final twist angle: 6.283 radians (should be 2π = 6.283)
+
+Centroid passages detected: 4 (should be 4)
+  Passage 1: t = 1.539
+  Passage 2: t = 4.616
+  Passage 3: t = 7.950
+  Passage 4: t = 11.028

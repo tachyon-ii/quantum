@@ -1,0 +1,49 @@
+{
+  "theory": "Freeman Lepton Mass Hierarchy",
+  "hypothesis": "Muons and taus are excited states of electron diamond lattice",
+  "validation_date": "2025-08",
+  "source_document": "lepton-theory-v4.md",
+  "experimental_data": {
+    "electron_mass": 0.5109989461,
+    "muon_mass": 105.6583745,
+    "tau_mass": 1776.86,
+    "electron_lifetime": Infinity,
+    "muon_lifetime": 2.1969811e-06,
+    "tau_lifetime": 2.903e-13
+  },
+  "predicted_values": {
+    "masses": {
+      "electron": 0.5109989461,
+      "muon": 50.85820005802251,
+      "tau": 1750.5109989461
+    },
+    "lifetimes": {
+      "electron": Infinity,
+      "muon": 2.7372233269071473e-23,
+      "tau": 3.9824784397576204e-16
+    }
+  },
+  "validation_results": {
+    "correct_mass_hierarchy": true,
+    "muon_mass_ratio_reasonable": false,
+    "tau_mass_ratio_reasonable": true,
+    "correct_lifetime_hierarchy": "False",
+    "charge_conservation": true,
+    "spin_conservation": true
+  },
+  "success_rate": 0.6666666666666666,
+  "status": "PARTIALLY_VALIDATED",
+  "parameter_optimization": {
+    "neutrino_pair_energy": 1.0646219747924726,
+    "vibrational_quantum": 50.75282860015607,
+    "optimization_error": 1.037308679084735,
+    "optimization_success": true,
+    "method": "differential_evolution"
+  },
+  "mass_ratio_analysis": {
+    "muon_electron_observed": 206.76828260879265,
+    "muon_electron_predicted": 99.52701555683798,
+    "tau_electron_observed": 3477.2283065575584,
+    "tau_electron_predicted": 3425.664597365987
+  }
+}

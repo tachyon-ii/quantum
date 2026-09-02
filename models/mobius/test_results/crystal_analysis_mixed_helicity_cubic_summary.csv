@@ -1,0 +1,2 @@
+crystal_type,crystal_symmetry,total_units,majorana_pairs,net_charge,avg_field_strength,geometric_g_contribution,theoretical_g_factor,deviation_explained_fraction,has_single_rotation_axis,produces_circular_field
+MIXED_HELICITY,CUBIC,27,15,0.026050004235463785,3.0270206693450685e+18,0.0023206728000002563,2.0023206728000003,1.000590020638232,True,False

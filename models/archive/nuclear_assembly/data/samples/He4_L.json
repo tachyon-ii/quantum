@@ -1,0 +1,33 @@
+{
+  "assembly": {
+    "name": "He4_ring_L",
+    "units": {"edge_a": 1.0},
+    "parts": [
+      {"id": "p1", "species": "proton", "pose": {"position": [0.5, 0, 0], "orientation": {"quat": [1, 0, 0, 0]}}},
+      {"id": "n1", "species": "neutron", "pose": {"position": [0, 0, 0], "orientation": {"quat": [1, 0, 0, 0]}}},
+      {"id": "p2", "species": "proton", "pose": {"position": [0, 0, 0], "orientation": {"quat": [1, 0, 0, 0]}}},
+      {"id": "n2", "species": "neutron", "pose": {"position": [-0.5, 0, 0], "orientation": {"quat": [1, 0, 0, 0]}}}
+    ],
+    "bonds": [
+      {"type": "HT", "from": {"part": "p1", "face": "H0"}, "to": {"part": "n1", "face": "T0"}, 
+       "alignment": {"coaxial": true, "twist_deg": 0.0}, "routing": {"layer": "outer", "belt_k": 2}},
+      {"type": "HT", "from": {"part": "p2", "face": "H0"}, "to": {"part": "n2", "face": "T0"}, 
+       "alignment": {"coaxial": true, "twist_deg": 0.0}, "routing": {"layer": "outer", "belt_k": 2}},
+      {"type": "HT", "from": {"part": "n1", "face": "H1"}, "to": {"part": "p2", "face": "T1"}, 
+       "alignment": {"coaxial": true, "twist_deg": 60.0}, "routing": {"layer": "outer", "belt_k": 2}},
+      {"type": "HT", "from": {"part": "n2", "face": "H1"}, "to": {"part": "p1", "face": "T1"}, 
+       "alignment": {"coaxial": true, "twist_deg": 0.0}, "routing": {"layer": "outer", "belt_k": 2}}
+    ],
+    "chirality": {
+      "n_vectors": [
+        {"part": "p1", "face": "H0"},
+        {"part": "n1", "face": "H1"},
+        {"part": "p2", "face": "H0"}
+      ]
+    },
+    "meta": {
+      "description": "He-4 ring, left-handed (+60° registry on one closure)",
+      "chi_hint": 1
+    }
+  }
+}

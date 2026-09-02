@@ -1,0 +1,77 @@
+{
+  "theory": "Freeman Dark Matter Structure Theory",
+  "hypothesis": "75% assembly failures create three-component dark matter",
+  "validation_date": "2025-08",
+  "source_documents": [
+    "neutrino-theory-v3.md",
+    "multiple Freeman documents"
+  ],
+  "assembly_statistics": {
+    "total_attempts": 1899,
+    "successful_assemblies": 470,
+    "failed_assemblies": 1429,
+    "success_rate": 0.24749868351764087,
+    "failure_rate": 0.7525013164823592,
+    "freeman_success_prediction": 0.25,
+    "freeman_failure_prediction": 0.75,
+    "success_rate_error": 0.0025013164823591283,
+    "failure_rate_error": 0.002501316482359184,
+    "frustrated_failures": 928,
+    "fragmented_failures": 0,
+    "pattern_distribution": {
+      "LLL": 237,
+      "LRR": 253,
+      "RLR": 258,
+      "RRR": 233,
+      "LLR": 224,
+      "LRL": 243,
+      "RLL": 231,
+      "RRL": 220
+    }
+  },
+  "structure_analysis": {
+    "total_structures": "4683",
+    "visible_matter_count": "470",
+    "dark_matter_count": "4213",
+    "clumpy_dm_count": "2784",
+    "filamentary_dm_count": "0",
+    "diffuse_dm_count": "1429",
+    "dark_to_visible_ratio": 8.963829787234042,
+    "clumpy_fraction": 0.6608117730833135,
+    "filamentary_fraction": 0.0,
+    "diffuse_fraction": 0.33918822691668643,
+    "freeman_predictions": {
+      "dark_to_visible_ratio": 5.0,
+      "clumpy_fraction": 0.27,
+      "filamentary_fraction": 0.68,
+      "diffuse_fraction": 0.05
+    }
+  },
+  "validation_results": {
+    "assembly_failure_rate_75_percent": true,
+    "dark_matter_dominance": "True",
+    "three_component_structure": "False",
+    "filamentary_dominance": "False",
+    "chirality_statistics_correct": true,
+    "pattern_distribution_correct": true
+  },
+  "success_rate": 0.6666666666666666,
+  "status": "PARTIALLY_VALIDATED",
+  "key_metrics": {
+    "assembly_failure_rate": 0.7525013164823592,
+    "dark_to_visible_ratio": 8.963829787234042,
+    "three_component_present": false
+  },
+  "freeman_predictions_comparison": {
+    "assembly_failure_rate": {
+      "predicted": 0.75,
+      "observed": 0.7525013164823592,
+      "error": 0.002501316482359184
+    },
+    "dark_matter_ratio": {
+      "predicted": 5.0,
+      "observed": 8.963829787234042,
+      "error": 3.963829787234042
+    }
+  }
+}

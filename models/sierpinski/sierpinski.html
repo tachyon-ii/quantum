@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetrahedral Face Patterns</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        canvas {
+            background: white;
+            border: 1px solid #ccc;
+            margin: 10px;
+            cursor: crosshair;
+        }
+        .controls {
+            margin: 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="range"] {
+            width: 150px;
+        }
+        .info {
+            text-align: center;
+            max-width: 600px;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .formula {
+            font-family: 'Courier New', monospace;
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tetrahedral Face: Triangle Patterns with Pyramid Visualization</h2>
+    
+    <div class="controls">
+        <div class="control-group">
+            <label for="order">Order: <span id="orderValue">3</span></label>
+            <input type="range" id="order" min="1" max="6" value="3">
+        </div>
+        <div class="control-group">
+            <label for="pattern">Pattern</label>
+            <select id="pattern">
+                <option value="sierpinski">Sierpinski (Fractal)</option>
+                <option value="simple-gapped">Simple Gapped</option>
+                <option value="solid">Solid (Complete)</option>
+                <option value="alternating">Alternating (Matter/Antimatter)</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="showCentroids">
+                <input type="checkbox" id="showCentroids" checked>
+                Show Pyramid Lines
+            </label>
+        </div>
+    </div>
+    
+    <canvas id="canvas" width="600" height="520"></canvas>
+    
+    <div class="info">
+        <div class="formula">
+            Triangles per face: <span id="triangleCount">?</span><br>
+            Total for tetrahedron (×4): <span id="totalCount">?</span><br>
+            Formula: <span id="formula">?</span>
+        </div>
+    </div>
+    
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const orderSlider = document.getElementById('order');
+        const orderValue = document.getElementById('orderValue');
+        const patternSelect = document.getElementById('pattern');
+        const showCentroidsCheckbox = document.getElementById('showCentroids');
+        const triangleCountSpan = document.getElementById('triangleCount');
+        const totalCountSpan = document.getElementById('totalCount');
+        const formulaSpan = document.getElementById('formula');
+        
+        // Draw a single triangle with optional centroid lines
+        function drawTriangle(x, y, size, filled = true, color = '#0040ff', showCentroid = false) {
+            const h = size * Math.sqrt(3) / 2;
+            
+            // Triangle vertices
+            const v1 = {x: x, y: y};
+            const v2 = {x: x - size/2, y: y + h};
+            const v3 = {x: x + size/2, y: y + h};
+            
+            ctx.beginPath();
+            ctx.moveTo(v1.x, v1.y);
+            ctx.lineTo(v2.x, v2.y);
+            ctx.lineTo(v3.x, v3.y);
+            ctx.closePath();
+            
+            if (filled) {
+                ctx.fillStyle = color;
+                ctx.fill();
+            }
+            
+            ctx.strokeStyle = '#ffd700';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            
+            // Draw lines to centroid for pyramid visualization
+            if (showCentroid && showCentroidsCheckbox.checked) {
+                const cx = (v1.x + v2.x + v3.x) / 3;
+                const cy = (v1.y + v2.y + v3.y) / 3;
+                
+                ctx.strokeStyle = 'rgba(0, 0, 0, 0.3)';
+                ctx.lineWidth = 1;
+                
+                // Lines from vertices to centroid
+                ctx.beginPath();
+                ctx.moveTo(v1.x, v1.y);
+                ctx.lineTo(cx, cy);
+                ctx.moveTo(v2.x, v2.y);
+                ctx.lineTo(cx, cy);
+                ctx.moveTo(v3.x, v3.y);
+                ctx.lineTo(cx, cy);
+                ctx.stroke();
+                
+                // Mark centroid
+                ctx.fillStyle = 'rgba(255, 0, 0, 0.5)';
+                ctx.beginPath();
+                ctx.arc(cx, cy, 3, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+        
+        // Sierpinski fractal pattern
+        function drawSierpinski(x, y, size, depth) {
+            if (depth === 0) {
+                drawTriangle(x, y, size, true, '#0040ff', true);
+                return 1;
+            }
+            
+            const newSize = size / 2;
+            const h = newSize * Math.sqrt(3) / 2;
+            
+            let count = 0;
+            // Top triangle
+            count += drawSierpinski(x, y, newSize, depth - 1);
+            // Bottom left triangle
+            count += drawSierpinski(x - newSize/2, y + h, newSize, depth - 1);
+            // Bottom right triangle
+            count += drawSierpinski(x + newSize/2, y + h, newSize, depth - 1);
+            
+            return count;
+        }
+        
+        // Simple gapped pattern - blue triangles with white gaps
+        function drawSimpleGapped(x, y, size, order) {
+            const unitSize = size / order;
+            const h = unitSize * Math.sqrt(3) / 2;
+            let count = 0;
+            
+            for (let row = 0; row < order; row++) {
+                for (let col = 0; col <= row; col++) {
+                    const triX = x - row * unitSize / 2 + col * unitSize;
+                    const triY = y + row * h;
+                    
+                    // Only draw upward-pointing triangles (creating natural gaps)
+                    drawTriangle(triX, triY, unitSize, true, '#0040ff', true);
+                    count++;
+                }
+            }
+            
+            return count;
+        }
+        
+        // Solid complete pattern - all triangles filled
+        function drawSolidPattern(x, y, size, order) {
+            const unitSize = size / order;
+            const h = unitSize * Math.sqrt(3) / 2;
+            let count = 0;
+            
+            // Draw all upward-pointing triangles
+            for (let row = 0; row < order; row++) {
+                for (let col = 0; col <= row; col++) {
+                    const triX = x - row * unitSize / 2 + col * unitSize;
+                    const triY = y + row * h;
+                    drawTriangle(triX, triY, unitSize, true, '#0040ff', true);
+                    count++;
+                }
+            }
+            
+            // Draw all downward-pointing triangles to fill gaps
+            for (let row = 0; row < order - 1; row++) {
+                for (let col = 0; col <= row; col++) {
+                    // Position for inverted triangle between upward triangles
+                    const triX = x - row * unitSize / 2 + col * unitSize;
+                    const triY = y + row * h + 2 * h;
+                    
+                    // Draw inverted triangle
+                    ctx.beginPath();
+                    ctx.moveTo(triX, triY);  // Bottom tip
+                    ctx.lineTo(triX - unitSize/2, triY - h);  // Top left
+                    ctx.lineTo(triX + unitSize/2, triY - h);  // Top right
+                    ctx.closePath();
+                    
+                    ctx.fillStyle = '#8080ff';
+                    ctx.fill();
+                    ctx.strokeStyle = '#ffd700';
+                    ctx.lineWidth = 2;
+                    ctx.stroke();
+                    
+                    count++;
+                }
+            }
+            
+            return count;
+        }
+        
+        // Alternating matter/antimatter pattern
+        function drawAlternatingPattern(x, y, size, order) {
+            const unitSize = size / order;
+            const h = unitSize * Math.sqrt(3) / 2;
+            let count = 0;
+            
+            // Draw upward-pointing triangles (matter - blue)
+            for (let row = 0; row < order; row++) {
+                for (let col = 0; col <= row; col++) {
+                    const triX = x - row * unitSize / 2 + col * unitSize;
+                    const triY = y + row * h;
+                    drawTriangle(triX, triY, unitSize, true, '#0040ff', true);
+                    count++;
+                }
+            }
+            
+            // Draw downward-pointing triangles (antimatter - red)
+            for (let row = 0; row < order - 1; row++) {
+                for (let col = 0; col <= row; col++) {
+                    // Position for inverted triangle between upward triangles
+                    const triX = x - row * unitSize / 2 + col * unitSize;
+                    const triY = y + row * h + 2 * h;
+                    
+                    const v1 = {x: triX, y: triY};  // Bottom tip
+                    const v2 = {x: triX - unitSize/2, y: triY - h};  // Top left
+                    const v3 = {x: triX + unitSize/2, y: triY - h};  // Top right
+                    
+                    ctx.beginPath();
+                    ctx.moveTo(v1.x, v1.y);
+                    ctx.lineTo(v2.x, v2.y);
+                    ctx.lineTo(v3.x, v3.y);
+                    ctx.closePath();
+                    
+                    ctx.fillStyle = '#ff4040';
+                    ctx.fill();
+                    ctx.strokeStyle = '#ffd700';
+                    ctx.lineWidth = 2;
+                    ctx.stroke();
+                    
+                    // Draw centroid lines for antimatter triangles too
+                    if (showCentroidsCheckbox.checked) {
+                        const cx = (v1.x + v2.x + v3.x) / 3;
+                        const cy = (v1.y + v2.y + v3.y) / 3;
+                        
+                        ctx.strokeStyle = 'rgba(0, 0, 0, 0.3)';
+                        ctx.lineWidth = 1;
+                        
+                        ctx.beginPath();
+                        ctx.moveTo(v1.x, v1.y);
+                        ctx.lineTo(cx, cy);
+                        ctx.moveTo(v2.x, v2.y);
+                        ctx.lineTo(cx, cy);
+                        ctx.moveTo(v3.x, v3.y);
+                        ctx.lineTo(cx, cy);
+                        ctx.stroke();
+                        
+                        ctx.fillStyle = 'rgba(255, 255, 0, 0.5)';
+                        ctx.beginPath();
+                        ctx.arc(cx, cy, 3, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                    
+                    count++;
+                }
+            }
+            
+            return count;
+        }
+        
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            const order = parseInt(orderSlider.value);
+            const pattern = patternSelect.value;
+            
+            let triangleCount = 0;
+            const baseSize = 400;
+            const centerX = canvas.width / 2;
+            const centerY = 60;
+            
+            if (pattern === 'sierpinski') {
+                triangleCount = drawSierpinski(centerX, centerY, baseSize, order);
+                triangleCountSpan.textContent = triangleCount;
+                totalCountSpan.textContent = triangleCount * 4;
+                formulaSpan.textContent = `3^(n-1) × 3 = 3^${order-1} × 3`;
+            } else if (pattern === 'simple-gapped') {
+                triangleCount = drawSimpleGapped(centerX, centerY, baseSize, order);
+                const triangularNumber = (order * (order + 1)) / 2;
+                triangleCountSpan.textContent = triangularNumber;
+                totalCountSpan.textContent = triangularNumber * 4;
+                formulaSpan.textContent = `T(n) = n(n+1)/2 = ${order}×${order+1}/2`;
+            } else if (pattern === 'solid') {
+                triangleCount = drawSolidPattern(centerX, centerY, baseSize, order);
+                triangleCountSpan.textContent = order * order;
+                totalCountSpan.textContent = order * order * 4;
+                formulaSpan.textContent = `n² = ${order}²`;
+            } else if (pattern === 'alternating') {
+                triangleCount = drawAlternatingPattern(centerX, centerY, baseSize, order);
+                triangleCountSpan.textContent = order * order;
+                totalCountSpan.textContent = order * order * 4;
+                formulaSpan.textContent = `n² = ${order}² (matter + antimatter)`;
+            }
+            
+            // Add title
+            ctx.fillStyle = '#333';
+            ctx.font = '14px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText(`Order ${order} - ${pattern.charAt(0).toUpperCase() + pattern.slice(1)} Pattern`, centerX, 30);
+        }
+        
+        // Event listeners
+        orderSlider.addEventListener('input', (e) => {
+            orderValue.textContent = e.target.value;
+            draw();
+        });
+        
+        patternSelect.addEventListener('change', draw);
+        showCentroidsCheckbox.addEventListener('change', draw);
+        
+        // Initial draw
+        draw();
+    </script>
+    
+    <div class="info">
+        <h3>Pattern Explanations</h3>
+        <p><strong>Sierpinski:</strong> Classic fractal pattern with recursive gaps</p>
+        <p><strong>Simple Gapped:</strong> Only upward-pointing blue triangles, creating natural white gaps</p>
+        <p><strong>Solid:</strong> Complete tessellation with both up (blue) and down (light blue) triangles</p>
+        <p><strong>Alternating:</strong> Matter (blue up) and antimatter (red down) interpretation</p>
+        <p>The lines to centroids help visualize how each triangle could form a pyramid pointing out of the page, creating the 3D tetrahedral structure.</p>
+    </div>
+</body>
+</html>

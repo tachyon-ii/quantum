@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nuclear-to-assembly"
+version = "0.1.0"
+description = "Truncated-octahedron nuclear assembly scaffold + CLI"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.23",
+  "jsonschema>=4.22",
+  "trimesh>=4.3",
+  "pyglet<2.0",
+  "matplotlib>=3.6"
+]
+
+[project.scripts]
+toasm = "nuclear_to_assembly.cli.toasm:main"
+

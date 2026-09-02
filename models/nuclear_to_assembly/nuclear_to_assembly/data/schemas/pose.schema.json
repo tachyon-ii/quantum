@@ -1,0 +1,24 @@
+{
+  "$id": "pose.schema.json",
+  "type": "object",
+  "required": ["id","kind","R","t","ports"],
+  "properties": {
+    "id": {"type": "string"},
+    "kind": {"enum": ["proton","neutron"]},
+    "R": {"type":"array","minItems":3,"maxItems":3,
+      "items":{"type":"array","minItems":3,"maxItems":3,"items":{"type":"number"}}},
+    "t": {"type":"array","minItems":3,"maxItems":3,"items":{"type":"number"}},
+    "ports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["face","phase"],
+        "properties": {
+          "face": {"enum": ["S+X","S-X","S+Y","S-Y","S+Z","S-Z",
+                            "H+++","H++-","H+-+","H-++","H+--","H-+-","H--+","H---"]},
+          "phase": {"enum": ["A","B"]}
+        }
+      }
+    }
+  }
+}

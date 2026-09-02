@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave Pattern: λ = e^n/π</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #00ff88;
+        }
+        .controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+        button {
+            background: #00ff88;
+            color: #1a1a1a;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #00cc66;
+        }
+        canvas {
+            border: 1px solid #444;
+            display: block;
+            margin: 20px auto;
+            background: #000;
+        }
+        .info {
+            background: #333;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .wave-data {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .wave-item {
+            background: #444;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        .wave-color {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin-right: 8px;
+            border-radius: 2px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wave Superposition: λ = e^n/π</h1>
+        
+        <div class="controls">
+            <button onclick="toggleAnimation()">Start/Stop Animation</button>
+            <button onclick="showComposite = !showComposite; draw()">Toggle Composite Wave</button>
+            <button onclick="resetWaves()">Reset</button>
+        </div>
+
+        <canvas id="waveCanvas" width="1000" height="600"></canvas>
+
+        <div class="info">
+            <h3>Wave Components (n=0 to n=6)</h3>
+            <p>Each wave radiates in both +x and -x directions with wavelength λ = e^n/π</p>
+            <div class="wave-data" id="waveData"></div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('waveCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        let animationId;
+        let isAnimating = false;
+        let time = 0;
+        let showComposite = true;
+        
+        // Wave colors for each n
+        const colors = [
+            '#ff0044', // n=0 - red
+            '#ff4400', // n=1 - orange-red  
+            '#ffaa00', // n=2 - orange
+            '#88ff00', // n=3 - yellow-green
+            '#0088ff', // n=4 - blue
+            '#4400ff', // n=5 - purple
+            '#ff00aa'  // n=6 - magenta
+        ];
+        
+        // Calculate wavelengths
+        function getWavelength(n) {
+            return Math.pow(Math.E, n) / Math.PI;
+        }
+        
+        // Calculate wave amplitude for visualization (normalized)
+        function getAmplitude(n) {
+            // Normalize amplitudes so they're visible - inversely proportional to wavelength
+            const baseAmplitude = 40;
+            return baseAmplitude / Math.pow(1.5, n); // Decreasing amplitude for longer waves
+        }
+        
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            const centerY = canvas.height / 2;
+            const centerX = canvas.width / 2;
+            
+            // Draw center line
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(0, centerY);
+            ctx.lineTo(canvas.width, centerY);
+            ctx.stroke();
+            
+            // Draw vertical center line
+            ctx.beginPath();
+            ctx.moveTo(centerX, 0);
+            ctx.lineTo(centerX, canvas.height);
+            ctx.stroke();
+            
+            let compositeWave = new Array(canvas.width).fill(0);
+            
+            // Draw individual waves
+            for (let n = 0; n <= 6; n++) {
+                const wavelength = getWavelength(n);
+                const amplitude = getAmplitude(n);
+                const frequency = 2 * Math.PI / (wavelength * 10); // Scale for visualization
+                
+                ctx.strokeStyle = colors[n];
+                ctx.lineWidth = 2;
+                ctx.globalAlpha = showComposite ? 0.3 : 0.8;
+                
+                ctx.beginPath();
+                
+                for (let x = 0; x < canvas.width; x++) {
+                    // Calculate wave going in both directions from center
+                    const distanceFromCenter = x - centerX;
+                    
+                    // Rightward wave + Leftward wave (standing wave pattern)
+                    const rightWave = Math.sin(frequency * distanceFromCenter - time * 0.02);
+                    const leftWave = Math.sin(-frequency * distanceFromCenter - time * 0.02);
+                    
+                    // Superposition creates standing wave
+                    const y = centerY + amplitude * (rightWave + leftWave);
+                    
+                    if (showComposite) {
+                        compositeWave[x] += amplitude * (rightWave + leftWave);
+                    }
+                    
+                    if (x === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+            }
+            
+            // Draw composite wave
+            if (showComposite) {
+                ctx.strokeStyle = '#ffffff';
+                ctx.lineWidth = 3;
+                ctx.globalAlpha = 1.0;
+                
+                ctx.beginPath();
+                for (let x = 0; x < canvas.width; x++) {
+                    const y = centerY + compositeWave[x];
+                    
+                    if (x === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+            }
+            
+            ctx.globalAlpha = 1.0;
+            
+            // Draw labels
+            ctx.fillStyle = '#ffffff';
+            ctx.font = '14px Arial';
+            ctx.fillText('Origin (0)', centerX - 30, centerY - 10);
+            ctx.fillText('+x direction →', canvas.width - 120, 30);
+            ctx.fillText('← -x direction', 20, 30);
+        }
+        
+        function animate() {
+            if (isAnimating) {
+                time += 1;
+                draw();
+                animationId = requestAnimationFrame(animate);
+            }
+        }
+        
+        function toggleAnimation() {
+            isAnimating = !isAnimating;
+            if (isAnimating) {
+                animate();
+            } else {
+                cancelAnimationFrame(animationId);
+            }
+        }
+        
+        function resetWaves() {
+            time = 0;
+            draw();
+        }
+        
+        function updateWaveData() {
+            const waveDataDiv = document.getElementById('waveData');
+            waveDataDiv.innerHTML = '';
+            
+            for (let n = 0; n <= 6; n++) {
+                const wavelength = getWavelength(n);
+                const amplitude = getAmplitude(n);
+                
+                const waveItem = document.createElement('div');
+                waveItem.className = 'wave-item';
+                waveItem.innerHTML = `
+                    <span class="wave-color" style="background-color: ${colors[n]}"></span>
+                    <strong>n=${n}</strong><br>
+                    λ = ${wavelength.toFixed(3)}<br>
+                    Amplitude: ${amplitude.toFixed(1)}
+                `;
+                waveDataDiv.appendChild(waveItem);
+            }
+        }
+        
+        // Initialize
+        updateWaveData();
+        draw();
+    </script>
+</body>
+</html>

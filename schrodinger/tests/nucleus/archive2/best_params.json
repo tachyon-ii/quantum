@@ -1,0 +1,20 @@
+{
+  "kappa": 1.0,
+  "eps0": 1.0,
+  "R0": 0.86,
+  "sigma_NN": 1.25,
+  "sigma_NP": 1.0,
+  "sigma_PP": 0.0,
+  "r0_NN": 1.6,
+  "r0_NP": 1.8,
+  "r0_PP": 2.0,
+  "theta_max_deg": 35.0,
+  "gap_floor_ratio": 0.005,
+  "neutron_mediation_strength": 0.9,
+  "mediation_range": 0.7,
+  "mu": 0.005,
+  "delta_eff": 0.08,
+  "lambda_c": 0.5,
+  "deflection_scale": 1.0,
+  "energy_scale": 6
+}

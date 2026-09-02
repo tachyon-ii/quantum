@@ -1,0 +1,18 @@
+{
+  "tetrahedral_edge_length": 1.6329931618554523e-15,
+  "tetrahedral_volume": 5.132002392796602e-46,
+  "crossing_angle_degrees": 109.47122063449069,
+  "is_majorana_pair": true,
+  "binding_energy": -5e-19,
+  "coulomb_energy": -4.614394392e-13,
+  "exchange_energy": 3.141592653589793e-66,
+  "total_energy": -4.614399392e-13,
+  "net_charge": 0.0,
+  "dipole_moment": 1.602e-34,
+  "stability_index": 1.0,
+  "geometric_stability": 1.0,
+  "is_stable": "True",
+  "avg_field_strength": 20000000000.0,
+  "helicity1": 1,
+  "helicity2": -1
+}

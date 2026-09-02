@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lithium-7 Pentagonal Bipyramid Model</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: black;
+        }
+        
+        #container {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background: white;
+        }
+        
+        .controls {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        
+        .control-group {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        label {
+            font-weight: bold;
+            min-width: 150px;
+        }
+        
+        input[type="range"] {
+            width: 200px;
+        }
+        
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        button:hover {
+            background: #45a049;
+        }
+        
+        .info-panel {
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+        }
+        
+        .nucleon-legend {
+            display: flex;
+            gap: 20px;
+            margin: 10px 0;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .legend-sphere {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 1px solid #333;
+        }
+        
+        .proton { background: #ff4444; }
+        .neutron { background: #4444ff; }
+        .apex-neutron { background: #44ff44; }
+    </style>
+</head>
+<body>
+    <h1>Lithium-7 Pentagonal Bipyramid Nuclear Model</h1>
+    <p><strong>Geometric Theory:</strong> Li-7 (3 protons + 4 neutrons) arranged as a pentagonal bipyramid with 2 neutrons at apex/base and 5 nucleons in pentagonal plane.</p>
+    
+    <div class="info-panel">
+        <h3>Revolutionary Nuclear Bonding Model: Li-7 (3p + 4n = 7 total nucleons)</h3>
+        <div class="nucleon-legend">
+            <div class="legend-item">
+                <div class="legend-sphere proton"></div>
+                <span>Protons (3) - Red: 1 solo + 2 paired (bent toward each other)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-sphere neutron"></div>
+                <span>All Neutrons (4) - Blue: Electron donors for bonding</span>
+            </div>
+        </div>
+        <p><strong>Bonding Theory:</strong> Strong force = electron sharing bonds at nuclear scale</p>
+        <p><strong>Key Insight:</strong> Paired protons bend toward each other, share electrons from 4 neutrons</p>
+    </div>
+    
+    <div id="container"></div>
+    
+    <div class="controls">
+        <h3>Interactive Controls</h3>
+        
+        <div class="control-group">
+            <label>Rotation X:</label>
+            <input type="range" id="rotationX" min="0" max="360" value="20" step="1">
+            <span id="rotXValue">20°</span>
+        </div>
+        
+        <div class="control-group">
+            <label>Rotation Y:</label>
+            <input type="range" id="rotationY" min="0" max="360" value="45" step="1">
+            <span id="rotYValue">45°</span>
+        </div>
+        
+        <div class="control-group">
+            <label>Pentagon Height:</label>
+            <input type="range" id="pentagonHeight" min="1.0" max="10.0" value="2.5" step="0.1">
+            <span id="heightValue">1.5</span>
+        </div>
+        
+        <div class="control-group">
+            <label>Pentagon Radius:</label>
+            <input type="range" id="pentagonRadius" min="1.0" max="10.0" value="5" step="0.1">
+            <span id="radiusValue">2.0</span>
+        </div>
+        
+        <div class="control-group">
+            <label>Paired Proton Separation:</label>
+            <input type="range" id="protonSeparation" min="0.1" max="2.0" value="1.0" step="0.05">
+            <span id="separationValue">1.0</span>
+        </div>
+        
+        <div class="control-group">
+            <label>Off-plane Neutron Bend:</label>
+            <input type="range" id="neutronBend" min="0.0" max="1.0" value="0.3" step="0.05">
+            <span id="bendValue">0.3</span>
+        </div>
+        
+        <div class="control-group">
+            <label>Nucleon Size:</label>
+            <input type="range" id="nucleonSize" min="0.1" max="1.0" value="0.5" step="0.02">
+            <span id="sizeValue">0.2</span>
+        </div>
+        
+        <div class="control-group">
+            <button id="animateBtn">Toggle Animation</button>
+            <button id="resetBtn">Reset View</button>
+            <button id="topViewBtn">Top View</button>
+            <button id="sideViewBtn">Side View</button>
+        </div>
+        
+        <div class="control-group" style="background: #e8f5e8; border: 1px solid #4CAF50; border-radius: 4px; padding: 10px;">
+            <label style="font-weight: bold; color: #2e7d32;">Average Proton-Neutron Distance:</label>
+            <span id="avgDistance" style="font-size: 16px; font-weight: bold; color: #1b5e20;">Calculating...</span>
+            <span style="color: #666; font-size: 12px;">(Real-time bonding strength indicator)</span>
+        </div>
+    </div>
+
+    <script>
+        class Lithium7Model {
+            constructor() {
+                this.scene = new THREE.Scene();
+                this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+                this.renderer = new THREE.WebGLRenderer({ antialias: true });
+                this.nucleons = [];
+                this.wireframe = null;
+                this.isAnimating = false;
+                this.animationId = null;
+                
+                this.setupRenderer();
+                this.setupLighting();
+                this.setupCamera();
+                this.createModel();
+                this.setupControls();
+                
+                // Force initial render
+                this.renderer.render(this.scene, this.camera);
+                console.log("Scene rendered with", this.scene.children.length, "objects");
+                
+                this.animate();
+            }
+            
+            setupRenderer() {
+                const container = document.getElementById('container');
+                this.renderer.setSize(container.clientWidth, container.clientHeight);
+                this.renderer.setClearColor(0xffffff); // White background
+                this.renderer.shadowMap.enabled = true;
+                this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+                container.appendChild(this.renderer.domElement);
+            }
+            
+            setupLighting() {
+                // Ambient light
+                const ambientLight = new THREE.AmbientLight(0x404040, 0.6);
+                this.scene.add(ambientLight);
+                
+                // Directional light with shadows
+                const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+                directionalLight.position.set(10, 10, 5);
+                directionalLight.castShadow = true;
+                directionalLight.shadow.mapSize.width = 2048;
+                directionalLight.shadow.mapSize.height = 2048;
+                this.scene.add(directionalLight);
+                
+                // Point light for better illumination
+                const pointLight = new THREE.PointLight(0xffffff, 0.5);
+                pointLight.position.set(-5, 5, 5);
+                this.scene.add(pointLight);
+            }
+            
+            setupCamera() {
+                this.camera.position.set(15, 10, 15);
+                this.camera.lookAt(0, 0, 0);
+                this.camera.updateProjectionMatrix();
+            }
+            
+            createModel() {
+                console.log("Creating model...");
+                this.clearModel();
+                
+                const pentagonHeight = parseFloat(document.getElementById('pentagonHeight')?.value || 1.5);
+                const pentagonRadius = parseFloat(document.getElementById('pentagonRadius')?.value || 4.0);
+                const nucleonSize = parseFloat(document.getElementById('nucleonSize')?.value || 0.2);
+                
+                console.log("Parameters:", { pentagonHeight, pentagonRadius, nucleonSize });
+                
+                // Create pentagonal bipyramid geometry
+                this.createPentagonalBipyramid(pentagonRadius, pentagonHeight);
+                this.createNucleons(pentagonRadius, pentagonHeight, nucleonSize);
+                
+                console.log("Model created with", this.nucleons.length, "nucleons");
+            }
+            
+            createPentagonalBipyramid(radius, height) {
+                // Create wireframe for the pentagonal bipyramid structure
+                const geometry = new THREE.BufferGeometry();
+                const vertices = [];
+                const indices = [];
+                
+                // Get dynamic parameters
+                const protonSeparationElement = document.getElementById('protonSeparation');
+                const protonSeparation = protonSeparationElement ? parseFloat(protonSeparationElement.value) : 1.0;
+                
+                // Pentagon vertices (5 positions around a circle) - same as nucleon positions
+                const pentagonPositions = [];
+                for (let i = 0; i < 5; i++) {
+                    const angle = (i * 2 * Math.PI) / 5 - Math.PI / 2; // Start from top
+                    let x = radius * Math.cos(angle);
+                    let z = radius * Math.sin(angle);
+                    
+                    // Adjust position for P2 and P3 based on proton separation
+                    if (i === 2 || i === 3) { // P2 and P3 (bottom protons)
+                        const separationAdjustment = (protonSeparation - 1.0) * 0.3;
+                        if (i === 2) { // P2 (left)
+                            x += separationAdjustment * Math.cos(angle + Math.PI/2);
+                            z += separationAdjustment * Math.sin(angle + Math.PI/2);
+                        } else { // P3 (right)  
+                            x += separationAdjustment * Math.cos(angle - Math.PI/2);
+                            z += separationAdjustment * Math.sin(angle - Math.PI/2);
+                        }
+                    }
+                    
+                    vertices.push(x, 0, z);
+                    pentagonPositions.push({ x: x, z: z });
+                }
+                
+                // Off-plane neutrons (above and below)
+                const p2Pos = pentagonPositions[2];
+                const p3Pos = pentagonPositions[3];
+                const pairedCenterX = (p2Pos.x + p3Pos.x) / 2;
+                const pairedCenterZ = (p2Pos.z + p3Pos.z) / 2;
+                
+                const neutronBendElement = document.getElementById('neutronBend');
+                const neutronBend = neutronBendElement ? parseFloat(neutronBendElement.value) : 0.3;
+                
+                const topNeutronX = pairedCenterX * neutronBend;
+                const topNeutronZ = pairedCenterZ * neutronBend;
+                
+                vertices.push(topNeutronX, height, topNeutronZ);     // index 5 (top neutron)
+                vertices.push(topNeutronX, -height, topNeutronZ);   // index 6 (bottom neutron)
+                
+                // Pentagon wireframe (connect all 5 vertices in a loop)
+                for (let i = 0; i < 5; i++) {
+                    indices.push(i, (i + 1) % 5);
+                }
+                
+                // Connect each pentagon vertex to both off-plane neutrons
+                for (let i = 0; i < 5; i++) {
+                    indices.push(i, 5); // to top neutron
+                    indices.push(i, 6); // to bottom neutron
+                }
+                
+                geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
+                geometry.setIndex(indices);
+                
+                const material = new THREE.LineBasicMaterial({ 
+                    color: 0x666666, 
+                    linewidth: 2,
+                    transparent: true,
+                    opacity: 0.6
+                });
+                
+                this.wireframe = new THREE.LineSegments(geometry, material);
+                this.scene.add(this.wireframe);
+            }
+            
+            createNucleons(radius, height, size) {
+                // Clear existing nucleons
+                this.nucleons.forEach(nucleon => this.scene.remove(nucleon));
+                this.nucleons = [];
+                
+                // Get dynamic parameters with safety checks
+                const protonSeparationElement = document.getElementById('protonSeparation');
+                const neutronBendElement = document.getElementById('neutronBend');
+                
+                const protonSeparation = protonSeparationElement ? parseFloat(protonSeparationElement.value) : 1.0;
+                const neutronBend = neutronBendElement ? parseFloat(neutronBendElement.value) : 0.3;
+                
+                // Li-7 Pentagonal Plane Arrangement:
+                //     P1
+                //  N1   N2  
+                //   P2  P3
+                
+                const sphereGeometry = new THREE.SphereGeometry(size, 16, 16);
+                
+                // Pentagon vertices (5 positions around a circle)
+                const pentagonPositions = [];
+                for (let i = 0; i < 5; i++) {
+                    const angle = (i * 2 * Math.PI) / 5 - Math.PI / 2; // Start from top
+                    const x = radius * Math.cos(angle);
+                    const z = radius * Math.sin(angle);
+                    pentagonPositions.push({ x: x, z: z, angle: angle });
+                }
+                
+                // Arrange nucleons in pentagon: P-N-P-P-N pattern
+                const pentagonPattern = ['P', 'N', 'P', 'P', 'N']; // Top proton, then clockwise
+                const pentagonNucleons = [];
+                
+                for (let i = 0; i < 5; i++) {
+                    const pos = pentagonPositions[i];
+                    const isProton = pentagonPattern[i] === 'P';
+                    
+                    // Adjust position based on proton separation for P2 and P3
+                    let adjustedX = pos.x;
+                    let adjustedZ = pos.z;
+                    
+                    if (i === 2 || i === 3) { // P2 and P3 (bottom protons)
+                        const separationAdjustment = (protonSeparation - 1.0) * 0.3;
+                        if (i === 2) { // P2 (left)
+                            adjustedX += separationAdjustment * Math.cos(pos.angle + Math.PI/2);
+                            adjustedZ += separationAdjustment * Math.sin(pos.angle + Math.PI/2);
+                        } else { // P3 (right)  
+                            adjustedX += separationAdjustment * Math.cos(pos.angle - Math.PI/2);
+                            adjustedZ += separationAdjustment * Math.sin(pos.angle - Math.PI/2);
+                        }
+                    }
+                    
+                    const material = new THREE.MeshPhongMaterial({ 
+                        color: isProton ? 0xff4444 : 0x4444ff,
+                        shininess: 100,
+                        transparent: true,
+                        opacity: 0.9
+                    });
+                    
+                    const nucleon = new THREE.Mesh(sphereGeometry, material);
+                    nucleon.position.set(adjustedX, 0, adjustedZ);
+                    nucleon.castShadow = true;
+                    nucleon.receiveShadow = true;
+                    
+                    // Fixed label creation
+                    let labelText = '';
+                    if (isProton) {
+                        if (i === 0) labelText = 'P1';
+                        else if (i === 2) labelText = 'P2';
+                        else if (i === 3) labelText = 'P3';
+                    } else {
+                        if (i === 1) labelText = 'N1';
+                        else if (i === 4) labelText = 'N2';
+                    }
+                    
+                    const label = this.createLabel(labelText, '#000000');
+                    label.position.set(adjustedX, 0, adjustedZ);
+                    this.scene.add(label);
+                    
+                    pentagonNucleons.push({
+                        mesh: nucleon,
+                        position: nucleon.position,
+                        type: isProton ? 'proton' : 'neutron',
+                        index: i
+                    });
+                    
+                    this.nucleons.push(nucleon);
+                    this.scene.add(nucleon);
+                }
+                
+                // OFF-PLANE NEUTRONS (2 total: above and below the pentagon)
+                const neutronMaterial = new THREE.MeshPhongMaterial({ 
+                    color: 0x4444ff,
+                    shininess: 100,
+                    transparent: true,
+                    opacity: 0.9
+                });
+                
+                // Calculate center of the paired protons (P2, P3) for neutron bending
+                const p2Pos = pentagonNucleons[2].position;
+                const p3Pos = pentagonNucleons[3].position;
+                const pairedCenterX = (p2Pos.x + p3Pos.x) / 2;
+                const pairedCenterZ = (p2Pos.z + p3Pos.z) / 2;
+                
+                // Top neutron (above pentagon, bending toward paired protons)
+                const topNeutronX = pairedCenterX * neutronBend;
+                const topNeutronZ = pairedCenterZ * neutronBend;
+                const topNeutron = new THREE.Mesh(sphereGeometry, neutronMaterial);
+                topNeutron.position.set(topNeutronX, height, topNeutronZ);
+                topNeutron.castShadow = true;
+                topNeutron.receiveShadow = true;
+                
+                const topLabel = this.createLabel('N3', '#000000');
+                topLabel.position.set(topNeutronX, height, topNeutronZ);
+                this.scene.add(topLabel);
+                
+                // Bottom neutron (below pentagon, bending toward paired protons)
+                const bottomNeutron = new THREE.Mesh(sphereGeometry, neutronMaterial);
+                bottomNeutron.position.set(topNeutronX, -height, topNeutronZ);
+                bottomNeutron.castShadow = true;
+                bottomNeutron.receiveShadow = true;
+                
+                const bottomLabel = this.createLabel('N4', '#000000');
+                bottomLabel.position.set(topNeutronX, -height, topNeutronZ);
+                this.scene.add(bottomLabel);
+                
+                this.nucleons.push(topNeutron, bottomNeutron);
+                this.scene.add(topNeutron, bottomNeutron);
+                
+                // Calculate average distance for all protons and neutrons
+                const protonPositions = pentagonNucleons
+                    .filter(n => n.type === 'proton')
+                    .map(n => n.position);
+                const neutronPositions = pentagonNucleons
+                    .filter(n => n.type === 'neutron')
+                    .map(n => n.position)
+                    .concat([topNeutron.position, bottomNeutron.position]);
+                
+                this.calculateAverageDistance(protonPositions, neutronPositions);
+            }
+            
+            createSoloProtonConnection(soloPos, paired1Pos, paired2Pos) {
+                const bondMaterial = new THREE.LineBasicMaterial({ 
+                    color: 0xcccccc, // Light gray for weak connection
+                    linewidth: 1,
+                    transparent: true,
+                    opacity: 0.3
+                });
+                
+                // Weak connection to the paired proton system
+                const pairedCenter = new THREE.Vector3().addVectors(paired1Pos, paired2Pos).multiplyScalar(0.5);
+                const weakBondGeometry = new THREE.BufferGeometry().setFromPoints([soloPos, pairedCenter]);
+                const weakBond = new THREE.Line(weakBondGeometry, bondMaterial);
+                this.scene.add(weakBond);
+                this.nucleons.push(weakBond);
+            }
+            
+            calculateAverageDistance(protonPositions, neutronPositions) {
+                let totalDistance = 0;
+                let pairCount = 0;
+                
+                // Calculate distance from each proton to each neutron
+                protonPositions.forEach(protonPos => {
+                    neutronPositions.forEach(neutronPos => {
+                        const distance = protonPos.distanceTo(neutronPos);
+                        totalDistance += distance;
+                        pairCount++;
+                    });
+                });
+                
+                const averageDistance = totalDistance / pairCount;
+                
+                // Update the display
+                const displayElement = document.getElementById('avgDistance');
+                if (displayElement) {
+                    displayElement.textContent = averageDistance.toFixed(3) + ' units';
+                }
+                
+                return averageDistance;
+            }
+            
+            createElectronBonds(paired1Pos, paired2Pos, topNPos, bottomNPos, sideNPos, planarNPos) {
+                const bondMaterial = new THREE.LineBasicMaterial({ 
+                    color: 0xffff00, // Yellow for electron bonds
+                    linewidth: 3,
+                    transparent: true,
+                    opacity: 0.7
+                });
+                
+                // Bond between paired protons (shared electron cloud)
+                const pairBondGeometry = new THREE.BufferGeometry().setFromPoints([paired1Pos, paired2Pos]);
+                const pairBond = new THREE.Line(pairBondGeometry, bondMaterial);
+                this.scene.add(pairBond);
+                this.nucleons.push(pairBond);
+                
+                // Bonds from neutrons to paired protons (electron sharing)
+                const bondPositions = [topNPos, bottomNPos, sideNPos, planarNPos];
+                const pairedCenter = new THREE.Vector3().addVectors(paired1Pos, paired2Pos).multiplyScalar(0.5);
+                
+                bondPositions.forEach(neutronPos => {
+                    const bondGeometry = new THREE.BufferGeometry().setFromPoints([neutronPos, pairedCenter]);
+                    const bond = new THREE.Line(bondGeometry, bondMaterial);
+                    this.scene.add(bond);
+                    this.nucleons.push(bond);
+                });
+            }
+            
+            createLabel(text, color) {
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
+                canvas.width = 64;
+                canvas.height = 64;
+                
+                context.fillStyle = color;
+                context.font = 'Bold 24px Arial';
+                context.textAlign = 'center';
+                context.textBaseline = 'middle';
+                context.fillText(text, 32, 32);
+                
+                const texture = new THREE.CanvasTexture(canvas);
+                const material = new THREE.SpriteMaterial({ 
+                    map: texture,
+                    transparent: true
+                });
+                
+                const sprite = new THREE.Sprite(material);
+                sprite.scale.set(0.5, 0.5, 1);
+                
+                return sprite;
+            }
+            
+            clearModel() {
+                // Remove existing nucleons
+                this.nucleons.forEach(nucleon => this.scene.remove(nucleon));
+                this.nucleons = [];
+                
+                // Remove wireframe
+                if (this.wireframe) {
+                    this.scene.remove(this.wireframe);
+                }
+                
+                // Remove all sprites (labels)
+                const sprites = this.scene.children.filter(child => child instanceof THREE.Sprite);
+                sprites.forEach(sprite => this.scene.remove(sprite));
+            }
+            
+            setupControls() {
+                // Rotation controls
+                document.getElementById('rotationX').addEventListener('input', (e) => {
+                    document.getElementById('rotXValue').textContent = e.target.value + '°';
+                    this.updateRotation();
+                });
+                
+                document.getElementById('rotationY').addEventListener('input', (e) => {
+                    document.getElementById('rotYValue').textContent = e.target.value + '°';
+                    this.updateRotation();
+                });
+                
+                // Geometry controls
+                document.getElementById('pentagonHeight').addEventListener('input', (e) => {
+                    document.getElementById('heightValue').textContent = e.target.value;
+                    this.createModel();
+                });
+                
+                document.getElementById('pentagonRadius').addEventListener('input', (e) => {
+                    document.getElementById('radiusValue').textContent = e.target.value;
+                    this.createModel();
+                });
+                
+                document.getElementById('nucleonSize').addEventListener('input', (e) => {
+                    document.getElementById('sizeValue').textContent = e.target.value;
+                    this.createModel();
+                });
+                
+                // NEW: Bonding geometry controls
+                document.getElementById('protonSeparation').addEventListener('input', (e) => {
+                    document.getElementById('separationValue').textContent = e.target.value;
+                    this.createModel();
+                });
+                
+                document.getElementById('neutronBend').addEventListener('input', (e) => {
+                    document.getElementById('bendValue').textContent = e.target.value;
+                    this.createModel();
+                });
+                
+                // View controls
+                document.getElementById('animateBtn').addEventListener('click', () => {
+                    this.toggleAnimation();
+                });
+                
+                document.getElementById('resetBtn').addEventListener('click', () => {
+                    this.resetView();
+                });
+                
+                document.getElementById('topViewBtn').addEventListener('click', () => {
+                    this.setTopView();
+                });
+                
+                document.getElementById('sideViewBtn').addEventListener('click', () => {
+                    this.setSideView();
+                });
+            }
+            
+            updateRotation() {
+                const rotX = parseFloat(document.getElementById('rotationX').value) * Math.PI / 180;
+                const rotY = parseFloat(document.getElementById('rotationY').value) * Math.PI / 180;
+                
+                this.scene.rotation.x = rotX;
+                this.scene.rotation.y = rotY;
+            }
+            
+            toggleAnimation() {
+                this.isAnimating = !this.isAnimating;
+                document.getElementById('animateBtn').textContent = 
+                    this.isAnimating ? 'Stop Animation' : 'Start Animation';
+            }
+            
+            resetView() {
+                document.getElementById('rotationX').value = 20;
+                document.getElementById('rotationY').value = 45;
+                document.getElementById('pentagonHeight').value = 1.5;
+                document.getElementById('pentagonRadius').value = 2.0;
+                document.getElementById('nucleonSize').value = 0.2;
+                document.getElementById('protonSeparation').value = 1.0;
+                document.getElementById('neutronBend').value = 0.3;
+                
+                // Update displays
+                document.getElementById('rotXValue').textContent = '20°';
+                document.getElementById('rotYValue').textContent = '45°';
+                document.getElementById('heightValue').textContent = '1.5';
+                document.getElementById('radiusValue').textContent = '2.0';
+                document.getElementById('sizeValue').textContent = '0.2';
+                document.getElementById('separationValue').textContent = '1.0';
+                document.getElementById('bendValue').textContent = '0.3';
+                
+                this.createModel();
+                this.updateRotation();
+            }
+            
+            setTopView() {
+                document.getElementById('rotationX').value = 90;
+                document.getElementById('rotationY').value = 0;
+                document.getElementById('rotXValue').textContent = '90°';
+                document.getElementById('rotYValue').textContent = '0°';
+                this.updateRotation();
+            }
+            
+            setSideView() {
+                document.getElementById('rotationX').value = 0;
+                document.getElementById('rotationY').value = 90;
+                document.getElementById('rotXValue').textContent = '0°';
+                document.getElementById('rotYValue').textContent = '90°';
+                this.updateRotation();
+            }
+            
+            animate() {
+                requestAnimationFrame(() => this.animate());
+                
+                if (this.isAnimating) {
+                    this.scene.rotation.y += 0.01;
+                }
+                
+                this.renderer.render(this.scene, this.camera);
+            }
+        }
+        
+        // Initialize the model when page loads
+        window.addEventListener('load', () => {
+            try {
+                const model = new Lithium7Model();
+                window.lithiumModel = model;
+                console.log("Lithium7Model initialized successfully");
+            } catch (error) {
+                console.error("Error initializing Lithium7Model:", error);
+            }
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            const container = document.getElementById('container');
+            if (window.lithiumModel) {
+                window.lithiumModel.camera.aspect = container.clientWidth / container.clientHeight;
+                window.lithiumModel.camera.updateProjectionMatrix();
+                window.lithiumModel.renderer.setSize(container.clientWidth, container.clientHeight);
+            }
+        });
+    </script>
+</body>
+</html>
