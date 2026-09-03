@@ -36,6 +36,7 @@ One index, one nomenclature. If a paper is not in this table it is not on the sh
 ## Cited but not on the shelf
 
 - **"Helland et al. (2026)"** — named in the Φ review alongside BP&R and Li. No PDF here. Either fetch it or strike the citation; a review may not lean on a paper the shelf cannot produce.
+- **Williamson & van der Mark (1997), "Is the electron a photon with toroidal topology?"**, Ann. Fond. Louis de Broglie 22(2), 133 — the photon-in-a-closed-path electron; spin ℏ/2 and μ_B from the toroidal configuration, charge comes out **0.91e** (their own honest miss). Cited by the Physics Detective guidance notes (`../docs/`), which are the seed of this estate's Möbius picture. **Fetch:** `wget -P papers/pdf https://aflb.minesparis.psl.eu/AFLB-222/aflb222p133.pdf` — then rename `williamson-van-der-mark-electron-photon-toroidal-topology.pdf`. Also van der Mark, "Light is Heavy" (mass as resistance to acceleration of a wave in a closed path).
 
 ## ../data/ (estate level)
 
