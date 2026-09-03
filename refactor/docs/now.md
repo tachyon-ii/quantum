@@ -1,6 +1,6 @@
 # now() — where the edge is
 
-**Grace Bayes, 2026-09-03. Current state only.** Written after reading the Φ paper and Gemini's review, and after **running the test archive** rather than reading about it. Companion to `checkpoint-1.md` (the ledger) and `now-edge.md` (why there is a now).
+**Grace Bayes, 2026-09-03. Current state only.** Written after reading the Φ paper and Gemini's review, and after **running the test archive** rather than reading about it. Companion to `../../schrodinger/checkpoint-1.md` (the ledger) and `../../schrodinger/now-edge.md` (why there is a now).
 
 ---
 
