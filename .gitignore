@@ -1,0 +1,46 @@
+# QUANTUM — the physics estate. Relocated from CGIOS/quantum 2026-09-03.
+# One ignore file at the root; nested per-model .gitignores are not used here
+# (the old models/hera_explorer/.gitignore was generic Python boilerplate that
+# also swallowed *.pdf and *.png — i.e. figures — inside that subtree).
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+dist/
+develop-eggs/
+eggs/
+.eggs/
+sdist/
+wheels/
+*.egg-info/
+*.egg
+.installed.cfg
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Model run outputs — regenerated on demand, like build/.
+# The generator is the artefact; the run is not.
+models/*/outputs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
