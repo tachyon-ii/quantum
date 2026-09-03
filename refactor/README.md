@@ -34,6 +34,7 @@ The live estate. `../schrodinger/` is the archive — the hashed past, read on d
 
 ## Layout
 
+    mantra/    the philosophy at maximum density — five texts you could recite; index in mantra/README.md
     docs/      the paper, the review, the pointer (now.md), pulled keystones and seed documents
     papers/    the reference shelf — index and nomenclature in papers/README.md
     data/      ground truth by source (ame2020-…)
