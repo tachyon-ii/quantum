@@ -47,6 +47,7 @@
 ## Working notes (unfiled)
 
 - [000-tuits.md](000-tuits.md) — round-tuit list; session-voice
+- [now.md](now.md) — the frontier pointer: paper and review graded, test archive EXECUTED (topology/gravity = compiler tests; g=2 CHOKED — asserted not derived; capsid = the one blind-test-passed sector; HFQPO schema-broken; EHT chromaticity unconfronted), ranked queue
 - [checkpoint-1.md](checkpoint-1.md) — rubber-duck audit of the spine: Ω → i⃗ → μ → {kg, m, sec}. The forgotten symbols {μ, i} = the middle of the path orthodoxy dropped; axiom = universe is i⃗ on Ω with c its only speed; Möbius capture = first theorem; F=ma/E=mc² concordance; the Shapiro costume-catch; no-magic-numbers sharpened (3 medium properties, rest are angles; α the gate). Current-state only — history is git's job
 
 ## deprecated/
