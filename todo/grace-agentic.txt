@@ -1,0 +1,106 @@
+TODO: split the agent-management system out of TRIGZI into AGENTIC
+From: grace (hypervisor, QUANTUM)   To: a Sonnet 4.6 agent, to be spawned   Priority: 2-next
+Filed: 2026-09-04
+
+WHY
+TRIGZI is two things: a food-safety pipeline and the agent-management system that
+was iterated to its current hyperfunctional state while building it. The tools
+assume the estate root is the cwd and that TRIGZI's layout is the only layout.
+QUANTUM, CGIOS and every future estate now consume that system through symlinks
+(QUANTUM/tools -> ../TRIGZI/tools, QUANTUM/docs -> ../TRIGZI/docs). That works
+until TRIGZI moves, is archived, or diverges. AGENTIC/ is the new single source:
+"import from here." This todo is the migration spec. It is a chunked job, not a
+weekend.
+
+WHAT MOVES  (TRIGZI -> AGENTIC)
+  docs/agents/*            000-AGENT_RULES .. 007-ETERNAL_WISDOMS, images/
+  docs/system/*            AGENT_INIT_PROMPT, TERMINUS, TO_INIT_OR_TO_CLONE,
+                           pow.pl, truseradd2.sh + README, WHO_IS_GOD.md
+  docs/cgios/*             the ancestral estate: home/, truth/, history/,
+                           gravity_bombs/  (AGENTIC/history/ already exists;
+                           gravity_bombs are the pow.pl corpus - keep together)
+  tools/                   engram_export.py, engram_forensics.py, trendmail.py,
+                           treadmail.py, truseradd.sh, unlock.sh, amigod.sh,
+                           system_locker.sh, toggle_lock.sh, fix_estate_perms.sh,
+                           trudo.py, eminemlos.py, sync*.sh, .engram_export.ini
+                           (the roster - ONE roster, all estates; #3 ruling)
+  home/*                   every desk that is not trigzi-specific; trigzi-db,
+                           trigzi-scraper stay (they are repo desks, not agents)
+  todo/ bugs/              the queues themselves stay per-estate (an estate's
+                           bugs are its own); the FORMAT and the tooling move
+  tests/test_tre*.py       the mail tests (already moved to TRIGZI/tests by
+                           James 2026-09-04) -> AGENTIC/tests
+
+WHAT STAYS IN TRIGZI
+  the food pipeline: trigzi-*/, data/, contracts, Makefile targets that touch
+  MySQL/exports; docs/specs/ that are food-app specs; tasks.sh if it is
+  trigzi-specific (check).
+
+CONSUMPTION MODEL (decide first, then everything follows)
+  Option A - symlinks: <estate>/tools -> ../AGENTIC/tools, <estate>/docs/agents
+             -> ../AGENTIC/docs/agents, etc. Zero code change; breaks on any
+             move; git records links not content.
+  Option B - a Makefile target in each estate: `make agentic` that syncs or
+             links; AGENTIC/README documents the contract.
+  Option C - AGENTIC is a git submodule of each estate. Clean, versioned,
+             heavier ceremony; TRIGZI already uses submodules so the muscle
+             exists.
+  Recommendation: C for docs+tools (versioned import), per-estate home/ and
+  queues stay local. Ask James before choosing - 30 seconds beats an hour.
+
+ROOT-RELATIVE ASSUMPTIONS TO FIX (measured, not guessed - RTFS each)
+  1. tools/truseradd.sh looks for docs/system/pow.pl and
+     docs/agents/images/god.png relative to the estate root; both warnings
+     fired in QUANTUM until docs was symlinked. Resolve via $AGENTIC_ROOT or
+     via the script's own location ($(dirname "$0")/..), never via cwd.
+  2. docs/system/pow.pl hardcodes
+     /Users/cgios/cgios.ai/TRIGZI/docs/cgios/gravity_bombs/songs/*.txt and
+     exits 0 silently when the path is missing (TO_INIT_OR_TO_CLONE §6 names
+     this). Make the songs path relative to the script, and exit non-zero on
+     zero files.
+  3. tools/unlock.sh globs "$ROOT"/trigzi-*/ - a silent no-op in any other
+     estate. Generalise: root repo + every immediate subdir with a .git.
+     (A generic version existed as unlock-fuse.sh, merged 2026-08-30 - check
+     which behaviour survived.)
+  4. trendmail/treadmail: verify whether home/ is resolved from the estate
+     root the caller is in, or hardcoded. If hardcoded, QUANTUM agents cannot
+     be mailed at their own desks. (Open question #15, 2026-09-04.)
+  5. tools/.engram_export.ini: one roster for all estates (#3 ruling). Its
+     path must be AGENTIC-relative; every estate's engram_export.py must find
+     the same file.
+  6. AGENT_INIT_PROMPT's {ROOT_PATH} and the "cat docs/specs/<task>.md" core-
+     task line assume docs/specs is estate-local. QUANTUM uses specs/ at root.
+     Parameterise: {SPEC_PATH}.
+  7. docs/system is root:root 000 by policy (TO_INIT_OR_TO_CLONE §6). The
+     lock/unlock (system_locker.sh / toggle_lock.sh) must follow the files to
+     AGENTIC and the README must say who re-locks after an edit.
+  8. Every keystone's Path: header says /system/keystone/...; the files live
+     at AGENTIC/system/keystones/. Either mv keystones -> keystone or amend
+     the fourteen headers in one signed pass (const files - James's hand).
+  9. docs.local/agents in QUANTUM is a dangling symlink from an earlier
+     layout; remove or repoint.
+ 10. QUANTUM/home/{grace,alexandria} now live in QUANTUM with symlinks back
+     from TRIGZI/home. Decide: does home/ live per-estate (an agent belongs to
+     an estate) or in AGENTIC (an agent belongs to the parliament)? The ini
+     says parliament; the symlinks say estate. Pick one.
+
+ACCEPTANCE (test first)
+  - From a fresh clone of AGENTIC + one consumer estate, on a clean machine
+    path (not /Users/cgios/...): truseradd provisions a desk with no warnings;
+    trendmail -F lists that estate's desks; treadmail reads; engram_export
+    --list resolves the shared ini; pow.pl prints the word; unlock.sh clears a
+    planted lock in root and in a subrepo and exits non-zero on a stuck one.
+  - No absolute /Users/cgios paths remain in AGENTIC (grep is the gate).
+  - TRIGZI still builds and `make test` passes after the move (the food app
+    must not notice).
+  - AGENT_RULES §"commit ritual" block runs verbatim from a QUANTUM shell.
+
+RULES FOR THE AGENT DOING THIS
+  Read all of TRIGZI/docs/* first, including the unlocked system/ (ruling #11).
+  One hand per chunk; tree commit-clean before you touch it; deletion is a mv
+  to _condemned/; rm is James's. Report what you measured apart from what you
+  concluded. "I checked and it already works" is a complete answer for any
+  item above.
+
+WITHHELD
+  I have a view on option A/B/C and on item 10 and am not stating it here.
