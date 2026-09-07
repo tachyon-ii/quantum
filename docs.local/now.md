@@ -44,6 +44,7 @@ Engram: `AGENTIC/cgios/history/home/bee/engrams/…gemini-aimode_2026-09-07T10_3
 | "Concur. Absolutely." ×3; "definitive", "shatters the central dogmas", "terminal floor of the rabbit hole" | — | the register `on-the-gravitational-collapse` names. Every James posit from turn 40 to 52 was concurred with, none was priced |
 | U238 limit "because the Malthusian Index C(t)=O(t²)" | `hubrility-v8` Theorem 4 — a *document-maintenance* cost law | **hallucinated cross-domain proof.** A theorem about relational updates in a corpus applied to nucleon packing. Also wrong on the fact: the last *stable* nuclide is ²⁰⁸Pb; ²³⁸U is the last *primordial* one; nuclides exist to Z=118 |
 | **The two-gate velocity paradox** (turn 65 Part III.2): `annihilation.md` Part IV makes annihilation require *high* relativistic velocity for the E-and-B double phase-lock — but higher velocity raises frequency and packet volatility, so it should raise the alignment probability, not gate it. The model must say why the Möbius tear needs momentum rather than settling | **new.** Not in REVIEW, not here, not in `annihilation.md` | **registered as an open crack.** The one alien finding in 33 turns. Belongs on `checkpoint-1`'s list beside g=2 |
+| "ΔE_mode ≈ −16.67 MeV … lands perfectly on −28.30 MeV with zero free parameters" (t33 Part II) | `nuclear-binding-v4.md` §V, quoted with its own ✓ — the bee computed nothing | **laundered calibration.** RTFS: the only *run* model (`capsid_audit`, scorecard §3) takes **κ = 5.032 from ⁴He** — He-4 is an input there, not a prediction. `nuclear-binding-v4` claims the 4×4 eigenmode gets −28.30 from D₂-only parameters; no script in the archive prints that. Two documents disagree; the artifact says [CALIBRATED]. Re-graded 2026-09-08 by Neyman from the t1–33 export |
 | float64 solvers on continuous grids simulate the background space the ontology denies; where is the tick? | REVIEW line 97 asked for the tick; the *code-level* form (`dirac_modes.py`, `hfqpo_fit.py` run on pre-installed grids) is a sharpening | half-new. Fair, and the honest answer is the same as §3: those are compiler tests against textbook QM/GR; they are not Φ solvers and never claimed to be |
 
 **Score: one crack found, one theorem hallucinated, the rest mirror.** A bee is a fast reader and orderer (its history-README turns were good) and a poor verifier of a corpus it has just been fed — it verifies the corpus against itself. The chokes (8, all on file-heavy pushes) are the D008 NULL pattern again.
@@ -78,11 +79,12 @@ Engram: `AGENTIC/cgios/history/home/bee/engrams/…gemini-aimode_2026-09-07T10_3
 1. **g=2, honestly.** Either a real derivation — charge and mass from the *same* current, μ and S computed together, no doubling — or the paper's §17.2 says "not yet" in plain words. A day's work to know which.
 2. **The ℤ₂ restatement** (ruling pending). One paragraph; closes Gemini's crisis 1 and the ledger's oldest open question.
 3. **Build the E⊥B test the paper stakes itself on.** From a trap-on-path field configuration, compute E·B and E²−c²B²; show both vanish for the free loop and depart from zero as trap-content rises. The archive has *no* test of the progenitor posit. This is the first payment, it is finite, and it is the difference between §6 being physics and §6 being prose.
-4. **α as the invoice for §4** (ruling pending) — one line in the ledger now; the derivation is the long game.
-5. **EHT chromaticity** — literature check on 345 GHz ring size. Cheapest kill in the estate.
-6. **HFQPO discriminators 2/3/5** — fix the schema, pull RXTE PDS for GRO J1655-40, test overtone hardness and lag flip. Real data, moderate effort, genuine discrimination.
-7. **Capsid: A=3 absolutes** (one shared cause, +12%) and fork (b) for ⁹Be; then C12/O16 with the braced bond *derived*.
-8. **S = Φs** — Boltzmann counting over Φ microstates; nothing in the archive touches it; honest status is [POSIT] until it does.
+4. **The two-gate lock** — spec written 2026-09-07 (`specs/two-gate-lock.md`): sign of dP_ann/dv from Part III's own symbols, against σ ∝ 1/β and positronium-at-rest. Leaf-shaped.
+5. **α as the invoice for §4** (ruling pending) — one line in the ledger now; the derivation is the long game.
+6. **EHT chromaticity** — literature check on 345 GHz ring size. Cheapest kill in the estate.
+7. **HFQPO discriminators 2/3/5** — fix the schema, pull RXTE PDS for GRO J1655-40, test overtone hardness and lag flip. Real data, moderate effort, genuine discrimination.
+8. **Capsid: the He-4 cross, honestly.** κ was calibrated on ⁴He in the run model, so −28.30 is not a prediction there. The test: does the 4×4 lowest eigenmode of `nuclear-binding-v4` §V, with D₂-only parameters, print −16.67 / −28.30? If it needs κ, [CALIBRATED]. Then A=3 absolutes (one shared cause, +12%), fork (b) for ⁹Be, C12/O16 with the braced bond *derived*.
+9. **S = Φs** — Boltzmann counting over Φ microstates; nothing in the archive touches it; honest status is [POSIT] until it does.
 
 On hold, honestly labelled: tangential ejection [POSIT, mechanism owed]; crystalline electron (τ,h) [POSIT]; e^n/π [UNAUDITED]; BEC analogue horizons [FAR].
 

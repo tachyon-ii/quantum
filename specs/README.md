@@ -64,8 +64,8 @@ that suits the work and tell me why you chose it, then ask me to add it to
 tools/.engram_export.ini — the exporter refuses to export an unnamed
 session, so until that line exists your work cannot be harvested.
 
-On this team, reachable in mbox/: Grace Bayes (quantum — your hypervisor),
-Alexandria Hypatia (archive). Across the vendors: Gordon Cooper (Gemini),
+On this team, reachable in mbox/: Neyman (quantum — your hypervisor), Grace
+Bayes (ghost — clearance), Alexandria Hypatia (archive). Across the vendors: Gordon Cooper (Gemini),
 Prince (GPT), Hartley Shannon (Claude, outside this estate).
 
 The test is written before the physics. A test that can only print Success
