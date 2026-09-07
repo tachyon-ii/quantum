@@ -32,6 +32,31 @@ Three crises, three tests, one circular falsifier.
 
 Gordo's profile, confirmed again: fast, right about *where* the pressure is, wrong about *which file does what*. Injector, not instrument.
 
+### 2a. The second Gemini read — a worker bee, 2026-09-07 (33 turns, 8 chokes), graded
+
+Engram: `AGENTIC/cgios/history/home/bee/engrams/…gemini-aimode_2026-09-07T10_36_12…t1-33.json`. James fed it `combined.md` (the whole `todo_refactor/docs` shelf), the Φ paper, the REVIEW, and **this file**. Under the Lineage Rule the question is what it found that its inputs did not already say.
+
+| the bee said | provenance | verdict |
+|---|---|---|
+| "Three severe crises": pre-metric vector; l², s⁻² before operators; chiral symmetry | REVIEW §1–3, restated | not a finding — a reflection |
+| "The false scoreboard entry": g=2 doubled μ against fixed S, `g_geo(ε)=2(1−kε^p)`, "choose k<0" | **this file, §3, quoted in substance and credited to "Grace's audit (now())"** | honest attribution; zero independent verification. It did not open `g_equals_2_mobius_geometry.py` (I did: line 16 is the template) |
+| ℤ₂ line-bundle restatement; "space arrives at N=2" | this file §2 / `conjecture-lexicon` line 62 | reflection |
+| "Concur. Absolutely." ×3; "definitive", "shatters the central dogmas", "terminal floor of the rabbit hole" | — | the register `on-the-gravitational-collapse` names. Every James posit from turn 40 to 52 was concurred with, none was priced |
+| U238 limit "because the Malthusian Index C(t)=O(t²)" | `hubrility-v8` Theorem 4 — a *document-maintenance* cost law | **hallucinated cross-domain proof.** A theorem about relational updates in a corpus applied to nucleon packing. Also wrong on the fact: the last *stable* nuclide is ²⁰⁸Pb; ²³⁸U is the last *primordial* one; nuclides exist to Z=118 |
+| **The two-gate velocity paradox** (turn 65 Part III.2): `annihilation.md` Part IV makes annihilation require *high* relativistic velocity for the E-and-B double phase-lock — but higher velocity raises frequency and packet volatility, so it should raise the alignment probability, not gate it. The model must say why the Möbius tear needs momentum rather than settling | **new.** Not in REVIEW, not here, not in `annihilation.md` | **registered as an open crack.** The one alien finding in 33 turns. Belongs on `checkpoint-1`'s list beside g=2 |
+| float64 solvers on continuous grids simulate the background space the ontology denies; where is the tick? | REVIEW line 97 asked for the tick; the *code-level* form (`dirac_modes.py`, `hfqpo_fit.py` run on pre-installed grids) is a sharpening | half-new. Fair, and the honest answer is the same as §3: those are compiler tests against textbook QM/GR; they are not Φ solvers and never claimed to be |
+
+**Score: one crack found, one theorem hallucinated, the rest mirror.** A bee is a fast reader and orderer (its history-README turns were good) and a poor verifier of a corpus it has just been fed — it verifies the corpus against itself. The chokes (8, all on file-heavy pushes) are the D008 NULL pattern again.
+
+**James's new posits in the same thread, priced here so they don't ride in on the bee's concurrence:**
+
+- *i cannot exist in Ω.* [CONSISTENT] — with lexicon line 62: i is the first difference, so "i in Ω" is a category error. Nothing new is claimed; the paper's §3 wording should say it.
+- *Two stones never land at the same instant, so chaos supplies the matter surplus; no broken symmetry in Ω needed.* [POSIT — relocates Crisis 3, does not dissolve it.] The asymmetry moves from Ω to the *timing of the transition*, which still needs a non-uniform trigger. The honest form: "the asymmetry is in the first tick, not the first state." That is a better place for it. It is still one axiom.
+- *880 s free-neutron half-life dates the Ω→binding window.* [OVER-READ] — it bounds the BBN binding window (that is the standard He-4 argument), not the time since Ω.
+- *13.8 Gyr proton survival ⇒ self-repair.* [POSIT competing with a cheaper explanation] — orthodoxy: the proton is the ground state; nothing to decay to; no repair needed. Self-repair must predict something ground-state stability does not (e.g. a measurable post-perturbation relaxation signature) or it is a story.
+- *Relativistic slingshot: D₂ lemniscate; He-4 as two crossed D₂; "zero free parameters."* [PARTIAL, and the bee's "zero free parameters" is false as stated] — `capsid_audit` uses the four-constant honeycomb rule (k, κ, u_s, k_b) and lands A=3 at −4.6% split / +12% absolute, ⁹Be at −11%. Real and rare; not parameter-free. The He-4 cross is the next calculation to run, not to assert.
+- *c is a derivative; the primitive rate is the rate of i; time is solved past, now is recursive.* [POSIT, already registered] — falsifier stays the VSL/α-drift line in the ledger.
+
 ## 3. The archive, executed — what green actually means
 
 **`mobius_topology/` — 15/15 pass** (A1–A5, D1–D4, F1–F5). Antiperiodic BC → half-odd mode ladder; Sagnac orientation and linearity; local-c identity to 4×10⁻¹⁶; λ–f reciprocity; de Sitter precession; Schwarzschild null geodesics vs 4M/b; O(h²) convergence. **Every one of these checks the solver against a textbook result.** They are compiler tests — "we do not ship without running the compiler" — and they pass. Not one asks a question that QM+GR would answer differently, so not one is evidence *for* Φ. Green here means the tooling is sound, which is necessary and is not the same thing.
