@@ -1,0 +1,36 @@
+{
+  "assembly": {
+    "name": "D2_HT_dimer",
+    "units": {"edge_a": 1.0},
+    "parts": [
+      {
+        "id": "p1",
+        "species": "proton",
+        "pose": {
+          "position": [0, 0, 0.5],
+          "orientation": {"quat": [1, 0, 0, 0]}
+        }
+      },
+      {
+        "id": "n1",
+        "species": "neutron",
+        "pose": {
+          "position": [0, 0, -0.5],
+          "orientation": {"quat": [1, 0, 0, 0]}
+        }
+      }
+    ],
+    "bonds": [
+      {
+        "type": "HT",
+        "from": {"part": "p1", "face": "H0"},
+        "to": {"part": "n1", "face": "T0"},
+        "alignment": {"coaxial": true, "twist_deg": 0.0},
+        "routing": {"layer": "outer", "belt_k": 2}
+      }
+    ],
+    "meta": {
+      "description": "Deuteron: single H0↔T0 backbone"
+    }
+  }
+}

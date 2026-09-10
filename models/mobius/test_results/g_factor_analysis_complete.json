@@ -1,0 +1,145 @@
+{
+  "cubic_mixed": {
+    "g_factor_contribution": {
+      "geometric_contribution": 0.0023207948680323306,
+      "mobius_twist_factor": 0.0,
+      "crystal_geometry_factor": 0.0,
+      "collective_enhancement": 1.220680320742344e-07,
+      "octahedral_contribution": 0.0023206728000002563,
+      "same_helicity_factor": 1.220680320742344e-07,
+      "total_theoretical_g": 2.0023207948680324,
+      "experimental_g": 2.00231930436256,
+      "deviation_explained": 1.0006426519504674,
+      "confidence_level": 0.7991002272613548,
+      "parameter_derivation_confidence": 0.6964009090454187
+    },
+    "qed_comparison": {
+      "geometric_vs_leading_qed": 1.9982567770037993,
+      "geometric_vs_total_qed": 2.0012853026583883,
+      "geometric_explanation_fraction": 1.0006426519504674,
+      "qed_explanation_fraction": 0.5000000003104371,
+      "complementary_explanation": 1.5006426522609044,
+      "theoretical_consistency": "False",
+      "parameter_derivation_quality": 0.6964009090454187,
+      "overall_theory_viability": {
+        "theory_viable": "True",
+        "anomaly_explanation_percentage": 100.06426519504674,
+        "primary_limitations": []
+      }
+    },
+    "freeman_theory_assessment": {
+      "theory_viable": "True",
+      "anomaly_explanation_percentage": 100.06426519504674,
+      "primary_limitations": []
+    }
+  },
+  "tetrahedral_right": {
+    "g_factor_contribution": {
+      "geometric_contribution": 0.0023207948680323306,
+      "mobius_twist_factor": 0.0,
+      "crystal_geometry_factor": 0.0,
+      "collective_enhancement": 1.220680320742344e-07,
+      "octahedral_contribution": 0.0023206728000002563,
+      "same_helicity_factor": 1.220680320742344e-07,
+      "total_theoretical_g": 2.0023207948680324,
+      "experimental_g": 2.00231930436256,
+      "deviation_explained": 1.0006426519504674,
+      "confidence_level": 0.7991002272613548,
+      "parameter_derivation_confidence": 0.6964009090454187
+    },
+    "qed_comparison": {
+      "geometric_vs_leading_qed": 1.9982567770037993,
+      "geometric_vs_total_qed": 2.0012853026583883,
+      "geometric_explanation_fraction": 1.0006426519504674,
+      "qed_explanation_fraction": 0.5000000003104371,
+      "complementary_explanation": 1.5006426522609044,
+      "theoretical_consistency": "False",
+      "parameter_derivation_quality": 0.6964009090454187,
+      "overall_theory_viability": {
+        "theory_viable": "True",
+        "anomaly_explanation_percentage": 100.06426519504674,
+        "primary_limitations": []
+      }
+    },
+    "freeman_theory_assessment": {
+      "theory_viable": "True",
+      "anomaly_explanation_percentage": 100.06426519504674,
+      "primary_limitations": []
+    }
+  },
+  "hexagonal_mixed": {
+    "g_factor_contribution": {
+      "geometric_contribution": 0.0023207948680323306,
+      "mobius_twist_factor": 0.0,
+      "crystal_geometry_factor": 0.0,
+      "collective_enhancement": 1.220680320742344e-07,
+      "octahedral_contribution": 0.0023206728000002563,
+      "same_helicity_factor": 1.220680320742344e-07,
+      "total_theoretical_g": 2.0023207948680324,
+      "experimental_g": 2.00231930436256,
+      "deviation_explained": 1.0006426519504674,
+      "confidence_level": 0.7991002272613548,
+      "parameter_derivation_confidence": 0.6964009090454187
+    },
+    "qed_comparison": {
+      "geometric_vs_leading_qed": 1.9982567770037993,
+      "geometric_vs_total_qed": 2.0012853026583883,
+      "geometric_explanation_fraction": 1.0006426519504674,
+      "qed_explanation_fraction": 0.5000000003104371,
+      "complementary_explanation": 1.5006426522609044,
+      "theoretical_consistency": "False",
+      "parameter_derivation_quality": 0.6964009090454187,
+      "overall_theory_viability": {
+        "theory_viable": "True",
+        "anomaly_explanation_percentage": 100.06426519504674,
+        "primary_limitations": []
+      }
+    },
+    "freeman_theory_assessment": {
+      "theory_viable": "True",
+      "anomaly_explanation_percentage": 100.06426519504674,
+      "primary_limitations": []
+    }
+  },
+  "diamond_structure": {
+    "g_factor_contribution": {
+      "geometric_contribution": 0.0023209327301929664,
+      "mobius_twist_factor": 0.0,
+      "crystal_geometry_factor": 0.0,
+      "collective_enhancement": 2.5993019270997945e-07,
+      "octahedral_contribution": 0.0023206728000002563,
+      "same_helicity_factor": 2.5993019270997945e-07,
+      "total_theoretical_g": 2.002320932730193,
+      "experimental_g": 2.00231930436256,
+      "deviation_explained": 1.0007020931186301,
+      "confidence_level": 0.7991002272613548,
+      "parameter_derivation_confidence": 0.6964009090454187
+    },
+    "qed_comparison": {
+      "geometric_vs_leading_qed": 1.9983754794365638,
+      "geometric_vs_total_qed": 2.00140418499464,
+      "geometric_explanation_fraction": 1.0007020931186301,
+      "qed_explanation_fraction": 0.5000000003104371,
+      "complementary_explanation": 1.5007020934290671,
+      "theoretical_consistency": "False",
+      "parameter_derivation_quality": 0.6964009090454187,
+      "overall_theory_viability": {
+        "theory_viable": "True",
+        "anomaly_explanation_percentage": 100.07020931186301,
+        "primary_limitations": []
+      }
+    },
+    "freeman_theory_assessment": {
+      "theory_viable": "True",
+      "anomaly_explanation_percentage": 100.07020931186301,
+      "primary_limitations": []
+    }
+  },
+  "overall_assessment": {
+    "average_anomaly_explanation": 100.0657512242508,
+    "best_anomaly_explanation": 100.07020931186301,
+    "average_confidence": 0.7991002272613548,
+    "overall_theory_viability": true,
+    "recommendation": "Theory shows promising results with consistent 100% anomaly explanation"
+  }
+}

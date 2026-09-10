@@ -44,3 +44,9 @@ htmlcov/
 *.swp
 *.swo
 *~
+
+# trendmail per-agent delivery logs (last-read epoch marks) — runtime state, as in TRIGZI
+.trendmail/
+
+# stale zip of a directory that is itself in the repo (116 files vs 154); rm it
+models/nuclear_to_assembly.zip

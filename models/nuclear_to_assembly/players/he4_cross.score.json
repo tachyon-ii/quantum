@@ -1,0 +1,37 @@
+{
+  "channels": {
+    "NP": 4,
+    "NP_S_S": 2,
+    "NP_H_H": 2,
+    "PP": 1,
+    "NN": 1
+  },
+  "brickwork": {
+    "orthogonal_links": 1,
+    "shear_penalty": 0,
+    "curvature_penalty": 0.6
+  },
+  "phase": {
+    "bad_phase_bonds": 3
+  },
+  "comprehensive": {
+    "A": 4,
+    "Z": 2,
+    "N": 2,
+    "bonds_SS": 2,
+    "bonds_HH": 4,
+    "bonds_SH": 0,
+    "channel_NP": 4,
+    "channel_PP": 1,
+    "channel_NN": 1,
+    "edge_0": 92,
+    "edge_1": 40,
+    "edge_2": 12,
+    "surface_nucleons": 4,
+    "interior_nucleons": 0,
+    "has_closed_loop": 1,
+    "bonds_per_A": 1.5,
+    "edge1_per_A": 10.0,
+    "edge2_per_A": 3.0
+  }
+}

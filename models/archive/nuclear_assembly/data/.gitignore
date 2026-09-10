@@ -1,0 +1,7 @@
+# Ignore output files but keep directory
+output/*
+!output/.gitkeep
+
+# Ignore user configurations except examples
+configurations/*
+!configurations/example_*.json

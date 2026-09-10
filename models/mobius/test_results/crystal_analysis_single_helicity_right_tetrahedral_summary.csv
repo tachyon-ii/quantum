@@ -1,0 +1,2 @@
+crystal_type,crystal_symmetry,total_units,majorana_pairs,net_charge,avg_field_strength,geometric_g_contribution,theoretical_g_factor,deviation_explained_fraction,has_single_rotation_axis,produces_circular_field
+SINGLE_HELICITY_RIGHT,TETRAHEDRAL,27,0,53.56736975846612,5.337375109655357e+20,0.0023206728000002563,2.0023206728000003,1.000590020638232,True,True

@@ -1,0 +1,40 @@
+{
+  "configurations": {
+    "1": {"symbol": "H", "name": "Hydrogen", "config": [1, 0, 0, 0, 0]},
+    "2": {"symbol": "He", "name": "Helium", "config": [2, 0, 0, 0, 0]},
+    "3": {"symbol": "Li", "name": "Lithium", "config": [2, 1, 0, 0, 0]},
+    "4": {"symbol": "Be", "name": "Beryllium", "config": [2, 2, 0, 0, 0]},
+    "5": {"symbol": "B", "name": "Boron", "config": [2, 3, 0, 0, 0]},
+    "6": {"symbol": "C", "name": "Carbon", "config": [2, 4, 0, 0, 0]},
+    "7": {"symbol": "N", "name": "Nitrogen", "config": [2, 5, 0, 0, 0]},
+    "8": {"symbol": "O", "name": "Oxygen", "config": [2, 6, 0, 0, 0]},
+    "9": {"symbol": "F", "name": "Fluorine", "config": [2, 7, 0, 0, 0]},
+    "10": {"symbol": "Ne", "name": "Neon", "config": [2, 8, 0, 0, 0]},
+    "11": {"symbol": "Na", "name": "Sodium", "config": [2, 8, 1, 0, 0]},
+    "12": {"symbol": "Mg", "name": "Magnesium", "config": [2, 8, 2, 0, 0]},
+    "13": {"symbol": "Al", "name": "Aluminum", "config": [2, 8, 3, 0, 0]},
+    "14": {"symbol": "Si", "name": "Silicon", "config": [2, 8, 4, 0, 0]},
+    "15": {"symbol": "P", "name": "Phosphorus", "config": [2, 8, 5, 0, 0]},
+    "16": {"symbol": "S", "name": "Sulfur", "config": [2, 8, 6, 0, 0]},
+    "17": {"symbol": "Cl", "name": "Chlorine", "config": [2, 8, 7, 0, 0]},
+    "18": {"symbol": "Ar", "name": "Argon", "config": [2, 8, 8, 0, 0]},
+    "19": {"symbol": "K", "name": "Potassium", "config": [2, 8, 8, 1, 0]},
+    "20": {"symbol": "Ca", "name": "Calcium", "config": [2, 8, 8, 2, 0]},
+    "21": {"symbol": "Sc", "name": "Scandium", "config": [2, 8, 9, 2, 0]},
+    "22": {"symbol": "Ti", "name": "Titanium", "config": [2, 8, 10, 2, 0]},
+    "23": {"symbol": "V", "name": "Vanadium", "config": [2, 8, 11, 2, 0]},
+    "24": {"symbol": "Cr", "name": "Chromium", "config": [2, 8, 13, 1, 0]},
+    "25": {"symbol": "Mn", "name": "Manganese", "config": [2, 8, 13, 2, 0]},
+    "26": {"symbol": "Fe", "name": "Iron", "config": [2, 8, 14, 2, 0]},
+    "27": {"symbol": "Co", "name": "Cobalt", "config": [2, 8, 15, 2, 0]},
+    "28": {"symbol": "Ni", "name": "Nickel", "config": [2, 8, 16, 2, 0]},
+    "29": {"symbol": "Cu", "name": "Copper", "config": [2, 8, 18, 1, 0]},
+    "30": {"symbol": "Zn", "name": "Zinc", "config": [2, 8, 18, 2, 0]}
+  },
+  "metadata": {
+    "description": "Ground truth electron shell configurations",
+    "shells": ["1s", "2s+2p", "3s+3p+3d", "4s+4p", "5s+5p"],
+    "capacities": [2, 8, 18, 8, 8],
+    "source": "NIST atomic data"
+  }
+}

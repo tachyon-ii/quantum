@@ -1,0 +1,34 @@
+{
+  "assembly": {
+    "name": "string",
+    "units": {"edge_a": 1.0},
+    "parts": [
+      {
+        "id": "string",
+        "species": "proton|neutron",
+        "pose": {
+          "position": [0, 0, 0],
+          "orientation": {"quat": [1, 0, 0, 0]}
+        }
+      }
+    ],
+    "bonds": [
+      {
+        "type": "HT|HH|TT",
+        "from": {"part": "string", "face": "H0-3|T0-3"},
+        "to": {"part": "string", "face": "H0-3|T0-3"},
+        "alignment": {"coaxial": true, "twist_deg": 0.0},
+        "routing": {"layer": "outer|inner", "belt_k": 2}
+      }
+    ],
+    "chirality": {
+      "n_vectors": [
+        {"part": "string", "face": "string"}
+      ]
+    },
+    "meta": {
+      "description": "string",
+      "chi_hint": 1
+    }
+  }
+}

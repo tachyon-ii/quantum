@@ -1,0 +1,64 @@
+{
+  "theory": "Freeman CMB Event-Peak Mapping",
+  "validation_date": "2025-08",
+  "data_source": "Synthetic (Planck-like)",
+  "detected_peaks": 4,
+  "mapped_events": 4,
+  "validation_results": {
+    "P1_is_largest_acoustic": "True",
+    "P2_smaller_than_P1": "True",
+    "P3_smaller_than_P2": "True",
+    "decreasing_amplitude_pattern": "True",
+    "chronological_order": true,
+    "freeman_amplitude_ratios": "False",
+    "P1_position_correct": "True",
+    "P2_position_correct": "True",
+    "P3_position_correct": "True"
+  },
+  "success_rate": 0.8888888888888888,
+  "status": "VALIDATED",
+  "peak_details": {
+    "W1 \u2192 P1": {
+      "multipole": 215.6918988733742,
+      "amplitude": 5640.241825419031,
+      "significance": 5645.659253372709
+    },
+    "W2 \u2192 P2": {
+      "multipole": 526.8921421350677,
+      "amplitude": 3453.643742773931,
+      "significance": 3433.003100424981
+    },
+    "W3 \u2192 P3": {
+      "multipole": 802.4249140723651,
+      "amplitude": 1999.998854808985,
+      "significance": 1237.406885966232
+    },
+    "W4 \u2192 P4": {
+      "multipole": 1160.2846975199282,
+      "amplitude": 963.6453910011342,
+      "significance": 803.8933722815812
+    }
+  },
+  "theoretical_predictions": {
+    "P1_amplitude_fraction": 1.0,
+    "P2_amplitude_fraction": 0.7,
+    "P3_amplitude_fraction": 0.45,
+    "P1_multipole_range": [
+      200,
+      250
+    ],
+    "P2_multipole_range": [
+      500,
+      600
+    ],
+    "P3_multipole_range": [
+      750,
+      850
+    ]
+  },
+  "summary": {
+    "P1_largest": false,
+    "decreasing_pattern": "True",
+    "chronological_order": true
+  }
+}

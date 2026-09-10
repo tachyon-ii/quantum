@@ -1,0 +1,29 @@
+# Core dependencies
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+matplotlib>=3.4.0
+plotly>=5.3.0
+tabulate
+
+# Web framework
+streamlit>=1.25.0
+
+# Scientific computing
+scikit-learn>=1.0.0
+statsmodels>=0.13.0
+astropy>=5.0  # For Lomb-Scargle
+
+# Data handling
+pyyaml>=6.0
+h5py>=3.7.0
+
+# Development
+jupyter>=1.0.0
+pytest>=7.0.0
+black>=22.0.0
+pylint>=2.15.0
+
+# Optional but recommended
+seaborn>=0.12.0
+tqdm>=4.65.0
