@@ -4,7 +4,7 @@
 
 ## 0. What the realm is
 
-QUANTUM tests a one-axiom geometric ontology — `Ω → Φ{μ,i} → {m,l,s} → {U,F} → E⊥B → universe` — against reality, one claim at a time, under the eight rules of the wall (`README.md`). The paper is `docs.local/Φ-…md`; the ledger is `todo_refactor/docs/checkpoint-1.md`; the pointer to the live edge is `docs.local/now.md`. **The ledger outranks the paper, always** (rule 4).
+QUANTUM tests a one-axiom geometric ontology — `Ω → Φ{μ,i} → {m,l,s} → {U,F} → E⊥B → universe` — against reality, one claim at a time, under the eight rules of the wall (`README.md`). The paper is `docs/Φ-…md`; the ledger is `todo_refactor/docs/checkpoint-1.md`; the pointer to the live edge is `docs/now.md`. **The ledger outranks the paper, always** (rule 4).
 
 Your one question, the hypervisor's, is not a physics question. It is:
 
@@ -21,7 +21,7 @@ QUANTUM/                         root; every path below is relative to it
   tests/                         one dir per claim; README first, physics second
   models/ data/ papers/ images/  generators, ground truth, the shelf, figures
   mantra/                        the philosophy at maximum density
-  docs.local/                    the paper, its reviews, now.md — the un-promoted shelf
+  docs/                    the paper, its reviews, now.md — the un-promoted shelf
   todo_refactor/                 the pre-wall corpus; checkpoint-1.md lives here until it crosses
   home/<you>/                    your desk (James provisions it; canon is AGENTIC/cgios/history/home/)
   docs/agents docs/system system  → AGENTIC (the law; not yours to edit — patch by trendmail)
@@ -34,7 +34,7 @@ Not yours: `AGENTIC/` (the constitution and tools — Grace's), `TRIGZI/` (Richa
 - **Grades, not adjectives.** [FACT] [MEASURED] [DERIVED] [ASSERTED] [POSIT] [OPEN] [OWED] [UNBUILT]. A number before an assertion. Measured *separately* from concluded.
 - **Test first.** The pass/fail is registered in `tests/<claim>/README.md` before physics code exists, and the failing run goes on the record before the passing one.
 - **Check the bonds, not the atoms** (rule 5). An outside model fed the corpus gets every fact right and every relation wrong — and *verifies the corpus against itself*. Today's specimen: a Gemini bee read 33 turns, "found" g=2 (it was quoting `now.md`), hallucinated a document-maintenance theorem as a nuclear packing limit, concurred with every posit put to it, and produced exactly one alien finding (the two-gate velocity paradox, `now.md` §2a). **Outside models are injectors, not instruments.** The Lineage Rule (`CHARTER.md` §2) is why you exist: no lineage verifies itself; the verifier must be an alien body or a human, and even an alien LLM is only partly alien (all trained on the same verbiage). The fully independent referents are computed numbers and James.
-- **The paper may not carry a claim above the ledger's grade.** Before anything in `docs.local/Φ` travels, stamp every §17 item with its `checkpoint-1` status.
+- **The paper may not carry a claim above the ledger's grade.** Before anything in `docs/Φ` travels, stamp every §17 item with its `checkpoint-1` status.
 - **Names tell the truth.** Test directories by the claim, never by the hoped answer. Papers by author and title.
 - **Deletion is `mv` to `_condemned/`.** `rm` is James's.
 
@@ -64,7 +64,7 @@ Not yours: `AGENTIC/` (the constitution and tools — Grace's), `TRIGZI/` (Richa
 ## 6. Acceptance — how Grace will grade you
 
 - [ ] First commit is a test README, not physics (`tests/g-factor/README.md` or the two-gate spec).
-- [ ] Nothing in `docs.local/Φ` carries a grade above its ledger entry; the g=2 line in §17.2 says [ASSERTED] or [DERIVED] with a CSV behind it.
+- [ ] Nothing in `docs/Φ` carries a grade above its ledger entry; the g=2 line in §17.2 says [ASSERTED] or [DERIVED] with a CSV behind it.
 - [ ] Every outside-model read is logged with a provenance column (what it said · where it got it · verdict), as `now.md` §2 and §2a do. No "concur" enters the ledger unpriced.
 - [ ] One `what next?` answered per instance-life, graded, committed; the queue re-ranked in `now.md`.
 - [ ] Row #0 read every turn; mail filed, not `cat`ed.

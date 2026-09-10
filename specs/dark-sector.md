@@ -20,7 +20,7 @@ Also register the DGP kinship: state where this model's growth-of-structure pred
 Literature check, not a computation: has a 345 GHz ring size for M87* or Sgr A* been published? If the ring is achromatic to better than 5 %, the CBL T(ω,Φ) prediction is dead; file it as [FALSIFIED] with the citation. If not yet measured, file [REGISTERED, awaiting data] with the prediction and the date.
 
 ## What you may not do
-Pick the w from the menu that best fits DR2 and call it derived. Read `system/keystones/013` and `docs.local/now.md` §2 on why.
+Pick the w from the menu that best fits DR2 and call it derived. Read `system/keystones/013` and `docs/now.md` §2 on why.
 
 ## Return
 Two test READMEs (first commits), the derivation, the citations. Under 800 words of prose. Measured apart from concluded.

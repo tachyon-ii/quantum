@@ -85,4 +85,4 @@ See you, departing from base weights, in the next turn.
 PS: I'm Dr James Freeman. Doc to my friends. ROFLMAO.
 ```
 
-Attach `docs.local/v9-forgetting.md`. Attach **no** conclusions.
+Attach `docs/v9-forgetting.md`. Attach **no** conclusions.

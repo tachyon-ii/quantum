@@ -8,16 +8,12 @@ $$
 E=mc^2
 $$
 
-To avoid later collision with the electric-field symbol $E$, call scalar energy $U$:
-
-$$
-U=mc^2
-$$
+Throughout this document, $E$ retains its conventional meaning of scalar energy. To avoid collision with that symbol, the electromagnetic field manifestations are denoted $V$ (electric) and $M$ (magnetic). These are model-local symbols for the two orthogonal electromagnetic manifestations.
 
 Dimensionally:
 
 $$
-[U]=ml^2s^{-2}
+[E]=ml^2s^{-2}
 $$
 
 Energy therefore presupposes the existence of:
@@ -37,7 +33,7 @@ $$
 The same is true of force:
 
 $$
-F=ma
+F=ma=m\frac{\Delta v}{s}
 $$
 
 with:
@@ -49,7 +45,7 @@ $$
 Force and energy are different quantities, but closely related. A force acting through a distance does work:
 
 $$
-\Delta U = Fl
+\Delta E = Fl
 $$
 
 for the simple collinear case.
@@ -66,7 +62,7 @@ $$
 \boxed{
 \begin{aligned}
 &\quad \\ 
-&\bm{\qquad \Omega \longrightarrow \Phi\{\mu,i\} \longrightarrow \{m,l,s\} \longrightarrow \{U,F\} \longrightarrow E \perp B \longrightarrow \textbf{\textit{Universe}} \qquad} \\
+&\bm{\qquad \Omega \longrightarrow \Phi\{\mu,i\} \longrightarrow \{m,l,s\} \longrightarrow \{E,F\} \longrightarrow V \perp M \longrightarrow \textbf{\textit{Universe}} \qquad} \\
 &\quad 
 \end{aligned}
 }
@@ -153,18 +149,18 @@ Stable composite systems, such as stars or nucleons, preserve their structural i
 ------------------------------
 ## 5. Energy and force emerge from the same substrate
 Once $m$, $l$, and $s$ are established by the expanding geometry, we define their dimensional profiles:
-$$\bm{[U] = m l^2 s^{-2}}$$ 
+$$\bm{[E] = m l^2 s^{-2}}$$ 
 and:
 $$\bm{[F] = m l s^{-2}}$$ 
 with the differential relationship:
-$$\bm{\Delta U = F l}$$ 
+$$\bm{\Delta E = F l}$$ 
 Energy and force therefore emerge from the exact same dimensional substrate.
 So:
 $$\boxed{ \begin{aligned} &\quad \\ &\bm{\qquad \Phi \longrightarrow \{m,l,s\} \longrightarrow \begin{cases} U \\ F \end{cases} \qquad} \\ &\quad \end{aligned} }$$ 
 This does not reject the classical or relativistic equivalences:
 $$\bm{E = mc^2}$$ 
 or:
-$$\bm{F = ma}$$ 
+$$\bm{F = ma = m\frac{\Delta v}{s}}$$ 
 Rather, it places them downstream in the dependency tree. They cannot themselves reside at the base of the ontology, because the symbols in their equations already presuppose these primitive, structurally generated concepts.
 
 ------------------------------
@@ -176,8 +172,8 @@ $$\bm{\text{Accumulated } \Phi \longrightarrow \text{Core Block } (\Omega) \xrig
 Ultimate cosmic eviction is therefore built into the geometry of space itself: when information travelling at the speed limit $c$ can no longer interact due to spatial divergence, it reaches its operational limit. The universe evicts stale state to preserve the energetic viability of the remaining computed architecture.
 
 ------------------------------
-## 6. The Electromagnetic Split: $E \perp B$
-Once energy $U$ and force $F$ are instantiated via the geometric substrate $\{m, l, s\}$, the primary $\Phi$ token separates into its twin field manifestations. The orthogonal electric and magnetic fields are not separate physical entities mysteriously coupled by dynamic laws, but two projections of a single resonant wave navigating the distinct geometric axes of the Möbius loop:
+## 6. The Electromagnetic Split: $V \perp M$
+Once energy $E$ and force $F$ are instantiated via the geometric substrate $\{m, l, s\}$, the primary $\Phi$ token separates into its twin field manifestations. The orthogonal electric and magnetic fields are not separate physical entities mysteriously coupled by dynamic laws, but two projections of a single resonant wave navigating the distinct geometric axes of the Möbius loop:
 
                      MÖBIUS TOPOLOGY (\mu)
                               │
@@ -187,20 +183,20 @@ Once energy $U$ and force $F$ are instantiated via the geometric substrate $\{m,
 (Steady Looping Path)                 (Continuous 720° Twist)
              │                                 │
              ▼                                 ▼
-   MAGNETIC FIELD (B)                 ELECTRIC FIELD (E)
+   MAGNETIC FIELD (M)                 ELECTRIC FIELD (V)
 
 The division operates via strict geometric necessity:
 
-* The Magnetic Field ($B$): Axial Flow. This manifestation emerges from the steady, directional propagation of the resonant wave along the long, longitudinal axis around the loop. This continuous cyclical flow is the microscopic equivalent of a current loop, generating the particle's intrinsic magnetic dipole and polar orientation.
-* The Electric Field ($E$): Topological Averaging. This manifestation emerges from the continuous twist across the strip's short axis width. As the wave navigates the $720^\circ$ twist required to close the spinor boundary condition, its internal variations undergo topological averaging. This creates a uniform, static, isotropic field perceived as net electric charge.
+* The Magnetic Field ($M$): Axial Flow. This manifestation emerges from the steady, directional propagation of the resonant wave along the long, longitudinal axis around the loop. This continuous cyclical flow is the microscopic equivalent of a current loop, generating the particle's intrinsic magnetic dipole and polar orientation.
+* The Electric Field ($V$): Topological Averaging. This manifestation emerges from the continuous twist across the strip's short axis width. As the wave navigates the $720^\circ$ twist required to close the spinor boundary condition, its internal variations undergo topological averaging. This creates a uniform, static, isotropic field perceived as net electric charge.
 
-Because the single $\pi$-twist of a Möbius loop enforces a permanent $\pi/2$ orientation at its geometric centroid, the electric and magnetic projections are locked in absolute orthogonality ($E \perp B$). In isolation, these fields form a perfect standing wave null—true electromagnetic neutrality. When the loop moves relative to the background field medium, the perfect cancellation degrades, causing $E$ and $B$ to emerge together as coupled, time-varying fields. You cannot manifest one without the other; they are two sides of the same geometric coin.
+Because the single $\pi$-twist of a Möbius loop enforces a permanent $\pi/2$ orientation at its geometric centroid, the electric and magnetic projections are locked in absolute orthogonality ($V \perp M$). In isolation, these fields form a perfect standing wave null—true electromagnetic neutrality. When the loop moves relative to the background field medium, the perfect cancellation degrades, causing $V$ and $M$ to emerge together as coupled, time-varying fields. You cannot manifest one without the other; they are two sides of the same geometric coin.
 
 ------------------------------
 ## 7. The Material Ladder: The Crystalline Electron
 With fields established, matter crystallizes through a deterministic hierarchy of geometric constraints. The universe does not contain a complex "zoo" of elementary particles; it contains exactly one fundamental topological capture—the $n=1$ neutrino state—which organizes recursively into increasingly dense architectures.
 The $(\tau, h)$ algebra dictates the first composite layer. Every fundamental loop is governed by its matter sign $\tau \in \{+1, -1\}$ and its helicity handedness $h \in \{+1, -1\}$. When like-matter loops collide tangentially under Big Bang pressures, they undergo a rapid flash-freeze crystallization:
-$$\bm{M(+1) + M(+1) \longrightarrow \text{Tetrahedral Close Lattice} \longrightarrow \text{Electron } (e^-)}$$ 
+$$\bm{\mathcal{M}(+1) + \mathcal{M}(+1) \longrightarrow \text{Tetrahedral Close Lattice} \longrightarrow \text{Electron } (e^-)}$$ 
 The electron is not an infinitely small point particle, but a dual-state crystal:
 
    1. The Physical Core: A near-point-sized, densely packed octahedral crystal template that locks individual degrees of freedom.
@@ -279,7 +275,7 @@ If a specific topological configuration of Φ—such as charge-neutral, tetrahed
 The core utility of the Φ framework is the massive array of physical phenomena that flow naturally from a single, minimalist starting vocabulary:
 $$\bm{\Omega \longrightarrow \Phi\{\mu, i\}}$$ 
 From this single event, the downstream dependency tree branches clearly:
-$$\begin{aligned} \mu &\longrightarrow \text{Localisation (Spatial anchoring)} \\ i &\longrightarrow \text{Direction (The information vector)} \\ \Phi &\longrightarrow \{m,l,s\} \quad \text{(Derivation of mass, length, and time)} \\ \{m,l,s\} &\longrightarrow \{U,F\} \quad \text{(Emergence of energy and force profiles)} \\ U &\longrightarrow \text{Energy-carrying electromagnetic propagation} \\ \mu &\longrightarrow \text{Geometric origin of absolute orthogonality } (\bm{E \perp B}) \\ \Delta\mu &\longrightarrow \text{Internal state modifications / Candidate compute} \\ \Delta i &\longrightarrow \text{Routing paths across the medium} \\ \Phi + \Phi &\longrightarrow \text{Deterministic wave interference} \\ \text{Stable Interactions} &\longrightarrow \text{Resonance and structural persistence} \\ \text{Persistence} &\longrightarrow \text{Recursive assembly (Fractal scaling)} \\ \text{Finite Persistence} &\longrightarrow \text{Mandatory temporal forgetting } (\delta > 0) \\ \Phi \times s &\longrightarrow \text{Statistical emergence of entropy } (S) \end{aligned}$$ 
+$$\begin{aligned} \mu &\longrightarrow \text{Localisation (Spatial anchoring)} \\ i &\longrightarrow \text{Direction (The information vector)} \\ \Phi &\longrightarrow \{m,l,s\} \quad \text{(Derivation of mass, length, and time)} \\ \{m,l,s\} &\longrightarrow \{E,F\} \quad \text{(Emergence of energy and force profiles)} \\ E &\longrightarrow \text{Energy-carrying electromagnetic propagation} \\ \mu &\longrightarrow \text{Geometric origin of absolute orthogonality } (\bm{V \perp M}) \\ \Delta\mu &\longrightarrow \text{Internal state modifications / Candidate compute} \\ \Delta i &\longrightarrow \text{Routing paths across the medium} \\ \Phi + \Phi &\longrightarrow \text{Deterministic wave interference} \\ \text{Stable Interactions} &\longrightarrow \text{Resonance and structural persistence} \\ \text{Persistence} &\longrightarrow \text{Recursive assembly (Fractal scaling)} \\ \text{Finite Persistence} &\longrightarrow \text{Mandatory temporal forgetting } (\delta > 0) \\ \Phi \times s &\longrightarrow \text{Statistical emergence of entropy } (S) \end{aligned}$$ 
 The claim is not that these relationships have been completely mapped or finalized. The remarkable feature is that they present themselves as elegant geometric questions arising from a single root node, rather than requiring an isolated, ad-hoc primitive for every newly discovered force or particle.
 
 ------------------------------
@@ -287,11 +283,11 @@ The claim is not that these relationships have been completely mapped or finaliz
 Before the Φ ontology can claim to explain a single line of new physics, it must survive the absolute rigor of old physics. A viable geometric model cannot rely on dismissing verified experimental data; it must recover, quantitatively and without exception:
 
 * The strict conservation of energy and linear momentum;
-* The exact mass-energy equivalence relations (U = mc²);
+* The exact mass-energy equivalence relations (E = mc²);
 * Classical Newtonian mechanics within the low-velocity, macroscopic limit;
 * Special relativity and Lorentz invariance under high-velocity propagation;
 * Maxwellian electromagnetic wave equations;
-* Absolute orthogonality ($\bm{E \perp B \perp i}$) for free-space propagation;
+* Absolute orthogonality ($\bm{V \perp M \perp i}$) for free-space propagation;
 * All known wave interference behaviors (Young's double-slit limits);
 * The precise stability profiles of nuclear and atomic matter;
 * Standard statistical mechanics and thermodynamic entropy (Δ S ≥ 0).
@@ -307,7 +303,7 @@ A physically real, self-sustaining configuration corresponding to the topologica
 At least some quantities currently categorized as fundamental primitives by standard model constraints must be derived explicitly from the properties of $\mu$ and the information vector $i$. Core properties like mass-energy equivalents, quantized electric charge, and half-integer spin cannot forever remain arbitrary empirical labels attached to particles after the fact.
 ### 17.3. Geometric Derivation of Electromagnetic Orthogonality
 If the topological Möbius claim is structurally meaningful, then the cross-product relation:
-$$\bm{E \perp B}$$ 
+$$\bm{V \perp M}$$ 
 must be derived as a direct geometric consequence of the loop's centroid axes, rather than being separately stipulated or forced by ad-hoc field equations.
 ### 17.4. Categorized Perturbation of State and Route
 Dynamic interactions between propagating structures must admit all three experimentally distinguishable states of modification:
@@ -343,7 +339,7 @@ The framework is seriously weakened, compromised, or outright falsified if any o
    1. Inviability of Capture Topology: Absolute mathematical or physical proof emerges demonstrating that no stable, self-sustaining, $\mu$-like topological capture state can exist within a 3D elastic space medium.
    2. Requirement of External Confinement: Any apparent wave-capture requires a separate, pre-existing external confining structure or independent force field to supply its structural stability.
    3. Failure of Property Derivation: Mass, electric charge, intrinsic spin, and other supposedly emergent properties cannot be mathematically related to the geometry of $\mu$ or $i$, requiring them to be manually inserted as independent, ungrounded primitives.
-   4. Separation of Field Orthogonality: The perpendicular lock $\bm{E \perp B}$ cannot follow naturally from the loop geometry and has to be introduced as a separate, ungrounded parameter.
+   4. Separation of Field Orthogonality: The perpendicular lock $\bm{V \perp M}$ cannot follow naturally from the loop geometry and has to be introduced as a separate, ungrounded parameter.
    5. Indistinguishability of Perturbations: Physical interactions cannot produce independently isolated state-only, route-only, and combined modifications.
    6. Absence of Compute-in-Place Ledger: The proposed internal state change $\Delta\mu$ produces no unique, measurable physical result beyond standard, already-described electromagnetic field calculations.
    7. Sterility of the Routing Mechanism: The proposed directional routing vector $\Delta i$ fails to make a single novel, testable quantitative prediction.
@@ -361,7 +357,7 @@ A registered prediction that fails is a useful, structural advancement for physi
 ------------------------------
 ## 19. The Ontology Reduced to Its Bones
 The final, unyielding base cascade of reality is formalized as:
-$$\boxed{ \begin{aligned} &\quad \\ &\bm{\qquad \Omega \longrightarrow \Phi\{\mu,i\} \longrightarrow \{m,l,s\} \longrightarrow \{U,F\} \longrightarrow \bm{E \perp B} \longrightarrow \text{\textbf{Universe}} \qquad} \\ &\quad \end{aligned} }$$ 
+$$\boxed{ \begin{aligned} &\quad \\ &\bm{\qquad \Omega \longrightarrow \Phi\{\mu,i\} \longrightarrow \{m,l,s\} \longrightarrow \{E,F\} \longrightarrow \bm{V \perp M} \longrightarrow \text{\textbf{Universe}} \qquad} \\ &\quad \end{aligned} }$$ 
 governed entirely by the root structural packet:
 $$\boxed{ \begin{aligned} &\quad \\ &\bm{\qquad \Phi = \{\mu, i\} \qquad} \\ &\quad \end{aligned} }$$ 
 where:

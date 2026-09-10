@@ -3,7 +3,7 @@
 **Model:** Opus (a derivation where regression to the mean is the failure mode). **Test dir:** `tests/g-factor/`.
 
 ## The claim it serves
-`checkpoint-1.md` §1–§4: the electron is a wave of energy E = mc² on a closed path that returns to itself only after 720°; charge is a topological residue of the whole configuration, not a density riding the path. The scoreboard entry for g=2 was corrected on 2026-09-03 from [DERIVED] to [ASSERTED] — see `docs.local/now.md` §3 for why the old two-mode note fails (it doubles μ while holding S fixed; the classical gyromagnetic theorem forbids that for co-moving charge and mass).
+`checkpoint-1.md` §1–§4: the electron is a wave of energy E = mc² on a closed path that returns to itself only after 720°; charge is a topological residue of the whole configuration, not a density riding the path. The scoreboard entry for g=2 was corrected on 2026-09-03 from [DERIVED] to [ASSERTED] — see `docs/now.md` §3 for why the old two-mode note fails (it doubles μ while holding S fixed; the classical gyromagnetic theorem forbids that for co-moving charge and mass).
 
 ## The test, written first
 Compute the ratio **μ/S** for a closed double-loop wave configuration with these and *only* these inputs:
@@ -29,7 +29,7 @@ Compute the ratio **μ/S** for a closed double-loop wave configuration with thes
 - Add a second charged loop. Two loops of co-moving charge give g=1 by theorem. If you find yourself doing that, stop and write down why.
 
 ## Precedents to read (on the shelf, `papers/quantum/md/`)
-Battey-Pratt & Racey 1980 (`-READING-NOTES` first); the Physics Detective guidance notes (`docs.local/`); Williamson & van der Mark 1997 once fetched — their charge came out **0.91e**, which is what an honest miss looks like.
+Battey-Pratt & Racey 1980 (`-READING-NOTES` first); the Physics Detective guidance notes (`docs/`); Williamson & van der Mark 1997 once fetched — their charge came out **0.91e**, which is what an honest miss looks like.
 
 ## Return
 `tests/g-factor/README.md` (the test, first commit), then the computation as a script that prints μ/S and the inputs it used, then the grade. Under 600 words of prose. Measured separately from concluded.
