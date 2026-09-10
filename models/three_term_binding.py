@@ -108,24 +108,42 @@ P_A = half / (PLAYERS["D"][2] * CIRC)   # area_D = 1·circ ; area_D·P = half
 table(cp_D, P_A, CIRC,
       "Scenario A — circ = π/4 (geometric). D exact by the split; T/He3/He4 all predicted:")
 
-# Scenario B — circ deflated so D (50:50) AND He4 both fit; T/He3 then predicted.
-# D: circ·P = half.  He4: whole·P + s4·Y = B(He4)+U_pp.  Two eqns, unknowns circ,P.
+# Scenario B — the round patch is NOT one number. Under Laplace a balloon pressed by
+# two neighbours (T, He3: coordination 2) has a bigger contact than one pressed by one
+# (D: coordination 1); packed (He4: coordination 3) the face is whole. Anchor P and the
+# coordination-1 patch on D+He4; then ask what patch T and He3 each REQUIRE. They are
+# independent data (He3 carries computed Coulomb) — their agreement is the check.
 s4, n4, rp4, whole4, PP4 = PLAYERS["He4"]
-P_B = (B["He4"] + PP4 * U_PP - s4 * Y(cp_D, n4)) / whole4
-circ_B = half / P_B
-print(f"\nLaplace lever [NEXT STEP — derive from surface tension, do not fit]:")
-print(f"  D+He4 both on data ⇒ P = {P_B:.4f} MeV/sq-unit, round patch deflated to circ = {circ_B:.4f}")
-print(f"  (naive π/4 = {CIRC:.4f}; deflation ×{CIRC/circ_B:.3f}). Laplace on the balloon contact is the posited")
-print(f"  cause; its size is owed from γ_surface. It is He4-agnostic to T/He3 — they are round too.")
-table(cp_D, P_B, circ_B,
-      "Scenario B — circ Laplace-deflated (D and He4 anchored; T/He3 predicted, still round):")
+P_B   = (B["He4"] + PP4 * U_PP - s4 * Y(cp_D, n4)) / whole4    # He4 whole faces → P
+c1    = half / P_B                                             # D: one contact, coordination 1
+c2_T  = (B["T"]   - 3 * Y(cp_D, 3)) / (3 * P_B)                # T:   coordination 2, required
+c2_H  = (B["He3"] + U_PP - 3 * Y(cp_D, 3)) / (3 * P_B)         # He3: coordination 2, required
+print(f"\nScenario B — patch area by COORDINATION (Laplace: more neighbours, bigger patch, whole when packed)")
+print(f"  P = {P_B:.4f} MeV/sq-unit (from He4's whole faces, D's split)")
+print(f"  coordination 1  (D)          patch {c1:.3f}     [π/4 would be {CIRC:.3f}; deflated ×{CIRC/c1:.2f}]")
+print(f"  coordination 2  (T)          patch {c2_T:.3f}   required by T")
+print(f"  coordination 2  (He3)        patch {c2_H:.3f}   required by He3 — same geometry, differs by computed Coulomb; agree to {100*abs(c2_T-c2_H)/c2_T:.1f}%")
+print(f"  coordination 3  (He4)        square 1.000, hex {HEX:.3f}  — whole faces, packed")
+print(f"  monotone: {c1:.2f} → {0.5*(c2_T+c2_H):.2f} → 1.00 as neighbours 1 → 2 → 3; ratio to coord-1: ×{0.5*(c2_T+c2_H)/c1:.2f}, ×{1/c1:.2f}")
+pred_B = {"D": B["D"], "He4": B["He4"],
+          "T":   3 * Y(cp_D, 3) + 3 * 0.5*(c2_T+c2_H) * P_B,
+          "He3": 3 * Y(cp_D, 3) + 3 * 0.5*(c2_T+c2_H) * P_B - U_PP}
+print(f"  with ONE coordination-2 patch = {0.5*(c2_T+c2_H):.3f}:  T {pred_B['T']:.3f} ({100*(pred_B['T']/B['T']-1):+.1f}%)  He3 {pred_B['He3']:.3f} ({100*(pred_B['He3']/B['He3']-1):+.1f}%)")
 
 # ── honest verdict ────────────────────────────────────────────────────────────────
 print("\nVerdict (measured apart from concluded):")
-print(f"  • He4 cliff is REACHABLE: packing (round→whole square+hex) makes 28 attainable with the sensible")
-print(f"    ratio π/4:1:2.598 and a Laplace deflation ×{CIRC/circ_B:.2f} on the round patch. Two-term (no hex,")
-print(f"    no packing) could not get near 28; this can. The deflation factor is a NEXT STEP to derive.")
-print(f"  • T/He3 middle stays ~−20%% in BOTH scenarios: T's counts are 3× D's in every term, so T/D = 3.00")
-print(f"    for ANY P, c′, circ; data T/D = {B['T']/B['D']:.2f}. The He4-only packing boost cannot move it.")
-print(f"    T needs a count D lacks — an OPEN geometric question, not a constant to fit (do NOT reach for lstsq).")
-print(f"  • slingshot: saturating (§7), per-contact; one free scale c′, bounded above by D (≤0.9534).")
+print(f"  • MEASURED: the round patch T requires and the one He3 requires agree to {100*abs(c2_T-c2_H)/c2_T:.1f}% —")
+print(f"    which is the T−He3 = {B['T']-B['He3']:.3f} vs U_pp = {U_PP:.3f} split ({U_PP-(B['T']-B['He3']):.3f} MeV) spread over 3 patches:")
+print(f"    the same Coulomb check as before, restated (Neyman 2026-09-09). NOT independent evidence for coordination.")
+print(f"  • MEASURED: patch area is monotone in coordination number: {c1:.2f} (1 nbr) → {0.5*(c2_T+c2_H):.2f} (2) → 1.00 (3, packed).")
+print(f"  • CONCLUDED [POSIT, untested until A≥5]: the patch mechanism is ONE mechanism — contact area grows with how many")
+print(f"    neighbours squeeze the balloon, saturating at the whole face when packed. There is no missing")
+print(f"    integer at A≤4. The old 'T/D=3 structural' claim assumed one patch size for every round contact;")
+print(f"    that assumption, not the geometry, was wrong.")
+print(f"  • OWED [NEXT STEP]: derive the trough (interference at the smurf distance, James 2026-09-09 — not surface")
+print(f"    tension) and the patch of a balloon held there under 1/2/3 neighbours; it must reproduce the curve")
+print(f"    {c1:.2f} → {0.5*(c2_T+c2_H):.2f} → 1.00 with no free knob. It fixes the ATTRIBUTION; the geometry stands either way.")
+print(f"  • CAUTION: the 50:50 split pins c′ at its ceiling ({cp_D:.4f}). A lighter slingshot share lowers c′ and")
+print(f"    raises P; the coordination curve rescales but keeps its shape. c′ is one honest free scale, at a boundary.")
+print(f"  • NOT YET a prediction of a new nucleus: 3 unknowns (P, patch₁, patch₂) on 4 points = the one check above.")
+print(f"    Prediction starts at A≥5, where coordination mixes within one nucleus.")
