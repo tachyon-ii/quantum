@@ -50,3 +50,6 @@ htmlcov/
 
 # stale zip of a directory that is itself in the repo (116 files vs 154); rm it
 models/nuclear_to_assembly.zip
+
+# desks are symlinks to AGENTIC canon; never a real dir, never a key
+home/*/.ssh/
