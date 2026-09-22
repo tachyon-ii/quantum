@@ -100,3 +100,34 @@ On hold, honestly labelled: tangential ejection [POSIT, mechanism owed]; crystal
 It is not the paper's §19, which reads as a finished cascade. It is item 1 through 3 above, and the sentence that governs them: **green in the archive means the compiler works; the theory has been asked exactly one question it could fail — ⁹Be — and it passed.** Everything else is queued, not banked.
 
 *The edge is where the next falsifier can be built cheaply and the answer is not already known. Today that is a g-factor, a line bundle, and two field invariants.*
+
+---
+
+## 6. 2026-09-17 — the Fable–Freeman conjecture, and this session's cheap falsifiers
+
+The mechanism layer under the ledger now has a document: `fable-freeman-fractal-conjecture.md`
+(governor tetra/octa, two-stage neutron decay, proton-as-scar, neutrino-bath
+friction + snakeskin dark matter, isospin = governor count, the 1928 agenda,
+§9 the numbers owed). It is [CONJECTURE — un-promoted]; nothing crosses the wall.
+§10 adds this session's breadth — the same nonlinear-oscillator knot at every
+scale — and one clean negative: **V′3V died** (carbon's lobes are not
+nucleus-set; three covalent radii give the six-rung ladder, propyne is the kill).
+
+New falsifiers that belong in the queue, cheapest first:
+
+- **Mirror-pair residual table** (T/He-3 → A=41): if the n=3→n=2 swap is one
+  spinor unit, the post-Coulomb residual (the Nolen–Schiffer anomaly) is a
+  constant per pair. AME masses + charge radii; a laptop afternoon. Ranks with
+  the capsid work as a real discriminator on existing data.
+- **String steady-tone control**: 440 driving 220, pure tone not pluck, then
+  damp — does 220 ring? Isolates nonlinear 2:1 down-conversion from the attack
+  transient. Bench, an hour.
+- **Granite thermogram + subharmonic spectrum** (ε-Axe): cool + sings below the
+  drive ⇒ coherent (FPUT); hot + overtones only ⇒ ordinary microchipping.
+- **φ-twist packing** for C-12 (alpha-ladder leaf): what twist the Kelvin-cell
+  contacts force; chirality is available exactly at Be-8, the first non-binding
+  rung.
+
+The numbers the conjecture owes and none paid: 880 s (878/888), λ=1.2754,
+μ_n=−1.913, 12/√A, 2.42 & 3Nα−6 from packing, Ω_DM/Ω_b=5.4. It is a theory
+against a ledger; it wins the day it pays one and the ledger cannot say why.

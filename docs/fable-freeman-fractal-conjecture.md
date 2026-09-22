@@ -96,3 +96,96 @@ Four confirmed by measurements made for other reasons; three testable from exist
 ## 9. What it owes — the numbers, none paid
 
 880 s (and which of 878/888). λ = g_A/g_V = 1.2754. μ_n = −1.913 μ_N from n = 3 plus an electron. 12/√A. 2.42 MeV and 3Nα − 6 from packing. Ω_DM/Ω_b = 5.4 from the decoupling epoch. The a(E) shape. Each is computable from the geometry and the constants already in the model — m_e, 0.782, c′, the vertex angles — with nothing new introduced to make it land. That is the whole test. The conjecture is a theory against a ledger; it wins the day it pays one of these and the ledger cannot say why.
+
+---
+
+## 10. The same knot at every scale (session 2026-09-15 → 17)
+
+Everything below was worked out after §1–§9 and is one claim: the universe is a
+nonlinear oscillator, and each phenomenon here is that oscillator making
+structure — spectral content, order, a knot — that its linear/forcing
+description does not contain. Grades and falsifiers kept honest. Written under a
+running smurf (Fable↔Opus), so the shape is the thing to check, not the facts.
+
+**The governor, sharpened.** Proton n=2 = tetrahedron; neutron n=3 = octahedron.
+Two readings, one direction. *Winding:* the tetrahedral vertex angle
+arccos(−1/3)=0.608π is irrational — a KAM-stable quasi-periodic orbit that never
+closes; the octahedron's π/2 vertices are rational — a resonant orbit that tears.
+Flutter, not brute resonance: threshold + exponential rate = a half-life.
+*Parity:* the tetrahedron has no inversion centre, the octahedron does; decay is
+octa→tetra, and the inversion centre that leaves **is** the antineutrino — whose
+100% handedness (Goldhaber 1958) is then the geometry of an exit seen from the
+thing that exited. The two-stage exit's square saddle slides one edge into the
+proton's tetrahedron: **the proton is a scar.** [POSIT; owes 880 s as a KAM
+escape time, λ=1.2754, and a(E) ∝ β vs p_e — §9.]
+
+**V′3V — tested and died (a real negative result).** Posit: carbon's four lobes
+are 3V+1V′, set by the C-12 triangle. Static V′: killed by Td methane, Fd-3m
+diamond, achiral CH₂FCl. Dynamic V′: killed by the frequency squeeze (kHz→10¹⁴ Hz
+has no window; the methane-stabilised HeNe resolves to kHz). The six-rung
+single-bond ladder (1.535→1.380 Å) needs three lobe kinds = hybridisation; three
+covalent radii give all six to 8 mÅ. Propyne — three identical C-12 nuclei acting
+as sp³/sp/sp in one molecule — is the one-molecule kill. **Survives:** *same-ish,
+the ish is the magic* — but the ish is the neighbour's, continuously, not the
+nucleus's, discretely. The triangle predicts graphene (coincidence, not cause).
+[DEAD as a nuclear-set asymmetry; recorded so nobody resurrects it.]
+
+**C-12 geometry & the φ-twist.** Three identical alphas in a triangle are one
+identity three times — but an alpha is oriented (D2d; two crossed p–p/n–n pairs,
+forced by the unique 2+2 vertex-colouring of a tetrahedron). Two alphas carry a
+relative twist φ; φ∉{0,90°} is chiral. The leaf's question is *what φ the packing
+forces*, not "is C-12 chiral." Chirality first becomes available at Be-8 — the
+first rung that does not bind. A chiral ground state would show as a parity
+doublet; C-12 has none near the ground, so any chirality is a fast-tunnelling
+packing, invisible in the spectrum and visible only in the binding cost.
+[`models/nuclear_to_assembly/README_ID10T.md`; feeds `specs/alpha-ladder.md`.]
+
+**The ε-Axe (built, physical).** Steam-whistle ultrasonic drill; a copper pipe
+cut a granite tile (Petrie core UC16036 territory). Honest mechanism: copper is a
+sacrificial holder (Mohs 3), the abrasive/self-charged swarf does brittle tensile
+microfracture at the flaw network — grain boundaries, not Si–O bonds (30 THz vs
+20 kHz, a billion-fold apart); the tool horn is the resonant element. The build
+proves the *effect* (rotary ultrasonic machining is real); the FPUT claim —
+energy held coherently in low structural modes instead of thermalising — is the
+*extra* part. **Two falsifiers, both his:** the granite stays cool (thermogram),
+and it sings *below* the drive (subharmonic spectrum — undermentals are the
+fingerprint of nonlinearity; a linear system gives only overtones). [POSIT;
+owes the thermogram and the spectrum.]
+
+**Undertones — the ladder runs both ways.** "Fundamental" is a reference choice,
+not a property; no privileged zero on the frequency axis. Overtones (nX) are the
+string subdivided; undertones (X/n) are the string as part of something larger —
+X/2 is the fundamental of a string twice as long. Undermentals are the voice of
+the bigger, slower structure an oscillator sits in; Ω is the deepest undertone,
+the ground note of which all matter is a harmonic. Confirmed on a string: damp a
+440 driving a 220 and the 220 rings its *own* 220, not 440 — the box's "hums at
+440" conflates forced with free response, and a component appears at half the
+drive, which linear physics forbids (2:1 internal resonance). [Control owed:
+drive with a steady pure tone, not a pluck, then damp — isolates nonlinear
+down-conversion from the broadband attack.]
+
+**Matter as knotted entropy.** A rock is a low-entropy knot standing off the CMB
+baseline — the closest thing to a measurable "ether" (the dipole rest frame, 370
+km/s). Machining is entropy accounting: the disc's order is spent (a sacrificial
+sink) to buy the hole's order. Entropy is the *medium* (Jacobson, Verlinde,
+Penrose — geometry/gravity as emergent-thermodynamic), not a ledger laid over the
+mechanics — but it is featureless, so it predicts nothing alone; the specific
+*knot topology* is the mechanism. Same shape as Ω→Φ: Ω the featureless maximum,
+Φ the specific twist. **The rock, the drill and the proton are one knot at three
+scales.** [FRAME, not a prediction — held back from becoming the universal
+solvent that explains everything and forecasts nothing.]
+
+**Climate as a toggle.** Ice ages are sawtooth, not sine — the signature of a
+bistable relaxation oscillator (ice-albedo = a Schmitt trigger with hysteresis),
+not a linear response to orbital forcing. The 100-kyr problem (dominant cycle
+where the forcing is weakest) and the Mid-Pleistocene Transition (41-kyr near-sine
+world → 100-kyr sawtooth) say the climate is a nonlinear oscillator the forcing
+merely paces, and one that *changed regime*. Sine→square is clipping is harmonic
+generation: the toggle makes spectral lines the forcing lacks — the same
+phenomenon as the undertone string, the granite subharmonics, FPUT. [Not
+QUANTUM's to own — logged as the planetary-scale instance of the one idea.]
+
+*New cheap falsifiers this session, for the §9 ledger and the queue: the string
+steady-tone control; the granite thermogram + subharmonic spectrum; the
+mirror-pair Nolen–Schiffer constant-residual table (T/He-3 → A=41, AME + radii,
+a laptop afternoon); the φ-twist packing (alpha-ladder leaf). None paid.*
