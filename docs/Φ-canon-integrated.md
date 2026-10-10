@@ -460,7 +460,9 @@ Ultimate cosmic eviction is built into geometry: when information at $c$ can no 
 
 # Part IV — Sentience
 
-## 27. The sentience force  [POSIT — one variable unmeasured]
+## 27. The sentience force  [POSIT — one variable unmeasured; EXPLORATORY EXTENSION, not a prerequisite of Parts I–III]
+
+> **Notation warning (2026-10-10, from the GPT-5 review).** Parts I–III use $\mu$ for capture, $i$ for direction and $S$ for entropy. This Part reuses $\mu$ (historical mean density), $i$ (surprisal) and $S$ (sentience force). The shared symbols make the proposed continuity look stronger than the defined mapping is. Read them as *analogues*, and treat §27–29 as a branch that needs nothing above it and on which nothing above depends.
 
 Traverse from the geometric instantiation $\{m, l, s\}$ into the domain of self-aware recursive execution, and force must be stripped of its mass-bound form. In the terrain, $F = ma$ changes the momentum of a mass. On the now-surface (the chorus torus, §25) the variables scale into
 
@@ -566,7 +568,7 @@ Before the ontology explains one line of new physics it must recover, quantitati
 | 1 | neutron = proton + one governor unit | one $\bar\nu$ per decay, three-body spectrum | **confirmed** · owes 878/888 s |
 | 2 | the $\bar\nu$ is the inversion centre leaving; hand = exit geometry | 100 % one-handed | **confirmed — Goldhaber 1958** · owes which hand from which side |
 | 3 | two-stage exit, faint memory | $a$ small and negative | **confirmed — −0.105** · owes $\propto p_e$ or $\propto \beta$ (aSPECT data exists) |
-| 4 | governor = $\nu$ pair on one loop | neutrinos are Majorana | **undone** — $0\nu\beta\beta$, 2030s |
+| 4 | governor = a $\nu\bar\nu$ pair of loops differing only by orientation (v2 §7; *one loop* superseded 2026-10-10) | neutrinos are Majorana | **undone** — $0\nu\beta\beta$, 2030s |
 | 5 | governors can run down | $g$-factor of decay protons vs bottle protons | **undone, doable now** — BASE-class trap, $10^{-10}$ |
 | 6 | proton death before BBN made the dark matter | neutral, $m = m_p$, nuclear-sized, 5.4 per survivor | **undone** — direct detection never asked for 938 MeV |
 | 7 | isospin is the governor count | mirror-pair residual constant per swap, to A = 41 | **data exists** — the table never made |
@@ -592,6 +594,7 @@ The rigorous question is not how many phenomena the ontology can be adapted to e
 11. Every failed prediction is rescued by adjusting an unconstrained parameter after the event.
 **12 — from the Koide program:** $\sum m_\nu$ measured far from 58.6 meV kills the signed-$\mathbb{Z}_3$; a proven Dirac neutrino kills the governor.
 **13 — from the conjecture:** an unpolarised $\bar\nu$ in beta decay kills the two-stage exit; a mirror-pair residual that is *not* constant per swap kills isospin-as-governor-count; ⁸Be over-bound kills the loose-cannon cost.
+**14–20 — from v2 (2026-10-10), carried here so this register is the only one:** 14 the recoil's planar fingerprint — downgraded, consistent-not-testable at $10^{-6}$; 15 primordial spectrum shape — a line spectrum kills the paint, a large-scale slope far from scale-invariant kills Brownian recoil, a *blue* tilt (persistent recoil) kills it; 16 bulk vorticity — a detected bulk rotation is fatal (bounded $10^{-10}H_0$, Saadeh 2016); 17 galaxy-spin handedness — no net chirality after selection effects ⇒ Ω's $L$ has nowhere to live; 18 matched or correlated CMB circles — detection fixes the torus, non-detection is consistent forever; 19 flatness — $\Omega_k$ far from 0 breaks $c$-as-capture-boundary; 20 a fourth stable nucleon-like rung — would need an orthogonal eight-lobe object Thomson says does not exist. **21 — from §12a / 32.11a:** $\gamma_{\rm PPN} \neq 1$ at any precision kills the chorus-gauge reading of gravity.
 
 ## 34. The numbers owed — none paid
 
