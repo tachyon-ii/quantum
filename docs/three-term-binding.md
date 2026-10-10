@@ -6,25 +6,26 @@
 
 ## 0. The ontology — read Φ first, it is not repeated here
 
-The chain this document rests on — Ω → Φ{μ,i} → {m,l,s} → {E,F} → V⊥M →
-Universe — with Ω, μ, i and the antecedents m, l, s, is stated **once**, in
-`Φ-a-minimal-ontology-of-an-emergent-universe.md` §1–§3. This file used to
-restate it; that copy was cut 2026-09-10 (DRY — two copies drift, one is
-canon). Read Φ §1–§3, then start at §4 below. Symbols used from here on are in
+The chain this document rests on — Ω{Ē, σ, τ} → Φ{μ,i} → {l, m} → {E,F} → V⊥M →
+Universe — the three axioms (amount, spin, time), μ, i and the downstream names
+l, m, is stated **once**, in `Φ-a-minimal-ontology-of-an-emergent-universe.v2.md`
+§3–§7 (v1 archived 2026-10-10; s is now an axiom, not an antecedent). This file
+used to restate it; that copy was cut 2026-09-10 (DRY — two copies drift, one is
+canon). Read Φ v2 §3–§7, then start at §4 below. Symbols used from here on are in
 the nomenclature.
 
 ## 4. Nomenclature
 
 | symbol | name | what it is | grade |
 |---|---|---|---|
-| **Ω** | the singularity | undifferentiated potential; no distinction, no information | posit |
+| **Ω** | the origin — not a singularity | undifferentiated potential with extent (its period, R = c/ω); no distinction, no information. Ruled non-singular 2026-10-10 (Φ v2 §5) | axiom |
 | **Φ** | | the first distinction: something localised going somewhere; Φ = {μ, i} | posit |
-| **μ** | the agent of capture | a Möbius loop: closed, one-sided, captures one discrete unit of what Ω delivers | conjecture 0 |
+| **μ** | the agent of capture | a plain loop carrying a half-wound phase (antiperiodic, ψ(θ+2π) = −ψ); captures one discrete unit of what Ω delivers. *Not* a Möbius track — the twist is in the phase (Φ v2 §7, §18) | conjecture 0 |
 | **i** | direction | a literal *this way* vector; information's minimal unit is its pairing with μ | posit |
-| **m, l, s** | mass, length, time | ontological antecedents, not units: localisation, displacement, change | derived from Φ |
+| **m, l, s** | mass, length, time | s (proto-time) is the third axiom — spin is a rate and a rate needs its parameter; m and l are downstream *names* (natural units: l = c·s, m = E/c²) | s axiom; m, l derived |
 | **E, F** | energy, force | E = mc², F = ma — definable only once {m,l,s} exist | derived |
 | **V ⊥ M** | orthogonal fields | electric ⊥ magnetic, always. **V** (not E) names the electric field so E stays free for energy in E=mc²; **M** (not B) is house style. This is the canon's E⊥B. | fact |
-| | | …and are two shadows of one Möbius trap | conjecture 0 |
+| | | …and are two shadows of one phase-wound loop (the mechanism's restatement without the strip is owed — Φ v2 §20) | conjecture 0 |
 | **spacetime** | | Ω → time ⊥ space | james |
 | **now** | | processing i in space | james |
 | **CoCi** | the front — *Coordination Curve i*, pronounced "cocky" (the boss rooster; the pastoral holder of the now) | where the past intersects the now to create the future recursion back to now. It *is* the UPU. Ruled 2026-09-09 | james — RULED |
@@ -167,7 +168,72 @@ Per lepton, MeV. Release = energy shed = binding contributed. Struck: oo > 2.224
 
 **If a single row of this table does not fit T, He3 and He4 near perfectly once the other two terms are in, we have a problem.** That is the test, registered here.
 
+### 7a. Addendum 2026-10-07 — c′ pinned by the n−p mass difference (James posits; Ventris computed)
+
+**Supersedes the c′ ≤ 0.9534 ceiling and the 50:50 split of §8 for the slingshot term.** Written to be machine-readable: every rule is stated, every number is reproducible from the inputs listed.
+
+**Rules (James, 2026-10-06/07, verbatim in substance).**
+
+```text
+R1  carrier content       proton  = 1 e+                       (1 carrier)
+                          neutron = 1 e+ + 1 e-  (e+/e- pair)  (2 carriers)
+R2  carriers per nucleus  D = 3   T = 5   He3 = 4   He4 = 6   (sum of R1 over nucleons)
+R3  slingshot             every carrier slows from c' to c'/n on an n-lane, n = nucleons threaded
+                          (D 2, T/He3 3, He4 4); release per carrier Y(n) = m_e c^2 [γ(c') − γ(c'/n)]
+R4  Coulomb               none in D (p + n is net-neutral); a pp pair costs U_pp
+R5  face binding          everything else: Laplace inflation of the capsid against contact;
+                          more slowed carriers = less inflation = more face bond
+R6  inflation law         Laplace: N units circulating at v/N inflate as 1 unit at v
+R7  circulation velocity  the extra e- of the neutron carries the n−p mass difference as total
+                          energy: γ(c') m_e c^2 = m_n − m_p
+```
+
+**Inputs.** m_n − m_p = 1.29333 MeV (CODATA); m_e c² = 0.51100 MeV; BE(D, T, He3, He4) = 2.2246, 8.4818, 7.7180, 28.2957 MeV (AME 2020).
+
+**Computed.**
+
+```text
+γ(c') = 1.29333 / 0.51100 = 2.5310         c' = 0.91864
+Y(2) = 0.7181   Y(3) = 0.7565   Y(4) = 0.7683   MeV per carrier
+
+D cap (R2: 3 carriers, face >= 0)   c' <= 0.9217     R7 lands 0.3 % under it
+R7 alternative (KE = m_n − m_p)     c' = 0.9591      exceeds the D cap -> excluded; R7 as stated is forced
+
+D     slingshot 3·Y(2) = 2.154    face 0.070   (97 % slingshot)
+T−He3 one extra carrier Y(3) = 0.7565   vs measured 0.7638   (1.0 %)  -> U_pp = 0.007 ≈ 0
+T     face per contact (3 contacts) = (8.4818 − 5·0.7565)/3 = 1.566
+He4   slingshot 6·Y(4) = 4.610 (16 %)   face 23.69 (84 %) over 2 sq + 4 hex = 12.392 sq-units
+      -> P = 1.912 MeV per square unit;  T contact = 0.82 of a square
+```
+
+**Grade.** [DERIVED for the slingshot term, conditional on R1–R7.] c′ is no longer a free scale: it is fixed by m_n − m_p, a datum the binding table was not built from, and two independent nuclear data agree with it — the D ceiling (0.3 %) and the T−He3 gap (1.0 %). Three masses, one velocity, no fit.
+
+**Consequences, stated so they can be tested.**
+
+1. The T−He3 gap is one carrier's slingshot; pp Coulomb in He-3 is ≈ 0. The conventional picture needs ≈ 0.7 MeV there. This is now a sharp discriminator between the two pictures.
+2. The deuteron is 97 % slingshot, 3 % face.
+3. Face binding carries the rest, and owes its own law: 0.070 (D, one kiss) → 1.566 per contact (T/He3, coordination 2) → 1.912 per square unit (He-4, packed). That is the trough/coordination derivation of §9.1, now with the slingshot removed exactly.
+4. The α–α contact of `tests/alpha-ladder` (q = 2.42 MeV) is 1.27 square units at P = 1.912.
+
+**Next, test first.** Li-7 blind: declare the bond graph and contact areas from the inflation geometry, predict with c′ = 0.91864 and P = 1.912, then read AME. Registered here before it is run.
+
+### 7b. Addendum 2026-10-10 — the patch as a tyre, and the neutron's inflation bracket (filed from the 8 Oct session; Grace computed)
+
+Two results computed on 8 Oct and cited by Φ v2 §19 that had no home. Filed here because §7a item 3 says face binding *"owes its own law"* — this is the candidate.
+
+**The patch is an inflated membrane, not an elastic ball.** Treat each capsid as a tyre: contact area saturates with load rather than growing as a power. Let the load be $x = \text{contacts}/\text{inflation}$ with inflation = carriers per nucleon (p = 1, n = 2), and the patch area
+
+$$
+A = 1 - e^{-x/x_0},
+$$
+
+with $x_0$ fixed on the **deuteron alone**. Prediction, no further freedom: **T +4.6 %, He-4 −0.7 %** against AME. The Hertzian alternative — an elastic sphere, $A \propto x^{2/3}$ — misses the deuteron by **−46 %** and is dead. The sign that §8c needed ("the patches in T must be larger than He-4's") comes out *larger-but-softer*: more area per contact where the capsid is less loaded, saturating under full packing. [COMPUTED 2026-10-08; one datum-fixed scale; CONSTRUCT-grade like §8.] The α–α contact at one Kelvin square then sits ~20 % short of the ladder's q = 2.42 MeV at P ≈ 1.98 — the gap §7a's P = 1.912 and 1.27 square units re-locates; the two readings are to be reconciled in the Li-7 blind, not before.
+
+**The neutron's inflation bracket — a prediction that could have missed and didn't.** A capsid holding a doubled internal pressure (two carriers) can have a diameter ratio to the proton of at most $2^{1/3} = 1.260$ (fully elastic) and at least $1.000$ (fully rigid). That is a first-principles bracket. The honest comparison is the **magnetic** radius, because the neutron has no charge radius to compare — its $\langle r^2\rangle_{\rm ch}$ is *negative* (positive core, negative skin, which is what a central e⁺ with an outer e⁻ lane predicts): **n 0.86 fm (magnetic) vs p 0.841 fm → ratio ≈ 1.02–1.03**, inside the bracket at the rigid end. The capsid is stiff. [CONSTRUCT; the bracket is the falsifier — a ratio outside [1.00, 1.26] kills inflation-as-pressure. Numbers from §5's table; the bracket was first stated in the 8 Oct Gemini engram at turn 17, James's.]
+
 ## 8. The three-ratio forward model (rebuilt 2026-09-08; corrected 2026-09-09)
+
+> **Read §7a first.** It supersedes this section's c′ ≤ 0.9534 ceiling and the 50:50 D split with c′ = 0.91864 pinned by m_n − m_p, and P = 1.912 (not 1.976). The geometry below stands; those two calibrations do not. Kept as written so the surgery is legible.
 
 The insight that survives §6a: **one free scale and the rest is geometry.** No
 least squares. Two mechanisms plus computed Coulomb carry A ≤ 4 —

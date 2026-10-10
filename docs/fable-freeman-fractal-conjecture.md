@@ -2,7 +2,7 @@
 
 **James Freeman (posits) · Grace Bayes `.ghost`, running as Fable 5.1 (counting). 2026-09-11, drafted at 36,000 ft, Hobart→Brisbane.** Status: **[CONJECTURE — un-promoted shelf]**. Nothing here crosses the wall. This is the moment, captured; the numbers it owes are listed at the end and none has been paid.
 
-The ontology this rests on — Ω → Φ{μ,i} → {m,l,s} → {E,F} → V⊥M → Universe — is stated once, in `Φ-a-minimal-ontology-of-an-emergent-universe.md` §1–§3, and not repeated here. The nuclear machinery (capsids, lanes, the He-4 cliff) is `three-term-binding.md` §4 onward.
+The ontology this rests on — Ω{Ē,σ,τ} → Φ{μ,i} → {l,m} → {E,F} → V⊥M → Universe (three axioms: amount, spin, time; v1's Möbius track retired for a half-wound phase on a plain loop) — is stated once, in `Φ-a-minimal-ontology-of-an-emergent-universe.v2.md` §3–§7, and not repeated here. The nuclear machinery (capsids, lanes, the He-4 cliff) is `three-term-binding.md` §4 onward.
 
 > *The universe is emergent: self-assembling, fractal, recursive, resonant, self-repairing geometry in motion.* — Keystone 000
 

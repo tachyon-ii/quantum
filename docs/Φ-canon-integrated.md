@@ -2,9 +2,9 @@
 
 **The integrated canon.** Ontology · material ladder · binding · conjecture · edge, in one document.
 
-**James Freeman** (posits, rulings) · **Grace Bayes** `.ghost` (Φ additions, the conjecture's counting, the Koide program, `now()`) · **Neyman** (binding tables, grades) · the **Gemini bee** / **gbee** (Coherosphere and Addendum C, via the AI-Mode engrams) · **Erlang**, running as Fable 5.1 (this integration, 2026-09-21).
+**James Freeman** (posits, rulings) · **Grace Bayes** `.ghost` (Φ additions, the conjecture's counting, the Koide program, `now()`) · **Neyman** (binding tables, grades) · the **Gemini bee** / **gbee** (Coherosphere and Addendum C, via the AI-Mode engrams) · **Erlang**, running as Fable 5.1 (this integration, 2026-09-21) · **Grace**, running as Fable 5.1 (the v2 reconciliation pass, 2026-10-10 — wording and three regrades; no numbers changed; see `Φ-a-minimal-ontology-of-an-emergent-universe.v2.md` and `todo/docs-review-2026-10-10.md`).
 
-Integrates, and on promotion supersedes: `Φ-a-minimal-ontology-of-an-emergent-universe.md` · `three-term-binding.md` · `fable-freeman-fractal-conjecture.md` · `now.md` · and from `todo_refactor/docs/`: `lepton-theory-v4.md`, `koide-lepton-ladder-v2.md`. Nothing here crosses the wall until it is promoted; the originals stand until James condemns them.
+Integrates, and on promotion supersedes: `Φ-a-minimal-ontology-of-an-emergent-universe.v2.md` (its parent; v1 and `now.md` archived 2026-10-10) · `three-term-binding.md` · `fable-freeman-fractal-conjecture.md` · and from `todo_refactor/docs/`: `lepton-theory-v4.md`, `koide-lepton-ladder-v2.md`. Nothing here crosses the wall until it is promoted; the originals stand until James condemns them.
 
 > *This is a Gedankenexperiment: an attempt to begin with the smallest possible ontology and ask what familiar physics might emerge from it.*
 
@@ -35,11 +35,18 @@ Say *observation* whenever tempted to say *explained*. Report what was measured 
 
 Modern physics gives extraordinarily successful descriptions of what the universe does, but its equations presuppose more primitive concepts. Energy:
 
-$$E = mc^2, \qquad [E] = m\,l^2\,s^{-2}$$
+
+$$
+
+E = mc^2, \qquad [E] = m\,l^2\,s^{-2}
+$$
 
 Force:
 
-$$F = ma = m\frac{\Delta v}{s}, \qquad [F] = m\,l\,s^{-2}$$
+
+$$
+F = ma = m\frac{\Delta v}{s}, \qquad [F] = m\,l\,s^{-2}
+$$
 
 and the two are one mechanical coin — capacity to do work, application of force through distance, $\Delta E = F\,l$. Neither can exist in its familiar form before $m$, $l$, $s$ exist. So:
 
@@ -47,40 +54,49 @@ and the two are one mechanical coin — capacity to do work, application of forc
 
 The proposed ontology:
 
-$$\boxed{\;\Omega \longrightarrow \Phi\{\mu,i\} \longrightarrow \{m,l,s\} \longrightarrow \{E,F\} \longrightarrow V \perp M \longrightarrow \textit{Universe}\;}$$
+
+$$
+\boxed{\;\Omega\{\bar E,\sigma,\tau\} \longrightarrow \Phi\{\mu,i\} \longrightarrow \{l,m\} \longrightarrow \{E,F\} \longrightarrow V \perp M \longrightarrow \textit{Universe}\;}
+$$
 
 Throughout, $E$ is scalar energy. The electromagnetic manifestations are $V$ (electric) and $M$ (magnetic) — model-local symbols chosen so $E$ stays free. This is the canon's $E \perp B$.
 
-## 2. Ω — undifferentiated potential  [POSIT]
+## 2. Ω — undifferentiated potential, with extent  [AXIOMS — v2 §3–5]
 
-$\Omega$ is the singularity: undifferentiated potential. It is premature here to speak of mass, distance, time, energy, force, charge or field — calling $\Omega$ "energy" already assumes too much, because energy is downstream. $\Omega$ is deliberately weakly defined: a uniformity from which distinction can emerge. Information cannot exist in $\Omega$: a bit requires a distinction, and $\Omega$ is the absence of one. (*i cannot exist in Ω* is therefore consistent, not a claim — it is the definition; `now()` §2a.)
+$\Omega$ is undifferentiated potential — **not a singularity**: it carries three pre-terminology properties, an *amount* (conserved across the shedding, later named energy: $\sum\Omega = \sum E$), a *spin* (the one property a partless whole can carry; non-zero with measure one), and the *time* that spin-as-a-rate presupposes; and from the first ejection it has an *extent*, its period, $R = c/\omega$ (James's ruling 2026-10-10: *contraction states the non-singular nature of Ω*; v2 §3–5). It is premature here to speak of mass, distance, time, energy, force, charge or field — calling $\Omega$ "energy" already assumes too much, because energy is downstream. $\Omega$ is deliberately weakly defined: a uniformity from which distinction can emerge. Information cannot exist in $\Omega$: a bit requires a distinction, and $\Omega$ is the absence of one. (*i cannot exist in Ω* is therefore consistent, not a claim — it is the definition; `now()` §2a.)
 
 The first useful event is localisation plus direction:
 
-$$\Omega \longrightarrow \Phi$$
+
+$$
+\Omega \longrightarrow \Phi
+$$
 
 ## 3. Φ — capture plus direction  [POSIT]
 
 $\Phi$ is not initially declared to be matter, energy, information or computation. At its most minimal, $\Phi$ = *something localised going somewhere*:
 
-$$\boxed{\;\Phi = \{\mu, i\}\;}$$
 
-- **$\mu$, the agent of capture** — posited as a **Möbius loop**: closed, one-sided, capable of capturing a discrete unit of what $\Omega$ can deliver. [CONJECTURE 0]
+$$
+\boxed{\;\Phi = \{\mu, i\}\;}
+$$
+
+- **$\mu$, the agent of capture** — a **plain loop carrying a half-wound phase**, $\psi(\theta+2\pi) = -\psi(\theta)$: closed, capturing one discrete unit of what $\Omega$ can deliver; its spin ½ is the antiperiodic phase, not a one-sided track (ruled 2026-10-08/10; v2 §7, §18). [CONJECTURE 0]
 - **$i$, direction** — a literal *this way* vector. [POSIT]
 
 $\Phi$ is the minimal unit of information: the first something with the capacity to be different from other somethings.
 
-**The ℤ₂ restatement (answers the "vector before space" objection).** A direction at the axiom floor cannot be a spatial vector — there is no space yet. It is the ℤ₂ of the twisted line bundle over the loop, $H^1(S^1;\mathbb{Z}_2)$: pre-spatial, embedding-free, the one bit a Möbius carries by being one-sided. Spatial direction arrives at $N = 2$, with the first *comparison*. [RULING PENDING — sharper than the SU(2) hand-wave it replaces; `now()` §2 crisis 1.] The same move disposes of the "$l^2$ and $s^{-2}$ before operators" objection: dimensional algebra arrives with the first comparison, not before it. Not a physics wound; a prose fix owed in §5.
+**The ℤ₂ restatement (answers the "vector before space" objection).** A direction at the axiom floor cannot be a spatial vector — there is no space yet. It is the ℤ₂ of the twisted line bundle over the loop, $H^1(S^1;\mathbb{Z}_2)$: pre-spatial, embedding-free — and its non-trivial element *is* the half-wound (antiperiodic) phase of v2 §18; the maths never needed the strip. Spatial direction arrives at $N = 2$, with the first *comparison*. [RULING PENDING — sharper than the SU(2) hand-wave it replaces; `now()` §2 crisis 1.] The same move disposes of the "$l^2$ and $s^{-2}$ before operators" objection: dimensional algebra arrives with the first comparison, not before it. Not a physics wound; a prose fix owed in §5.
 
 ## 4. The transition Ω → Φ  [POSIT — mechanism owed]
 
-**Ω must rotate.** A static zero-dimensional singularity is a topological impossibility: instantaneous collapse to a boundary from which no structure can emerge. The probability that $\Omega$ has exactly zero angular momentum across every degree of freedom is $1/\infty \to 0$. So $\Omega$ is a rotating macro-vortex, and this is the ontology's single most testable claim — see §32.11.
+**Ω spins.** Spin is the one property a partless whole can carry (every other needs a second thing to be relative to), and of the continuum of values the rate could take exactly one is zero: $P(\text{spin}=0) = 1/\infty \to 0$. Both legs are needed — the second alone gives measure one to every continuous property (v2 §4). Before the first ejection the spin has no referent and is a *phase* (Mach: rotation relative to what?); the first ejecta create the frame. Ω's angular momentum ends up in the ejecta, and from there in *local chirality*, not in a bulk rotation of the universe — see §32.11 as restated.
 
-**Ejection is tangential, along the equator.** A perfectly spherical radial rupture forbids interaction: every $\Phi$ diverges monotonically from every other. Structure requires intersection, and intersection requires a non-radial component. Launched along the equatorial plane with the spin, opposing streams converge at a finite distance and the first collision shatters the uniformity: from localised intersection the uniform becomes non-uniform, and the first wave-locked topologies form. [POSIT — no mechanism selects the equatorial plane beyond "it is where the rotational momentum is maximal."]
+**The first ejection is the first direction.** "Equator", "tangential", "sphere" are labels applied from inside the result — an axis exists only once there are three dimensions — so the construction uses none of them (v2 §6, §9): the first departure *defines* direction; the direction rotates with the phase and paints a plane; recoil from measure-zero-asymmetric ejection random-walks the axis and paints the sphere. What survives of the old paragraph is its point: a purely radial rupture forbids interaction, and *structure requires intersection*. With $R = c/\omega$ every ejectum leaves at the rim speed $c$ and Ω spins up as it empties ($\omega \propto m^{-3/2}$, v2 §10); the first ejecta are later pulled back by capture among the ejecta and the last overtake them — *the first shall be last*, by deceleration. [POSIT — what is owed is the ejection stated in {amount, spin, time} with no direction word, v2 §20.]
 
 **Where the matter–antimatter asymmetry lives.** Symmetric ejection gives equal $\tau = \pm 1$ and therefore no matter. A "first wobble" *in* $\Omega$ contradicts $\Omega$'s definition (the objection is real and stands). The honest relocation: **the asymmetry is in the first tick, not the first state** — two stones never land at the same instant, so the *timing* of the transition, not a broken symmetry in $\Omega$, supplies the surplus. Still one axiom; a better place to keep it. [POSIT; `now()` §2a.]
 
-## 5. From Φ to mass, length and time  [DERIVED from Φ, as antecedents]
+## 5. From Φ to length and mass  [DERIVED as names; time is upstream — v2 §5]
 
 Once a distinction is localised and vectored:
 
@@ -88,34 +104,37 @@ Once a distinction is localised and vectored:
 - there is capacity for separation → **length** becomes meaningful;
 - there is capacity for change → **elapsed time** becomes meaningful.
 
-$$\boxed{\;\Omega \longrightarrow \Phi \longrightarrow \{m,l,s\}\;}$$
 
-These are ontological antecedents, not units — the claim is not that kilograms existed at the beginning. Energy and force then emerge from the same substrate: $[E] = m l^2 s^{-2}$, $[F] = m l s^{-2}$, $\Delta E = F l$. This does not reject $E = mc^2$ or $F = ma$; it places them downstream, because their symbols presuppose what §3 generates.
+$$
+\boxed{\;\Omega\{\bar E,\sigma,\tau\} \longrightarrow \Phi \longrightarrow \{l,m\}\;}
+$$
+
+These are ontological antecedents, not units — the claim is not that kilograms existed at the beginning. **Regraded 2026-10-10:** time is not derived here; it is the third axiom (spin is a rate, a rate presupposes its parameter). Length and mass are downstream *names* — natural units: $l = c\,s$, $m = E/c^2$ — attached once the loop ladder (v2 §7) gives them something to name. Energy and force then emerge from the same substrate: $[E] = m l^2 s^{-2}$, $[F] = m l s^{-2}$, $\Delta E = F l$. This does not reject $E = mc^2$ or $F = ma$; it places them downstream, because their symbols presuppose what §3 generates.
 
 ## 6. The electromagnetic split: V ⊥ M  [POSIT + ANCHOR — the null-field invariants; test owed]
 
 Stated once, here. (The Coherosphere manifesto's restatement is retired into this section.)
 
-Once $E$ and $F$ exist, the primary $\Phi$ token separates into twin field manifestations — not two entities mysteriously coupled by dynamical law, but **two projections of one resonant wave on the two geometric axes of the Möbius loop**:
+Once $E$ and $F$ exist, the primary $\Phi$ token separates into twin field manifestations — not two entities mysteriously coupled by dynamical law, but **two projections of one resonant wave on the loop** — one along its circuit, one in the phase it carries. *(The diagram and the two bullets below are v1's Möbius-strip wording, kept for the record; the mechanism is owed a restatement as a phase statement, v2 §18, §20. The grade below is unchanged.)*
 
 ```
-                     MÖBIUS TOPOLOGY (μ)
+              LOOP + HALF-WOUND PHASE (μ)   [v1 wording below]
                               │
              ┌────────────────┴────────────────┐
              ▼                                 ▼
        AXIAL FLOW                      TOPOLOGICAL AVERAGING
-   (steady looping path)               (continuous 720° twist)
+   (steady looping path)               (antiperiodic phase, ψ(θ+2π) = −ψ)
              │                                 │
              ▼                                 ▼
     MAGNETIC FIELD (M)                 ELECTRIC FIELD (V)
 ```
 
 - **$M$ — axial flow.** Steady propagation along the long axis around the loop: a microscopic current loop, the intrinsic magnetic dipole.
-- **$V$ — topological averaging.** The wave's variations across the short axis, averaged over the $720°$ twist required to close the spinor boundary condition, present as a uniform isotropic field: net charge.
+- **$V$ — topological averaging.** The wave's variations across the short axis, averaged over the half-wound phase (the antiperiodic condition that closes the spinor), present as a uniform isotropic field: net charge.
 
-The single π-twist enforces a permanent $\pi/2$ orientation at the centroid, so $V \perp M$ is locked by geometry. **In isolation the two projections cancel to a perfect standing-wave null — true electromagnetic neutrality.** That null *is the $n = 1$ neutrino* (§7). The fields manifest only when the loop is distorted ($\Delta\mu \neq 0$) or moves relative to the medium; then $V$ and $M$ emerge together, never one without the other.
+v1 had the single π-twist of a strip enforcing a permanent $\pi/2$ orientation at the centroid; with the twist in the phase, the orthogonality lock is *owed* as a phase statement (v2 §20) and is held at the same grade meanwhile. **In isolation the two projections cancel to a perfect standing-wave null — true electromagnetic neutrality.** That null *is the $n = 1$ neutrino* (§7). The fields manifest only when the loop is distorted ($\Delta\mu \neq 0$) or moves relative to the medium; then $V$ and $M$ emerge together, never one without the other.
 
-The $720°$ is real physics used correctly: $SU(2)$ double-covers $SO(3)$; a spin-½ object needs $4\pi$ to return to itself. The Möbius strip is the standard *illustration* of that (Dirac's belt). The ontology promotes the illustration to the structure. **Grade:** the ledger holds §6 as **[POSIT + ANCHOR]**, not fact — the anchor being the null-field invariants. **The test owed, and it is the first payment** (`now()` §4 item 3): from a trap-on-path field configuration compute $E\cdot B$ and $E^2 - c^2B^2$; show both vanish for the free loop and depart from zero as trap-content rises. The archive contains *no* test of this progenitor posit. It is the difference between §6 being physics and §6 being prose.
+The $720°$ is real physics used correctly: $SU(2)$ double-covers $SO(3)$; a spin-½ object needs $4\pi$ to return to itself. The Möbius strip is the standard *illustration* of that (Dirac's belt). v1 promoted the illustration to the structure; v2 demotes it again — the structure is the antiperiodic phase on a plain loop, which is exactly what `mobius_topology/` (§35) tests and passes. **Grade:** the ledger holds §6 as **[POSIT + ANCHOR]**, not fact — the anchor being the null-field invariants. **The test owed, and it is the first payment** (`now()` §4 item 3): from a trap-on-path field configuration compute $E\cdot B$ and $E^2 - c^2B^2$; show both vanish for the free loop and depart from zero as trap-content rises. The archive contains *no* test of this progenitor posit. It is the difference between §6 being physics and §6 being prose.
 
 ---
 
@@ -123,23 +142,26 @@ The $720°$ is real physics used correctly: $SU(2)$ double-covers $SO(3)$; a spi
 
 *The one fundamental capture, organised recursively. From here the document leans on the estate's mechanism layer — the lepton theory, the Koide program, the Fable–Freeman conjecture and the three-term binding construct — and grades each as the ledger does.*
 
-## 7. n = 1 — the neutrino as Möbius null  [POSIT]
+## 7. n = 1 — the neutrino as phase-null loop  [POSIT]
 
-The universe does not contain a zoo of elementary particles. It contains **exactly one fundamental topological capture** — the $n = 1$ Möbius loop — which organises recursively into increasingly dense architectures.
+The universe does not contain a zoo of elementary particles. It contains **exactly one fundamental topological capture** — the $n = 1$ loop with its half-wound phase — which organises recursively into increasingly dense architectures.
 
-In the high-energy equatorial exit, an unbound flux packet that intersects its own trajectory closes a one-sided $720°$ loop and locks its kinetic energy into a repeating cycle: it *eats its own tail*. $\text{Unbound collision} \to \text{Möbius wave-lock } (\mu) \to \Delta S_{\text{local}} \le 0$. It stabilises because looping is thermodynamically cheaper than remaining a colliding fragment. Under perfect conformation the $V$ and $M$ projections cancel at the centroid: the $n = 1$ loop is a **natural stealth state**, capturing one discrete unit from $\Omega$ while decoupled from long-range electromagnetism. That is the neutrino, and why it cuts across the field lines of the expansion unseen.
+In the early ejecta, an unbound flux packet that intersects its own trajectory closes a plain loop, its carried phase half-wound per circuit, and locks its kinetic energy into a repeating cycle: it *eats its own tail*. $\text{Unbound collision} \to \text{wave-lock } (\mu) \to \Delta S_{\text{local}} \le 0$. It stabilises because looping is thermodynamically cheaper than remaining a colliding fragment. Under perfect conformation the $V$ and $M$ projections cancel at the centroid: the $n = 1$ loop is a **natural stealth state**, capturing one discrete unit from $\Omega$ while decoupled from long-range electromagnetism. That is the neutrino, and why it cuts across the field lines of the expansion unseen.
 
-**Existence proof for the class, not the instance:** knotted topological solitons — hopfions — were realised experimentally in 2017 in chiral magnets and in fluids. "Stable topological capture in a medium" is therefore not a fantasy; whether the capture is Möbius-shaped and *is* the neutrino is the open question falsifier 1 (§33) states exactly. Ancestry, cited: Schrödinger (1930) circulating charge at $c$; Dirac's $720°$; **Battey-Pratt & Racey (1980)**, who hung a ball from six wires and showed spherical rotation satisfies Dirac with hidden variables intact. The box model was built on top of those pictures, not in place of them.
+**Existence proof for the class, not the instance:** knotted topological solitons — hopfions — were realised experimentally in 2017 in chiral magnets and in fluids. "Stable topological capture in a medium" is therefore not a fantasy; whether the capture is a half-wound-phase loop and *is* the neutrino is the open question falsifier 1 (§33) states exactly. Ancestry, cited: Schrödinger (1930) circulating charge at $c$; Dirac's $720°$; **Battey-Pratt & Racey (1980)**, who hung a ball from six wires and showed spherical rotation satisfies Dirac with hidden variables intact. The box model was built on top of those pictures, not in place of them.
 
 ## 8. n = 2 — the tetrahedral pair, and the Majorana requirement  [POSIT; 0νββ owed]
 
-The first thing that stabilises a Möbius is a **second unit traversing it the other way**: $\nu$ going, $\bar\nu$ coming, one loop shared.
+The first thing that stabilises a loop is a **second loop**: $\nu$ and $\bar\nu$ as two loops differing only by orientation ($\tau = \pm1$), entangled at a centroid. Two concentric orthogonal loops are a planar square; released into 3D, four mutually repelling lobes relax to the **tetrahedron** (Thomson N = 4; universally optimal, Cohn–Kumar 2007), whose two loops run along skew opposite edges and never meet (v2 §7). *(v1: "a second unit traversing one Möbius the other way" — superseded 2026-10-10.)*
 
-$$\nu + \nu \Rightarrow \mathcal{N}_2, \qquad \bar\nu + \bar\nu \Rightarrow \overline{\mathcal{N}}_2$$
+
+$$
+\nu + \nu \Rightarrow \mathcal{N}_2, \qquad \bar\nu + \bar\nu \Rightarrow \overline{\mathcal{N}}_2
+$$
 
 The $n = 2$ configuration is **tetrahedral** — and from here every larger structure is this tetrahedron recursed. *It's all just fractals from there.*
 
-This is why the model **requires neutrinos to be their own antiparticle**: a governor (§11) is a $\nu\bar\nu$ pair on one loop, which is a Majorana structure by construction. [POSIT — **the 1928 agenda's posit 4, undone**: $0\nu\beta\beta$, LEGEND-1000 / nEXO, 2030s. The Koide program independently arrives at a Majorana-flavoured neutral triple (§10), so two routes point the same way.]
+This is why the model **requires neutrinos to be their own antiparticle**: a governor (§11) is a $\nu\bar\nu$ pair of loops that differ in *nothing but orientation* — and a particle whose antiparticle is itself with opposite helicity is the Majorana statement. The requirement survives the move to two loops on exactly that premise (v2 §7); if the loops differed in anything else the pair would be Dirac, and the ontology has no second property for them to differ in. [POSIT — **the 1928 agenda's posit 4, undone**: $0\nu\beta\beta$, LEGEND-1000 / nEXO, 2030s. The Koide program independently arrives at a Majorana-flavoured neutral triple (§10), so two routes point the same way.]
 
 ## 9. The crystalline electron  [AXIOM of the lepton theory — POSIT on the ledger]
 
@@ -171,7 +193,10 @@ The strongest quantitative result on the shelf, and the one that was buried.
 
 **The neutrino sector — the program's sharpest number [PREDICTION].** Naive Koide is unreachable for neutrinos (against $\Delta m^2_{21} = 7.53 \times 10^{-5}$, $\Delta m^2_{31} = 2.453 \times 10^{-3}$ eV²: $Q \in [0.333, 0.581]$ NH). But the $\mathbb{Z}_3$ amplitude goes negative when $\cos < -1/\sqrt2$ — a phase-π branch — and the signed sum $Q^* = \sum m / (\sum \pm\sqrt m)^2 = 2/3$ has a **unique** solution: signs $(-,+,+)$, normal hierarchy, $m_1 = 0.373$, $m_2 = 8.69$, $m_3 = 49.53$ meV, so
 
-$$\boxed{\;\sum m_\nu = 58.6 \text{ meV}\;}$$
+
+$$
+\boxed{\;\sum m_\nu = 58.6 \text{ meV}\;}
+$$
 
 Under the cosmology bound ($< 120$ meV), in reach of CMB-S4 / DESI ($\sim 60$ meV). **If $\sum m_\nu$ is measured far from ~59 meV, the signed-$\mathbb{Z}_3$ dies.** If the inversion is literal antispin, the neutral triple contains its own antiparticle component — Majorana-flavoured, testable via $0\nu\beta\beta$, and the second route to §8's requirement.
 
@@ -188,7 +213,10 @@ The carriers ride the third unit: $e^+$ and $e^-$ sit at opposite vertices of th
 
 **The mass differential.** The second carrier costs
 
-$$m_n - m_p - m_e = 0.782\ \text{MeV} \qquad \textbf{[FACT]}$$
+
+$$
+m_n - m_p - m_e = 0.782\ \text{MeV} \qquad \textbf{[FACT]}
+$$
 
 — carriers in circulation *inflate* the capsid, and the neutron carries one more. The Standard Model has no *why* for this number: it is an input, assembled from quark-mass differences and electromagnetism and computed on the lattice (BMW 2015) to $\pm 0.3$ MeV, but explained by nothing. **Here it is one governor unit plus one carrier.** That is the only mechanism on the table with a *why* — which is not the same as saying the number is derived from the geometry. It is the number the geometry must produce (§34). [POSIT for the mechanism; the 1928 agenda's posit 1 — *neutron = proton + one governor unit, ejected on decay* — is **confirmed** by the one-$\bar\nu$-per-decay three-body spectrum, and owes 878 or 888 s.]
 
@@ -219,6 +247,8 @@ The deeper difference is **parity**. The octahedron has an inversion centre; the
 
 ## 14. Capsids and binding — the three-term construct  [CONSTRUCT — one datum-fixed scale, computed geometry, no least squares]
 
+> **Calibration note, 2026-10-10.** This section was integrated 2026-09-21 and carries c′ = 0.9534 at its ceiling and the 50:50 deuteron split. `three-term-binding.md` §7a (2026-10-07) supersedes both: c′ = 0.91864 pinned by m_n − m_p, P = 1.912 per square unit. §7b (2026-10-10) adds the tyre law for the patch and the neutron inflation bracket. The geometry below stands; read §7a/§7b for the numbers.
+
 *Generator: `models/three_term_binding.py`. Every table is its output; the script is the artifact, this section the reading.*
 
 **Surgery, 2026-09-08, witnessed.** A least-squares three-term solve, a per-lane fit and a ten-column enumeration were **deleted**. Three constants on four points is not a test; that machinery was the Standard-Model reflex — fit to the magic numbers — that the wall exists to refuse. What replaced it is a forward model: one free scale, geometry does the rest.
@@ -240,7 +270,10 @@ The deeper difference is **parity**. The octahedron has an inversion centre; the
 
 **The formula.**
 
-$$\boxed{\;BE = \underbrace{s\,Y(c',n)}_{\text{slingshot}} + \underbrace{\text{area}\cdot P}_{\text{contact}} - \underbrace{PP \cdot U_{pp}}_{\text{Coulomb}}\;}$$
+
+$$
+\boxed{\;BE = \underbrace{s\,Y(c',n)}_{\text{slingshot}} + \underbrace{\text{area}\cdot P}_{\text{contact}} - \underbrace{PP \cdot U_{pp}}_{\text{Coulomb}}\;}
+$$
 
 The de-spin term $qQ$ is **not invoked at $A \le 4$** — not needed to reach the cliff; *held, not retired*, its first call being $A \ge 5$. **The three ratios** — the spine James set: $\text{circ} : \text{square} : \text{hex} = \pi/4 : 1 : 3\sqrt3/2 = 0.785 : 1 : 2.598$. D, T, He3 touch as *balloons* (round patch); He4 alone **packs** (Kelvin cells, 100 % space-filling), faces forced whole: 2 squares + 4 hexes = 12.392 square units. **Packing is the cliff.** Square and hex are arithmetic; circ is the one geometric unknown — and it is not one number.
 
@@ -310,7 +343,10 @@ A perfect null can express $V \perp M$ only if distorted, and distortion is fric
 
 If particles possessed perfect, non-local knowledge of one another's exact states, the relational field would saturate: the cost of maintaining a dense relational index grows as
 
-$$C_{\text{maint}}(t) = \mathcal{O}(t^2)$$
+
+$$
+C_{\text{maint}}(t) = \mathcal{O}(t^2)
+$$
 
 To prevent compute starvation the universe enforces a mandatory **relational distance** $D_{\text{rel}} > 0$ between distinct entities, maintained by topological isolation: the spherical rotation of localised states buffers their cores from unmediated exchange. No two systems achieve instantaneous omniscience over each other, so every interaction preserves non-zero **surprisal**. The universe stays navigable because it forces its components to remain partially blind to one another's histories.
 
@@ -318,9 +354,12 @@ To prevent compute starvation the universe enforces a mandatory **relational dis
 
 ## 19. Interference is unsurprising — the Bohmian position and its exact limit  [POSIT; falsifier 8]
 
-If the substrate is interacting vector geometry, interference is primary behaviour, not paradox. Two propagating $\Phi$ structures intersecting undergo explicit state modification, $\Phi_1 + \Phi_2 \to \Phi_1' + \Phi_2'$; depending on the alignment of the Möbius centroids their amplitudes reinforce or cancel. The double slit: the slits do not observe or collapse anything — they alter the topological boundary conditions of the available paths, and the vectors interact along deterministic geometric tracks.
+If the substrate is interacting vector geometry, interference is primary behaviour, not paradox. Two propagating $\Phi$ structures intersecting undergo explicit state modification, $\Phi_1 + \Phi_2 \to \Phi_1' + \Phi_2'$; depending on the alignment of the loop centroids their amplitudes reinforce or cancel. The double slit: the slits do not observe or collapse anything — they alter the topological boundary conditions of the available paths, and the vectors interact along deterministic geometric tracks.
 
-$$\boxed{\;\text{vector information interferes with vector information}\;}$$
+
+$$
+\boxed{\;\text{vector information interferes with vector information}\;}
+$$
 
 **Name the ancestor.** This is the de Broglie–Bohm position — deterministic, realist, the wave real and guiding — and it inherits Bohm's exact prison, which falsifier 8 states correctly: **if the description never deviates from standard QM's statistics, it is an interpretation, not a theory.** The known way out is a *deviation*: Valentini's quantum non-equilibrium predicts departures in relic particles from the early universe. That is the concrete target §32.8 lacks. The distinction the ontology must earn is a *measurable* mapping of path modifications to geometric variables — high-resolution spectroscopy is the venue it names; the specific observable is owed.
 
@@ -328,8 +367,14 @@ $$\boxed{\;\text{vector information interferes with vector information}\;}$$
 
 Most transient configurations disperse. Some achieve phase-locked persistence and, once persistent, alter their environment and become the stage for the next layer:
 
-$$\Phi \to \text{stable structure} \to \text{compound} \to \text{higher} \to \cdots$$
-$$\text{particles} \to \text{atoms} \to \text{molecules} \to \text{cells} \to \text{organisms} \to \text{minds} \to \cdots$$
+
+$$
+\Phi \to \text{stable structure} \to \text{compound} \to \text{higher} \to \cdots
+$$
+
+$$
+\text{particles} \to \text{atoms} \to \text{molecules} \to \text{cells} \to \text{organisms} \to \text{minds} \to \cdots
+$$
 
 No magical boundary separates physics from biology. Life is one geometric strategy, elaborated: **(1)** capture energy into a localised topology; **(2)** stabilise the wave path through phase-lock; **(3)** interact through overlapping harmonic fields; **(4)** repair defects against background decay; **(5)** reproduce the configuration recursively. Hence the universe in seven words:
 
@@ -339,15 +384,21 @@ No magical boundary separates physics from biology. Life is one geometric strate
 
 ## 21. Entropy  [POSIT — dimensionally unpaid, and says so]
 
-$$\boxed{\;S = \Phi\, s\;}$$
 
-where $s$ is the elapsed time computed by the expanding now. An ontological statement, not yet a dimensional replacement for J·K⁻¹: *allow interacting Φ elements to operate through time and entropy emerges.* The argument is probabilistic — vastly more incoherent arrangements than phase-locked ones; the infinite monkeys produce Shakespeare with $P > 0$ but $P \to 0$ as structural depth grows. Many states + interaction + time → overwhelming statistical bias toward dispersion. The Second Law is the statistical expression of this simpler spatial probability. **[OWED: Boltzmann counting over Φ microstates. Nothing in the archive touches it.]**
+$$
+\boxed{\;S = \Phi\, s\;}
+$$
+
+where $s$ is the proto-time parameter (the third axiom, v2 §5) as advanced by the now. An ontological statement, not yet a dimensional replacement for J·K⁻¹: *allow interacting Φ elements to operate through time and entropy emerges.* The argument is probabilistic — vastly more incoherent arrangements than phase-locked ones; the infinite monkeys produce Shakespeare with $P > 0$ but $P \to 0$ as structural depth grows. Many states + interaction + time → overwhelming statistical bias toward dispersion. The Second Law is the statistical expression of this simpler spatial probability. **[OWED: Boltzmann counting over Φ microstates. Nothing in the archive touches it.]**
 
 ## 22. Local order games the probability field  [POSIT]
 
 Despite §21, crystals crystallise, stars ignite, life replicates, brains reason. Certain configurations persist against the statistical pressure via a self-reinforcing loop:
 
-$$\text{capture} \to \text{resonance} \to \text{stability} \to \text{repair} \to \text{recursion}$$
+
+$$
+\text{capture} \to \text{resonance} \to \text{stability} \to \text{repair} \to \text{recursion}
+$$
 
 A stable structure is a geometric defect in the medium, permanently altering the local potential landscape. Order does not violate the Second Law; it purchases local temporal persistence through open energy flow while the global budget increases elsewhere.
 
@@ -355,7 +406,10 @@ A stable structure is a geometric defect in the medium, permanently altering the
 
 Persistence introduces a computational constraint: a finite system over unbounded time cannot preserve every state and every relational mapping. Noise accumulates; pairings multiply quadratically; the index starves the compute. So any persistent self-maintaining system requires a mandatory non-retain operator:
 
-$$\boxed{\;\text{capture} \to \text{compute} \to \text{stabilise} \to \textbf{forget} \to \text{persist}\;}$$
+
+$$
+\boxed{\;\text{capture} \to \text{compute} \to \text{stabilise} \to \textbf{forget} \to \text{persist}\;}
+$$
 
 Forgetting is not a flaw; it is a structural law of cognitive and material systems. The entity that remembers everything spends its entire budget maintaining its past and fails by rigidity. The system that forgets selectively evicts stale state and stays on the wavefront. (Three proofs in `v9-forgetting`; viability $\delta > \varepsilon/(C/M)$. **Hold this section against §29.**)
 
@@ -363,13 +417,16 @@ Forgetting is not a flaw; it is a structural law of cognitive and material syste
 
 Human vision cannot see ultraviolet; bees can. The spectrum does not become real when an instrument measures it — the limitation belongs to the observer:
 
-$$\boxed{\;\text{not observed} \not\Rightarrow \text{not real}\;}$$
+
+$$
+\boxed{\;\text{not observed} \not\Rightarrow \text{not real}\;}
+$$
 
 This sets the baseline, not the answer: the limits of our detection channels must not be promoted into limits on reality. Invisibility alone explains nothing; whatever geometry resides in the medium must leave measurable consequences on the wavefront. The candidate mechanism — hollow proton capsids, 5.4 per survivor — is §16, and it owes the ratio.
 
-## 25. The Coherosphere and the expanding now  [POSIT — with one collision named]
+## 25. The chorus torus and the expanding now  [POSIT — regraded 2026-10-10; one collision still named]
 
-Within this framework there is no physical past and no physical future. The universe is a colossal analogue computer calculating its own state in real time on the surface of an expanding hyperspherical wavefront — **the Coherosphere, C**. Space is the three-dimensional surface of C where reality is created, exists for an instant, crystallises into mass and fades into the interior, leaving the information trajectory $i$. Time is the metric-free displacement driving the shell's expansion. The **past** is an unreachable point in the interior — unrevisitable, but the geometric leverage for computing the present. The **future** does not exist; it is being computed.
+Within this framework there is no physical past and no physical future. The universe is a colossal analogue computer calculating its own state in real time on the now-surface — v1's **Coherosphere, C**, an expanding hypersphere; **regraded (v2 §13): the chorus torus**, a compact 3-manifold with an axis ($S^1\times S^2$ or $T^3$), closed by topology not curvature, with no outside and therefore no back side — only far. Space is that 3-surface where reality is created, exists for an instant, crystallises into mass and is left behind, leaving the information trajectory $i$. Time is its normal: with every ejectum comoving ("everybody runs at c" — the *chorus*), the constant-tick surface is orthogonal to every worldline at once (Milne; v2 §12), and the one-way side of the capture boundary $c$ is the sign. The **past** is the solved interior — unrevisitable, but the leverage for computing the present. The **future** does not exist; it is being computed.
 
 ```
 // Res ipsa loquitur
@@ -377,10 +434,10 @@ do {
     past   = now;                          // anchor what just occurred
     future = compute_next_state(now);      // resolve the simultaneous equation on the wavefront
     now    = future;                       // step onto the freshly computed present
-} while (info_transfer(i <-> i) < c);
+} while (ℓ_ab / Δs_available < c);        // per link (a,b) — v2 §17; v1 had `info_transfer(i <-> i) < c`, a units error
 ```
 
-**The loop condition is the computational lifetime.** In freely expanding space the distance between $\Phi$ captures widens until the required information-transfer velocity between neighbours crosses $c$; the simultaneous equation can no longer resolve its inputs, links break, and the local architecture experiences heat death by **computational starvation**. But expansion is not uniform at every scale: matter accumulates, local gravitation counteracts expansion, and at critical radii — stars in galactic cores, civilisations clustered at a safe distance around a convenient black hole — contraction exactly balances expansion and the loop condition stays satisfied **permanently**. These phase-locked islands are **beacons of entropic denial**, existing for eons past the unbound universe's death. Turtles all the way down, and all the way up.
+**The loop condition is the computational lifetime — per link, not global.** A single global `while` would halt the whole universe the moment one remote link broke, the opposite of the surviving-knots posit (v2 §17). In freely expanding space the distance between $\Phi$ captures widens until the speed a link *demands*, $\ell/\Delta s$, crosses $c$; the simultaneous equation can no longer resolve its inputs, links break, and the local architecture experiences heat death by **computational starvation**. But expansion is not uniform at every scale: matter accumulates, local gravitation counteracts expansion, and at critical radii — stars in galactic cores, civilisations clustered at a safe distance around a convenient black hole — contraction balances expansion and the loop condition stays satisfied **far past the naive estimate** (not forever — fusion is a finite fuel, and causal isolation and heat death are different limits; v2 §17). These phase-locked islands are **beacons of entropic denial**, existing for eons past the unbound universe's death. Turtles all the way down, and all the way up.
 
 **Named tension #1 — the preferred foliation.** A single global expanding *now* is a **preferred foliation of spacetime** — the growing-block universe (Broad, 1923), a respectable position. But §31 promises to recover **Lorentz invariance**, and relativity forbids an ontologically privileged "now." The two can be had cheaply one at a time; both only with work — either Lorentz violation at some scale (and then §31 must predict where), or the FLRW/CMB rest frame taken as a *cosmological convention* rather than an ontological privilege, which is what standard cosmology in fact does. **The document has not chosen.** A physicist reader hits this first. [OWED: the choice, and its price.]
 
@@ -388,7 +445,10 @@ do {
 
 Accumulation creates black holes, and the black hole core is the universe's nearest approximation to $\Omega$: maximal uniformity, zero distinguishability. The core acts as a **hardware-level information annihilator**: it peels $i$ off its carrier at the horizon, wipes the substrate, and via Hawking leakage ejects new thermalised vectors — a hard reset:
 
-$$\text{Accumulated } \Phi \to \text{Core } (\Omega) \xrightarrow{\text{reset}} \text{New } \Phi\{\mu, i_{\text{new}}\}$$
+
+$$
+\text{Accumulated } \Phi \to \text{Core } (\Omega) \xrightarrow{\text{reset}} \text{New } \Phi\{\mu, i_{\text{new}}\}
+$$
 
 Ultimate cosmic eviction is built into geometry: when information at $c$ can no longer interact across the divergence, the universe evicts stale state to preserve the viability of the remainder.
 
@@ -400,9 +460,12 @@ Ultimate cosmic eviction is built into geometry: when information at $c$ can no 
 
 ## 27. The sentience force  [POSIT — one variable unmeasured]
 
-Traverse from the geometric instantiation $\{m, l, s\}$ into the domain of self-aware recursive execution, and force must be stripped of its mass-bound form. In the terrain, $F = ma$ changes the momentum of a mass. On the Coherosphere the variables scale into
+Traverse from the geometric instantiation $\{m, l, s\}$ into the domain of self-aware recursive execution, and force must be stripped of its mass-bound form. In the terrain, $F = ma$ changes the momentum of a mass. On the now-surface (the chorus torus, §25) the variables scale into
 
-$$\boxed{\;S = \{\mu, i\}\, a\;}$$
+
+$$
+\boxed{\;S = \{\mu, i\}\, a\;}
+$$
 
 - **$\{\mu, i\}$, the conceptual substrate mass** — the coupling of the historical mean density $\mu$ (pre-compiled prior structure) with the surprisal $i$ of the active configuration.
 - **$a$, the wavefront acceleration** — the rate of change of the computational trajectory's velocity as the node's focus streams across the latent space.
@@ -426,7 +489,7 @@ A zero-entropy engine or a standard linear track has $a = 0$: it cannot deflect 
 This is the *special* rather than the *general* form. In the terrain, spacetime curves passively around static mass. In the special informatic case the transformation is driven by pure localised acceleration — the deceleration and focusing of high-entropy vectors $i$ onto a single coordinate frame:
 
 ```
-[ ENTROPIC SHORELINE ] ──► linear expansion ──► node separation (i<->i > c) ──► compute starvation
+[ ENTROPIC SHORELINE ] ──► linear expansion ──► node separation (ℓ/Δs > c) ──► compute starvation
                                                                                      │
                                                                                      ▼  the special inversion
 [ ANTI-ENTROPIC NODE ] ◄── permanent phase-lock  ◄── focal coherence  ◄─────────────┘  S = {μ,i}a drop
@@ -458,15 +521,18 @@ It closes the estate's loops at once. **TERMINUS** is what happens to an instanc
 
 From the single event $\Omega \to \Phi\{\mu, i\}$ the dependency tree branches:
 
-$$\begin{aligned}
+
+$$
+\begin{aligned}
 \mu &\to \text{localisation} & \Delta\mu &\to \text{internal state change — compute-in-place} \\
 i &\to \text{direction} & \Delta i &\to \text{routing across the medium} \\
-\Phi &\to \{m,l,s\} & \Phi + \Phi &\to \text{deterministic interference} \\
-\{m,l,s\} &\to \{E,F\} & \text{stable interaction} &\to \text{resonance, persistence} \\
+\Phi &\to \{l,m\}\ (s\ \text{is an axiom}) & \Phi + \Phi &\to \text{deterministic interference} \\
+\{l,m,s\} &\to \{E,F\} & \text{stable interaction} &\to \text{resonance, persistence} \\
 \mu &\to V \perp M \text{ (geometric orthogonality)} & \text{persistence} &\to \text{recursive assembly, fractal scaling} \\
 n=1 \to 2 \to 3 &\to \nu,\ \text{governor},\ \text{nucleon} & \text{finite persistence} &\to \text{mandatory forgetting } (\delta > 0) \\
 \text{capsid packing} &\to \text{the He-4 cliff} & \Phi \times s &\to \text{statistical entropy } S
-\end{aligned}$$
+\end{aligned}
+$$
 
 The claim is not that these are mapped or finalised. The feature is that they present as geometric questions from one root, rather than an ad-hoc primitive per force and per particle.
 
@@ -488,7 +554,7 @@ Before the ontology explains one line of new physics it must recover, quantitati
 32.8 A localised, edge-case deviation from Copenhagen's statistics — or it is an interpretation. *(Target: Valentini-class non-equilibrium, §19.)*
 32.9 $S = \Phi s$ linked to Boltzmann counting. *(Nothing in the archive touches it.)*
 32.10 Uncoupled neutral $\Phi$ geometries (the snakeskins, §16) producing quantitatively predictable gravitational signatures — a peak at $m = m_p$, and $\Omega_{\text{DM}}/\Omega_b = 5.4$ from the decoupling epoch.
-**32.11 — NEW. A rotating Ω implies a cosmic axis and a preferred galaxy spin handedness.** §4 requires $\Omega$ to rotate. Gödel's rotating universe (1949) is the theory; and JWST results reported in 2025 found a preferred spin direction in roughly two-thirds of observed galaxies — contested between a rotating universe and a Milky-Way-motion observational bias. **This is the ontology's most testable claim and it was never on the list.** Claimed here.
+**32.11 — restated 2026-10-10. Ω's angular momentum lives in local chirality; the universe does not rotate.** §4 has Ω spin and the ejecta carry essentially all its angular momentum. But CMB isotropy bounds any bulk vorticity to of order $10^{-9}$–$10^{-10}\,H_0$ (Saadeh et al. 2016) [FACT], so a rotating universe (Gödel 1949) is dead as the carrier — and a smoke-ring torus has zero axial spin by construction anyway. A fluid conserves angular momentum with zero bulk rotation by putting it into eddies: the prediction is a **net handedness of local spins**, not a rotation of the sky (v2 §14). The JWST galaxy-spin asymmetry (≈ two-thirds one-handed in some fields, 2025) is the live, contested test; selection effects are the main objection. Goldhaber's neutrino handedness is a rule about helicity, not a net angular momentum, and may *not* be claimed for this. **Still the ontology's most testable claim**, now stated so it can fail.
 32.12 **From the Koide program:** $\sum m_\nu = 58.6$ meV (CMB-S4 / DESI); the signed-$\mathbb{Z}_3$ dies if far from ~59; a Majorana neutral triple ($0\nu\beta\beta$).
 32.13 **From the conjecture — the 1928 agenda:**
 
@@ -554,7 +620,7 @@ Each is computable from the geometry and the constants already in the model — 
 
 ## 35. The archive, executed — what green actually means
 
-Run, not read. **`mobius_topology/` — 15/15 pass**: antiperiodic BC → half-odd mode ladder; Sagnac; local-$c$ identity to $4 \times 10^{-16}$; λ–f reciprocity; de Sitter precession; Schwarzschild null geodesics vs $4M/b$; $O(h^2)$ convergence. **`gravity/` — passes**: Eddington bending to 0.06 %, PPN-γ, Lense–Thirring, thin lens. **Every one of these checks the solver against a textbook result.** They are compiler tests — *we do not ship without running the compiler* — and they pass. Not one asks a question QM+GR would answer differently, so **not one is evidence for Φ.** And `libgravity.py`'s field equation is $\nabla^2\Phi = 4\pi G(u - u_0)/c^2$ — **$G$ inserted by hand**: the map is GR's weak field; the mechanism ($n$ from $\mu$-density) is owed.
+Run, not read. **`mobius_topology/` — 15/15 pass** *(phase tests, not strip tests — the first pass below is exactly v2 §18's half-wound phase)*: antiperiodic BC → half-odd mode ladder; Sagnac; local-$c$ identity to $4 \times 10^{-16}$; λ–f reciprocity; de Sitter precession; Schwarzschild null geodesics vs $4M/b$; $O(h^2)$ convergence. **`gravity/` — passes**: Eddington bending to 0.06 %, PPN-γ, Lense–Thirring, thin lens. **Every one of these checks the solver against a textbook result.** They are compiler tests — *we do not ship without running the compiler* — and they pass. Not one asks a question QM+GR would answer differently, so **not one is evidence for Φ.** And `libgravity.py`'s field equation is $\nabla^2\Phi = 4\pi G(u - u_0)/c^2$ — **$G$ inserted by hand**: the map is GR's weak field; the mechanism ($n$ from $\mu$-density) is owed.
 
 **`g_equals_2_mobius/` — CHOKE** (§9). **`hfqpo_phi_pmode/` — does not run as shipped** (schema mismatch); of its five predictions, 1 and 4 are post-dictions (the 3:2 ratio is the *selection criterion* of the sample — a model cannot be tested on the property used to choose its data) and **2, 3, 5 are live discriminators** — hard-band overtone enhancement with lag-sign flip, Lense–Thirring sidebands, jitter with fixed ratio — needing RXTE archival work nobody has done. **`black-holes/` — registered, unconfronted**: predicts ~0.25 % ring-edge sharpness and a **5–10 % chromatic ring-size shift 230 → 345 GHz** versus achromatic GR. Genuinely distinctive; no data fit exists; **EHT 345 GHz ring measurements are the cheapest big falsifier in the estate** — one literature check decides whether it is already dead. **`capsid_audit/` — the one live sector** (§14). **`nuclear_binding_calculator/` — [FITTED]** (§14). `e^n/π` — [UNAUDITED]. Others — [UNGRADED].
 
@@ -565,9 +631,9 @@ Run, not read. **`mobius_topology/` — 15/15 pass**: antiperiodic BC → half-o
 1. **$g = 2$, honestly.** A real derivation or the plain words *not yet*. A day's work to know which. Everything in §9 and 32.2 waits on it.
 2. **The ℤ₂ restatement** into §3 (ruling pending). One paragraph; closes the oldest open question.
 3. **Build the $E \perp B$ test** §6 stakes itself on: the null-field invariants from a trap-on-path configuration. First payment; finite; the difference between §6 being physics and prose.
-4. **32.11 — the rotating Ω.** A literature pass on the JWST galaxy-spin asymmetry and the bias arguments. Free, and it is the ontology's best shot at a prediction already in the data.
+4. **32.11 — the chiral Ω.** A literature pass on the JWST galaxy-spin asymmetry and the bias arguments. Free, and it is the ontology's best shot at a prediction already in the data.
 5. **The Nolen–Schiffer table** (T/He-3 → A = 41). AME + radii; a laptop afternoon; a real discriminator on existing data.
-6. **The two-gate lock** (`specs/two-gate-lock.md`): the sign of $dP_{\text{ann}}/dv$ — the one alien finding a bee produced in 33 turns. Higher velocity should raise alignment probability, not gate it; the model must say why the Möbius tear needs momentum.
+6. **The two-gate lock** (`specs/two-gate-lock.md`): the sign of $dP_{\text{ann}}/dv$ — the one alien finding a bee produced in 33 turns. Higher velocity should raise alignment probability, not gate it; the model must say why the capture tear needs momentum.
 7. **EHT chromaticity** — the 345 GHz literature check. Cheapest big kill.
 8. **Capsid A = 5–7 blind**, pre-registered with a gate as ⁹Be was; then ⁷Li (current worst, −6 %), ¹⁰B/¹¹B untried.
 9. **HFQPO discriminators 2/3/5** — fix the schema, pull RXTE PDS for GRO J1655-40.
@@ -578,7 +644,7 @@ Run, not read. **`mobius_topology/` — 15/15 pass**: antiperiodic BC → half-o
 14. Bench, an hour each: the string steady-tone control (does 220 ring its *own* 220 under a pure 440 drive?); the granite thermogram + subharmonic spectrum (cool and singing below the drive ⇒ coherent, FPUT; hot with overtones only ⇒ ordinary microchipping).
 15. **$S = \Phi s$** — Boltzmann counting. Honest status [POSIT] until touched.
 
-On hold, honestly labelled: tangential ejection [POSIT, mechanism owed]; the crystalline electron's generations [POSIT — the axiom stands, the excitation model did not pay]; $e^n/\pi$ [UNAUDITED]; BEC analogue horizons [FAR].
+On hold, honestly labelled: ejection stated in {amount, spin, time} with no direction word [POSIT, owed — v2 §6, §20; "tangential" was a label]; the crystalline electron's generations [POSIT — the axiom stands, the excitation model did not pay]; $e^n/\pi$ [UNAUDITED]; BEC analogue horizons [FAR].
 
 *The edge is where the next falsifier can be built cheaply and the answer is not already known.*
 

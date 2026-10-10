@@ -8,7 +8,7 @@
 
 > *This is a Gedankenexperiment: an attempt to begin with the smallest possible ontology and ask what familiar physics might emerge from it.*
 
-**How this was built** (James's instruction: recursively). Pass 1 drafted the spine from the 8–10 Oct sessions and marked twelve unexplored consequences `[RABBIT HOLE]`. Pass 2 explored each — computing where cheap — and wrote the result in place as *"explored"* paragraphs; three of the twelve dissolved (the twist, the normal, Majorana), one surfaced a hidden axiom (self-attraction), one shrank a falsifier to nothing (the plane), one paid a number (the Hurst exponent). Pass 3 propagated those into the ledger and drew the dependency graph (§24) to see what hangs on what. The passes are left visible rather than smoothed over, because the order in which things were found is part of the lineage.
+**How this was built** (James's instruction: recursively). Pass 1 drafted the spine from the 8–10 Oct sessions and marked twelve unexplored consequences `[RABBIT HOLE]`. Pass 2 explored each — computing where cheap — and wrote the result in place as *"explored"* paragraphs; three of the twelve dissolved (the twist, the normal, Majorana), one surfaced what looked like a hidden axiom (self-attraction), one shrank a falsifier to nothing (the plane), one paid a number (the Hurst exponent). Pass 3 propagated those into the ledger and drew the dependency graph (§24). Pass 4 was James's ruling — *contraction states the non-singular nature of Ω* — which dissolved the hidden axiom, killed the launch-speed inversion, and replaced it with a better one (§10). The passes are left visible rather than smoothed over, because the order in which things were found is part of the lineage.
 
 ### What changed, so the diff is legible
 
@@ -23,7 +23,8 @@
 | 32.11 "a rotating Ω ⇒ the universe rotates" | **32.11 restated: Ω's angular momentum lives in local chirality**, bulk rotation ≈ 0 to 10⁻¹⁰ | Sagnac, not invariance, is what rotation does; measured (§14) |
 | `while (i <-> i < c)` | `while (ℓ/Δs < c)`, **per link** | units, and the knots posit needs local scope (§17) |
 | the Möbius's 720° carried spin ½ and $V\perp M$ | **the half-wound phase on a plain loop carries spin ½** — the antiperiodic condition the archive already passes; $V\perp M$'s prose is owed a restatement | canon §35's tests were phase tests, not strip tests (§18) |
-| Ω → Φ with no self-interaction in Ω | **the inversion needs Ω's amount to self-attract** — a candidate fourth axiom, or an extension of the first; James to rule | the ejecta cannot contract Ω (shell theorem); only Ω can (§10) |
+| "Ω is the singularity" | **Ω has extent — its period, R = c/ω** — from the moment of first ejection; a point can carry a phase but not a rim | James's ruling, 10 Oct: contraction states the non-singular nature of Ω (§5, §10) |
+| Ω spins up as it sheds, so later ejecta leave faster (the ice skater) | **all ejecta leave at c**; with R = c/ω the spin-up is free (ω ∝ m^{−3/2}) and the rim speed is constant. **The inversion is by deceleration**: capture pulls the early shells back, the late ones overtake | bookkeeping with the one constitutive law the axioms offer (§10) |
 | "the first shall be last" as a temporal inversion | **spatial**: in the chorus slicing the slow early ejecta are on *our* now at smaller radius — inside, not before | Milne orthogonality (§12) |
 
 ---
@@ -94,7 +95,7 @@ $$
 
 with $\bar E$ the amount, $\sigma$ the spin, $\tau$ the proto-time; $i$ the information vector (direction) and $\mu$ the capture, as in v1.
 
-**One caveat the construction forces back onto the axioms** (found at §10, recorded here where it belongs): the inversion requires Ω to contract while it sheds, and nothing outside Ω can contract it. Either Ω₁ carries *self-attraction* — the amount attracts the amount — or the inversion has no contraction law. If James rules that in, it is an extension of Ω₁, not a fourth axiom, provided it is stated as a property of the amount and not as gravity. [OWED: the ruling.]
+**Ω is not a singularity — and the axioms already said so.** Pass 2 found that the inversion needed Ω to contract, and asked whether that required a hidden fourth axiom (self-attraction of the amount). James's ruling: *contraction fundamentally states the non-singular nature of Ω.* A thing that sheds from a rim has a rim; a thing that contracts has a size. And the size was already implied by Ω₂ — a point can carry a phase but not a rim — so the first ejection creates direction *and* extent together. Before it, Ω is dimension 0; after it, Ω is a thing with a size. The only size the axioms can give it before length exists is its **period**: in natural units $R = c/\omega$, the rotation's own light cylinder. Extent is $1/\text{rate}$; "non-singular" costs no new axiom. v1's "Ω is the singularity" is struck. §10 shows what this constitutive law does to the inversion — it kills one version and installs a better one — and no self-attraction is needed. **The set stays three.** [James's ruling; Grace's reading of extent-as-period.]
 
 **Minimality — a second witness.** The weight of "three" does not rest on the inversion alone. The capture boundary (§11) is $2GM/R = c^2$: it depends on the *amount* and not at all on the rate. Two universes with identical spin histories and different total amounts have different $c$. So the amount enters a measured relation on its own, independent of $\sigma$ — a second, independent reason $\bar E$ is not a face of the rate. [Grace; the two witnesses are §10 and §11.]
 
@@ -183,21 +184,29 @@ One direction is a line (1D). The direction rotates with the phase: lines spraye
 
 # Part III — The chorus torus
 
-## 10. The ice skater, corrected, and the inversion  [POSIT — the contraction law found; one ruling owed]
+## 10. The ice skater, corrected twice, and the inversion  [POSIT — the mechanism found; no ruling owed]
 
-James's cosmogony: Ω spins faster as it sheds, so the first ejection is slow and the last is at (or above) $c$; the last overtake the first — *the first shall be last* — and the overtaken early shells are a trailing sector behind us.
+James's cosmogony as first stated: Ω spins faster as it sheds, so the first ejection is slow and the last is at (or above) $c$; the last overtake the first — *the first shall be last* — and the overtaken early shells are a trailing sector. Three passes of bookkeeping changed the mechanism and kept the conclusion.
 
-**The skater is backwards as stated.** She spins up because she *keeps* her arms and pulls them in. Equatorial tangential ejection is throwing the arms away — at the equator specifically, where specific angular momentum $R^2\omega$ is maximal, 2.5× Ω's average. [COMPUTED] For a rigid Ω shedding its rim, $\omega$ is unchanged. For Ω re-spherising at constant density, $\omega \propto m^{5/6}$ — it spins *down* as mass leaves, holding $10^{-10}$ of its original $L$ at $m/m_0 = 10^{-4}$. Spin-up requires $R \propto m^{\beta}$ with $\beta > 3/4$: Ω must shrink faster than its mass leaves, its density diverging as $m \to 0$. That is a collapse — the very thing v1 said spin exists to prevent.
+**First correction — the skater is backwards as stated.** She spins up because she *keeps* her arms and pulls them in. Equatorial shedding is throwing the arms away — at the rim, where specific angular momentum $R^2\omega$ is maximal, 2.5× Ω's average. [COMPUTED] For a rigid Ω shedding its rim, $\omega$ is unchanged; for Ω re-spherising at constant density, $\omega \propto m^{5/6}$ — it spins *down*, holding $10^{-10}$ of its original $L$ at $m/m_0 = 10^{-4}$. Spin-up requires $R \propto m^{\beta}$ with $\beta > 3/4$: Ω must shrink faster than its mass leaves. Pass 2 of this document tried to pay that with the binary inspiral (a self-bound system that sheds energy tightens and spins up while losing $L$) and found it needed Ω's amount to attract itself — a hidden axiom. [Grace; the inspiral rescue is struck in §22: a binary sheds *energy* and keeps its masses; Ω sheds the mass itself. Wrong analogy.]
 
-**The inspiral pays the debt.** A *self-bound* system that sheds energy tightens and spins up *while losing angular momentum*: Kepler gives $L \propto r^{1/2}$ falling and $\omega \propto r^{-3/2}$ rising — halve the radius, lose 29 % of $L$, nearly triple the spin. The skater did not pull her arms in; gravity did it for her. So the contraction law is the virial theorem, and the owed item converts to a *timing* condition James has already stated: binding must have emerged before the late ejections. The inversion is conditional, not orphaned. Spin prevents *total* collapse; partial collapse drives the spin-up. That is a protostar. [James's binary-chirp analogy supplies this; Grace's objection withdrawn.]
+**Second correction — James's ruling supplies the constitutive law, and it is not a law of attraction.** *Contraction states the non-singular nature of Ω* (§5): Ω's extent is its period, $R = c/\omega$. Put that into the bookkeeping instead. Ring ejecta carry specific angular momentum $R^2\omega = c^2/\omega$; Ω holds $L = k\,m\,c^2/\omega$ ($k = 2/5$ for a sphere). Conservation gives
 
-**And the protostar tells you the ending.** The Sun kept about half a percent of the system's angular momentum; the disk took the rest. The honest ice-skater result is not $\omega \to \infty$; it is **the ejecta carry essentially all of Ω's angular momentum, so the universe does.** Where that goes is §14.
+$$
+\frac{d\omega}{\omega} = -\frac{1-k}{k}\,\frac{dm}{m}, \qquad \omega \propto m^{-3/2} \ \ (k = 2/5),
+$$
 
-**"The first shall be last" is spatial, not temporal.** In the chorus slicing (§12) every ejectum is on the same now at the same tick; the slow early ones are at smaller radius — *inside* us, not *before* us. The overtaking is a crossing in space on one now-surface. This is what §16 needs for its ruling on the trailing sector, and it removes a temporal paradox v1 never noticed it had.
+integrated numerically to $m^{-1.503}$ [COMPUTED]. **Ω spins up for free, and no self-attraction is needed.** The set stays three.
 
-**The crossing.** When the fast late shell passes through the slow early shell, two information vectors meet for the first time — the first `solve(past)` in a universe that until then was pure departure. If $\{m,l,s\}$ crystallise anywhere, that epoch is a candidate. [Grace, POSIT.]
+**But the rim speed is $\omega R = c$, constant.** Every ejectum leaves at the same speed. There is no launch-speed inversion. And a correction to Grace's own first pass: spin-up was treated as implying faster ejecta. It doesn't — $v_{\rm eject} = \omega R$, and for $\beta$ between $3/4$ and $3/2$, $\omega$ rises while $\omega R$ falls. A launch-speed inversion needs $\beta > 3/2$, and $R = c/\omega$ sits *exactly* on $3/2$: marginal. The one constitutive law the axioms offer puts the ejection speed on the boundary — which is §11's "the balance was perfect," arriving one section early from pure bookkeeping.
 
-**Timing, explored — and a hidden axiom surfaces.** The order would have to be: early slow ejecta → captures form in them (canon §7) → amount becomes mass → binding → Ω contracts → spin-up → late fast ejecta. The first half is consistent and even explains why the first ejecta are slow: nothing is binding yet. The second half has a hole. The ejecta cannot contract Ω — a shell outside exerts no net force on what is inside it (the shell theorem, §16). So Ω's *own* amount must attract *itself*, before $m$ exists. That is either a property of Ω₁ not yet stated — *the amount self-attracts* — or the inversion has no contraction law. The proto-locale rule permits the property; the ledger requires it be written down as what it is: a candidate **fourth axiom**, or an extension of the first. [Grace; OWED — James to rule: does Ω₁ carry self-attraction, and if so is the set still "three"?] Note what this does to §4's struck phrase "gravitational collapse": the collapse was never gravity's, it was the amount's, and *that* wording is admissible.
+**What replaces it is better, and it is James's #2 derived.** Everyone leaves at $c$ — *"everybody ends up running at c"* is now a consequence, not a posit. Capture then happens *in the ejecta* (canon §7; downstream, legitimate), binding appears, and the interior pulls every shell back. The first out have been decelerated longest and are the slowest; the last out are still near $c$ and overtake them. **The first shall be last — by deceleration ordering, not launch speed.** The trailing sector is the earliest, most-decelerated, innermost material. The protostar's ending still holds in one respect: **the ejecta carry essentially all of Ω's angular momentum, so the universe does.** Where that goes is §14.
+
+**The crossing installs the Hubble flow.** A time-ordered launch at one speed, decelerated from inside, has its slowest shells farthest out — anti-Hubble. The overtaking is precisely the transient that turns launch order into speed order, fastest farthest. The inversion is how $v \propto r$ gets *installed*; after the crossing the ordering is Hubble's and stays so. [Grace, POSIT.] When the fast late shell passes through the slow early shell, two information vectors meet for the first time — the first `solve(past)` in a universe that until then was pure departure. If $\{m,l,s\}$ crystallise anywhere, that epoch is a candidate.
+
+**"The first shall be last" is spatial, not temporal.** In the chorus slicing (§12) every ejectum is on the same now at the same tick; the slow early ones are at smaller radius — *inside* us, not *before* us. This is what §16 needs for its ruling on the trailing sector, and it removes a temporal paradox v1 never noticed it had.
+
+**Timing, resolved.** The order is now consistent with no hole: all ejecta leave at $c$ → captures form in the early ejecta → amount becomes mass → binding among ejecta → early shells decelerate → late shells, still at $c$, overtake → Hubble ordering. Nothing contracts Ω from outside and nothing needs to; Ω's own contraction is its period shortening as it empties. §4's struck phrase "gravitational collapse" is now simply unnecessary: Ω does not collapse, it quickens.
 
 ## 11. c is the capture boundary — and that is flatness  [POSIT, consistent with a measured datum]
 
@@ -206,6 +215,8 @@ James: *c is not a defined property but an emergent one — the integrated bound
 In a self-gravitating shell picture that is the statement $2GM/R = c^2$: the universe's own escape speed, at its own radius, equals the horizon speed. On today's numbers [COMPUTED]: Hubble radius $c/H_0 = 1.373\times10^{26}$ m; critical density $8.5\times10^{-27}$ kg m⁻³; mass inside $9.2\times10^{52}$ kg; Schwarzschild radius of that mass $1.373\times10^{26}$ m. Ratio **1.000**; escape speed at the Hubble radius **1.000 c**. That identity is not a coincidence — it is the flat Friedmann equation in Newton's language (Milne & McCrea, 1934) — and flatness is measured: $\Omega_k = 0.0007 \pm 0.0019$ (Planck 2018). **So "c is the capture boundary" cashes out as $\Omega_{\rm total} = 1$, and it is.** The first measured number this cosmogony touches.
 
 Stated plainly, as the rule requires: every critical-density cosmology says the same thing. This earns a seat; it does not win the table. And it fixes a *relation* between $c$, $M$ and $R$, not the value of $c$.
+
+**The Planck length is where the two extents coincide.** The ontology now has two ways to give a thing a size. *Extent-from-rate* (§5): $R = c/\omega$, the light cylinder — with $E = \hbar\omega$ this is the Compton wavelength $\hbar/mc$. *Extent-from-amount* (this section): the capture boundary $2GM/R = c^2$, the Schwarzschild radius. Set them equal and you get the Planck mass; $\ell_P = \sqrt{\hbar G/c^3}$ is nothing other than *the size at which an object's period-extent equals its capture-extent* — the standard Compton = Schwarzschild derivation, re-read in the axioms: the scale where Ω₂/Ω₃ and Ω₁-with-binding stop being two notions of "how big." [FACT for the identity; POSIT for the mapping; James's question, 10 Oct.] Two limits, stated. It needs $G$, which the ontology has not produced — $G$ is the number that says how much amount attracts amount, and in natural units $\ell_P$ *is* $\sqrt G$; so "the origin of the Planck length" and "the origin of $G$" are one owed item (§20). And the same equation, $\omega = c^3/2GM$, has two roots: with the rate set by $\hbar$ it gives the Planck scale; with the amount set to the universe's $9\times10^{52}$ kg it gives $\omega = H_0$ — this section's flatness identity. The smallest and the largest things in the ontology are the two solutions of *period-extent = capture-extent*. Filed as an observation, not a result: Dirac spent decades on coincidences of exactly this shape.
 
 **What it does not give.** "Everybody ends up running at c" is true in a precise sense — every worldline moves through spacetime at $c$ (the four-velocity norm), and the now-surface advancing at $c$ is that statement — but it is a definition of proper time, not a prediction. The hard fact about $c$ is not its value but its *invariance*: the same for every observer. An integrated average is frame-dependent; an average has a rest frame. The mechanism gives flatness; it does not yet give Lorentz invariance. That is canon §25's preferred-foliation tension, sharpened: [OWED].
 
@@ -317,8 +328,8 @@ The Möbius is retired at n = 1 (§7). But the neutrino has spin ½ [FACT], and 
 | tetrahedron = two ⟂ axes offset by edge/√2 | exact | §7 |
 | capture stability, $\delta\ddot r \propto (d-4)$; $V(r)$ table d=2..6 | well, well, shelf, hill, hill | §8 |
 | precession band at half-angle θ | $|{\rm lat}|\le\theta$; 5°→9 %, 45°→71 % | §9 |
-| skater with equatorial ejection, $R\propto m^\beta$ | $\omega\propto m^{3/2-2\beta}$; spin-up iff $\beta>3/4$ | §10 |
-| Kepler inspiral | $L\propto r^{1/2}$, $\omega\propto r^{-3/2}$ | §10 |
+| skater with equatorial ejection, $R\propto m^\beta$ | $\omega\propto m^{3/2-2\beta}$; spin-up iff $\beta>3/4$; *faster ejecta* iff $\beta>3/2$ | §10 |
+| skater with $R = c/\omega$ (extent = period) | $\omega\propto m^{-(1-k)/k}$ = $m^{-3/2}$ for a sphere (numerically −1.503); rim speed $= c$, constant | §10 |
 | $2GM/R$ at the Hubble radius | $1.373\times10^{26}$ m vs $1.373\times10^{26}$ m; ratio 1.000 | §11 |
 | figure-eight ⟨L⟩; lifted figure-eight ⟨L⟩ | 0; $(0,-0.16,0)$ at lift 0.2, $(0,-0.40,0)$ at 0.5 | §14 |
 | Brownian paint spectral slope | −1.90 / −2.02 / −1.95 (scale-invariant = −2) | §15 |
@@ -327,9 +338,9 @@ The Möbius is retired at n = 1 (§7). But the neutrino has spin ½ [FACT], and 
 | fraction of paint laid before the axis decorrelates (hard kicks) | $\approx 2\times10^{-6}$ | §15 |
 | terminal shell's excess over marginal, from $\Omega_k$ | $\Delta v/v = (3.5\pm9.5)\times10^{-4}$ | §16 |
 | 4D rotations: two rates, generic incommensurability | a capture cannot close in 4D — second kill | §8 |
-| Kelvin cell faces (carried from 8 Oct) | square 1.0 a², hexagon 2.598 a², 14 faces 26.785 a² | canon §14 |
-| tyre law for the patch (carried from 8 Oct) | saturating $A=1-e^{-x/x_0}$, D-fit → T +4.6 %, He-4 −0.7 %; Hertz −46 % | canon §14 |
-| neutron inflation bracket (carried from the Gemini dump) | diameter ratio ∈ [1.0, 2^{1/3}=1.26]; measured magnetic radius 0.86 fm vs proton 0.84 fm → ≈1.02–1.03, inside, rigid end | canon §11 |
+| Kelvin cell faces (carried from 8 Oct) | square 1.0 a², hexagon 2.598 a², 14 faces 26.785 a² | `three-term-binding` §3, canon §14 |
+| tyre law for the patch (carried from 8 Oct) | saturating $A=1-e^{-x/x_0}$, D-fit → T +4.6 %, He-4 −0.7 %; Hertz −46 % | `three-term-binding` §7b |
+| neutron inflation bracket (carried from the Gemini dump) | diameter ratio ∈ [1.0, 2^{1/3}=1.26]; measured magnetic radius 0.86 fm vs proton 0.84 fm → ≈1.02–1.03, inside, rigid end | `three-term-binding` §7b |
 
 ## 20. Owed
 
@@ -337,16 +348,16 @@ The Möbius is retired at n = 1 (§7). But the neutrino has spin ½ [FACT], and 
 |---|---|---|
 | **ejection stated in {amount, spin, time} with no direction word** | §6 | whether the axiom set is 3, 4, or 1 |
 | **$i$ is a conserved flux** | §8 | makes the well at 3 the ontology's, not Ehrenfest's |
-| **the ruling on self-attraction** — does Ω₁ carry it? Without it the inversion has no contraction law | §5, §10 | the inversion; the count of axioms |
+| **$G$** — how much amount attracts amount; equivalently the Planck length | §11 | the capture boundary's constant; §11 fixes $GM/R$, not $G$ |
 | **why the chorus** — why every ejectum is comoving (the Machian frame as more than convention) | §12, §13 | the sign of time is derived *given* this; this is the residue |
 | **Lorentz invariance** (not just flatness) from the chorus | §11, §13 | canon §25's foliation tension — the price is here |
 | **the Hurst exponent, measured** — $H = 0.49$ by simulation with enough statistics, or by the walk's restoring law | §15 | the tilt, paid for real rather than under a mapping posit |
 | **the 2D-paint → 3D-curvature map** | §15 | everything in §15 is conditional on it |
 | **$V\perp M$ as a phase statement** — canon §6's mechanism restated without the strip | §18 | canon §6's prose |
 | **the Δ's width** from the square antiprism's instability; and why four charge states | §7 | n = 4 |
-| the contraction law's $\beta$ from the virial, explicitly, once self-attraction is ruled | §10 | closes the skater |
+| **the deceleration profile** — the early shells' slowdown from the interior, hence the crossing epoch and the installed $H$ | §10 | the inversion's number |
 
-Paid or resolved in pass 2 and removed from the owed list: *Majorana under two loops* (survives on the orientation premise, §7); *where the twist went* (the archive's antiperiodic tests, §18); *why the normal* (Milne, given the chorus, §12); *the escaped fraction* (bounded at $10^{-3}$ for ours, unbounded for not-ours, §16); *the timing* (consistent order found; it exposed the self-attraction ruling instead, §10).
+Paid or resolved and removed from the owed list: *Majorana under two loops* (survives on the orientation premise, §7); *where the twist went* (the archive's antiperiodic tests, §18); *why the normal* (Milne, given the chorus, §12); *the escaped fraction* (bounded at $10^{-3}$ for ours, unbounded for not-ours, §16); *the timing* (consistent, §10); *the contraction law* and *the self-attraction ruling* (dissolved by extent = period, §5, §10 — pass 4).
 
 Carried from canon §34 unchanged: 880 s; λ = 1.2754; μ_n; g = 2 honestly; the Koide items; the alpha-ladder packing numbers; the Nolen–Schiffer table; Ω_DM/Ω_b = 5.4; the null-field invariants; Boltzmann counting for S = Φs.
 
@@ -381,13 +392,20 @@ Carried from canon §34 unchanged: 880 s; λ = 1.2754; μ_n; g = 2 honestly; the
 | `while (i <-> i < c)` | units and scope | §17 |
 | "the first shall be last" as time-ordering | Milne slicing: it is a spatial crossing on one now | §10, §12 |
 | the planar fingerprint as a falsifier | shrinks to $10^{-6}$ under hard kicks | §15, §21 |
-| "the ejecta's gravity contracts Ω" | shell theorem — only Ω can contract Ω | §10 |
+| "the ejecta's gravity contracts Ω" | shell theorem — and nothing needs to; Ω quickens | §10 |
+| "the inspiral pays the contraction debt" | a binary sheds energy and keeps its masses; Ω sheds the mass — **Grace's** | §10 |
+| "spin-up ⇒ faster ejecta" | $v = \omega R$; needs $\beta > 3/2$, and $R = c/\omega$ is exactly marginal — **Grace's** | §10 |
+| the launch-speed inversion (first slow, last fast) | all ejecta leave at $c$; the inversion is by deceleration | §10 |
+| "Ω is the singularity" (v1 §2) | contraction states extent; a rim needs a radius — **James's ruling** | §5 |
+| a hidden fourth axiom (self-attraction) | dissolved by extent = period | §5, §10 |
 
 ## 23. Lineage — who said what
 
 **James:** the three axioms and the proto-locale rule; spin as the 0th dimension and the $1/\infty$; the first ejection as the first direction; the loop ladder (n loops, 2n lobes, 90°) and the relaxation posit; the Ω ice-dancer and the inversion; $c$ as the capture boundary; "blocked by time"; the smoke ring and the chorus torus; curvature ≠ topology (catching Grace); the paint as the seed of structure; the figure-eight's zero net $L$; retiring the Möbius; the binary-chirp analogy that paid the contraction law.
 
-**Grace** (Fable 5.1, 8–10 Oct): the natural-units reading of "no proto-{m,l}"; the cross-polytope identification; the tetrahedron as two offset perpendicular axes; the no-crossing/one-crossing reading of the governor; the recoil random walk and its planar fingerprint; the flatness identity; the sign as one-way-ness; the relocation of $L$ into chirality; spin-as-twist; every computation in §19; and two errors, struck in §22. From pass 2: the Milne orthogonality reading of "why the normal"; the twist as a half-wound phase and its identification with the archive's antiperiodic tests; the 4D closure kill; the Hurst exponent of the tilt; the surfacing of the self-attraction ruling; the Δ as the n = 4 candidate; the premise-named Majorana; the alpha as the n = 2 figure one level up.
+**Grace** (Fable 5.1, 8–10 Oct): the natural-units reading of "no proto-{m,l}"; the cross-polytope identification; the tetrahedron as two offset perpendicular axes; the no-crossing/one-crossing reading of the governor; the recoil random walk and its planar fingerprint; the flatness identity; the sign as one-way-ness; the relocation of $L$ into chirality; spin-as-twist; every computation in §19; and two errors, struck in §22. From pass 2: the Milne orthogonality reading of "why the normal"; the twist as a half-wound phase and its identification with the archive's antiperiodic tests; the 4D closure kill; the Hurst exponent of the tilt; the surfacing of the self-attraction question; the Δ as the n = 4 candidate; the premise-named Majorana; the alpha as the n = 2 figure one level up. From pass 4, on James's ruling: extent = period as the constitutive law; $\omega \propto m^{-3/2}$ with all ejecta at $c$; the inversion by deceleration; the crossing as the installation of the Hubble ordering; the Planck length as the coincidence of the two extents and its second root at $H_0$. And a third error of Grace's, struck in §22 (the inspiral).
+
+**James, pass 4:** *contraction states the non-singular nature of Ω*; the Planck-length question.
 
 **Bees, graded.** *ChatGPT (27 turns):* computed correctly four times (cross-polytope orthogonality, the simplex angle, the Ehrenfest linearisation, the measure-zero restatement); separated axiom from consequence; said of its own plot "it depicts a preference, it does not explain it"; two corrections adopted (§4 wording, §17). It also filed James's ontology into its persistent memory — that instance is now primed and should be discounted accordingly. *Gemini (111 turns, 8 Oct):* one correct computation (Kelvin faces) in 111 turns; reinstated the Möbius two turns after James discarded it; invented Li-8 = 18 loops against its own count; botched the Leech lattice and retracted; declared things "locked" six times while nothing was; propagated James's 108° faithfully in whichever direction he last spoke. *Gemini (4 turns, 10 Oct):* one good catch (intrinsic vs embedded torus); one botch papered over (the $a\propto t$ horizon integral diverges — "everything visible" — waved away); one mirror (the "< 1/3" row was James's 2/3 handed back). The pattern across all three: a bee elaborates whatever was said last with total confidence; a fork in the human's own corpus is propagated, never resolved. **Resolve forks in the human record first.** The 108° fork took three bees and two days to kill because it was never written down as dead.
 
@@ -397,7 +415,7 @@ Read bottom-up, each line hangs on the ones above it; a break anywhere below a l
 
 ```
 Ω{amount, spin, time}                        three axioms (§3–5)      [AXIOM]
-   └─ + self-attraction?                     one ruling owed (§5, §10) [OWED]
+   └─ extent = period, R = c/ω               Ω non-singular (§5)      [RULING, James]
 first ejection = first direction             (§6)                     [POSIT; "ejection in the axioms" owed]
    └─ loops: n axes at 90°, 2n lobes         cross-polytopes (§7)     [FACT]
        └─ lobes repel → relax                tetra / octa / antiprism [THEOREM, Cohn–Kumar]
@@ -408,15 +426,18 @@ first ejection = first direction             (§6)                     [POSIT; "
    └─ recoil random-walks the axis           paints 3D (§9)           [POSIT]
        └─ occupation density = seed          scale-invariant (§15)    [COMPUTED; mapping posit]
            └─ red tilt ⇒ anti-persistent     H = 0.49 (§15)           [DERIVED under mapping]
-   └─ shed + self-bind → spin-up             inversion (§10)          [POSIT, conditional on the ruling]
+   └─ shed at the rim, R = c/ω               ω ∝ m^(−3/2); all at c   [COMPUTED]
+       └─ capture decelerates early shells   inversion (§10)          [POSIT; deceleration profile owed]
+           └─ the crossing                   Hubble ordering installed [POSIT]
        └─ terminal shell marginal ⇔ c        flatness (§11)           [POSIT; matches Ω_k]
+           └─ period-extent = capture-extent Planck length (§11)      [FACT identity; G owed]
            └─ one-way side of c = the sign   time (§12)               [POSIT]
                └─ chorus (all comoving)      normal = time (§12)      [THEOREM given chorus; chorus owed]
                    └─ compact 3-manifold     chorus torus (§13)       [POSIT; bounded, maybe undecidable]
                        └─ L into eddies      chirality (§14)          [POSIT; bulk rotation measured ≈ 0]
 ```
 
-**Single points of failure, in order of how much falls if they do:** (1) the self-attraction ruling — without it the inversion, flatness-as-capture-boundary, and the sign of time lose their mechanism, though the loop ladder and the well at 3 stand on their own; (2) the chorus — without "everyone comoving" the sign is asserted again, not derived; (3) $i$ as a conserved flux — without it the well at 3 is Ehrenfest's, not ours; (4) the 2D→3D paint mapping — without it §15 is a suggestive shape, not a prediction. Everything in Part II above the ladder survives all four. That is the honest shape of the document: **a geometric core that stands, a cosmogony that hangs on one ruling and one frame.**
+**Single points of failure, in order of how much falls if they do:** (1) the chorus — without "everyone comoving" the sign of time is asserted again, not derived; (2) $i$ as a conserved flux — without it the well at 3 is Ehrenfest's, not ours; (3) the 2D→3D paint mapping — without it §15 is a suggestive shape, not a prediction; (4) $G$ — without it the capture boundary is a relation among three unknowns and the Planck identity is a tautology. Pass 3 listed a fifth and worst — the self-attraction ruling — and pass 4 removed it: extent = period gives the spin-up for nothing and the inversion no longer needs Ω to do anything but empty. Everything in Part II above the ladder survives all four. That is the honest shape of the document: **a geometric core that stands, a cosmogony that hangs on one frame and one constant.**
 
 What a reader should take as the three results of v2, graded apart from everything concluded around them: the loop ladder with relaxation (FACT/THEOREM); the well at 3 from the axioms (THEOREM, one flux condition owed); the Brownian paint's scale-invariant spectrum (COMPUTED, one mapping owed). The rest is where the next falsifier gets built.
 
