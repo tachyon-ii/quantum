@@ -1,0 +1,1437 @@
+{
+  "input": {
+    "protons": 2,
+    "neutrons": 1,
+    "mass_number": 3,
+    "n_to_z_ratio": 0.5
+  },
+  "stage1_neural_prediction": {
+    "predicted_binding_energy": 2.549813062759118,
+    "stability_probability": 0.5509068250031408,
+    "adjacency_probabilities": [
+      [
+        0.0,
+        0.6578,
+        0.7083999999999999
+      ],
+      [
+        0.6578,
+        0.0,
+        0.8371999999999999
+      ],
+      [
+        0.7083999999999999,
+        0.8371999999999999,
+        0.0
+      ]
+    ],
+    "adjacency_binary": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    "nucleon_types": [
+      0,
+      0,
+      1
+    ],
+    "num_protons": 2,
+    "num_neutrons": 1,
+    "physics_informed": {
+      "nuclear_radius": 1.78069948436889,
+      "magic_number_score": 0.6,
+      "decay_probabilities": {
+        "alpha": 0.0,
+        "beta_plus": 0.18000000000000002,
+        "beta_minus": 0.0,
+        "fission": 0.0,
+        "electron_capture": 0.30000000000000004,
+        "stable": 0.5199999999999999
+      },
+      "james_freeman_resonance": {
+        "theoretical_frequencies": [
+          0.8652559794322651,
+          2.3520096058562596,
+          6.393424971960192
+        ],
+        "predicted_frequencies": [
+          0.632431467084506,
+          1.7191269647215077,
+          4.673071589016429
+        ],
+        "resonance_accuracy": 0.764080860838698,
+        "interference_score": 0.3795,
+        "scroll_coherence": 0.55,
+        "theory_applies": false,
+        "frequency_errors": [
+          0.23282451234775903,
+          0.6328826411347519,
+          1.7203533829437632
+        ],
+        "james_freeman_quality": 0.5645269536128993
+      },
+      "conservation_violations": [
+        "Excessive proton fraction: 0.67"
+      ],
+      "shell_structure": {
+        "proton_shell_occupancy": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "neutron_shell_occupancy": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "proton_shell_closure": true,
+        "neutron_shell_closure": false,
+        "doubly_magic": false,
+        "valence_protons": 0,
+        "valence_neutrons": 0
+      },
+      "physics_quality_score": 1.0,
+      "theoretical_consistency": {
+        "semf_agreement": false,
+        "radius_formula_agreement": true,
+        "magic_enhancement_consistency": true,
+        "stability_reasonable": true
+      },
+      "semf_comparison": {
+        "predicted": 2.549813062759118,
+        "semf_baseline": 0.3525884854228982,
+        "improvement": true
+      },
+      "nuclear_force_analysis": {
+        "strong_force_pairs": 3,
+        "coulomb_repulsion_pairs": 1,
+        "force_ratio": 3.0,
+        "binding_effectiveness": 0.75
+      },
+      "quantum_corrections": {
+        "zero_point_energy": 15.0,
+        "pauli_exclusion_energy": 17.917222187964196,
+        "uncertainty_energy": 6.925308585529471,
+        "total_quantum_correction": 39.84253077349367
+      }
+    }
+  },
+  "stage2_physics_simulation": {
+    "final_analysis": {
+      "nuclear_radius": 1.3836522389724433,
+      "total_energy": 0.04480947506575414,
+      "proton_count": 2,
+      "neutron_count": 1,
+      "center_of_mass": [
+        -4.037018372570665e-17,
+        -3.0277637794279984e-17,
+        4.037018372570665e-17
+      ]
+    },
+    "energy_history": [
+      36.10909088623282,
+      29.56930862255703,
+      24.21545485096819,
+      19.832469291927772,
+      16.2442916716232,
+      13.306789275080153,
+      10.901967049036353,
+      8.933227671428558,
+      7.321491182073197,
+      6.002018298056189,
+      4.921809804613141,
+      4.0374775534301826,
+      3.313501544935393,
+      2.7208030803014043,
+      2.235576665548339,
+      1.8383337443489687,
+      1.51311984542968,
+      1.2468736966481564,
+      1.0289025607426079,
+      0.8504527164731647,
+      0.7043578309562205,
+      0.5847510979603506,
+      0.4868295784790466,
+      0.40666127691910464,
+      0.3410272029822561,
+      0.28729207473410967,
+      0.24329846890499632,
+      0.20728016637058977,
+      0.177791211853207,
+      0.15364783814314975,
+      0.13388092192162843,
+      0.11769706133252114,
+      0.10444671179451376,
+      0.09359810008118799,
+      0.08471586881439228,
+      0.07744359354027343,
+      0.07148947012118348,
+      0.0666145975295796,
+      0.06262338538792829,
+      0.05935570094973672,
+      0.05668044008983548,
+      0.05449026407383243,
+      0.0526972907051359,
+      0.051229566784272366,
+      0.050028180199414254,
+      0.04904489565985266,
+      0.04824021911768776,
+      0.04758181314222785,
+      0.047043199608193975,
+      0.04660269759908459,
+      0.0462425538745711,
+      0.04594823098505384,
+      0.04570782444822392,
+      0.04551158558597531,
+      0.045351530863532934,
+      0.04522112204665817,
+      0.04511500433680594,
+      0.04502879197240769,
+      0.044958892690517845,
+      0.04490236400350994,
+      0.0448567955229765,
+      0.04482021260880893,
+      0.04479099747761399,
+      0.04476782460555244,
+      0.04474960783451213,
+      0.04473545706030436,
+      0.04472464276617017,
+      0.04471656697973753,
+      0.044710739489341476,
+      0.04470675836664791,
+      0.04470429401529089,
+      0.04470307610667319,
+      0.044702882879881924,
+      0.04470353237746997,
+      0.04470487526647508,
+      0.0447067889575898,
+      0.044709172787420676,
+      0.044711944071371065,
+      0.04471503486955347,
+      0.04471838933668884,
+      0.04472196155032528,
+      0.044725713730852615,
+      0.044729614782456496,
+      0.04473363909698397,
+      0.04473776557320752,
+      0.04474197681256605,
+      0.044746258459513,
+      0.044750598660362934,
+      0.044754987619258245,
+      0.04475941723373692,
+      0.04476388079555605,
+      0.04476837274501638,
+      0.044772888469155864,
+      0.0447774241359234,
+      0.044781976557865845,
+      0.04478654308003035,
+      0.04479112148773716,
+      0.04479570993066373,
+      0.044800306860322485,
+      0.04480491097853869
+    ],
+    "geometry_history": [
+      {
+        "nuclear_radius": 1.4289232999104478,
+        "total_energy": 36.10909088623282,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.4241155241007872,
+        "total_energy": 29.56930862255703,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -4.037018372570665e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.4198425523083311,
+        "total_energy": 24.21545485096819,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          2.0185091862853324e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.4160401819155508,
+        "total_energy": 19.832469291927772,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          2.0185091862853324e-17,
+          -8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.4126525833755792,
+        "total_energy": 16.2442916716232,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          -2.0185091862853324e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.4096311323954458,
+        "total_energy": 13.306789275080153,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          -4.037018372570665e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.4069334101854238,
+        "total_energy": 10.901967049036353,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.4045223481588993,
+        "total_energy": 8.933227671428558,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -4.037018372570665e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.4023654963976049,
+        "total_energy": 7.321491182073197,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          2.0185091862853324e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.4004343979024074,
+        "total_energy": 6.002018298056189,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3987040530980064,
+        "total_energy": 4.921809804613141,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          0.0,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3971524612417252,
+        "total_energy": 4.0374775534301826,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -8.07403674514133e-17,
+          2.0185091862853324e-17,
+          -8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3957602273080298,
+        "total_energy": 3.313501544935393,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          0.0,
+          8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3945102245965053,
+        "total_energy": 2.7208030803014043,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          -4.037018372570665e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3933873047620668,
+        "total_energy": 2.235576665548339,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          8.07403674514133e-17,
+          -4.037018372570665e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3923780482147798,
+        "total_energy": 1.8383337443489687,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          2.0185091862853324e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.391470548905678,
+        "total_energy": 1.51311984542968,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          4.037018372570665e-17,
+          -8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3906542284267043,
+        "total_energy": 1.2468736966481564,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          2.0185091862853324e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3899196751279461,
+        "total_energy": 1.0289025607426079,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          1.0092545931426662e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3892585046125936,
+        "total_energy": 0.8504527164731647,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          2.0185091862853324e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3886632385263078,
+        "total_energy": 0.7043578309562205,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          1.2111055117711994e-16,
+          3.0277637794279984e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3881271990278075,
+        "total_energy": 0.5847510979603506,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          1.0092545931426662e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.387644416724371,
+        "total_energy": 0.4868295784790466,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          2.0185091862853324e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3872095501908457,
+        "total_energy": 0.40666127691910464,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          8.07403674514133e-17,
+          -3.0277637794279984e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.386817815473199,
+        "total_energy": 0.3410272029822561,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          5.0462729657133304e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3864649242159053,
+        "total_energy": 0.28729207473410956,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -8.07403674514133e-17,
+          -2.0185091862853324e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3861470292534643,
+        "total_energy": 0.24329846890499635,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -2.0185091862853324e-17,
+          -1.2111055117711994e-16
+        ]
+      },
+      {
+        "nuclear_radius": 1.3858606766760235,
+        "total_energy": 0.20728016637058977,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          1.0092545931426662e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3856027635224468,
+        "total_energy": 0.177791211853207,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -1.0092545931426662e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3853705003753305,
+        "total_energy": 0.1536478381431497,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -8.07403674514133e-17,
+          -1.0092545931426662e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3851613782351424,
+        "total_energy": 0.13388092192162837,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -2.0185091862853324e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3849731391376026,
+        "total_energy": 0.11769706133252114,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          1.0092545931426662e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3848037500522967,
+        "total_energy": 0.10444671179451381,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          -2.0185091862853324e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3846513796633042,
+        "total_energy": 0.09359810008118799,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          8.07403674514133e-17,
+          -4.037018372570665e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3845143776861382,
+        "total_energy": 0.08471586881439225,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          3.0277637794279984e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3843912564209433,
+        "total_energy": 0.07744359354027348,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          0.0,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.384280674280955,
+        "total_energy": 0.07148947012118348,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          1.0092545931426662e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3841814210687085,
+        "total_energy": 0.0666145975295796,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -8.07403674514133e-17,
+          2.0185091862853324e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3840924048012027,
+        "total_energy": 0.06262338538792823,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -1.0092545931426662e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3840126399100012,
+        "total_energy": 0.059355700949736745,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -8.07403674514133e-17,
+          0.0,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.383941236663574,
+        "total_energy": 0.05668044008983552,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -4.037018372570665e-17,
+          -8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3838773916776597,
+        "total_energy": 0.0544902640738324,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          3.0277637794279984e-17,
+          -8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.383820379395414,
+        "total_energy": 0.0526972907051359,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          8.07403674514133e-17,
+          3.0277637794279984e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3837695444330191,
+        "total_energy": 0.051229566784272366,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          -2.0185091862853324e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3837242946985155,
+        "total_energy": 0.050028180199414254,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          0.0,
+          8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3836840952021898,
+        "total_energy": 0.04904489565985271,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          1.0092545931426662e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3836484624860637,
+        "total_energy": 0.04824021911768776,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          8.07403674514133e-17,
+          -2.0185091862853324e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3836169596081456,
+        "total_energy": 0.04758181314222786,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          0.0,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835891916241874,
+        "total_energy": 0.04704319960819402,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          -3.0277637794279984e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835648015159647,
+        "total_energy": 0.04660269759908459,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          -1.0092545931426662e-17,
+          8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835434665205837,
+        "total_energy": 0.0462425538745711,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          8.07403674514133e-17,
+          -2.0185091862853324e-17,
+          -1.2111055117711994e-16
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835248948202126,
+        "total_energy": 0.04594823098505384,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -2.0185091862853324e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835088225559269,
+        "total_energy": 0.04570782444822392,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -1.0092545931426662e-17,
+          8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.38349501113318,
+        "total_energy": 0.04551158558597531,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          0.0,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.383483244789806,
+        "total_energy": 0.045351530863533045,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -2.0185091862853324e-17,
+          1.2111055117711994e-16
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834733284004574,
+        "total_energy": 0.04522112204665817,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.383465085494081,
+        "total_energy": 0.04511500433680594,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          -1.0092545931426662e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.383458356463422,
+        "total_energy": 0.04502879197240769,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          -6.055527558855997e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834529969476608,
+        "total_energy": 0.044958892690517845,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          2.0185091862853324e-17,
+          -1.2111055117711994e-16
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834488763712287,
+        "total_energy": 0.044902364003509915,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          1.0092545931426662e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834458766235176,
+        "total_energy": 0.04485679552297647,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          1.0092545931426662e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834438908657476,
+        "total_energy": 0.044820212608808974,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          0.0,
+          -8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834428224526247,
+        "total_energy": 0.04479099747761399,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -2.0185091862853324e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.383442583957627,
+        "total_energy": 0.04476782460555244,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          2.0185091862853324e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834430962918915,
+        "total_energy": 0.04474960783451213,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          1.0092545931426662e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834442879076256,
+        "total_energy": 0.04473545706030436,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -1.0092545931426662e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834460940778943,
+        "total_energy": 0.044724642766170185,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          3.0277637794279984e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834484562454,
+        "total_energy": 0.04471656697973753,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          -2.0185091862853324e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.383451321433616,
+        "total_energy": 0.04471073948934146,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          1.0092545931426662e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834546417142628,
+        "total_energy": 0.044706758366647885,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          1.0092545931426662e-17,
+          -8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834583737257222,
+        "total_energy": 0.04470429401529089,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          1.0092545931426662e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834624782374865,
+        "total_energy": 0.04470307610667325,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          0.0,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834669197562235,
+        "total_energy": 0.044702882879881924,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -2.0185091862853324e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834716661694806,
+        "total_energy": 0.04470353237746997,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -8.07403674514133e-17,
+          2.0185091862853324e-17,
+          -1.2111055117711994e-16
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834766884233995,
+        "total_energy": 0.04470487526647514,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -1.0092545931426662e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834819602312025,
+        "total_energy": 0.0447067889575898,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          3.0277637794279984e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834874578094987,
+        "total_energy": 0.044709172787420676,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          1.2111055117711994e-16,
+          0.0,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834931596397442,
+        "total_energy": 0.04471194407137104,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          -3.0277637794279984e-17,
+          -8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3834990462524595,
+        "total_energy": 0.044715034869553444,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -1.2111055117711994e-16,
+          0.0,
+          -8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835051000320226,
+        "total_energy": 0.044718389336688785,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          1.0092545931426662e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.383511305040076,
+        "total_energy": 0.04472196155032528,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          3.0277637794279984e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835176468557664,
+        "total_energy": 0.04472571373085263,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          2.0185091862853324e-17,
+          -8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835241124312183,
+        "total_energy": 0.044729614782456496,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          0.0,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835306899607704,
+        "total_energy": 0.04473363909698397,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -8.07403674514133e-17,
+          -1.0092545931426662e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835373687626846,
+        "total_energy": 0.04473776557320752,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          0.0,
+          -8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835441391721173,
+        "total_energy": 0.04474197681256604,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -8.07403674514133e-17,
+          0.0,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835509924442901,
+        "total_energy": 0.0447462584595131,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          0.0,
+          8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835579206668858,
+        "total_energy": 0.044750598660362934,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          1.0092545931426662e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.383564916680788,
+        "total_energy": 0.044754987619258245,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          1.0092545931426662e-17,
+          8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835719740083683,
+        "total_energy": 0.04475941723373691,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          2.0185091862853324e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835790867886042,
+        "total_energy": 0.04476388079555605,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          8.07403674514133e-17,
+          1.0092545931426662e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835862497183795,
+        "total_energy": 0.04476837274501638,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          0.0,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3835934579993687,
+        "total_energy": 0.04477288846915592,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -1.2111055117711994e-16,
+          1.0092545931426662e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.383600707289982,
+        "total_energy": 0.0447774241359234,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          0.0,
+          1.0092545931426662e-17,
+          -4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3836079936618881,
+        "total_energy": 0.04478197655786582,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          -1.0092545931426662e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3836153135606728,
+        "total_energy": 0.04478654308003035,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          4.037018372570665e-17,
+          4.037018372570665e-17,
+          0.0
+        ]
+      },
+      {
+        "nuclear_radius": 1.3836226637702447,
+        "total_energy": 0.04479112148773716,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -8.07403674514133e-17,
+          5.0462729657133304e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.3836300413806306,
+        "total_energy": 0.04479570993066373,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -1.2111055117711994e-16,
+          -2.0185091862853324e-17,
+          4.037018372570665e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.383637443758837,
+        "total_energy": 0.044800306860322485,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          -1.0092545931426662e-17,
+          8.07403674514133e-17
+        ]
+      },
+      {
+        "nuclear_radius": 1.383644868522484,
+        "total_energy": 0.044804910978538705,
+        "proton_count": 2,
+        "neutron_count": 1,
+        "center_of_mass": [
+          -4.037018372570665e-17,
+          -2.0185091862853324e-17,
+          4.037018372570665e-17
+        ]
+      }
+    ],
+    "simulation_time_seconds": 0.47617506980895996,
+    "nucleons": [
+      {
+        "type": "proton",
+        "position": [
+          -0.5748146536175711,
+          -0.6991670004253966,
+          -1.3368251904973025
+        ],
+        "velocity": [
+          5.154329920367718e-05,
+          -0.00011113294698100038,
+          1.0583923364887442e-05
+        ],
+        "charge": 1.0,
+        "mass": 938.272,
+        "id": 0
+      },
+      {
+        "type": "proton",
+        "position": [
+          1.2382097992941896,
+          0.4443716586801297,
+          0.5908321434758499
+        ],
+        "velocity": [
+          9.91940212262811e-05,
+          9.686996903956323e-05,
+          -0.00010107311261642846
+        ],
+        "charge": 1.0,
+        "mass": 938.272,
+        "id": 1
+      },
+      {
+        "type": "neutron",
+        "position": [
+          -0.6624822020023015,
+          0.2544447003560318,
+          0.7449664346957502
+        ],
+        "velocity": [
+          -0.0001412328810362984,
+          2.2663265713665436e-05,
+          9.365613941203069e-05
+        ],
+        "charge": 0.0,
+        "mass": 939.565,
+        "id": 2
+      }
+    ],
+    "final_energy": 0.04480947506575414
+  },
+  "experimental_validation": {
+    "experimental_data_available": true,
+    "nucleus_name": "He-3",
+    "binding_energy": {
+      "experimental_mev": 2.57268044,
+      "simulated_mev": 0.04480947506575414,
+      "error_mev": 2.527870964934246,
+      "error_percent": 98.25825724916872
+    },
+    "nuclear_radius": {
+      "experimental_fm": 1.7306994843688899,
+      "simulated_fm": 1.3836522389724433,
+      "error_fm": 0.3470472453964466,
+      "error_percent": 20.052426693996477
+    },
+    "stability": {
+      "experimental": false,
+      "predicted": "False",
+      "correct": "True"
+    },
+    "experimental_uncertainty_mev": 1.5e-07,
+    "within_experimental_uncertainty": "False",
+    "decay_mode": "B-",
+    "separation_energy_n": null,
+    "separation_energy_p": 1.4603973399999999,
+    "binding_per_nucleon_experimental": 0.8575601466666667,
+    "binding_per_nucleon_simulated": 0.014936491688584713
+  },
+  "total_analysis_time": 0.4765629768371582
+}

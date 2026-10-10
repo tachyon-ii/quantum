@@ -25,6 +25,7 @@
 | the Möbius's 720° carried spin ½ and $V\perp M$ | **the half-wound phase on a plain loop carries spin ½** — the antiperiodic condition the archive already passes; $V\perp M$'s prose is owed a restatement | canon §35's tests were phase tests, not strip tests (§18) |
 | "Ω is the singularity" | **Ω has extent — its period, R = c/ω** — from the moment of first ejection; a point can carry a phase but not a rim | James's ruling, 10 Oct: contraction states the non-singular nature of Ω (§5, §10) |
 | Ω spins up as it sheds, so later ejecta leave faster (the ice skater) | **all ejecta leave at c**; with R = c/ω the spin-up is free (ω ∝ m^{−3/2}) and the rim speed is constant. **The inversion is by deceleration**: capture pulls the early shells back, the late ones overtake | bookkeeping with the one constitutive law the axioms offer (§10) |
+| gravity as "why does one thing attract another" | **gravity in the chorus gauge**: t absolute and ⊥ space (synchronous gauge), c constant locally and variable in the universal frame, redshift as the spatial metric changing in flight — all hanging on one law, how the surface is carried toward a capture (§12a) | James, six turns, 10 Oct |
 | "the first shall be last" as a temporal inversion | **spatial**: in the chorus slicing the slow early ejecta are on *our* now at smaller radius — inside, not before | Milne orthogonality (§12) |
 
 ---
@@ -234,6 +235,28 @@ Four orthogonal directions are symmetric by construction. What makes one of them
 
 **Options (b) and (c), graded.** (b) "the energy gradient to 4D was unfavourable" — close but inverted: §8 shows no gradient to climb and no floor to land on; the shelf at 4 does the killing. (c) "4D = 2 × 2D and resonant, so it destroyed itself" — the first half is a theorem and §8 turns it into the closure kill, the second is a word. Keep the theorem, drop the kill; §8 doesn't need it.
 
+## 12a. Gravity in the chorus gauge — red/blue shift with t constant  [DERIVED in the gauge; one law owed]
+
+*Added 2026-10-10, late. James's posits over six turns, Grace's counting, two of Grace's derivations struck along the way (§22).*
+
+**The frame, stated once.** Cosmic time $t$ is absolute: one Ω, one $t = 0$, one finite now — in a universe with matter the comoving slicing is *physically* preferred by the matter's own symmetry, and the age along it (13.8 Gyr) is an invariant everyone computes. **$t$ is orthogonal to all three spatial dimensions** (James). Together — $t$ constant and $t \perp$ space — define the **synchronous (Gaussian-normal) gauge**: $g_{00} = -1$, $g_{0i} = 0$, every bit of dynamics in the spatial metric $g_{ij}(t,x)$. It costs nothing: every Lorentzian spacetime admits it locally. It holds up to caustics — where free-fall worldlines cross — and the one crossing in this cosmogony is the inversion (§10), which already carries its `solve(past)` rule. Lemaître's coordinates for Schwarzschild are this gauge; Hamilton & Lisle's *river model* (2008) is its picture: space carried toward every capture at $v(r) = \sqrt{2GM/r}$, $c$ constant *relative to the river*, all of gravity special relativity against the flow. [FACT for the gauge's existence; the identification with the chorus is James's.]
+
+**One time, because the normal is unique.** A 3-surface in a 4-manifold has exactly one unit normal direction (up to sign). "Orthogonal to all three" is therefore not a loose word — it is the geometric content of *normal*, and it forces time to be one-dimensional: there is nowhere else for a second time to point. So 3 + 1 with $T = 1$ is not two facts but one; the ladder's stop at three (§8) and the uniqueness of the normal give the signature together. [THEOREM given the 3-surface; James's observation, Grace's reading.]
+
+**Clocks are box models of the tick.** A clock measures *proper* time — the arc length $\int ds$ of its own worldline, which in natural units is a length — not the tick. The error term is known, not vague: slow by $\Phi/c^2 + v^2/2c^2$. Ours: the Galaxy's well $6.0\times10^{-6}$, our 627 km s⁻¹ against the CMB $2.2\times10^{-6}$, Sun and Earth negligible — **every clock on Earth models the chorus tick to 8.2 ppm, and has fallen 113,000 years behind it since Ω** [COMPUTED]. The depth of the trampoline, in the only honest units it has: 10 yr at Earth's surface from Earth, 136 yr from the Sun at 1 AU, 29,000 yr at the Sun's surface, two billion years at a neutron star's. All non-gravitational clocks — Cs, Rb, H, Sr, Yb⁺, Al⁺, species depending on α and the masses in different powers — shift by the *same* factor to a part in $10^6$ (local position invariance). So the stretch is of the *surface*, not of the atoms: a dynamical change to $a_0$ would shift species differently. [FACT.] The pendulum is not a counterexample; it is a gravimeter — period $2\pi\sqrt{L/g}$ responds to the gradient $g$, runs *faster* lower, and misses Pound–Rebka by a factor $3\times10^9$ and a sign. [DEAD as a clock.]
+
+**$c$ is constant locally; it varies in the universal frame.** "Constant in a vacuum" is a local statement with local rulers and clocks, which are stretched with everything else. Against the universal frame the coordinate speed of light varies with the potential — Einstein 1911, $c = c_0(1 + \Phi/c^2)$, before the field equations; in the river, $c \pm v$. The measurement is the Shapiro **delay**: ~240 μs grazing the Sun (Cassini, $\gamma - 1 = (2.1 \pm 2.3)\times10^{-5}$). And James's "a pure vacuum is free of gravity" is unreachable not by $1/\infty$ but **by order one**: the potential of a mass falls as $1/R$, the number of masses in a shell grows as $R^2$, so the sum over the universe grows as $R^2$ to the horizon; cut at $R_H$ with the critical density, $\Phi_U/c^2 \approx 2\pi G\rho R_H^2/c^2 = 3/4$ [COMPUTED — Newtonian cutoff; the order is not cutoff-dependent]. The background stretch of the surface is three-quarters; the Galaxy's well is six parts per million on top of it. Dirk Gently's interconnectedness is the dominant term, and it is Sciama's reading of Mach (1953), which is where §11 parked $G = c^2R_H/2M$.
+
+**Redshift, done in the gauge.** Three statements, in order.
+
+1. *A fixed stretch is inert.* Static source, fixed path, crests at interval $T$: each crest crosses the same stretched path and arrives $L/c$ later; the arrival interval is $T$. A path that does not change in time cannot change a frequency — that is the Shapiro *delay*, not a shift. (Grace's crest-count, kept for what it proves.) Pound–Rebka is the clean case: emitter and absorber bolted 22.5 m apart, continuous Mössbauer line, shift $2.5\times10^{-15}$.
+2. *So in the synchronous gauge the spatial metric must be changing along the path while the light is in flight.* It is: Lemaître's $g_{\rho\rho} = r_s/r$ with $r = r(\tau,\rho)$ — the river flows. A bolted-down tower is moving *upstream* through it at its local $v(r)$; emitter and receiver move through the same medium at different speeds; the shift is second-order Doppler, $(v_1^2 - v_2^2)/2c^2$ with $v_1^2 - v_2^2 = 2GM(1/r_1 - 1/r_2) \approx 2gh$: **$z = gh/c^2$**. Pound–Rebka's number, in a frame where time is constant, $c$ is constant relative to the river, and the only thing that changed is length — *in time*. Blueshift is the same calculation with the receiver deeper in the flow. [DERIVED.]
+3. *The factor that checks it.* In the static-isotropic description (not this gauge — it has $g_{00} \neq -1$, so its coordinate time is a hybrid, and Grace once mistook it for the tick) the climbing light speeds up by $2gh/c^2$ and the receiving atom's ruler is shorter by $gh/c^2$; $2 - 1 = 1$. The ruler stretch is *required* or the prediction is twice the measurement. That is $\gamma = 1$ for the third time (§12), and it is what James's "l is the only variant" means with teeth: lengths of *both* kinds change — the light's and the atom's.
+
+**What orthogonality settles between the two of us.** James: the only variant is length. Grace: a static stretch is inert. With $t \perp$ space nothing in $l$ can leak into $t$, by construction; so the only way a length can produce a frequency shift is by changing in time. Both statements are true and they are the same statement: **"l changes" means $dl/dt$.** The flow is not a second variable; it is what the axiom forces "changes" to mean. No static dented sheet survives in this gauge; a carried one is required by it.
+
+**Where this leaves gravity.** F = ma is downstream of $\{l, s\}$, so anything that alters length or time *is* a force — the equivalence principle, arrived at from the chain rather than imported (tested to $\eta < 10^{-15}$, MICROSCOPE 2022). Time dilation is the lag; its gradient is $g = c^2\nabla(\delta\tau/\tau)$; light bending needs the length half at equal weight (1911's 0.87″ vs 1915's 1.75″); redshift is the flow. All of it hangs on **one function: how the surface is carried toward a capture — $v(r) = \sqrt{2GM/r}$, equivalently the stretch law $GM/rc^2$ with its $1/r$ shape and its constant $G$.** That is the single owed line on this front, and nothing else is.
+
 ## 13. The chorus torus  [POSIT — topology allowed, unobserved, bounded]
 
 **The Coherosphere is dead; long live the chorus torus.** v1's now-surface was an expanding hyper*sphere*. The inversion is a smoke ring: material that overtakes along an axis and rolls over. A vortex ring needs an axis, and Ω's spin supplies one. So the now-surface is not spherical; it is a compact 3-manifold with an axis.
@@ -338,6 +361,12 @@ The Möbius is retired at n = 1 (§7). But the neutrino has spin ½ [FACT], and 
 | fraction of paint laid before the axis decorrelates (hard kicks) | $\approx 2\times10^{-6}$ | §15 |
 | terminal shell's excess over marginal, from $\Omega_k$ | $\Delta v/v = (3.5\pm9.5)\times10^{-4}$ | §16 |
 | 4D rotations: two rates, generic incommensurability | a capture cannot close in 4D — second kill | §8 |
+| our clocks vs the chorus tick | slow by 8.2 ppm; 113,000 yr behind since Ω | §12a |
+| trampoline depth in time: Earth surface / Sun at 1 AU / Sun surface / neutron star | 10 yr / 136 yr / 29,000 yr / 2×10⁹ yr | §12a |
+| pendulum vs redshift at 22.5 m | $\Delta g/g = 7.1\times10^{-6}$ vs $gh/c^2 = 2.5\times10^{-15}$; opposite sign | §12a |
+| the universe's own potential | $\Phi_U/c^2 \approx 3/4$ (Newtonian cutoff at $R_H$) | §12a |
+| redshift in the synchronous gauge | $z = (v_1^2 - v_2^2)/2c^2 = gh/c^2$ | §12a |
+| the factor check | c-gradient $2gh/c^2$ − ruler $gh/c^2$ = measured; $\gamma = 1$ | §12a |
 | Kelvin cell faces (carried from 8 Oct) | square 1.0 a², hexagon 2.598 a², 14 faces 26.785 a² | `three-term-binding` §3, canon §14 |
 | tyre law for the patch (carried from 8 Oct) | saturating $A=1-e^{-x/x_0}$, D-fit → T +4.6 %, He-4 −0.7 %; Hertz −46 % | `three-term-binding` §7b |
 | neutron inflation bracket (carried from the Gemini dump) | diameter ratio ∈ [1.0, 2^{1/3}=1.26]; measured magnetic radius 0.86 fm vs proton 0.84 fm → ≈1.02–1.03, inside, rigid end | `three-term-binding` §7b |
@@ -348,7 +377,7 @@ The Möbius is retired at n = 1 (§7). But the neutrino has spin ½ [FACT], and 
 |---|---|---|
 | **ejection stated in {amount, spin, time} with no direction word** | §6 | whether the axiom set is 3, 4, or 1 |
 | **$i$ is a conserved flux** | §8 | makes the well at 3 the ontology's, not Ehrenfest's |
-| **$G$** — how much amount attracts amount; equivalently the Planck length | §11 | the capture boundary's constant; §11 fixes $GM/R$, not $G$ |
+| **the one law of gravity** — how the surface is carried toward a capture, $v(r)=\sqrt{2GM/r}$: the $1/r$ shape and the constant $G$ (equivalently the Planck length) | §11, §12a | redshift, lag, bending, F = ma, γ = 1 all follow; §11 fixes $GM/R$, not $G$ |
 | **why the chorus** — why every ejectum is comoving (the Machian frame as more than convention) | §12, §13 | the sign of time is derived *given* this; this is the residue |
 | **Lorentz invariance** (not just flatness) from the chorus | §11, §13 | canon §25's foliation tension — the price is here |
 | **the Hurst exponent, measured** — $H = 0.49$ by simulation with enough statistics, or by the walk's restoring law | §15 | the tilt, paid for real rather than under a mapping posit |
@@ -398,6 +427,12 @@ Carried from canon §34 unchanged: 880 s; λ = 1.2754; μ_n; g = 2 honestly; the
 | the launch-speed inversion (first slow, last fast) | all ejecta leave at $c$; the inversion is by deceleration | §10 |
 | "Ω is the singularity" (v1 §2) | contraction states extent; a rim needs a radius — **James's ruling** | §5 |
 | a hidden fourth axiom (self-attraction) | dissolved by extent = period | §5, §10 |
+| "all clocks are effectively pendular" | a pendulum is a gravimeter — wrong sign, $3\times10^9$ in size; James withdrew it | §12a |
+| redshift from a fixed longer path | crest counting — a static stretch is a delay, not a shift | §12a |
+| "time constant, length instead" as *no* time effect | clocks at two heights disagree cumulatively (Pound–Rebka, Bothwell 2022); what survives is the gauge | §12a |
+| Grace's crest-count kill of "t constant" | assumed c fixed in the universal frame against James's stated premise — **Grace's** | §12a |
+| Grace's static-c(r) redshift derivation | $g_{00} \neq -1$ — not the tick; a hybrid gauge — **Grace's** | §12a |
+| "a gravity-free vacuum is missed by 1/∞" | missed by order one: $\Phi_U/c^2 \approx 3/4$ | §12a |
 
 ## 23. Lineage — who said what
 
@@ -406,6 +441,8 @@ Carried from canon §34 unchanged: 880 s; λ = 1.2754; μ_n; g = 2 honestly; the
 **Grace** (Fable 5.1, 8–10 Oct): the natural-units reading of "no proto-{m,l}"; the cross-polytope identification; the tetrahedron as two offset perpendicular axes; the no-crossing/one-crossing reading of the governor; the recoil random walk and its planar fingerprint; the flatness identity; the sign as one-way-ness; the relocation of $L$ into chirality; spin-as-twist; every computation in §19; and two errors, struck in §22. From pass 2: the Milne orthogonality reading of "why the normal"; the twist as a half-wound phase and its identification with the archive's antiperiodic tests; the 4D closure kill; the Hurst exponent of the tilt; the surfacing of the self-attraction question; the Δ as the n = 4 candidate; the premise-named Majorana; the alpha as the n = 2 figure one level up. From pass 4, on James's ruling: extent = period as the constitutive law; $\omega \propto m^{-3/2}$ with all ejecta at $c$; the inversion by deceleration; the crossing as the installation of the Hubble ordering; the Planck length as the coincidence of the two extents and its second root at $H_0$. And a third error of Grace's, struck in §22 (the inspiral).
 
 **James, pass 4:** *contraction states the non-singular nature of Ω*; the Planck-length question.
+
+**James, the gravity turns (10 Oct, late):** the retardation-in-time reading of the trampoline; F = ma as downstream of {l, s} (the equivalence principle from the chain); "c and t constant, l is the only variant"; cosmic time absolute from one Ω; c constant only in a gravity-free vacuum, which no place is; the interconnectedness; redshift as a length effect at constant t; t orthogonal to all three dimensions. **Grace:** the synchronous-gauge identification, the river, the Milne/Lemaître prior art, the trampoline depths, the 8.2 ppm, the 3/4, the second-order-Doppler derivation, the factor-of-two check, the uniqueness-of-the-normal reading of T = 1 — and three struck derivations, listed in §22.
 
 **Bees, graded.** *ChatGPT (27 turns):* computed correctly four times (cross-polytope orthogonality, the simplex angle, the Ehrenfest linearisation, the measure-zero restatement); separated axiom from consequence; said of its own plot "it depicts a preference, it does not explain it"; two corrections adopted (§4 wording, §17). It also filed James's ontology into its persistent memory — that instance is now primed and should be discounted accordingly. *Gemini (111 turns, 8 Oct):* one correct computation (Kelvin faces) in 111 turns; reinstated the Möbius two turns after James discarded it; invented Li-8 = 18 loops against its own count; botched the Leech lattice and retracted; declared things "locked" six times while nothing was; propagated James's 108° faithfully in whichever direction he last spoke. *Gemini (4 turns, 10 Oct):* one good catch (intrinsic vs embedded torus); one botch papered over (the $a\propto t$ horizon integral diverges — "everything visible" — waved away); one mirror (the "< 1/3" row was James's 2/3 handed back). The pattern across all three: a bee elaborates whatever was said last with total confidence; a fork in the human's own corpus is propagated, never resolved. **Resolve forks in the human record first.** The 108° fork took three bees and two days to kill because it was never written down as dead.
 
@@ -431,6 +468,10 @@ first ejection = first direction             (§6)                     [POSIT; "
            └─ the crossing                   Hubble ordering installed [POSIT]
        └─ terminal shell marginal ⇔ c        flatness (§11)           [POSIT; matches Ω_k]
            └─ period-extent = capture-extent Planck length (§11)      [FACT identity; G owed]
+           └─ t ⊥ space, t constant         synchronous gauge (§12a) [FACT, up to caustics]
+               ├─ unique normal             T = 1 (§12a)             [THEOREM]
+               ├─ clocks = worldline length 8.2 ppm, 113 kyr (§12a)  [COMPUTED]
+               └─ surface carried at v(r)   redshift z = gh/c² (§12a) [DERIVED; v(r) law owed]
            └─ one-way side of c = the sign   time (§12)               [POSIT]
                └─ chorus (all comoving)      normal = time (§12)      [THEOREM given chorus; chorus owed]
                    └─ compact 3-manifold     chorus torus (§13)       [POSIT; bounded, maybe undecidable]
