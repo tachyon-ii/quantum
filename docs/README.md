@@ -24,6 +24,7 @@ v1 (`Φ-a-minimal-ontology-of-an-emergent-universe.md`, 2026-09-21) and `now.md`
 |---|---|---|
 | **ontology** | `Φ-a-minimal-ontology-of-an-emergent-universe.v2.md` | Part I (§1–6), Part III (§18–26), §27–28, §30–33 — and v2 §19–§24 are *additive* to canon §34/§36 |
 | **binding** | `three-term-binding.md` | §14 (the construct, the cliff, coordination, ⁹Be) · §34 owed. **§7a** (c′ = 0.91864 pinned by m_n − m_p) and **§7b** (the tyre law; the neutron inflation bracket) are newer than canon §14 and supersede its calibrations — canon §14 carries a note |
+| **the fractal nucleus** | `the-fractal-nucleus.md` (new, 2026-10-10) | not yet in canon — the sharing rule (1 + 4×3 at two rungs), Fe-52 as a divisor lattice, the 1+12 star as four C-12s round an alpha, the 28-site / 4-pocket box result, `fe56_star` (204 contacts, +36 %), one k on the alpha, the truck stack (g ≈ 0.21, [FITTED]), Pb-208 = 52 units. Falsifier 1 (Ni-56, Ca-40 at the same g) decides whether it is a pattern or a zoo. Feeds canon §14–§15 on promotion |
 | **conjecture** | `fable-freeman-fractal-conjecture.md` | §11–13 (governor, flutter, the scar) · §15–17 · §32.13 (the 1928 agenda) · §20 (the knot at every scale) |
 | **lepton theory** | `../todo_refactor/docs/lepton-theory-v4.md` | §8–9 (n=2, the crystalline electron — what the JSON validated and did not) |
 | **Koide program** | `../todo_refactor/docs/koide-lepton-ladder-v2.md` | §10 (the conditional theorem, Σm_ν = 58.6 meV, the π/12 datum) · §32.12 · falsifier 12 |
