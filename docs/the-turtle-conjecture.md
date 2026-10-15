@@ -1,6 +1,6 @@
 # The Turtle Conjecture
 
-**James Freeman** (the conjecture, the tripod, big momma turtle, axiom four) · **Grace Bayes** `.ghost`, running Fable 5.1 (the counting, the identities, this write-up, 2026-10-15). Companion to `Φ-a-minimal-ontology-of-an-emergent-universe.v2.md` (cited as v2 §n) and `the-fractal-nucleus.md`. **Status: [CONJECTURE — un-promoted shelf]** under the canon's grade rule: a candidate *why*, retrodicting what it does not yet derive. Nothing here crosses the wall. **Checkpoint 15 Oct evening:** §3 rewritten as the origin of G (mechanism complete); §3a, §5a, §6a added; falsifiers 6–8; three new kills in §9. **§3b:** the ballpark — $G \approx c^4/kR_H$ to ×2 [COMPUTED], labelled as Dirac's coincidence until §7 row 1′ is paid.
+**James Freeman** (the conjecture, the tripod, big momma turtle, axiom four) · **Grace Bayes** `.ghost`, running Fable 5.1 (the counting, the identities, this write-up, 2026-10-15). Companion to `Φ-a-minimal-ontology-of-an-emergent-universe.v2.md` (cited as v2 §n) and `the-fractal-nucleus.md`. **Status: [CONJECTURE — un-promoted shelf]** under the canon's grade rule: a candidate *why*, retrodicting what it does not yet derive. Nothing here crosses the wall. **Checkpoint 15 Oct evening:** §3 rewritten as the origin of G (mechanism complete); §3a, §5a, §6a added; falsifiers 6–8; three new kills in §9. **§3b:** the ballpark — $G \approx c^4/kR_H$ to ×2 [COMPUTED], labelled as Dirac's coincidence until §7 row 1′ is paid. **§3c:** the funnel conform — one angle, cos θ = √(1−2GM/rc²); the deformation *is* the potential.
 
 > *Turtles all the way down — and the thing that makes it turtles is that every turtle is the same shape as the stack.*
 
@@ -80,6 +80,43 @@ $$
 
 **What decides it:** the number **1.3 × 10⁻⁴** — k in proton units, the skin carrying 1/7500 of the proton's rest energy per Compton area. If the ladder derives it, $G = c^4/kR_H$ becomes a *prediction of* $R_H$ *from nuclear data* and Dicke is out. If it does not, this is a coincidence with an anthropic explanation already on the shelf. [§7 row 1 paid at ballpark; row 1′ opened.]
 
+### 3c. The funnel conform  [THEOREM in Schwarzschild, read in the gauge; James's question, 15 Oct: "there must be some maths for funnel conforms"]
+
+James's picture: the capsid's conform varies down the gravity well — tetrahedron at the edge of now, cross at the bottom — so the tension is variant along the funnel. There is maths, it is exact, and it is one angle.
+
+**One angle.** Stand the tripod on the now-surface at radius r from a mass. In the gauge the apex (time lobe) is shortened by the clock rate $d\tau/dt = \sqrt{1 - 2GM/rc^2}$ and the radial base lobe is lengthened by the reciprocal — Schwarzschild's $g_{tt}\,g_{rr} = -1$, which is γ = 1 (falsifier 1). The tangential lobes are untouched ($2\pi r$ is unstretched). Define
+
+$$
+\cos\theta = \sqrt{1 - \frac{2GM}{rc^2}} = \frac{d\tau}{dt} = \frac{1}{\gamma(v_{\rm esc})}, \qquad v_{\rm esc} = \sqrt{2GM/r}.
+$$
+
+Then **apex × cos θ, radial lobe × sec θ, product 1**: an area-preserving shear in the (t, r) plane — a hyperbolic rotation, i.e. a boost, at the escape velocity. That is the river model (Hamilton–Lisle 2008; Painlevé–Gullstrand): space flows inward at $v_{\rm esc}$, a capsid held static is boosted against it, and its conform is the Lorentz figure of that boost. θ is also the slope of Flamm's paraboloid — the funnel's own wall — so the tetrahedron tilts *with* the funnel. At the horizon cos θ → 0: the apex lies in the plane, **tetrahedron → cross, 100 %**, and this is the exact form of the 3D → 2D crossing *as seen* (§6a).
+
+**The fractions,** cross % = 1 − cos θ [COMPUTED]:
+
+| where | $2GM/rc^2$ | cross % |
+|---|---|---|
+| Earth's surface | 1.4 × 10⁻⁹ | 3.5 × 10⁻⁸ % |
+| Sun's surface | 4 × 10⁻⁶ | 10⁻⁴ % |
+| white dwarf | 3 × 10⁻⁴ | 0.015 % |
+| neutron-star surface | 0.4 | 22 % |
+| r = 1.2 r_s | 0.83 | 59 % |
+| r = 1.01 r_s | 0.99 | 90 % |
+
+Re-scaling the picture at both ends: the **edge of now is 0 % cross by definition** — the chorus is at rest in the river; the cosmological $\Phi_U/c^2 \approx 3/4$ (v2 §12a) is a uniform offset absorbed into the tick (§5a) with no local meaning. And **99 % cross is reached only inside 0.01 % of a horizon**; a neutron star's surface is a fifth of the way; everything else is a regular tetrahedron to parts per million. The funnel is almost all floor.
+
+**The centroid deformation — dead outside the onion.** Tidal, second order: at a neutron-star surface the strain across one capsid is $2GMR_p^2/(r^3c^2) \approx 10^{-39}$. Finite only on the Kasner approach (§6a). [DEAD for every astrophysical well.]
+
+**The energy — a trap, struck so nobody rebuilds it.** Computing the lobe-repulsion energy of the sheared tetrahedron gives a first-order drop, −0.083 ε. Artefact: lobe distances in sheared *coordinates* are not proper distances. [STRUCK.] The honest statement is cleaner. In the gauge every length in the capsid scales together, so its whole energy is
+
+$$
+E(r) = E_0 \cos\theta = E_0\Bigl(1 - \frac{GM}{rc^2} - \dots\Bigr):
+$$
+
+Newton's potential at first order, Schwarzschild's to all orders, applied to all internal energy alike — $E = mc^2$ gravitating and the equivalence principle in one line. There is no $\varepsilon^2$ spring. **The deformation is not resisted; the deformation *is* the potential energy.** That is why free fall is free, and why "drag = deforming the tetrahedron" had to die as a *force* (§3a) and come back as a *conform*.
+
+**The variant tension is real, and it is the right kind.** Per unit *proper* area k is constant — intensive, §5a. Per unit *chorus* area it is **k cos θ**: the tension seen from the surface falls down the funnel and vanishes at the rim. That is the frozen membrane of §6a, and it is the per-link rule at its limit — Flamm's wall going vertical is the surface sloping at one tick per link. Constant in its own units, variant in ours, reconciled by the same cos θ. [THEOREM given §3 step 3 and the gauge.]
+
 ## 4. The Planck length  [POSIT for the meaning; OWED for the value]
 
 In the textbooks $\ell_P = \sqrt{\hbar G/c^3}$ is a *derived* number — three constants combined — and the *postulate* is the meaning hung on it (a minimum length). The conjecture supplies a different meaning: **the base of the first tetrahedron, orthogonal to its apex and equal to it by symmetry.** The ratio $\ell_P = c\,t_P$ falls out of §2 for free.
@@ -154,14 +191,16 @@ The mottled fireball of Tumbler-Snapper (1952, Edgerton's rapatronic shot, a mil
 - **Horizon flattening as the mechanism of ordinary gravity** — the equivalence principle: no tide across a femtometre at any astrophysical horizon (§3a). Survives only for primordial holes.
 - **The Machian origin of G** — $G = c^2R_H/2M_U$ read as G *set by* the universe's amount. That is Dirac's large-number hypothesis, $G \propto 1/t$, dead at $\dot G/G < 10^{-13}$/yr. The identity is flatness with a fixed G and a growing $M_U$; it closes but does not choose a cause (§3 step 5).
 - **The Kasner thirds and the tripod's $R/3$** as a result — a coincidence until derived (§6a, last paragraph).
+- **The funnel as a spring** — an $\varepsilon^2$ restoring energy against deformation down the well. There is none: $E = E_0\cos\theta$, the deformation is the potential (§3c). Also the sheared-coordinate lobe energy, −0.083ε — an artefact of mixing coordinate and proper lengths.
+- **Tidal deformation of the capsid in any astrophysical well** — 10⁻³⁹ strain at a neutron-star surface (§3c); finite only on the Kasner approach.
 
 ## 10. Lineage
 
 **James:** axiom four; the mechanism (the n = 2 pair snapping from the stressed 2D cross to the relaxed 3D tetrahedron); the tripod — three lobes define now, the fourth defines quantum time; the Planck length as the base, 1 : 1 with the apex by symmetry; Maxwell's ether as the chorus; the creation story; the fireball; big momma turtle — the now-surface as the largest capsid; the variant-gravity objection (§5a) and its answer in outline (constant arc; time in lockstep with space); stiffness as the n = 2's drive to be three-dimensional, drag as deformation toward the cross, the horizon as a dimensional crossing 3D → 2D → 1D; the singularity as where 3D ceases, onion-like; black holes hollow, "hollow carries meaning outside, not inside"; the two-pair cross — one pair compressed orthogonal to time, one stretched along it — and the insistence that compression/tension is a second ledger beside the snap; the question whether the forcing of c is causal to G.
 
-**Grace:** the Thomson numbers; the scale argument (10⁻³⁰); Sakharov as prior art; the three readings and the two identities (c = 1 from regularity; the R/3 lag per capsid); the two-roots reading of v2 §11 as smallest and biggest turtle; the black hole as maximally behind; the stiffness ladder as the one owed function; the honest edge of "same"; the soap-film answer (tension intensive; H falls, γ doesn't); the equivalence-principle kill of horizon flattening (2.5 × 10¹³ kg); the Kasner mapping of the two-pair cross to the exponent and the alignment theorem from lobes-repel; the cross energy formula; mass inflation, Planck star, frozen star/fuzzball/gravastar, membrane paradigm and holography as prior art; the Planck floor from posit 1; the rimmed hole in the chorus; the c-as-budget derivation of axiom four; the link rule as maximum gradient and $G = c^3\ell^2/\hbar$; Laplace in d = 3 for 1/r; the 10⁻³⁸ target as a ratio of two turtles; the Dirac kill of the Machian reading; echoes as falsifier 6; the ballpark computation (§3b: k as a tension three ways; $c^4/GR_H$; the identification with Dirac 1937, Dicke 1961, Wetterich 2013; the 1.3 × 10⁻⁴ as the deciding number).
+**Grace:** the Thomson numbers; the scale argument (10⁻³⁰); Sakharov as prior art; the three readings and the two identities (c = 1 from regularity; the R/3 lag per capsid); the two-roots reading of v2 §11 as smallest and biggest turtle; the black hole as maximally behind; the stiffness ladder as the one owed function; the honest edge of "same"; the soap-film answer (tension intensive; H falls, γ doesn't); the equivalence-principle kill of horizon flattening (2.5 × 10¹³ kg); the Kasner mapping of the two-pair cross to the exponent and the alignment theorem from lobes-repel; the cross energy formula; mass inflation, Planck star, frozen star/fuzzball/gravastar, membrane paradigm and holography as prior art; the Planck floor from posit 1; the rimmed hole in the chorus; the c-as-budget derivation of axiom four; the link rule as maximum gradient and $G = c^3\ell^2/\hbar$; Laplace in d = 3 for 1/r; the 10⁻³⁸ target as a ratio of two turtles; the Dirac kill of the Machian reading; echoes as falsifier 6; the ballpark computation (§3b: k as a tension three ways; $c^4/GR_H$; the identification with Dirac 1937, Dicke 1961, Wetterich 2013; the 1.3 × 10⁻⁴ as the deciding number); the funnel conform as one angle (§3c: cos θ = √(1−2GM/rc²) = 1/γ(v_esc), the river model and Flamm's slope; the fractions table; the tidal 10⁻³⁹ kill; the struck −0.083ε artefact; E = E₀ cos θ; k cos θ).
 
-**James:** the test itself — "express k and gravity's stiffness in the same units and see if it falls orders of magnitude out of line."
+**James:** the test itself — "express k and gravity's stiffness in the same units and see if it falls orders of magnitude out of line"; the funnel conform — variant tension down the well, tetrahedron at the edge of now to cross at the bottom, "there must be some maths for funnel conforms."
 
 **Checkpoint:** 15 Oct 2026, 17:40 AEDT. Mechanism of G complete; value paid at ballpark — $G \approx c^4/kR_H$ to ×2 — with the honest label that it is Dirac's coincidence until 1.3 × 10⁻⁴ is derived (§7 row 1′).
 
