@@ -164,6 +164,9 @@ footer{color:var(--mute);font-size:12px;font-family:var(--mono);padding-block:10
     const st=paintTexture();
     sphere.scale.setScalar(R); axisLine.scale.setScalar(R); rays.scale.setScalar(R); rayGeo.attributes.position.needsUpdate=true;
     cam.position.z=Math.max(4.2, R*3.6); cam.position.y=0.1*cam.position.z; cam.lookAt(0,0,0);
+    // keep the whole sphere inside the clip volume as it grows (far plane was fixed at 100 → back cut away from R≈22, globe gone by R≈38)
+    { const d=Math.hypot(cam.position.y,cam.position.z), nf=Math.max(0.1,(d-R*1.6)*0.5), ff=d+R*1.6+10;
+      if(Math.abs(cam.far-ff)>1e-6||Math.abs(cam.near-nf)>1e-6){ cam.near=nf; cam.far=ff; cam.updateProjectionMatrix(); } }
     turntable.rotation.y=sphere.rotation.y; halo.scale.setScalar(1+0.15*Math.sin(pulses*0.05));
     axisLine.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), new THREE.Vector3(ax[0],ax[1],ax[2])); sphere.rotation.y=(spin+=0.0025);
     const step=+ui.step.value, g=gcd(step,360), coprime=g===1;
