@@ -115,6 +115,12 @@ Three things were tried against that number, in order:
 
 **Grade for §6:** g = 0.21 is [FITTED — one nucleus, one parameter]. It becomes a law the day it is carried to a second nucleus untouched (§9).
 
+## 6a. The box and the ball  [RULING, James, 10 Oct]
+
+*The truncated octahedron is a box model — useful as far as it goes, not definitive, because nature abhors straight lines.* A nucleon is a sphere that flattens where it is pressed; the Kelvin cell is only what it becomes when pressed on all fourteen sides, and even that dry limit is not quite right (Weaire–Phelan beats Kelvin, with pentagons). What the box is *for*: counting — contacts, pockets, sites, topology. The 28 first-shell sites and the 4 pockets (§5), the 204 contacts of `fe56_star` (§6), the divisor lattice (§2): those are box results and they are nearly topological, so they survive the rounding. What the box is *not* for: energies at the edge — it has no surface, every contact is full, and it over-binds iron by a third until the truck stack is laid over it. And what it cannot see at all: a configuration that lives off the lattice — Ne-20's fifth alpha across an edge (§8.4), the chiral dodecahedral cage, anything with a five-fold axis.
+
+The instrument that replaces it is the one James named: **nuclear conformation is a real-time analog solution to the packing problem.** As a program: spheres, two species, a patch energy P × A with A saturating in load (the tyre law) and flattening by layer (the truck stack), computed Coulomb, relax. The box seeds it; the ball decides.
+
 ## 7. The pack series, and where it closes  [FACT for the series; COINCIDENCE for lead; FITTED for uranium]
 
 The Mackay/cuboctahedral shell series in units of four: **1, 13, 55, 147** units — 4, 52, 220, 588 nucleons; shells of 10n² + 2. (The bee's "mirrors BCC iron" is decoration: a Mackay icosahedron is a cluster arrangement, not a lattice.)
