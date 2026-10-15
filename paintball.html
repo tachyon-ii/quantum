@@ -1,0 +1,187 @@
+<title>Paintball Sphere</title>
+<style>
+/* layout: one dark stage, controls in a slim rail beneath; the sphere is the page */
+:root{
+  --bg:#0b0d12; --fg:#e8e6df; --mute:#8d8a80; --rail:#141821; --line:#262b36;
+  --accent:#e0a33a; --hot:#ff5a3c; --cold:#1b2a4a;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;
+  color-scheme:dark;
+}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);display:flex;flex-direction:column;padding-block:0;padding-inline:16px}
+header{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding-block:14px 6px}
+h1{font-size:18px;font-weight:500;margin:0;letter-spacing:.01em}
+header p{margin:0;color:var(--mute);font-size:13px;max-width:64ch;line-height:1.5}
+#stage{flex:1;min-height:380px;position:relative;border:1px solid var(--line);border-radius:6px 6px 0 0;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#121622 0%,#0b0d12 70%)}
+#stage canvas{display:block;width:100%;height:100%}
+#hud{position:absolute;left:12px;top:10px;font-family:var(--mono);font-size:12px;color:var(--mute);line-height:1.6;pointer-events:none}
+#hud b{color:var(--fg);font-weight:500}
+#hud .res{color:var(--hot)}
+#hud .cop{color:var(--accent)}
+#rail{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px 18px;padding-block:12px 16px;background:var(--rail);border:1px solid var(--line);border-top:0;border-radius:0 0 6px 6px;padding-inline:14px}
+label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--mute);font-family:var(--mono);min-width:0}
+label span b{color:var(--fg);font-weight:500}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.btns{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+button{font:500 13px var(--sans);color:var(--fg);background:transparent;border:1px solid var(--line);border-radius:4px;padding:7px 12px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.presets{display:inline-flex;gap:6px;flex-wrap:wrap;align-items:center;margin-left:10px;padding-left:10px;border-left:1px solid var(--line)}
+.presets button{font-family:var(--mono);font-size:12px;padding:5px 8px;color:var(--mute)}
+footer{color:var(--mute);font-size:12px;font-family:var(--mono);padding-block:10px 16px;line-height:1.6}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+
+<header>
+  <h1>Paintball Sphere</h1>
+  <p>A spinning, precessing ejector paints an expanding sphere one pulse at a time. A step that shares a factor with 360 resonates: ten teeth and bare sky. A coprime step paints every direction once before any twice. Jitter on the step turns the comb into a cloud.</p>
+</header>
+
+<div id="stage"><div id="hud"></div></div>
+
+<div id="rail">
+  <label><span>step per pulse <b id="stepV">23</b>°</span><input id="step" type="range" min="1" max="359" step="1" value="23"></label>
+  <label><span>precession per turn <b id="precV">137.5</b>°</span><input id="prec" type="range" min="0" max="180" step="0.1" value="137.508"></label>
+  <label><span>ejection latitude <b id="latV">0</b>°</span><input id="lat" type="range" min="0" max="80" step="1" value="0"></label>
+  <label><span>jitter on step <b id="jitV">0.0</b>°</span><input id="jit" type="range" min="0" max="10" step="0.1" value="0"></label>
+  <label><span>recoil kick per turn <b id="kickV">0.0</b>° (random walk of the axis)</span><input id="kick" type="range" min="0" max="20" step="0.5" value="0"></label>
+  <label><span>pulses per frame <b id="rateV">40</b></span><input id="rate" type="range" min="1" max="400" step="1" value="40"></label>
+  <label><span>expansion per turn <b id="growV">0.20</b>%</span><input id="grow" type="range" min="0" max="2" step="0.01" value="0.2"></label>
+  <div class="btns" style="grid-column:1/-1">
+    <button id="play">Pause</button>
+    <button id="reset">Reset</button>
+    <span class="presets" aria-label="presets">
+      <button data-s="23" data-p="137.508" data-j="0">23° + precession</button>
+      <button data-s="23" data-p="137.508" data-j="3">23° + jitter</button>
+      <button data-s="23" data-p="0" data-j="0" data-k="8">23° + recoil walk</button>
+    </span>
+  </div>
+</div>
+
+<footer>Buckets are 1° × 1° on the surface, 64,800 of them. Colour is count per bucket on a log scale, cold to hot. The sphere grows by a fixed fraction every turn — Hubble-like — and the camera backs off to keep it in frame. The spin axis walks the full sphere of directions on a Fibonacci spiral — pole to pole over 360 turns, swinging round by the precession angle each turn (the golden angle by default, which never closes). Counts are shown per solid angle. The recoil kick instead random-walks the axis. Every pulse leaves the centre.</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  const W=360, H=180;
+  let counts=new Float32Array(W*H);
+  let pulses=0, phi=0, psi=0, turns=0, playing=true, R=0.6;
+  const $=id=>document.getElementById(id);
+  const ui={step:$('step'),prec:$('prec'),lat:$('lat'),jit:$('jit'),rate:$('rate'),kick:$('kick'),grow:$('grow')};
+  const show=()=>{ $('stepV').textContent=ui.step.value; $('precV').textContent=(+ui.prec.value).toFixed(1); $('latV').textContent=ui.lat.value; $('jitV').textContent=(+ui.jit.value).toFixed(1); $('rateV').textContent=ui.rate.value; $('kickV').textContent=(+ui.kick.value).toFixed(1); $('growV').textContent=(+ui.grow.value).toFixed(2); };
+  Object.values(ui).forEach(el=>el.addEventListener('input',show)); show();
+
+  const tex=document.createElement('canvas'); tex.width=W; tex.height=H;
+  const tctx=tex.getContext('2d'); const img=tctx.createImageData(W,H);
+  const texture=new THREE.CanvasTexture(tex); texture.minFilter=THREE.LinearFilter; texture.wrapS=THREE.RepeatWrapping;
+  function cmap(t){
+    const a=[27,42,74], b=[224,163,58], c=[255,90,60];
+    if(t<0.6){const u=t/0.6; return [a[0]+(b[0]-a[0])*u, a[1]+(b[1]-a[1])*u, a[2]+(b[2]-a[2])*u];}
+    const u=(t-0.6)/0.4; return [b[0]+(c[0]-b[0])*u, b[1]+(c[1]-b[1])*u, b[2]+(c[2]-b[2])*u];
+  }
+  const wlat=new Float32Array(H); for(let j=0;j<H;j++){ wlat[j]=1/Math.max(0.05,Math.cos((j-89.5)*Math.PI/180)); }
+  function paintTexture(){
+    let mx=0, mn=Infinity, filled=0;
+    for(let i=0;i<counts.length;i++){ const v=counts[i]*wlat[(i/W)|0]; if(v>mx)mx=v; if(v<mn)mn=v; if(v>0)filled++; }
+    const d=img.data;
+    for(let i=0;i<counts.length;i++){
+      const v=counts[i]*wlat[(i/W)|0]; const t=mx>0? Math.log1p(v)/Math.log1p(mx):0;
+      const col=v>0?cmap(t):[16,19,26];
+      const k=i*4; d[k]=col[0]; d[k+1]=col[1]; d[k+2]=col[2]; d[k+3]=255;
+    }
+    tctx.putImageData(img,0,0); texture.needsUpdate=true;
+    return {mx,mn,filled};
+  }
+
+  const stage=$('stage');
+  const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
+  stage.insertBefore(renderer.domElement, stage.firstChild);
+  const scene=new THREE.Scene();
+  const cam=new THREE.PerspectiveCamera(38,1,0.1,100); cam.position.set(0,0.4,4.2);
+  const geo=new THREE.SphereGeometry(1,96,64);
+  const mat=new THREE.MeshStandardMaterial({map:texture,roughness:0.85,metalness:0.0,transparent:true,opacity:0.82,side:THREE.FrontSide});
+  const sphere=new THREE.Mesh(geo,mat); scene.add(sphere);
+  scene.add(new THREE.AmbientLight(0xffffff,0.55));
+  const key=new THREE.DirectionalLight(0xffffff,0.8); key.position.set(3,4,5); scene.add(key);
+  const axisMat=new THREE.LineBasicMaterial({color:0xe0a33a,transparent:true,opacity:0.6});
+  const axisGeo=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,-1.35,0),new THREE.Vector3(0,1.35,0)]);
+  const axisLine=new THREE.Line(axisGeo,axisMat); const turntable=new THREE.Group(); scene.add(turntable); turntable.add(axisLine);
+  // the ejector: a small bright core at the centre, and the last pulses drawn as rays from centre to impact
+  const core=new THREE.Mesh(new THREE.SphereGeometry(0.06,24,16),new THREE.MeshBasicMaterial({color:0xffd27a})); scene.add(core);
+  const halo=new THREE.Mesh(new THREE.SphereGeometry(0.11,24,16),new THREE.MeshBasicMaterial({color:0xe0a33a,transparent:true,opacity:0.25})); scene.add(halo);
+  const NRAY=72; const rayPos=new Float32Array(NRAY*6); let rayHead=0;
+  const rayGeo=new THREE.BufferGeometry(); rayGeo.setAttribute('position',new THREE.BufferAttribute(rayPos,3));
+  const rays=new THREE.LineSegments(rayGeo,new THREE.LineBasicMaterial({color:0xffb347,transparent:true,opacity:0.55})); turntable.add(rays);
+
+
+  function resize(){ const w=stage.clientWidth,h=stage.clientHeight; renderer.setSize(w,h,false); cam.aspect=w/h; cam.updateProjectionMatrix(); }
+  window.addEventListener('resize',resize); resize();
+
+  const rad=Math.PI/180;
+  let s32=0x9e3779b9;
+  function rng(){ s32^=s32<<13; s32^=s32>>>17; s32^=s32<<5; return (s32>>>0)/4294967296; }
+  function gauss(){ let u=0,v=0; while(u===0)u=rng(); while(v===0)v=rng(); return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v); }
+  // spin axis a: full precession over the sphere of directions, plus an optional random kick per turn.
+  let ax=[0,1,0];
+  // proper precession: the spin axis walks the whole sphere of directions on a Fibonacci spiral — latitude steps evenly pole to pole
+  // over 360 turns (then back), azimuth advances by the precession angle each turn (default the golden angle, 137.508°, which never repeats)
+  function axisFromCone(){ const k=turns%720; const y=1-2*((k<=360?k:720-k)+0.5)/361; const r=Math.sqrt(Math.max(0,1-y*y)); const p=psi*rad; return [r*Math.cos(p), y, r*Math.sin(p)]; }
+  function normalize(v){ const n=Math.hypot(v[0],v[1],v[2])||1; return [v[0]/n,v[1]/n,v[2]/n]; }
+  function perpFrame(a){ // two unit vectors perpendicular to a
+    const ref=Math.abs(a[1])<0.9?[0,1,0]:[1,0,0];
+    let u=[a[1]*ref[2]-a[2]*ref[1], a[2]*ref[0]-a[0]*ref[2], a[0]*ref[1]-a[1]*ref[0]]; u=normalize(u);
+    const w=[a[1]*u[2]-a[2]*u[1], a[2]*u[0]-a[0]*u[2], a[0]*u[1]-a[1]*u[0]];
+    return [u,w];
+  }
+  function pulse(){
+    const step=+ui.step.value, prec=+ui.prec.value, latE=+ui.lat.value, jit=+ui.jit.value, kick=+ui.kick.value;
+    phi += step + (jit>0? gauss()*jit : 0);
+    if(phi>=360){ phi-=360; turns++; psi += prec; R*=1+(+ui.grow.value)/100;
+      if(kick>0){ // random-walk the axis: small random rotation
+        const [u,w]=perpFrame(ax); const ang=gauss()*kick*rad, dir=rng()*2*Math.PI;
+        const d=[u[0]*Math.cos(dir)+w[0]*Math.sin(dir), u[1]*Math.cos(dir)+w[1]*Math.sin(dir), u[2]*Math.cos(dir)+w[2]*Math.sin(dir)];
+        ax=normalize([ax[0]*Math.cos(ang)+d[0]*Math.sin(ang), ax[1]*Math.cos(ang)+d[1]*Math.sin(ang), ax[2]*Math.cos(ang)+d[2]*Math.sin(ang)]);
+      } else { ax=axisFromCone(); }
+    }
+    if(phi<0) phi+=360;
+    if(kick===0) ax=axisFromCone();
+    const [u,w]=perpFrame(ax);
+    const th=(90-latE)*rad, ph=phi*rad, st=Math.sin(th), ct=Math.cos(th), cp=Math.cos(ph), sp=Math.sin(ph);
+    // ejection direction from the CENTRE: latitude latE off the spin equator, azimuth phi
+    const X=ct*ax[0]+st*(cp*u[0]+sp*w[0]), Y=ct*ax[1]+st*(cp*u[1]+sp*w[1]), Z=ct*ax[2]+st*(cp*u[2]+sp*w[2]);
+    const lon=(Math.atan2(Z,X)/rad+360)%360, lat=Math.asin(Math.max(-1,Math.min(1,Y)))/rad;
+    const i=Math.floor(lon)%W, j=Math.min(H-1,Math.max(0,Math.floor(lat+90)));
+    counts[j*W+i]+=1; pulses++;
+    const k=rayHead*6; rayPos[k]=0;rayPos[k+1]=0;rayPos[k+2]=0; rayPos[k+3]=X;rayPos[k+4]=Y;rayPos[k+5]=Z; rayHead=(rayHead+1)%NRAY;
+  }
+  function gcd(a,b){ while(b){ const t=a%b; a=b; b=t; } return a; }
+
+  let spin=0;
+  function frame(){
+    if(playing){ const n=+ui.rate.value; for(let k=0;k<n;k++) pulse(); }
+    const st=paintTexture();
+    sphere.scale.setScalar(R); axisLine.scale.setScalar(R); rays.scale.setScalar(R); rayGeo.attributes.position.needsUpdate=true;
+    cam.position.z=Math.max(4.2, R*3.6); cam.position.y=0.1*cam.position.z; cam.lookAt(0,0,0);
+    turntable.rotation.y=sphere.rotation.y; halo.scale.setScalar(1+0.15*Math.sin(pulses*0.05));
+    axisLine.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), new THREE.Vector3(ax[0],ax[1],ax[2])); sphere.rotation.y=(spin+=0.0025);
+    const step=+ui.step.value, g=gcd(step,360), coprime=g===1;
+    const mn=st.mn===Infinity?0:st.mn, mean=pulses/(st.filled||1);
+    $('hud').innerHTML=
+      'pulses <b>'+pulses.toLocaleString()+'</b> · turns <b>'+turns+'</b> · radius <b>'+R.toFixed(2)+'</b><br>'+
+      'gcd(step, 360) = <b>'+g+'</b> → <span class="'+(coprime?'cop':'res')+'">'+(coprime?'coprime: fills':'resonant: '+(360/g)+' directions only')+'</span><br>'+
+      'buckets painted <b>'+st.filled.toLocaleString()+'</b> / 64,800 · min <b>'+mn.toFixed(1)+'</b> max <b>'+st.mx.toFixed(1)+'</b> (per solid angle)<br>'+
+      'non-uniformity (max−min)/mean <b>'+(mean>0?((st.mx-mn)/mean).toFixed(3):'—')+'</b>';
+    renderer.render(scene,cam);
+    requestAnimationFrame(frame);
+  }
+  function reset(){ counts=new Float32Array(W*H); pulses=0; phi=0; psi=0; turns=0; R=0.6; ax=axisFromCone(); }
+  $('reset').addEventListener('click',reset);
+  $('play').addEventListener('click',function(){ playing=!playing; $('play').textContent=playing?'Pause':'Play'; });
+  document.querySelectorAll('.presets button').forEach(function(b){ b.addEventListener('click',function(){
+    ui.step.value=b.dataset.s; ui.prec.value=b.dataset.p; ui.jit.value=b.dataset.j; ui.kick.value=b.dataset.k||0; show(); reset();
+  });});
+  frame();
+})();
+</script>
