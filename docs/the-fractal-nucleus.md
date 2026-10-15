@@ -76,7 +76,7 @@ With q = 2.425 MeV fixed once on C-12 and the ladder's 3Nα − 6 edges, the res
 | nucleus | Nα | residual (MeV) | 3Nα − 6 | bonds implied | error |
 |---|---|---|---|---|---|
 | Be-8 | 2 | −0.09 | 0 | 0.0 | — (the ladder's unbound rung) |
-| C-12 | 3 | 7.27 | 3 | 3.0 | calibration |
+| C-12 | 3 | 7.27 | 3 | 3.0 | **calibration — and tautological:** by the definition of u (¹²C ≡ 12), Δ(¹²C) = 0 and Δ(⁴He) = +2.4249 MeV, so q *is* the alpha's mass excess and C-12 = 3q by construction. Errors are to be read from O-16 onward (review F7, 15 Oct) |
 | O-16 | 4 | 14.44 | 6 | 6.0 | +0.8 % |
 | Ne-20 | 5 | 19.17 | 9 | 7.9 | **+13.9 %** |
 | Mg-24 | 6 | 28.48 | 12 | 11.7 | +2.2 % |

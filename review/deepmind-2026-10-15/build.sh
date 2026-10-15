@@ -32,3 +32,19 @@ FILES=(
   done
 } > "$OUT"
 wc -lc "$OUT"
+# transport variants: the Gemini app has choked on one large .md — a .txt copy and four parts
+cp "$OUT" "${OUT%.md}.txt"
+python3 - "$OUT" <<'PY'
+import sys,re
+p=sys.argv[1]; s=open(p).read()
+blocks=re.split(r'(?=\n\n\n<!-- =+ -->\n<!-- FILE: )',s)
+n=4; size=len(s)//n; parts=[[]]; cur=0
+for b in blocks:
+    if cur>size and len(parts)<n: parts.append([]); cur=0
+    parts[-1].append(b); cur+=len(b)
+for i,pb in enumerate(parts,1):
+    body=''.join(pb)
+    hdr=f"# Φ ontology review docset — PART {i} of {len(parts)} (same content as docset.md, split for transport; read all parts before Task 1)\n"
+    open(p.replace('docset.md',f'docset-part{i}.txt'),'w').write(hdr+body)
+    print(f'part{i}: {len(body)} chars')
+PY

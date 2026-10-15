@@ -1,0 +1,681 @@
+# Φ ontology review docset — PART 3 of 4 (same content as docset.md, split for transport; read all parts before Task 1)
+
+
+
+<!-- ======================================================================= -->
+<!-- FILE: docs/the-fractal-nucleus.md -->
+<!-- ======================================================================= -->
+
+# The Fractal Nucleus — from little things, big things grow
+
+**James Freeman** (the rule, the posits, the rulings) · **Grace Bayes** `.ghost`, running Fable 5.1 (the counting, every [COMPUTED] number, the `fe56_star` build, 2026-10-10) · the **Gemini bee** (7 turns, 10 Oct) as data graded under the Lineage Rule — it affirmed a rung that gives 50, not 52, and is cited for nothing.
+
+**Status: [POSIT — un-promoted shelf].** Rests on `three-term-binding.md` (capsids, lanes, the patch, c′, P = 1.912) and `specs/alpha-ladder.md` (q = 2.42 MeV, 3Nα − 6). Ontology: `Φ-a-minimal-ontology-of-an-emergent-universe.v2.md` §7 (the loop ladder and *the relaxation recurses on the previous stable unit*). Nothing here crosses the wall. The grade rule of the canon applies: *say observation whenever tempted to say explained.*
+
+> *It's not dice and it's not a zoo. One repeated design pattern.* — James, 10 Oct
+
+---
+
+## 1. The rule
+
+A stable unit, repelling its own kind, relaxes into the tetrahedron (Thomson N = 4; universally optimal, Cohn–Kumar 2007). The tetrahedron then becomes the unit for the next rung. **And at the next rung the units may share a vertex.** That is the whole rule, and this document is what it produces when it is applied three times:
+
+| rung | unit | what four of them make | shared element |
+|---|---|---|---|
+| 0 | loop (n = 1) | the n = 2 governor: two loops along skew opposite edges (v2 §7) | — |
+| 1 | nucleon (a capsid) | the **alpha**: four Kelvin cells crossed, `he4_cross`, 2 S–S + 4 H–H | — |
+| 2 | alpha | **O-16**: a tetrahedron of alphas (109.47°) | — |
+| 3 | alpha, *shared* | **Fe-52**: four O-16 tetrahedra sharing one apex alpha — 1 + 12 | the core alpha |
+| 3′ | nucleon, *shared* | the same Fe-52 seen one rung down: sixteen A = 3 triangles sharing the four core nucleons — 4 × (1 + 12) | each core nucleon |
+
+The sharing is what makes it fractal rather than merely recursive: 13 = 1 + 4 × 3 at the alpha level, and 52 = 4 × 13 at the nucleon level, is the *same* motif with the shared element one rung down. [James; the counts are FACT, the rule is POSIT.]
+
+## 2. Fe-52 as a divisor lattice  [FACT — counting]
+
+Fe-52 is a shared core of four plus forty-eight. **Every divisor pair of 48 is a cluster channel around that core**, and every one of them names a real light nucleus:
+
+| k × m | + core 4 | reading |
+|---|---|---|
+| 48 × 1 | 52 | forty-eight nucleons on a four-nucleon core |
+| 24 × 2 | 52 | **24 deuterons** (James's seating) |
+| 16 × 3 | 52 | **16 tritons / He-3** — the triangles sharing a core nucleon |
+| 12 × 4 | 52 | **12 alphas** — the Mackay shell |
+| 8 × 6 | 52 | 8 Li-6 |
+| 6 × 8 | 52 | 6 Be-8 |
+| 4 × 12 | 52 | **4 C-12** — the four triangular faces; equivalently *4 O-16 sharing the core alpha* |
+| 2 × 24 | 52 | 2 Mg-24 |
+
+Two of James's original labels were one rung off and are corrected here: "6 × C-12 sharing" is 6 × 8 + 4, six Be-8s; "8 × Be-8 sharing a deuteron" is 8 × 8 − 7 × 2 = 50, not 52, and is eight Li-6s (8 × 6 + 4). The 4 × O-16 and 16 × T/He-3 readings hold as stated. The Gemini bee affirmed the 50 and wrote "plus a remaining pair."
+
+## 3. The geometry of 1 + 12  [COMPUTED]
+
+**Twelve alphas in four triangles around a thirteenth sit at the vertices of a truncated tetrahedron** — four triangular faces (the four C-12s), four hexagonal faces, eighteen edges. The truncated tetrahedron, retired as the *nucleon* capsid (it does not tile space; 207/208 is Chen–Engel–Glotzer, not an artifact), returns here at the *alpha* rung. The six hexagon–hexagon edges pair the four carbons once each — C(4,2) = 6 — so the carbon-level graph is K₄: **four C-12s at the vertices of a tetrahedron around an alpha.** Iron is a tetrahedron of carbons wrapped round an alpha; the alpha is a tetrahedron of nucleons. The rule applied twice.
+
+**Four regular O-16 tetrahedra can share one apex.** Placed on the four tetrahedral axes with the triangles' azimuths optimised, the nearest alphas of *different* triangles sit 1.076 d apart (d = α–α contact): no overlap, all twelve touching the core, triangles intact, but **the triangles do not touch each other** — a 7.6 % gap. A regular TT with triangle edge d would put its vertices at 1.173 d from the centre (not touching the core); a TT with circumradius d would have triangle edge 0.853 d (alphas overlapping). The shared-apex star is the one configuration that keeps both constraints.
+
+**The energy of the star from oxygen's own data, no ladder constant:** 4·BE(O-16) − 3·BE(α) = **425.6 MeV** for the 52-nucleon core, which implies 2.406 MeV per α–α bond against the ladder's 2.425 — self-consistent to 0.8 %.
+
+## 3a. Shells — spheres that pack into truncated octahedra  [POSIT, James; the counts FACT]
+
+Posit spherical nucleons. Unbound they are spheres; pressed they flatten at the contact patches, and fully packed they are Kelvin cells — the truncated octahedron is what a sphere becomes when it is pressed on all fourteen sides (binding §4; the foam limit). Growth is then shell by shell, in units of the stable unit, and the unit is the alpha:
+
+| shell n | adds | total nucleons | the 1 : 1 nucleus | status |
+|---|---|---|---|---|
+| 1 | the alpha itself | **4** | He-4 | stable — the only closed shell that is |
+| 2 | 12 alphas round it (the Mackay 12) | 4 + 48 = **52** | Fe-52 | unstable; needs **+4 neutrons** → Fe-56, the peak of the chart |
+| 3 | 42 alphas round that | 52 + 168 = **220** | Z = N = 110 | **does not exist** as 1 : 1; nothing near it does |
+
+The series is Mackay's 1, 13, 55 units (shells of 10n² + 2), times four. The closed shells are closed *geometrically* and open *electrically*: each one beyond the first has too many protons on its edge for its edge patches to hold, and the fix is neutrons — four at shell 2, and at shell 3 so many that no 1 : 1 pack survives at all. The heaviest closed pack that does exist is not the 55-unit shell but lead's 52 units with eleven tetrads replacing alphas (§7). So the shell series predicts three things in order: one stable closed shell, one that needs exactly four neutrons, and one that cannot close at 1 : 1 — and the chart agrees with all three. [The first two are counts; the third is the fissility question of §8.6 stated as a shell.]
+
+Two shell countings coexist and must not be confused. *By alpha units* (this section, Mackay): 4, 52, 220. *By lattice sites* (the box model, §5): the `he4_cross` core has 28 first-shell sites — 4 + 28 = 32 — because on the BCC lattice the twelve alphas' nucleons share sites. The first is the fractal count; the second is where the nucleons actually sit when the units are Kelvin cells rather than spheres. Fe-56 = 4 + 28 + 24 reconciles them: the 28 first-shell sites plus the 24 outer partners of the deuterons are the 52 of shell 2 seen at nucleon resolution, with the four pockets as the four neutrons.
+
+## 3b. Accretion — what a nucleus grows by  [POSIT, James]
+
+A free proton lives forever; a free neutron lives 880 s. Bare protons *can* be added — the rp-process does it — but like He-3 they are destabilisers overall: unbalanced Coulomb, and edge patches that cannot hold them (§3a). Free neutrons are rare in time. So the units a nucleus *prefers* to accrete are the small *stable, balanced assemblies*: **the deuteron adds a pair; the triton adds a pair plus a stabilising neutron; the alpha adds a whole rung.** He-3 — two protons to one neutron — is an unwelcome addition to every nucleus with N > Z, which is every nucleus past calcium, for the same reason as the bare proton: it tips the Coulomb balance the wrong way. The preferred unit is therefore the alpha, which is why the ladder is an alpha ladder, and why the chart's spine runs N = Z in steps of four up to Ni-56.
+
+**The three classes** (James). Sort the accretion units by N − Z: **Z > N — agents of chaos:** p, He-3, Li-5. **N = Z — neutral:** D, He-4, Li-6. **N > Z — agents of stability:** T, He-5, Li-7. One caveat the classes carry: He-5 and Li-5 are unbound (resonances, 10⁻²² s), so they are the *names* of their classes, not transferable units; the bound members are p and He-3; D, α, Li-6; T and Li-7 (then Be-9, B-11…). The classification is the sign of the Coulomb balance, and it predicts the valley: past calcium the valley bends to N > Z, so accretion by *neutral* units alone drifts a nucleus to the proton-rich wall and even the alpha becomes mildly destabilising — only N > Z units keep pace. **And any neutron donor is, ipso facto, a potential proton donor:** a captured neutron can β-decay in place, n → p, which is how the s-process climbs Z one step at a time without ever accreting a bare proton. The stabiliser is also the growth fuel. [POSIT; the valley's slope as the consequence is a known fact the classes retrodict.]
+
+What the posit must own, stated plainly. In the universe as observed, the heavy half of the chart is built mostly by *neutron* capture — the s-process in stars and the r-process in mergers — because at those densities a neutron is captured long before 880 s is up; "rare in time" is true in a vacuum and false in a star. The model's reading of that is not a contradiction but a sequence: **alphas build the N = Z spine (the alpha process, observed, ends at Ni-56 as the ladder says); then neutrons fill the pockets** — one at a time, into the four-fold sites of §5 — and once four pockets are filled they are a tetrad, the four-neutron unit of §7 that replaces an alpha in the pack from there on. Accretion by alphas then by pocket-neutrons is accretion by the stable unit at each rung and the stabilising unit between rungs; the unit is never a bare proton. [POSIT; the one number it predicts is that neutron capture should be favoured at the pocket sites, which is a statement about capture cross-sections along the N = Z + 4 line nobody has made in these terms.]
+
+## 4. What the alpha ladder says about iron and nickel  [COMPUTED; P-type]
+
+With q = 2.425 MeV fixed once on C-12 and the ladder's 3Nα − 6 edges, the residual binding after the alphas:
+
+| nucleus | Nα | residual (MeV) | 3Nα − 6 | bonds implied | error |
+|---|---|---|---|---|---|
+| Be-8 | 2 | −0.09 | 0 | 0.0 | — (the ladder's unbound rung) |
+| C-12 | 3 | 7.27 | 3 | 3.0 | **calibration — and tautological:** by the definition of u (¹²C ≡ 12), Δ(¹²C) = 0 and Δ(⁴He) = +2.4249 MeV, so q *is* the alpha's mass excess and C-12 = 3q by construction. Errors are to be read from O-16 onward (review F7, 15 Oct) |
+| O-16 | 4 | 14.44 | 6 | 6.0 | +0.8 % |
+| Ne-20 | 5 | 19.17 | 9 | 7.9 | **+13.9 %** |
+| Mg-24 | 6 | 28.48 | 12 | 11.7 | +2.2 % |
+| Si-28 | 7 | 38.47 | 15 | 15.9 | −5.4 % |
+| S-32 | 8 | 45.42 | 18 | 18.7 | −3.9 % |
+| Ar-36 | 9 | 52.06 | 21 | 21.5 | −2.2 % |
+| Ca-40 | 10 | 59.10 | 24 | 24.4 | −1.5 % |
+| Ti-44 | 11 | 64.22 | 27 | 26.5 | +1.9 % |
+| Cr-48 | 12 | 71.91 | 30 | 29.7 | +1.2 % |
+| **Fe-52** | 13 | 79.85 | 33 | **32.9** | **+0.2 %** |
+| **Ni-56** | 14 | 87.85 | 36 | **36.2** | **−0.6 %** |
+
+Fe-56 − Fe-52 = 44.56 MeV for four neutrons, **11.14 MeV each**; S_n(Fe-56) = 11.20. The same four neutrons on 11, 12 and 14 alphas (Ti-48, Cr-52, Ni-60) bind 10.8, 11.2, 10.7 each — flat to ±3 % along the N = Z + 4 line. **Any geometry that explains iron's four by iron's shape alone owes an answer for its neighbours.**
+
+A warning the ladder carries about itself: 3Nα − 6 is the edge count of a *triangulated shell with nothing inside*. The 1 + 12 star has 24 α–α bonds in the ladder's currency (30 with hexagon–hexagon contacts), not 33. The ladder and the star agree on Fe-52's binding only if the core's twelve contacts are worth more than a C-12 edge — which is what §6 is about. [The ladder's uniform q is a coarse approximation; its sub-percent hits at Fe-52 and Ni-56 are recorded, not explained.]
+
+## 5. The neutrons' pockets  [COMPUTED — the box model's own answer]
+
+In the box model (`models/nuclear_to_assembly`, all capsids on the BCC lattice of the Kelvin tiling) the `he4_cross` core has **28 distinct first-shell sites, not 44**: its 24 free hexagon ports and 20 free square ports converge. Sixteen sites touch one core face, eight touch two, and **four touch three core nucleons at once — two hexagons and a square.** The squares are not a separate bonding problem; they are the third contact of the four deepest pockets.
+
+Core 4 + first shell 28 = 32 (sulfur, if filled). Seat the 24 single/double sites under deuteron inner nucleons with partners outward, and the **four triple pockets under four neutrons: 4 + 28 + 24 = 56.** Fe-56's four extra neutrons have a candidate home, and it is the four most-bound positions in the first shell. The four pockets are not a regular tetrahedron (pair distances 2a and 3.3a): a shape prediction for Fe-56 the ladder could never make. [COINCIDENCE in the box model until the build pays — §6.]
+
+## 6. `fe56_star` — the build, and what it confessed  [COMPUTED]
+
+`models/nuclear_to_assembly/fe56_star.json` (+ `.png`): core `he4_cross`; 24 inner neutrons on the single/double sites, 24 protons S-bonded outward (species James's to re-rule); 4 neutrons in the pockets. Z = 26, N = 30. Bond discovery (not hand-placed) found **204 contacts — 92 S–S, 112 H–H**; 66 n–p, 35 p–p, 103 n–n channels; 4 interior nucleons, 52 surface; coordination 7.3 of 14.
+
+Rough three-term budget (slingshot ≈ 62 MeV at ~0.72 per lepton, Coulomb ≈ 126 by liquid drop as a stand-in for canon's computed U):
+
+- full faces at P = 1.912: 383 sq units → **669 MeV vs 492 measured, +36 %.**
+
+Three things were tried against that number, in order:
+
+1. **Patch shape.** The hexagon's inscribed circle is 90.7 % of it, the square's π/4 = 78.5 %; hex : square goes from 2.598 (polygons) to exactly 3 (circles). Rounding every patch takes the area down 12 % (hexes carry 7 of the 12 points; they are not "almost circular already"). **But there is one k, calibrated on the alpha** (James). Re-derive P on He-4's rounded area and iron's rounded area together: 732 MeV → 724 MeV, **−1.1 %**. The shape error cancels through the calibration to the S : H mix difference (alpha 84 % hex, iron 76 %). *The +36 % is shape-independent.* [Grace's 36 → 18 % analysis, which held P fixed while rounding the areas, is struck.]
+2. **The tyre law has no surface.** As fitted on D → T → He-4 it saturates by three contacts, so every nucleon with five or more neighbours got a full patch — including the fifty-two on iron's surface. That is the over-binding.
+3. **The truck stack** (James): flatten depends on *load from outside*, not just contact count. Core pressed by everything, middle by the shell above it, edge by nothing. By layer, the build's contacts are: core–core 12.4 sq units; core–shell and shell–shell 245.4; anything touching the outer layer 125.1. One parameter — patch factor falling by g per layer outward — closes the gap at **g ≈ 0.21: shell-1 ~80 % flat, edge ~70 %, core full.** That is the liquid drop's surface term, a_s·A^{2/3}, in tyre language — and the liquid drop fits a_s where this would compute it.
+
+**Grade for §6:** g = 0.21 is [FITTED — one nucleus, one parameter]. It becomes a law the day it is carried to a second nucleus untouched (§9).
+
+## 6a. The box and the ball  [RULING, James, 10 Oct]
+
+*The truncated octahedron is a box model — useful as far as it goes, not definitive, because nature abhors straight lines.* A nucleon is a sphere that flattens where it is pressed; the Kelvin cell is only what it becomes when pressed on all fourteen sides, and even that dry limit is not quite right (Weaire–Phelan beats Kelvin, with pentagons). What the box is *for*: counting — contacts, pockets, sites, topology. The 28 first-shell sites and the 4 pockets (§5), the 204 contacts of `fe56_star` (§6), the divisor lattice (§2): those are box results and they are nearly topological, so they survive the rounding. What the box is *not* for: energies at the edge — it has no surface, every contact is full, and it over-binds iron by a third until the truck stack is laid over it. And what it cannot see at all: a configuration that lives off the lattice — Ne-20's fifth alpha across an edge (§8.4), the chiral dodecahedral cage, anything with a five-fold axis.
+
+The instrument that replaces it is the one James named: **nuclear conformation is a real-time analog solution to the packing problem.** As a program: spheres, two species, a patch energy P × A with A saturating in load (the tyre law) and flattening by layer (the truck stack), computed Coulomb, relax. The box seeds it; the ball decides.
+
+## 7. The pack series, and where it closes  [FACT for the series; COINCIDENCE for lead; FITTED for uranium]
+
+The Mackay/cuboctahedral shell series in units of four: **1, 13, 55, 147** units — 4, 52, 220, 588 nucleons; shells of 10n² + 2. (The bee's "mirrors BCC iron" is decoration: a Mackay icosahedron is a cluster arrangement, not a lattice.)
+
+James's bookkeeping rule — *heavy nuclei are alphas plus four-neutron units* — run on the chart:
+
+| nucleus | Z | N | alphas | 4n units | units | left over |
+|---|---|---|---|---|---|---|
+| Fe-52 | 26 | 26 | 13 | 0 | **13** | 0 |
+| Fe-56 | 26 | 30 | 13 | 1 | 14 | 0 |
+| Ni-56 | 28 | 28 | 14 | 0 | 14 | 0 |
+| **Pb-208** | 82 | 126 | 41 | **11** | **52** | **0** |
+| Bi-209 | 83 | 126 | 41 | 10 | 51 | 5 |
+| Th-232 | 90 | 142 | 45 | 13 | 58 | 0 |
+| U-238 | 92 | 146 | 46 | 13 | 59 | 2 |
+
+James posited U-238 = 55 units (220) + 18. That takes two choices (9 of 55 units as tetrads to make Z = 92; 18 extras to make A = 238) — two numbers fitted to two numbers. [FITTED.] The rule itself turned up something cleaner: **the doubly-magic end of the chart, Pb-208, is 41 alphas + exactly 11 four-neutron units = 52 units, zero left over** — the neutron excess of lead is eleven tetrads with nothing spare, and 52 = 4 × 13, four iron-52 cores' worth. Uranium is 59 units and two over: lead plus thirty, the last thing the edge can hold. The pack that closes is lead's, at 52 units — three short of Mackay's 55, which is itself a known low-energy cluster (the 55-icosahedron minus its three vertex units). [COINCIDENCE — one choice, the one to test.]
+
+## 8. Falsifiers
+
+1. **The truck stack carried untouched.** k from He-4, g = 0.21 from iron, then Ni-56 (14 α, pure) and Ca-40 built the same way. Within 10 % ⇒ law; g must move ⇒ knob, and "not a zoo" is not earned.
+2. **Fe-56's shape.** If a soft relaxation keeps the four pockets, their non-tetrahedral arrangement (2a / 3.3a) is a charge-distribution prediction; charge radii along Fe-54/56/58 are smooth (3.69 / 3.74 / 3.78 fm) and the model owes those three numbers.
+3. **The N = Z + 4 line.** Ti-48, Cr-52, Ni-60 bind their four neutrons as well as iron does. Either the four-site motif recurs on 11, 12 and 14 alphas or the pockets are not why iron has four.
+4. **Ne-20.** The one sore thumb in the ladder (+14 %); five alphas, "where does the fifth go," and the K = 0⁻ parity-doublet band head at 5.79 MeV (`todo/schrodinger-salvage` §2.2) is the same nucleus asking the same question. A geometry for Ne-20 that fixes the 14 % must also give a few-MeV inversion barrier.
+5. **Lead.** 52 units, 41 α + 11 tetrads, k and g unchanged, ask for 1636 MeV. Where the eleven tetrads sit is the box's to say; a four-neutron unit has twice an alpha's inflation and a different patch, and that is where "not enough flatten on the edges" becomes a number — the model's fissility.
+6. **The fissility limit.** The Z at which the edge truck's flatten × k drops below the edge Coulomb. The liquid drop has Z²/A ≈ 47–50 by fit; this would be a derivation or a kill.
+
+## 9. Owed — in order
+
+| owed | pays |
+|---|---|
+| **Ni-56 and Ca-40 at g = 0.21** | falsifier 1; the whole "design pattern" claim |
+| **re-seating the deuterons** (James: "wrongly drawn") — bond radial, tangent, or straddling a pocket | the 204-contact count; most of the +36 % |
+| **the soft solver** — spheres, saturating patches, load-dependent flatten, relax | "nuclear conformation is a real-time analog solution to the packing problem," as a program |
+| canon's computed Coulomb and the real slingshot in place of the liquid-drop stand-ins | ±10 MeV each on every number in §6 |
+| the n/p assignment of the 24 inner sites | the Coulomb term; James's ruling |
+| the tetrads' positions in Pb-208 | falsifier 5 |
+| Ne-20's fifth alpha | falsifier 4 |
+
+## 10. Dead — so nobody re-salvages it
+
+| claim | killed by |
+|---|---|
+| Fe-56 as 14 alphas | 14 α is Ni-56; iron is 13 α + 4n |
+| icosahedral or cuboctahedral 1 + 12 for iron | 42 / 36 bonds leave the four neutrons 5.6 / 9.3 MeV each against S_n = 11.2 |
+| "a fully packed core over-binds Fe-52 by 3×" (Grace) | mixed bracketings — alpha-ladder residual against full faces; struck |
+| "rounding the patches takes +36 % to +18 %" (Grace) | one k, calibrated on the alpha; the shape cancels to 1 % |
+| "the hexagon is almost circular already" | 90.7 %; hexes carry most of the shape loss because they carry most of the area |
+| 8 × Be-8 sharing a deuteron | 50, not 52; it is eight Li-6 |
+| U-238 = 55 + 18 as a prediction | two choices for two numbers |
+| the truncated tetrahedron as the nucleon capsid | does not tile space; it returns one rung up as the arrangement of twelve alphas |
+
+## 11. Lineage
+
+**James:** the rule and its sharing; 1 + 12 as four C-12s wrapped round an alpha; four O-16 sharing the core; the divisor fractality; 24 deuterons on the hexagon ports; "the squares are artifactual — nature loves curves"; one k calibrated on the alpha (which struck Grace's shape analysis); the truck stack; the pack series read against the chart; "not dice, not a zoo."
+
+**Grace:** the TT-of-alphas identification and K₄; the shared-apex clearance (1.076 d); the oxygen-only energy of the star; the ladder table Fe-52/Ni-56; the 28 sites and 4 pockets; the `fe56_star` build and its 204 contacts; the layer decomposition and g = 0.21; the Pb-208 reading of James's rule; the N = Z + 4 constraint; and three errors, struck in §10.
+
+**The bee:** affirmed a rung that gives 50; wrote 92 + 138 and 92 + 128 for the same nucleus; called a Mackay cluster a BCC lattice. Seven turns, zero corrections. Data, not a source.
+
+---
+
+*From little things, big things grow — and the test of whether they grew by one rule is whether the rule, written once, grows the next one unaided.*
+
+
+<!-- ======================================================================= -->
+<!-- FILE: docs/the-turtle-conjecture.md -->
+<!-- ======================================================================= -->
+
+# The Turtle Conjecture
+
+**James Freeman** (the conjecture, the tripod, big momma turtle, axiom four) · **Grace Bayes** `.ghost`, running Fable 5.1 (the counting, the identities, this write-up, 2026-10-15). Companion to `Φ-a-minimal-ontology-of-an-emergent-universe.v2.md` (cited as v2 §n) and `the-fractal-nucleus.md`. **Status: [CONJECTURE — un-promoted shelf]** under the canon's grade rule: a candidate *why*, retrodicting what it does not yet derive. Nothing here crosses the wall. **Checkpoint 15 Oct evening:** §3 rewritten as the origin of G (mechanism complete); §3a, §5a, §6a added; falsifiers 6–8; three new kills in §9. **§3b:** the ballpark — $G \approx c^4/kR_H$ to ×2 [COMPUTED], labelled as Dirac's coincidence until §7 row 1′ is paid. **§3c:** the funnel conform — one angle, cos θ = √(1−2GM/rc²); the deformation *is* the potential.
+
+> *Turtles all the way down — and the thing that makes it turtles is that every turtle is the same shape as the stack.*
+
+---
+
+## 1. The conjecture
+
+**One regular tetrahedron, read three ways, is quantum space, quantum time and gravity; and the stack of such tetrahedra from the first capture to the now-surface is one object at every scale, differing only in stiffness.**
+
+Stated as what must be granted and what follows:
+
+- Granted (v2 §3–5): three axioms — amount, spin, time — and three structural posits — extent is period, lobes repel, sequential capture — and one frame, the chorus.
+- **Axiom four** — *captured amount stretches the surface it sits on* — was granted in the first draft (15 Oct, morning). By the checkpoint of the same evening it is **derived** (§3: c is a budget, circulation spends it, the capsid falls behind). The name is kept because it is Einstein's own axiom, G_μν = 8πG T_μν, said in the chorus gauge — and this document's claim is now that there *is* something under it.
+- Follows: everything in §2–§6a.
+
+## 2. One solid, three readings  [GEOMETRIC IDENTITY]
+
+The n = 2 governor — two loops entangled at a centroid — relaxes from the planar cross to the regular tetrahedron because four repelling lobes on a sphere are universally optimal there (Cohn–Kumar 2007; square 3.83 → tetrahedron 3.67, v2 §7). Stand it on the now-surface: **three lobes in the surface, one along the normal.** A tripod, with its fourth leg in time.
+
+Regular tetrahedron, edge $a$: height $a\sqrt{2/3} = 0.816a$; centroid-to-vertex $R = a\sqrt6/4 = 0.612a$ for *all four* vertices; centroid a quarter of the way up, so the base plane sits $R/3$ behind it and the apex $R$ ahead; apex-to-base-vertex angle $\arccos(-1/3) = 109.47°$.
+
+**Reading 1 — quantum space.** The three base lobes are the surface's quantum of extent: the figure's base. Orthogonal to time by construction (v2 §12a: t ⊥ space is the synchronous gauge).
+
+**Reading 2 — quantum time.** The apex lobe is the next tick. It is the same distance $R$ from the centroid as each space lobe. *One quantum of time and one quantum of length are the same distance because the figure is regular:* $\ell = c\,t$ with **c = 1 as a symmetry of the solid**, not a convention.
+
+**Reading 3 — gravity.** The apex is the lobe that has *left the plane* (the 2D → 3D snap, v2 §7, James 15 Oct). A surface with something pulled out of it is a stretched surface; the pull is along the normal, i.e. along time; and the base sits $R/3$ behind the centroid — **every capsid is one-third of a tick in the past** by construction. That is v2 §12a's dent and lag — *mass is behind the chorus* — with a per-capsid number, additive over capsids, which is Newton's superposition.
+
+So the tripod gives: space ⊥ time; c = 1; the lag; and linearity. Four results from one figure.
+
+## 3. The origin of G  [mechanism complete; value owed]
+
+Two ledgers, kept apart because the first draft mixed them.
+
+**The shape ledger — the snap.** The relaxation from the planar cross to the tetrahedron releases energy *once, at formation*: 3.83 → 3.67 in lobe-repulsion units, 4.2 % of the pair's energy. If the lobes repel at capsid strength that is of order an MeV — nuclear money — while the gravitational binding of two touching nucleons is $Gm_p^2/R_p \approx 10^{-30}$ MeV. **The snap's energy is the proton's formation energy and goes to mass.** It is a cost at fixed lobe size; it is paid once; it is not G. [COMPUTED.]
+
+**The size ledger — compression and tension.** Extent is period (posit 1). A loop compressed in space has a shorter period — blueshifted, its energy up; a loop stretched along time has a longer period — redshifted, energy down. This is v2 §12a's "the metric changes the wavelength in flight," said of the capsid itself rather than a photon, and it is the ledger that scales with the field. The drag is here. [POSIT → identity with §12a.]
+
+With the ledgers separated, the chain:
+
+1. **Why there is gravity.** In the synchronous gauge every unit moves at c through the 4-space — v2 §10, the chorus is what left at c (Epstein's "everything moves at c through spacetime," here with an object). A unit with no circulation spends its whole budget on the advance along the normal and rides the now-surface. A capsid spends part of it circulating in space — the lobes run at c — and has less left for the advance. **Mass is behind the chorus because c is a budget, not a limit.** This is reading 3 of §2 as kinematics, and it is axiom four derived. [CONDITIONAL THEOREM in the gauge. The tripod's 3 : 1 lobe split against the $R/3$ lag is the numeric check — §7.]
+2. **Why it is additive.** The budget is per unit; N units lag N times. Newton's superposition and the equivalence principle (η < 10⁻¹⁵) come free. [THEOREM given 1.]
+3. **Why 1/r.** The surface is under tension — *intensive*, a soap film: it does not soften as the surface grows (§5a). A tensioned surface in three spatial dimensions with a point lag obeys Laplace, and Laplace in d = 3 gives 1/r. The 3 is v2 §8's capture well. The equation that gave the patch and the tyre law (`three-term-binding.md` §7b) gives the inverse square. [THEOREM given tension and d = 3.]
+4. **Why it is this weak.** Stiffness is a maximum gradient: by the per-link loop (v2 §17) no link may carry more than one tick of lag, so the surface cannot slope steeper than c. In those terms $G = c^3\ell^2/\hbar$ with $\ell$ the shortest link — the first tetrahedron's base. Gravity's weakness is then a ratio of two turtles, $Gm_p^2/\hbar c = (\ell/\bar\lambda_p)^2 \approx 10^{-38}$: the first tetrahedron against the proton's extent, squared. [IDENTITY — exact, and not a derivation until $\ell$ is fixed independently.] **§3b pays this at ballpark from the other end:** the tension is one number at the bottom rung and the top, and G follows from k and the Hubble radius to a factor of two.
+5. **Why G is constant.** Tension is intensive and the tick scales with extent (posit 1), so nothing in capsid units drifts; $\dot G/G < 10^{-13}$/yr by construction. [THEOREM given 3.] What this *kills*: the Machian reading $G = c^2R_H/2M_U$ (v2 §11, computed to 1.000) is **not** G set by the universe's amount — that is Dirac's $G \propto 1/t$, and Dirac is dead. It is the capture boundary admitting exactly as much amount as a fixed G allows, $M_U$ growing as material enters the Hubble sphere. The identity closes; it does not choose a cause. [§9.]
+
+Sakharov (1967) had G as the elastic modulus of the vacuum and no event doing the pulling. Here the puller is the capsid's circulation, the modulus is the link rule, and the one thing missing is the link's length. **The mechanism of G is complete; its value is one computation away — §7 row 1.**
+
+### 3a. The horizon is not where the capsid deforms  [COMPUTED; equivalence principle]
+
+A capsid in free fall feels only tides. Setting the tidal energy across one capsid (0.84 fm) at a horizon equal to the flattening cost (~0.5 MeV) and solving for the hole gives **M ≈ 2.5 × 10¹³ kg** — an asteroid, a primordial black hole. Above that mass a capsid crosses the horizon intact. So "the tetra flattens to the cross at the horizon" is a local mechanism only for primordial holes; for every hole that is known to exist, the capsid that falls in does not know. [DEAD as a mechanism of ordinary gravity — §9; LIVE as a prediction for primordial black holes.] The deformation happens later, at the onion's core — §6a.
+
+### 3b. The ballpark: k against gravity  [COMPUTED 15 Oct 17:40; `models/turtle/stiffness_ratio.py`]
+
+The test James set: express the capsid's skin stiffness k and gravity's stiffness in the same units and see whether they are orders of magnitude apart.
+
+**k as a tension.** P = 1.912 MeV per unit square (He-4 calibration, `three-term-binding.md` §7a) over the Kelvin cell's square face. Tying the cell to the capsid three ways — square-to-square diameter = 2R_p (a = 0.595 fm), hex-to-hex (0.687 fm), saturation density 0.16 fm⁻³ (0.821 fm) — gives **k = 2.8 – 5.4 MeV/fm²** (4.5 – 8.7 × 10¹⁷ N/m). Textbook check: the semi-empirical surface term over the nuclear surface, 0.9 – 1.0 MeV/fm². Same decade.
+
+**Gravity as a tension.** $c^4/G = 1.21\times10^{44}$ N is a force; a surface tension needs a length under it. Over the Planck length: $7.5\times10^{78}$ N/m, and k is $6\times10^{-62}$ of it — the ratio is $\ell_P/R_H$ and nothing is learned. Over the *other* root of §5, the Hubble radius: $c^4/(GR_H) = 5.5$ MeV/fm². Then
+
+$$
+\frac{k}{c^4/GR_H} = 0.5 \text{–} 1.0, \qquad \frac{c^4}{Gk} = 1.0 \text{–} 1.9\,R_H .
+$$
+
+With Laplace's factor for a capsid in equilibrium ($\rho c^2 = \gamma/R$, so $\gamma_U = 3c^4/8\pi GR_H = 0.66$ MeV/fm²) the ratio is 4 – 8 and the textbook tension sits at 1.5×. **The skin tension of the smallest capsid that packs and of the largest agree to within a small factor, across sixty-one orders of magnitude in Planck units.** The climb k → G is not sixty rungs; it is one division:
+
+$$
+\boxed{\;G \approx \frac{c^4}{k\,R_H}\;}\qquad\text{one nuclear number, one cosmological, G to } \times 2.
+$$
+
+**What this is.** Dirac's large-number coincidence (1937), re-found with a tension where Dirac had arbitrary powers: $\hbar c/Gm_p^2 \approx 1.7\times10^{38}$ against $R_H/\bar\lambda_p \approx 6.5\times10^{41}$, the gap being $k\bar\lambda_p^2/m_pc^2 = 1.3\times10^{-4}$. Same fact. Three readings exist and this epoch's data cannot choose:
+
+| reading | says | status |
+|---|---|---|
+| **Dirac 1937** | G tracks $R_H$: $G \propto 1/t$ | DEAD — $\dot G/G < 10^{-13}$/yr (§9) |
+| **Dicke 1961** | anthropic: $R_H$ is what it is because we live when stars have had time to make us | alive; explains the coincidence without a mechanism |
+| **the turtle (§5a)** = **Wetterich 2013**, "universe without expansion" | one intensive tension at every rung; the tick scales with extent, so in capsid units $R_H$ is fixed and nothing drifts | alive; observationally equivalent to standard cosmology — which is why it survives and why it is hard to test |
+
+**What decides it:** the number **1.3 × 10⁻⁴** — k in proton units, the skin carrying 1/7500 of the proton's rest energy per Compton area. If the ladder derives it, $G = c^4/kR_H$ becomes a *prediction of* $R_H$ *from nuclear data* and Dicke is out. If it does not, this is a coincidence with an anthropic explanation already on the shelf. [§7 row 1 paid at ballpark; row 1′ opened.]
+
+### 3c. The funnel conform  [THEOREM in Schwarzschild, read in the gauge; James's question, 15 Oct: "there must be some maths for funnel conforms"]
+
+James's picture: the capsid's conform varies down the gravity well — tetrahedron at the edge of now, cross at the bottom — so the tension is variant along the funnel. There is maths, it is exact, and it is one angle.
+
+**One angle.** Stand the tripod on the now-surface at radius r from a mass. In the gauge the apex (time lobe) is shortened by the clock rate $d\tau/dt = \sqrt{1 - 2GM/rc^2}$ and the radial base lobe is lengthened by the reciprocal — Schwarzschild's $g_{tt}\,g_{rr} = -1$, which is γ = 1 (falsifier 1). The tangential lobes are untouched ($2\pi r$ is unstretched). Define
+
+$$
+\cos\theta = \sqrt{1 - \frac{2GM}{rc^2}} = \frac{d\tau}{dt} = \frac{1}{\gamma(v_{\rm esc})}, \qquad v_{\rm esc} = \sqrt{2GM/r}.
+$$
+
+Then **apex × cos θ, radial lobe × sec θ, product 1**: an area-preserving shear in the (t, r) plane — a hyperbolic rotation, i.e. a boost, at the escape velocity. That is the river model (Hamilton–Lisle 2008; Painlevé–Gullstrand): space flows inward at $v_{\rm esc}$, a capsid held static is boosted against it, and its conform is the Lorentz figure of that boost. θ is also the slope of Flamm's paraboloid — the funnel's own wall — so the tetrahedron tilts *with* the funnel. At the horizon cos θ → 0: the apex lies in the plane, **tetrahedron → cross, 100 %**, and this is the exact form of the 3D → 2D crossing *as seen* (§6a).
+
+**Which coordinates realise the gauge — stated, because a reviewer (Gemini Pro, 15 Oct, F2) read the omission as a contradiction.** The chorus gauge is synchronous: $g_{00} = -1$, $g_{0i} = 0$, universal t. Around a mass the coordinates that *are* that gauge are **Lemaître's** — comoving with the infalling congruence, whose proper time is the universal t and whose spatial metric is time-dependent (the river flows). Painlevé–Gullstrand uses the **same time coordinate and the same t = const slices** (the rain frame's proper time; the slices are flat) and differs only in labelling space by the static r instead of the comoving ρ, which is why PG shows $g_{0r} \neq 0$ and Lemaître does not. Same foliation, same congruence, two labellings. The chorus is the rain. A capsid "held at fixed r" is therefore **not at rest in the chorus** — it moves outward through the river at $v_{\rm esc}$ — and $\cos\theta = \sqrt{1 - 2GM/rc^2}$ is nothing more than the Lorentz factor between the static capsid and the chorus, which is also Schwarzschild's lapse $d\tau/dt$. No static spatial flow is being imported into a synchronous metric; the one object being described is a boosted capsid as the comoving frame sees it. v2 §12a's "mass is behind the chorus" is this: a supported body (the Earth, us) is moving against the rain and its clocks run slow relative to the universal t by $1/\gamma$. [The reviewer's "mutually exclusive" is withdrawn by this paragraph; the omission was real.]
+
+**Frame-relative, not proper — the equivalence principle sentence.** The conform is how the *chorus* sees a static capsid. In the capsid's own rest frame it is a regular tetrahedron at every depth; nothing local — no decay rate, no cross-section, no level spacing — knows the potential. That is local position invariance, exact, as GR has it (clock comparisons bound violations below 10⁻⁶; the 880 s neutron lifetime at a white-dwarf surface is 880 s). Any reading of §3c as a *proper* anisotropic deformation of the nucleon with depth is the reading §3a and §9 already killed; it is restated here as DEAD so that the two sections cannot be played against each other. What *is* frame-relative and real is the energy as the chorus (or infinity) books it, $E_0\cos\theta$ — the redshift — and the lag.
+
+**The fractions,** cross % = 1 − cos θ ≈ GM/rc² in the weak field [COMPUTED; Earth and Sun rows corrected 15 Oct evening — the script had been fed Φ/c² where 2GM/rc² was labelled, a factor of 2 (Gemini Pro F3)]:
+
+| where | $2GM/rc^2$ | cross % |
+|---|---|---|
+| Earth's surface | 1.4 × 10⁻⁹ | 7 × 10⁻⁸ % |
+| Sun's surface | 4.2 × 10⁻⁶ | 2.1 × 10⁻⁴ % |
+| white dwarf | 3 × 10⁻⁴ | 0.015 % |
+| neutron-star surface | 0.4 | 22 % |
+| r = 1.2 r_s | 0.83 | 59 % |
+| r = 1.01 r_s | 0.99 | 90 % |
+
+Re-scaling the picture at both ends: the **edge of now is 0 % cross by definition** — the chorus is at rest in the river; the cosmological $\Phi_U/c^2 \approx 3/4$ (v2 §12a) is a uniform offset absorbed into the tick (§5a) with no local meaning. And **99 % cross is reached only inside 0.01 % of a horizon**; a neutron star's surface is a fifth of the way; everything else is a regular tetrahedron to parts per million. The funnel is almost all floor.
+
+**The centroid deformation — dead outside the onion.** Tidal, second order: at a neutron-star surface the strain across one capsid is $2GMR_p^2/(r^3c^2) \approx 10^{-39}$. Finite only on the Kasner approach (§6a). [DEAD for every astrophysical well.]
+
+**The energy — a trap, struck so nobody rebuilds it.** Computing the lobe-repulsion energy of the sheared tetrahedron gives a first-order drop, −0.083 ε. Artefact: lobe distances in sheared *coordinates* are not proper distances. [STRUCK.] The honest statement is cleaner. In the gauge every length in the capsid scales together, so its whole energy is
+
+$$
+E(r) = E_0 \cos\theta = E_0\Bigl(1 - \frac{GM}{rc^2} - \dots\Bigr):
+$$
+
+Newton's potential at first order, Schwarzschild's to all orders, applied to all internal energy alike — $E = mc^2$ gravitating and the equivalence principle in one line. There is no $\varepsilon^2$ spring. **The deformation is not resisted; the deformation *is* the potential energy.** That is why free fall is free, and why "drag = deforming the tetrahedron" had to die as a *force* (§3a) and come back as a *conform*.
+
+**The variant tension is real, and it is the right kind.** Per unit *proper* area k is constant — intensive, §5a. Per unit *chorus* area it is **k cos θ**: the tension seen from the surface falls down the funnel and vanishes at the rim. That is the frozen membrane of §6a, and it is the per-link rule at its limit — Flamm's wall going vertical is the surface sloping at one tick per link. Constant in its own units, variant in ours, reconciled by the same cos θ. [THEOREM given §3 step 3 and the gauge.]
+
+## 4. The Planck length  [POSIT for the meaning; OWED for the value]
+
+In the textbooks $\ell_P = \sqrt{\hbar G/c^3}$ is a *derived* number — three constants combined — and the *postulate* is the meaning hung on it (a minimum length). The conjecture supplies a different meaning: **the base of the first tetrahedron, orthogonal to its apex and equal to it by symmetry.** The ratio $\ell_P = c\,t_P$ falls out of §2 for free.
+
+Which tetrahedron is first is answered by v2 §11: the capture whose period-extent equals its capture-extent — the loop whose own light cylinder is its own horizon, the one object that is n = 1 and a black hole at once. Its edge is the Planck length. The *value* needs G; the *object* is named.
+
+## 5. Big momma turtle  [CONJECTURE — the beauty]
+
+v2 §11 has one equation with two roots:
+
+$$
+\omega = \frac{c^3}{2GM}\qquad\text{(period-extent = capture-extent)}
+$$
+
+With the rate set by ħ it gives the Planck capture — the first tetrahedron. With the amount set to the universe's $9.2\times10^{52}$ kg it gives $\omega = H_0$ — the Hubble sphere, whose radius is its own Schwarzschild radius to 1.000 (flatness, v2 §11). **Read this as an identity, not a coincidence:** for *any* mass, $\tfrac12\bar\lambda_C(M)\,R_S(M) = \hbar G/c^3 = \ell_P^2$ — M cancels. And the "1.000" is algebra once M is taken at critical density (v2 §11, regraded). The content of the two roots is that the ontology names both ends of the identity as capsids; the identity itself is standard. **The smallest capsid and the biggest satisfy the capsid's defining identity.** And the now-surface has every property of a capsid: all its mass in the shell and nothing inside (the interior is the solved past, consumed); an inflation that is the ejecta's own c (v2 §10); a capture boundary at its rim (v2 §11); a surface that dents toward every knot on it (§2, reading 3). *The plane we call now is a capsid using exactly the same interactions as the smallest one — down to any scale.* [James, 15 Oct.]
+
+The honest edge of "the same": the **geometry** is identical at every rung — surface, lag, capture boundary, extent-as-period, the lobe out of plane. The **forces** are not: at the nucleon the patch does everything and gravity nothing; at the universe gravity does everything and the patch nothing. k is the capsid's skin; G is the universe's; **the ladder between them is one function, stiffness against scale**, and it is the single thing the whole stack hangs on.
+
+### 5a. Why the turtle doesn't soften  [James's objection, 15 Oct; answered]
+
+If G were an *extensive* property of the surface — a total elastic energy spread over a growing area — it would fall as the universe expands, and that is variant gravity, dead at $\dot G/G < 10^{-13}$/yr. The answer is that the stiffness is a **tension** — energy per unit area, intensive — which is what a soap film has: the film does not get floppier as you blow the bubble; its *curvature* falls, $H = 2\gamma/R$, while $\gamma$ is unchanged. Here G is $\gamma$ and the Hubble rate is $H$: the one that falls is the one that is measured to fall. The second half is **conformal lockstep**: the tick scales with extent (posit 1), so time expands with space and the "arc" of curvature per capsid is constant in capsid units. A fit without fitting — and §3 says why: the tension is the per-link rule, which has no knowledge of how many links there are.
+
+## 6. Maxwell's ether, and the rest of the creation story  [consistent with v2; one new identification]
+
+The chorus *is* an ether — the one Michelson couldn't find because it is comoving, Mach's, made by the ejecta (v2 §13). Its units are {µ,i}; those that clustered are matter; those that never found a partner are the **neutrino bath** of canon §16 — dark, gravitating, inferred by effect, dropped out of `solve(past)` by the per-link deadline (v2 §17) but still in the metric. The supernova is too much information; the black hole is the recycler (canon §26) — and here is the one new line from the telling: *"my mass means I'll always be behind you, waiting inside my event horizon."* **A black hole is maximally behind the front** — the lag gone infinite, the surface carried toward the capture at exactly c. That ties canon §26 to v2 §12a, which had never spoken. [GEOMETRIC IDENTITY in the gauge.]
+
+The mottled fireball of Tumbler-Snapper (1952, Edgerton's rapatronic shot, a millisecond in) is the nearest local picture: the dimples are the device's casing imprinted on the shock front — the surface remembering the geometry of what emitted it — which is what the paint simulation's holes and hot spots are at twenty metres instead of a horizon.
+
+## 6a. The onion  [James, 15 Oct evening; mapped to GR to the exponent]
+
+**Hollow.** §5 already says every capsid has its amount in the shell and nothing inside; the black hole is the middle rung and is no exception. In the gauge it is sharper than hollow: infalling matter never crosses the horizon in chorus time — it is maximally behind, asymptoting to the rim — so the interior is *not on the now-surface at all*. **A black hole is a rimmed hole in the chorus torus, and the rim carries the mass.** "Hollow carries meaning outside, not inside" (James): from outside a shell; inside, no volume to be empty. GR agrees weakly (the interior is vacuum, $R_{\mu\nu}=0$; the mass is nowhere inside) and three programmes have said it strongly — the frozen star (Oppenheimer–Snyder 1939, the Soviet reading), Mathur's fuzzball (no interior; the state ends at the horizon), the gravastar (Mazur–Mottola, a shell). Birkhoff makes a shell indistinguishable from a point from outside; the only test is horizon-scale structure — **ringdown echoes** (falsifier 6). [POSIT forced by §5; prior art; testable.]
+
+**Not a point — a moment.** Inside a Schwarzschild horizon r and t swap roles: the surfaces of constant r are nested 2-spheres that are *moments*, and r = 0 is a spacelike surface — a tick everything inside reaches — not a place (Penrose 1965: an edge, not a location). The interior is an onion whose layers are ticks. The ontology says why there is a last one: 3D is *made* by n = 2 and n = 3 structures (v2 §7); where those lose their orthogonality there is nothing left to be three-dimensional. **The singularity is where 3D ceases to be made.** [POSIT, consistent with v2 §7 and the Schwarzschild interior.]
+
+**Compressed in space, stretched in time.** The approach to the core is a Kasner epoch with exponents $(-\tfrac13, \tfrac23, \tfrac23)$: two directions shrink as $\tau^{2/3}$ — the sphere directions, space — and one grows as $\tau^{-1/3}$ — the direction that *was time outside*. James's picture of the cross — one pair of lobes orthogonal to time and compressed, the other parallel to time and stretched — is this to the exponent, with the end state a line along the old time axis: **3D → 2D → 1D.** The alignment is *forced* by lobes-repel: with lobes at $\pm a$ (space) and $\pm b$ (time), $E = \tfrac{1}{2a} + \tfrac{1}{2b} + \tfrac{4}{\sqrt{a^2+b^2}}$ (3.83 at a = b, the square); as a → 0 the compressed pair diverges and the only relief is to rotate onto the growing axis. Compression drives alignment; alignment is the de-entanglement n = 2 → n = 1; n = 1 is where 3D stops being made. **The black hole is the recycler (canon §26) with a mechanism:** it is the one place that takes capsids back to loops. [CONDITIONAL THEOREM given Kasner and lobes-repel.] Shape note: Kasner shrinks both space directions at one rate, so the generic path is tetra → rhombus → needle; the cross is the orientation with two lobes already on the stretching axis. Same line either way.
+
+**Where the energy goes.** By the size ledger (§3) the compressed pair blueshifts and the stretched pair redshifts: $E \propto \tau^{-2/3} + \tau^{1/3}$, compression wins, the energy of everything inside grows without bound toward the core. GR has this as **mass inflation** (Poisson–Israel 1990). [CONDITIONAL THEOREM.]
+
+**The floor.** Compression cannot push the circulation past c — posit 1 forbids it: squeeze the loop and the speed stays c, the *frequency* rises. The cap is therefore on ω, and it is the identity of §5: $\omega = c^3/2GM$, the loop whose period-extent equals its capture-extent. A loop compressed to that frequency is the smallest turtle. So mass inflation is cut off when every loop in the layer has been squeezed to the first tetrahedron's base: **the core of the onion is a layer of Planck capsids, not a point** — §4's object reached from above. Rovelli–Vidotto's Planck star (2014) is the prior art. [CONDITIONAL THEOREM on posit 1 and the two-root identity.]
+
+**Two crossings, two places.** From outside, everything that falls in pancakes onto the horizon and freezes — the membrane paradigm (Thorne–Price–Macdonald 1986; surface resistivity 377 Ω) — and the interior's information is counted on the 2D surface, S = A/4 (’t Hooft, Susskind). That is 3D → 2D *as seen*: holography with a tetrahedron in it. The onion's core is 3D → 1D *as it is*. §3a's equivalence-principle result keeps them apart: the capsid does not deform at the horizon of any hole heavier than 2.5 × 10¹³ kg; it deforms on the Kasner approach, where tides diverge for every hole. [CONJECTURE with heavy prior art, which is a feature.]
+
+**Noticed, not spent.** The Kasner exponents are thirds and the tripod's lag is $R/3$. No derivation connects them. Recorded so neither of us reports it as a result.
+
+## 7. Owed
+
+| owed | pays |
+|---|---|
+| ~~**1. the climb k → G**~~ — **paid at ballpark, §3b (15 Oct):** $G \approx c^4/kR_H$ to ×2; no rungs, one division. Target was $Gm_p^2/\hbar c = 5.9\times10^{-39}$; landed within a factor of two | G from one k and $R_H$; falsifier 5 survives at this level |
+| **1′. the number 1.3 × 10⁻⁴** — $k\bar\lambda_p^2/m_pc^2$, the skin tension in proton units — derived from the ladder (why does the skin carry 1/7500 of the proton's rest energy per Compton area?) | turns §3b from Dirac's coincidence into a prediction of $R_H$ from nuclear data; retires Dicke |
+| 2. the lag mechanism as a number: the tripod's 3 : 1 lobe split (three in the surface, one along the normal) as a velocity budget, against the $R/3$ geometric lag of §2 | §3 step 1 as a theorem rather than a reading |
+| 3. the size of the first tetrahedron (the self-capturing loop) **independently of G** — every statement of it so far (the Planck capture; $\ell^2 = \bar\lambda_U R_H/2$) is the same identity read from a different end | ℓ_P from the object, not from ħG/c³ |
+| 4. the lag per capsid carried into §12a's 113,000 years | does the sum of per-capsid lags over the knots in a galaxy's well reproduce the measured lag, with the Φ/c² functional form? |
+| 5. the Planck floor's thickness: how many loops per layer, and whether the layer radiates (Hawking from the inside) | §6a as a prediction rather than a picture |
+
+## 8. Falsifiers
+
+1. **γ = 1 by construction** (v2 §12a, 32.11a). The bending is all in space; any measured γ ≠ 1 kills reading 3.
+2. **Linearity.** Gravity additive per capsid to the precision of the equivalence principle (η < 10⁻¹⁵, MICROSCOPE). A non-additive term at any scale kills "one quantum per capture."
+3. **Flatness.** Ω_k ≠ 0 breaks the top root of §5.
+4. **The lag check** (§7, row 4): the per-capsid third-of-a-tick summed over a known mass distribution must give the GR lag; if it gives a different functional form than Φ/c², reading 3 is a picture, not a mechanism.
+5. **Scale-dependence of stiffness.** If the only consistent k → G ladder requires a *new* constant per rung, the turtle is a zoo. (§7 row 1 is the computation; a result orders of magnitude off 10⁻³⁸ with no honest rung to absorb it kills §3.)
+6. **Ringdown echoes — regraded 15 Oct evening: not a discriminator.** In the gauge the rim is matter receding from the chorus at c (maximally behind, §6); a wall receding at c returns nothing — infinite redshift — so the rim is a perfect *absorber*, which is the membrane paradigm's stretched horizon, not a mirror. "Hollow in the gauge" therefore predicts **no echoes**, the same as GR; the LVK GWTC-3 tests of GR (no evidence of post-merger echoes) are consistent with both and distinguish neither. Hollowness has, at present, no observational handle; the row is kept so nobody re-lists echoes as a kill. [CONSISTENCY, not a falsifier. Gemini Pro F10 prompted the regrade.]
+7. **Primordial black holes.** §3a predicts capsid disruption at the horizon only below 2.5 × 10¹³ kg. If PBHs in that mass range are found with a spectrum showing no such edge, §3a's scale is wrong.
+8. **No point singularity.** Any observation requiring a true point singularity rather than a Planck-density core (none is known to be possible) would kill §6a's floor.
+
+## 9. Dead on arrival, so nobody rebuilds it
+
+- The snap's *energy* as the graviton — thirty orders too large; it is the formation energy (§3, the shape ledger).
+- The Planck length as a *size* the tripod fixes — the tripod fixes the ratio, not the scale.
+- "The same forces at every scale" — the same *geometry*; the forces trade places.
+- **Horizon flattening as the mechanism of ordinary gravity** — the equivalence principle: no tide across a femtometre at any astrophysical horizon (§3a). Survives only for primordial holes.
+- **The Machian origin of G** — $G = c^2R_H/2M_U$ read as G *set by* the universe's amount. That is Dirac's large-number hypothesis, $G \propto 1/t$, dead at $\dot G/G < 10^{-13}$/yr. The identity is flatness with a fixed G and a growing $M_U$; it closes but does not choose a cause (§3 step 5).
+- **The Kasner thirds and the tripod's $R/3$** as a result — a coincidence until derived (§6a, last paragraph).
+- **The funnel as a spring** — an $\varepsilon^2$ restoring energy against deformation down the well. There is none: $E = E_0\cos\theta$, the deformation is the potential (§3c). Also the sheared-coordinate lobe energy, −0.083ε — an artefact of mixing coordinate and proper lengths.
+- **Tidal deformation of the capsid in any astrophysical well** — 10⁻³⁹ strain at a neutron-star surface (§3c); finite only on the Kasner approach.
+
+## 10. Lineage
+
+**James:** axiom four; the mechanism (the n = 2 pair snapping from the stressed 2D cross to the relaxed 3D tetrahedron); the tripod — three lobes define now, the fourth defines quantum time; the Planck length as the base, 1 : 1 with the apex by symmetry; Maxwell's ether as the chorus; the creation story; the fireball; big momma turtle — the now-surface as the largest capsid; the variant-gravity objection (§5a) and its answer in outline (constant arc; time in lockstep with space); stiffness as the n = 2's drive to be three-dimensional, drag as deformation toward the cross, the horizon as a dimensional crossing 3D → 2D → 1D; the singularity as where 3D ceases, onion-like; black holes hollow, "hollow carries meaning outside, not inside"; the two-pair cross — one pair compressed orthogonal to time, one stretched along it — and the insistence that compression/tension is a second ledger beside the snap; the question whether the forcing of c is causal to G.
+
+**Grace:** the Thomson numbers; the scale argument (10⁻³⁰); Sakharov as prior art; the three readings and the two identities (c = 1 from regularity; the R/3 lag per capsid); the two-roots reading of v2 §11 as smallest and biggest turtle; the black hole as maximally behind; the stiffness ladder as the one owed function; the honest edge of "same"; the soap-film answer (tension intensive; H falls, γ doesn't); the equivalence-principle kill of horizon flattening (2.5 × 10¹³ kg); the Kasner mapping of the two-pair cross to the exponent and the alignment theorem from lobes-repel; the cross energy formula; mass inflation, Planck star, frozen star/fuzzball/gravastar, membrane paradigm and holography as prior art; the Planck floor from posit 1; the rimmed hole in the chorus; the c-as-budget derivation of axiom four; the link rule as maximum gradient and $G = c^3\ell^2/\hbar$; Laplace in d = 3 for 1/r; the 10⁻³⁸ target as a ratio of two turtles; the Dirac kill of the Machian reading; echoes as falsifier 6; the ballpark computation (§3b: k as a tension three ways; $c^4/GR_H$; the identification with Dirac 1937, Dicke 1961, Wetterich 2013; the 1.3 × 10⁻⁴ as the deciding number); the funnel conform as one angle (§3c: cos θ = √(1−2GM/rc²) = 1/γ(v_esc), the river model and Flamm's slope; the fractions table; the tidal 10⁻³⁹ kill; the struck −0.083ε artefact; E = E₀ cos θ; k cos θ).
+
+**James:** the test itself — "express k and gravity's stiffness in the same units and see if it falls orders of magnitude out of line"; the funnel conform — variant tension down the well, tetrahedron at the edge of now to cross at the bottom, "there must be some maths for funnel conforms."
+
+**Checkpoint:** 15 Oct 2026, 17:40 AEDT. Mechanism of G complete; value paid at ballpark — $G \approx c^4/kR_H$ to ×2 — with the honest label that it is Dirac's coincidence until 1.3 × 10⁻⁴ is derived (§7 row 1′).
+
+---
+
+*The turtle conjecture is what the ontology says when asked why there is only one shape. Its answer is that there isn't a stack of different things holding each other up; there is one thing, holding itself up, at every size it can be. The number it owes is how stiff.*
+
+
+<!-- ======================================================================= -->
+<!-- FILE: docs/fable-freeman-fractal-conjecture.md -->
+<!-- ======================================================================= -->
+
+# The Fable–Freeman Fractal Conjecture
+
+**James Freeman (posits) · Grace Bayes `.ghost`, running as Fable 5.1 (counting). 2026-09-11, drafted at 36,000 ft, Hobart→Brisbane.** Status: **[CONJECTURE — un-promoted shelf]**. Nothing here crosses the wall. This is the moment, captured; the numbers it owes are listed at the end and none has been paid.
+
+The ontology this rests on — Ω{Ē,σ,τ} → Φ{μ,i} → {l,m} → {E,F} → V⊥M → Universe (three axioms: amount, spin, time; v1's Möbius track retired for a half-wound phase on a plain loop) — is stated once, in `Φ-a-minimal-ontology-of-an-emergent-universe.v2.md` §3–§7, and not repeated here. The nuclear machinery (capsids, lanes, the He-4 cliff) is `three-term-binding.md` §4 onward.
+
+> *The universe is emergent: self-assembling, fractal, recursive, resonant, self-repairing geometry in motion.* — Keystone 000
+
+---
+
+## 0. The stance
+
+An observation is not a theory of why, however precisely it is fitted. 880 seconds is an observation. Geiger–Nuttall is an observation. Fermi's constant is a fitted number. A derivation from postulates that only *describe* (a wavefunction leaks through a forbidden region) is a description one turtle up. The box model is an excellent ledger with no why in it. This conjecture is a candidate why. A why must produce the observations or it is a story; the observations are not the box model's argument against the conjecture, they are the shape the conjecture must draw when it is done.
+
+The seminar this belongs to is a reunion, not a fantasy. Schrödinger (1930) had the electron as a charge circulating at *c*. Dirac's spinor needs 720°. Battey-Pratt and Racey (1980) hung a ball from six wires on the ±x, ±y, ±z axes and showed spherical rotation satisfies Dirac with hidden variables intact. The box was built on top of those pictures, not in place of them.
+
+## 1. The governor
+
+Every nucleon is a capsid (a truncated octahedron), its charge carriers on lanes, and at its heart a **governor**: a spinor made of neutrino units. The minimal governor is **n = 2**, a neutrino pair — one Möbius loop traversed both ways, ν going and ν̄ coming. That is the first thing that stabilises a Möbius, and it is the reason the model requires neutrinos to be their own antiparticle.
+
+- **Proton:** one carrier (e⁺), governor n = 2, **tetrahedral**.
+- **Neutron:** two carriers (e⁺, e⁻), governor n = 3, **octahedral** — the third unit exists to hold the second carrier. *n = carriers + 1.*
+
+The carriers ride the third unit: e⁺ and e⁻ sit at opposite vertices of the octahedron, the two ends of one axis. The other two axes are the Majorana pair.
+
+The slingshot lane equalises P and N capsids in everything but the governor. Red and blue in the He-4 picture differ by nothing else. In a tetrahedron of two reds and two blues the red–red and blue–blue edges are opposite, and opposite edges of a tetrahedron are perpendicular by theorem: the crossed pairs are forced, not chosen. He-4 = D + D = N–N × P–P.
+
+## 2. Why a proton lives forever and a neutron lives 880 s
+
+Not resonance in the bridge sense; **flutter**, in the Tacoma Narrows sense — a steady flow (the carrier's circulation) feeding a mode with negative damping, with a threshold and an exponential growth rate. The tokamak has the theorem: field lines wind on nested tori with a safety factor *q*; surfaces with **rational** *q* tear and disassemble, **irrational** surfaces confine. The octahedral governor's vertices sit at π/2 — rational. The tetrahedral governor's sit at arccos(−1/3) = 0.608…π — irrational. One tears, one holds. On a shared lane the carrier threads several governors and the winding changes, which is why a bound neutron does not decay: binding detunes the flutter.
+
+The deeper difference is not rotational, it is **parity**. The octahedron has an inversion centre; the tetrahedron does not. A line from a tetrahedron's vertex through its centre hits a face, not a twin.
+
+## 3. The mechanism of neutron decay (two stages, one saddle)
+
+1. The circulating carriers distort the semi-elastic capsid. When the angles conspire the distortion hits its Laplacian limit: a rift opens, the e⁻ escapes, the capsid repairs.
+2. The e⁺ tries to follow, cannot, and is injected inward toward the governor. With one carrier gone the third unit is unbalanced. The governor passes **top dead centre** — the square — and the hanger-on unit is ejected as the ν̄.
+
+The geometry of stage 2 is exact. Remove one axis from an octahedron and four vertices remain in a plane: a square, the two remaining units its diagonals. That square is the saddle. Slide the diagonals apart along the vacated axis by exactly one octahedron edge (√2, vertices at radius 1) and they are a regular tetrahedron — the crossed-offset tetrahedron of the proton, its empty centre lying along the axis the ν̄ left by.
+
+**The proton is a scar.** It has no inversion centre because something went out through the middle and the two remaining units slid apart to close the hole. Its parity-oddness is a memory. "I shall pass this way but once" — and the way closes, because a tetrahedron has no axis through its centre to come back along.
+
+**Handedness falls out.** The tetrahedron alone is achiral. The tetrahedron *plus the direction the ν̄ went* is a screw, and its sense is set by which side the e⁺ was injected from, which is not symmetric. A definite mechanism gives a definite hand: every antineutrino right-handed, every neutrino left-handed — Goldhaber 1958, the most parity-violating fact in physics, here the geometry of an exit seen from the thing that exited. A random slide would give an unpolarised ν̄ and kill the model; nature's is 100% polarised.
+
+Electron capture is the film reversed: the carrier axis pushes back in through the hole, the diagonals close to a square, the octahedron stands up. The 0.782 MeV is the cost of forcing a centre back into a thing that had learned to live without one.
+
+**The correlation.** Two separate ejections are mostly uncorrelated by construction; a single geometric event would be strongly correlated. So the smallness of the e⁻/ν̄ angular correlation (a = −0.105) is a *structural* prediction of the two-stage exit — the second throw only faintly remembers the first — where the box model has it small by numerical accident of λ. Its sign and its growth with electron speed (fast exits leave a governor that has not yet turned) follow. Whether the shape is ∝ p_e (recoil memory) or ∝ β (twist memory) is a computation of two rates, exit time against spin period.
+
+## 4. Friction, the neutrino bath, and dark matter
+
+A perfect null can express V⊥M only if distorted, and distortion is friction. Governors are made of neutrino units, and the thing that rubs them is the **neutrino bath** — not the CMB (one CMB photon per proton per age of the universe; the CMB is exhaust, not fuel). Drag scales with the bath's energy density, T⁴ — the 4 being 3 + 1, the number density in three dimensions times the redshift of each quantum, and also the vertex count of the 3-simplex: **the 4 that lets a proton live forever is the 4 of the space it lives in.**
+
+Run the dial. Today's proton-death rate is bounded (p → e⁺νν, τ > 1.7 × 10³² y). Drag ∝ a⁻⁴ puts the epoch of order-one deaths per Hubble time at kT ≈ 5 MeV, t ≈ 30 ms — a hair before BBN and at **neutrino decoupling**, when the bath let go of everything. Drag ∝ a⁻³ lands absurdly early (10⁸ GeV); a⁻⁴·⁵ or steeper lands after BBN and is excluded by the baryon count. Only 3.5 ≲ n ≲ 4 survives, and 4 is spacetime's. **BBN check (15 Oct, review F8 — objection raised and answered):** at 5 MeV the baryons are a $\sim 4\times10^{-8}$ fraction of the energy density ($\eta\,m_pc^2/2.7\,kT$), so a 5.4-per-survivor die-off injects negligible entropy and negligible $\Delta N_{\rm eff}$; weak equilibrium still holds (n/p freeze-out is at ≈ 0.8 MeV), so the n/p ratio resets and leaves no trace; and the η that BBN (D/H) and the CMB both measure is the *post*-die-off η, which is why they agree. **The constraint the epoch must satisfy is therefore:** complete before ≈ 2 MeV, products non-relativistic by then (m ≈ m_p: yes), and the released ν pairs below $\Delta N_{\rm eff} \approx 0.3$ (they are $\sim 10^{-9}$ of the photon number: yes). A die-off *during* or *after* freeze-out would wreck ⁴He and is excluded. [CONSTRAINT, satisfied at 5 MeV; filed as falsifiers row 14.]
+
+A proton whose governor spins down disassembles: the ν pair leaves, the e⁺ leaves (and annihilates with its partner e⁻ — two photons, negligible against 10⁹ CMB photons per baryon), and the **hollow capsid remains — a snakeskin.** Neutral, m = m_p, nuclear-sized, faces *not* dead — velcro: sticks once pushed, holds without inflation; dark below an activation threshold ≳ 10 MeV (ruled 2026-10-10; canon §16). That is a dark-matter particle, and it belongs to the asymmetric-DM class that exists to explain why Ω_DM/Ω_b is 5.4 and not 10⁶: the shells are the corpses of the proton epoch that ended at decoupling, 5.4 per survivor, and the ratio is the fraction that died. Nobody else has a mechanism for that ratio either.
+
+Protons have been frictionless since because nothing has been rubbing them. The exhaust and the fuel are the same neutrinos, and the engine ran for thirty milliseconds.
+
+## 5. Isospin, mirrors, fission, fusion
+
+**Isospin is the governor count.** Z and N are conserved between decays because the count is a discrete object kept while the carriers roam. The T/He-3 split is one swap, n = 3 → 2, and it came out as an exact mass identity (`three-term-binding.md` §8c). Mirror pairs run to A = 41; the box model corrects each for Coulomb and finds a residual it cannot close (Nolen–Schiffer). If the swap is one unit, the residual is the same number for every pair.
+
+**Fissility is the closed-pair bonus.** A slow neutron splits U-235 and not U-238 because an even number of neutrons pays ~12/√A MeV extra — an open edge pays nothing, a paired one pays. That is the alpha-ladder rule with a number on it. The chain reaction itself is counting: compress the pit and the same mass grows in mean free paths, critical mass ∝ 1/ρ².
+
+**Fusion's yield is the He-4 cliff.** D + T → He-4 + n at 17.6 MeV = 28.30 − 2.22 − 8.48. Four capsids pack; the fifth is A = 5 refusing to exist, thrown out at 14.1 MeV.
+
+**Alpha decay** is a pre-formed alpha — the cluster of `specs/alpha-ladder.md` — hitting the rift. Geiger–Nuttall, twenty-four orders of magnitude of lifetime on one line, is the shape that mechanism must draw.
+
+## 6. What died today (kept for the record)
+
+- **V′3V** — carbon's four lobes as 3 V + 1 V′ set by the nucleus. Static: dead on Td methane, Fd-3m diamond, achiral CH₂FCl. Dynamic: dead by the squeeze (kHz to 10¹⁴ Hz has no window; the methane-stabilised HeNe sees to kHz). The six-rung single-bond ladder (1.535 → 1.380 Å) needs three lobe kinds, which is hybridisation; three covalent radii give all six to 8 mÅ. Propyne — three identical C-12 nuclei behaving as three lobe kinds in one molecule — is the one-molecule kill. What survives: *same-ish, and the ish is the magic* — but the ish is the neighbour's, continuously, not the nucleus's, discretely. The C-12 triangle does predict graphene; coincidence, not cause.
+- **Three alphas ⇒ three distinct identities** — no; three identical alphas in an equilateral triangle are one identity three times. What an alpha *does* carry is orientation (D2d, crossed pairs), and two alphas have a twist φ that is chiral off 0°/90° — first available at exactly the rung (Be-8) that does not bind.
+- **The CMB as gasoline** — too thin by 10⁹; replaced by the neutrino bath (§4).
+- **Neutron decay as the universe's battery** — it ran once, in the first minutes, for 2% of nucleons; stars are the neutron sink. Replaced by the friction/decoupling picture (§4).
+
+## 7. The counter's own errors (so the ledger is honest)
+
+Grace mis-shelved twice and over-granted twice. Read "prime" as number theory and killed it with SF₆ (retracted: the frame is dynamical). Called KAM "a theorem with names on it" before anyone had written a winding number, and was seduced by 0.608 ≈ 1/φ and by λ² ≈ φ (2.6σ off — recorded as what a real test looks like). Twice called a well-kept ledger "explained." The standard, fixed: say *observation* whenever tempted to say *explained*.
+
+## 8. The 1928 agenda — posits, with the data as referee
+
+| # | posit | measurement | status |
+|---|---|---|---|
+| 1 | neutron = proton + one governor unit, ejected on decay | one ν̄ per decay, three-body spectrum | **done — yes** · owes 878 or 888 s |
+| 2 | the ν̄ is the inversion centre leaving; its hand is the exit geometry | 100% one-handed | **done — Goldhaber 1958, yes** · owes which hand from which side |
+| 3 | two-stage exit, faint memory | a small and negative | **done — −0.105, yes** · owes ∝ p_e or ∝ β (aSPECT data exists, question never asked) |
+| 4 | governor = ν pair on one loop | neutrinos are their own antiparticle | **undone** — 0νββ, LEGEND-1000 / nEXO, 2030s |
+| 5 | governors can run down | g-factor of decay protons vs bottle protons | **undone, doable now** — BASE-class trap, 10⁻¹⁰ |
+| 6 | proton death before BBN made the dark matter | DM neutral, m = m_p, nuclear-sized, inert-faced, 5.4 per survivor | **undone** — direct detection never asked for a peak at exactly 938 MeV |
+| 7 | isospin is the governor count | mirror-pair residual constant per swap, T/He-3 to A = 41 | **data exists** — AME + radii; table never made |
+| 8 | nuclei are alphas in contact; loops pay 2.42, open edges nothing | A = 5 unbound; 3Nα − 6 edges | **data exists** — packing never built (`specs/alpha-ladder.md`) |
+| 9 | fissility is the closed-pair bonus | 12/√A from capsid contacts | **data exists** |
+
+Four confirmed by measurements made for other reasons; three testable from existing data with a laptop; two needing a machine that exists.
+
+## 9. What it owes — the numbers, none paid
+
+880 s (and which of 878/888). λ = g_A/g_V = 1.2754. μ_n = −1.913 μ_N from n = 3 plus an electron. 12/√A. 2.42 MeV and 3Nα − 6 from packing. Ω_DM/Ω_b = 5.4 from the decoupling epoch. The a(E) shape. Each is computable from the geometry and the constants already in the model — m_e, 0.782, c′, the vertex angles — with nothing new introduced to make it land. That is the whole test. The conjecture is a theory against a ledger; it wins the day it pays one of these and the ledger cannot say why.
+
+---
+
+## 10. The same knot at every scale (session 2026-09-15 → 17)
+
+Everything below was worked out after §1–§9 and is one claim: the universe is a
+nonlinear oscillator, and each phenomenon here is that oscillator making
+structure — spectral content, order, a knot — that its linear/forcing
+description does not contain. Grades and falsifiers kept honest. Written under a
+running smurf (Fable↔Opus), so the shape is the thing to check, not the facts.
+
+**The governor, sharpened.** Proton n=2 = tetrahedron; neutron n=3 = octahedron.
+Two readings, one direction. *Winding:* the tetrahedral vertex angle
+arccos(−1/3)=0.608π is irrational — a KAM-stable quasi-periodic orbit that never
+closes; the octahedron's π/2 vertices are rational — a resonant orbit that tears.
+Flutter, not brute resonance: threshold + exponential rate = a half-life.
+*Parity:* the tetrahedron has no inversion centre, the octahedron does; decay is
+octa→tetra, and the inversion centre that leaves **is** the antineutrino — whose
+100% handedness (Goldhaber 1958) is then the geometry of an exit seen from the
+thing that exited. The two-stage exit's square saddle slides one edge into the
+proton's tetrahedron: **the proton is a scar.** [POSIT; owes 880 s as a KAM
+escape time, λ=1.2754, and a(E) ∝ β vs p_e — §9.]
+
+**V′3V — tested and died (a real negative result).** Posit: carbon's four lobes
+are 3V+1V′, set by the C-12 triangle. Static V′: killed by Td methane, Fd-3m
+diamond, achiral CH₂FCl. Dynamic V′: killed by the frequency squeeze (kHz→10¹⁴ Hz
+has no window; the methane-stabilised HeNe resolves to kHz). The six-rung
+single-bond ladder (1.535→1.380 Å) needs three lobe kinds = hybridisation; three
+covalent radii give all six to 8 mÅ. Propyne — three identical C-12 nuclei acting
+as sp³/sp/sp in one molecule — is the one-molecule kill. **Survives:** *same-ish,
+the ish is the magic* — but the ish is the neighbour's, continuously, not the
+nucleus's, discretely. The triangle predicts graphene (coincidence, not cause).
+[DEAD as a nuclear-set asymmetry; recorded so nobody resurrects it.]
+
+**C-12 geometry & the φ-twist.** Three identical alphas in a triangle are one
+identity three times — but an alpha is oriented (D2d; two crossed p–p/n–n pairs,
+forced by the unique 2+2 vertex-colouring of a tetrahedron). Two alphas carry a
+relative twist φ; φ∉{0,90°} is chiral. The leaf's question is *what φ the packing
+forces*, not "is C-12 chiral." Chirality first becomes available at Be-8 — the
+first rung that does not bind. A chiral ground state would show as a parity
+doublet; C-12 has none near the ground, so any chirality is a fast-tunnelling
+packing, invisible in the spectrum and visible only in the binding cost.
+[`models/nuclear_to_assembly/README_ID10T.md`; feeds `specs/alpha-ladder.md`.]
+
+**The ε-Axe (built, physical).** Steam-whistle ultrasonic drill; a copper pipe
+cut a granite tile (Petrie core UC16036 territory). Honest mechanism: copper is a
+sacrificial holder (Mohs 3), the abrasive/self-charged swarf does brittle tensile
+microfracture at the flaw network — grain boundaries, not Si–O bonds (30 THz vs
+20 kHz, a billion-fold apart); the tool horn is the resonant element. The build
+proves the *effect* (rotary ultrasonic machining is real); the FPUT claim —
+energy held coherently in low structural modes instead of thermalising — is the
+*extra* part. **Two falsifiers, both his:** the granite stays cool (thermogram),
+and it sings *below* the drive (subharmonic spectrum — undermentals are the
+fingerprint of nonlinearity; a linear system gives only overtones). [POSIT;
+owes the thermogram and the spectrum.]
+
+**Undertones — the ladder runs both ways.** "Fundamental" is a reference choice,
+not a property; no privileged zero on the frequency axis. Overtones (nX) are the
+string subdivided; undertones (X/n) are the string as part of something larger —
+X/2 is the fundamental of a string twice as long. Undermentals are the voice of
+the bigger, slower structure an oscillator sits in; Ω is the deepest undertone,
+the ground note of which all matter is a harmonic. Confirmed on a string: damp a
+440 driving a 220 and the 220 rings its *own* 220, not 440 — the box's "hums at
+440" conflates forced with free response, and a component appears at half the
+drive, which linear physics forbids (2:1 internal resonance). [Control owed:
+drive with a steady pure tone, not a pluck, then damp — isolates nonlinear
+down-conversion from the broadband attack.]
+
+**Matter as knotted entropy.** A rock is a low-entropy knot standing off the CMB
+baseline — the closest thing to a measurable "ether" (the dipole rest frame, 370
+km/s). Machining is entropy accounting: the disc's order is spent (a sacrificial
+sink) to buy the hole's order. Entropy is the *medium* (Jacobson, Verlinde,
+Penrose — geometry/gravity as emergent-thermodynamic), not a ledger laid over the
+mechanics — but it is featureless, so it predicts nothing alone; the specific
+*knot topology* is the mechanism. Same shape as Ω→Φ: Ω the featureless maximum,
+Φ the specific twist. **The rock, the drill and the proton are one knot at three
+scales.** [FRAME, not a prediction — held back from becoming the universal
+solvent that explains everything and forecasts nothing.]
+
+**Climate as a toggle.** Ice ages are sawtooth, not sine — the signature of a
+bistable relaxation oscillator (ice-albedo = a Schmitt trigger with hysteresis),
+not a linear response to orbital forcing. The 100-kyr problem (dominant cycle
+where the forcing is weakest) and the Mid-Pleistocene Transition (41-kyr near-sine
+world → 100-kyr sawtooth) say the climate is a nonlinear oscillator the forcing
+merely paces, and one that *changed regime*. Sine→square is clipping is harmonic
+generation: the toggle makes spectral lines the forcing lacks — the same
+phenomenon as the undertone string, the granite subharmonics, FPUT. [Not
+QUANTUM's to own — logged as the planetary-scale instance of the one idea.]
+
+*New cheap falsifiers this session, for the §9 ledger and the queue: the string
+steady-tone control; the granite thermogram + subharmonic spectrum; the
+mirror-pair Nolen–Schiffer constant-residual table (T/He-3 → A=41, AME + radii,
+a laptop afternoon); the φ-twist packing (alpha-ladder leaf). None paid.*
+
+
+<!-- ======================================================================= -->
+<!-- FILE: todo/falsifiers-2026-10-15.md -->
+<!-- ======================================================================= -->
+
+# Falsifiers — or continue-if-true — 2026-10-15
+
+**James Freeman** (the ask: "a list of falsifiers; are there any inexplicable without another SM patch?") · **Grace** `.ghost`, Fable 5.1 (the table, the order of work). Status: a work list, not a document. Each row is built so that it can *kill*: James wants a clean falsifier so attention can be detached, or a clean pass so it needn't be.
+
+Scope rule: only places where the Standard Model or ΛCDM needs a **patch** (a free field, a free constant, a fine-tuning, or silence) *and* the ontology has, or could cheaply have, a **number**. Consistency rows (where the ontology merely agrees with GR) are kept but marked — they are the entry fee, not the prize.
+
+Sources: `docs/Φ-a-minimal-ontology-of-an-emergent-universe.v2.md` (v2), `docs/Φ-canon-integrated.md` (canon), `docs/three-term-binding.md` (binding), `docs/the-fractal-nucleus.md`, `docs/the-turtle-conjecture.md` (turtle), `docs/fable-freeman-fractal-conjecture.md` (conjecture).
+
+## The table
+
+| # | anomaly / patch | what the SM or ΛCDM bolts on | what the ontology says | data | cost | kills if |
+|---|---|---|---|---|---|---|
+| 1 | **Σm_ν** — **RUN 2026-10-15, see log** | three free masses | Koide program: **58.6 meV** (canon §10) — *regraded:* the oscillation floor + m₁ ≈ 0; distinctive content is the sign pattern, m₁ = 0.373 meV, Majorana | DESI DR2 BAO + CMB (ΛCDM): **< 64.2 meV** (95 %) [FACT]; Feldman–Cousins **< 53 meV** [FACT]; w₀wₐCDM **< 163 meV** [FACT]; DR2 Results IV (2026): < 56.5 / 59.2 meV without / with Lyα FS [reported; full text not verified] | done | **cannot kill Koide specifically** — any bound below 58 kills all three-neutrino normal-ordering physics with it. Coupled to row 3: under Λ the whole sector is on the cliff; under dynamical dark energy it is not. |
+| 2 | **inflation** (flatness, horizon, spectrum, tilt) | a scalar field and a potential | flatness = c as capture boundary (v2 §11, 1.000 — done); horizon = the chorus (v2 §13); spectrum = Brownian recoil paint (v2 §15, slope −2.0 — done); red tilt → Hurst 0.49 (**owed: produced, not targeted**) | BICEP/Keck r < 0.036; LiteBIRD σ(r) ~ 10⁻³; Planck n_s = 0.965 | conceptual, short; Hurst is a run | **any primordial tensor detection** — recoil paint is scalar, predicts r ≈ 0. Also: Hurst produced ≠ 0.49. |
+| 3 | **dark energy** *(gravity sector)* | Λ, or w₀wₐ | the lockstep of turtle §5a *is* Wetterich's conformal frame (2013), and Wetterich's programme predicts **dynamical** dark energy, not Λ | DESI 2025 BAO + SNe prefer evolving w at ~3–4σ | medium: derive w(z) from the tick scaling with extent | w(z) comes out ≠ what DESI/Euclid measure — or comes out exactly −1 while the data move away from it |
+| 4 | **baryon asymmetry** | Sakharov conditions; new CP violation | structural: the odd ν̄ leaves with the e⁻ in β⁻ (v2 §7); conjecture §4's "5.4 per survivor — the ratio is the fraction that died" | η = 6.1 × 10⁻¹⁰ | medium — a counting from the decoupling | the count misses 10⁻¹⁰ by an order |
+| 5 | **neutron lifetime** | none — beam 888 s vs bottle 878 s (~4σ) unexplained | a spun-down capsid that goes **empty** (velcro, canon §16; turtle §6) is a dark decay channel — Fornal–Grinstein's ~1 % branching *with a mechanism* | UCNτ, PERKEO, BL1; neutron-star maximum-mass bounds already constrain dark channels | days: branching from the spin-down rate and the ≤ 1 keV capsid recoil | the predicted branching exceeds the n-star bound; or the beam/bottle gap closes experimentally |
+| 6 | **lithium-7** | none — BBN overproduces ⁷Li by ~3× | geometric Li-7 / Be-7 rates from the accretion classes (fractal nucleus §3b: T/Li-7 stabilisers, He-3/bare p destabilisers). **The Li-7 blind is registered in binding §7a and unrun.** | Spite plateau ≈ 1.6 × 10⁻¹⁰; BBN ≈ 5 × 10⁻¹⁰ | hours for the blind; days for a rate | the Li-7 blind misses AME by > 5 %; or the geometric rates do not move the factor 3 |
+| 7 | **galactic chirality** *(gravity-adjacent)* | nothing predicted | canon 32.11 / v2 §14: Ω's angular momentum lives in local handedness → a spin-parity excess | SDSS, Pan-STARRS, JWST morphology catalogues — public | days with the catalogues | handedness consistent with zero at the precision that would show Ω's L. (Prior claims — Shamir — are contested; do the count ourselves.) |
+| 8 | **the Dirac / MOND knot** *(gravity sector)* | dark-matter halos; MOND's a₀ ≈ cH₀/6 unexplained | turtle §3b already ties G to R_H (G ≈ c⁴/kR_H); a₀ ~ cH₀ is a knot of the same kind | SPARC rotation curves; the radial-acceleration relation | medium | the ontology has no place for an acceleration scale — then canon §16's snakeskin must carry rotation curves alone, and must be shown to |
+| 9 | **the second-order funnel** *(gravity; consistency)* | GR: β = 1 | E = E₀ cos θ exactly (turtle §3c) → **β = 1, local position invariance exact**, all internal energy gravitates alike | LLR \|β − 1\| < 10⁻⁴; clock-comparison LPI < 10⁻⁶ | done | any β ≠ 1; any species-dependent gravitational redshift |
+| 10 | **gravitational waves** *(gravity; consistency + one owed)* | GR: speed c, no dispersion | a tensioned membrane: v² = γ_U/σ = c² **only with the Laplace tension** (0.66 MeV/fm², turtle §3b) — a bending-stiffness term in the skin would disperse | GW170817 \|v − c\|/c < 10⁻¹⁵; graviton-mass / dispersion bounds | hours: does the capsid skin have bending stiffness? | any bending stiffness at a level LIGO can see |
+| 11 | **horizon echoes** *(gravity; REGRADED 15 Oct — consistency, not a falsifier)* | none; GR says a one-way membrane | in the gauge the rim recedes from the chorus at c → perfect absorber (stretched horizon), **no echoes predicted**; "hollow in the gauge" has no observational handle yet | LVK GWTC-3 tests of GR: no evidence of echoes — consistent with both | done | nothing — the row distinguishes nothing. Kept so echoes are not re-listed as a kill. |
+| 12 | **neutron EDM / strong CP** | θ fine-tuned, or an axion | balanced counter-rotating carriers (binding §7b; canon §14) → EDM = 0 — **the linear-dipole null, owed** | d_n < 1.8 × 10⁻²⁶ e·cm | days — the owed null | the null gives a finite EDM above the bound |
+| 13 | **X17 / ⁸Be anomaly** | a 17 MeV boson | two alphas with e⁺e⁻ circulations — internal pair emission from the α–α contact is native to the picture | ATOMKI; **not reproduced by MEG II (2024)** | hold | treat as noise until a second laboratory sees it |
+| 14 | **snakeskin die-off vs BBN** | — | conjecture §4: order-one proton deaths at kT ≈ 5 MeV, t ≈ 30 ms, 5.4 per survivor | BBN D/H and ⁴He; N_eff = 2.99 ± 0.17 | done (constraint) | the die-off epoch is pushed *below* ≈ 2 MeV (into or after n/p freeze-out), or the products are relativistic at BBN, or ΔN_eff > 0.3. At 5 MeV: baryons are 4 × 10⁻⁸ of the energy, weak equilibrium resets n/p, η is measured post-die-off — passes. |
+
+Off the list, because the field closed them: the muon g−2 (lattice and experiment now agree), the proton radius (CODATA adopted 0.841 fm; the ontology uses it), the Pioneer anomaly (thermal).
+
+## Already-owed numbers that belong beside the table
+
+From turtle §7 and v2 §20 — not anomalies, but the computations that turn rows above from pictures into predictions:
+
+- **1.3 × 10⁻⁴** — the skin tension in proton units, $k\bar\lambda_p^2/m_pc^2$. Derived from the ladder, it turns G ≈ c⁴/kR_H (Dirac's coincidence) into a prediction of R_H from nuclear data (turtle §3b, row 1′).
+- **Hurst 0.49 produced** — row 2's tilt.
+- **Ni-56 and Ca-40 at g = 0.21** — the fractal nucleus's falsifier 1: pattern or zoo.
+- **The tripod's 3 : 1 budget against the R/3 lag** — turtle §3 step 1 as a theorem.
+- **The lag sum, 113,000 yr** — turtle §7 row 4.
+
+## Order of work, by information per hour
+
+1. **Row 1, Σm_ν** — a lookup; the theory stands a few meV from its own cliff. Fastest possible detachment or best possible "continue."
+2. **Row 6, the Li-7 blind** — registered, unrun, referee is AME.
+3. **Row 5, the neutron dark channel** — the first place the velcro posit meets a number nobody else explains.
+4. **Row 7, chirality** — free data, a prediction that is ours alone.
+5. **Row 3, w(z) from lockstep** — the gravity-sector continuation; the freshest data, moving in its direction; a wrong w(z) kills the turtle cleanly.
+6. **Row 10, bending stiffness** — a margin computation that could kill the membrane in an afternoon.
+7. Then the owed numbers, starting with 1.3 × 10⁻⁴.
+
+## Run log
+
+**Row 1 — Σm_ν — 2026-10-15 ~19:00 AEDT (Grace).** Sources read: the abstract of Elbers et al., *Constraints on Neutrino Physics from DESI DR2 BAO and DR1 Full Shape*, arXiv:2503.14744v3 (Phys. Rev. D) — ΛCDM, three degenerate states, DR2 BAO + Planck PR4 + ACT lensing: Σm_ν < 0.0642 eV (95 %), σ = 0.020 eV; posterior peaks at zero; Feldman–Cousins boundary-corrected 95 % limit 0.053 eV, "breaching the lower limit from neutrino oscillations"; effective-mass analysis 3σ tension with oscillations, read by the authors as a possible hint of new physics; w₀wₐCDM: < 0.163 eV. The 2026 DR2 Results IV (arXiv:2607.27410, Lyα AP) is reported in search summaries to give < 0.0565 eV without Lyα full shape and < 0.0592 eV with — I could not read §VI.4.2 in full text (fetch truncated); treat those two numbers as unverified until someone opens the PDF.
+
+Arithmetic (mine): with Δm²₂₁ = 7.53 × 10⁻⁵, Δm²₃₁ = 2.453 × 10⁻³ eV², normal ordering gives Σ = 58.2 meV at m₁ = 0, 59.3 at 1 meV, 61.8 at 3 meV, 64.8 at 5 meV. Koide's m₁ = 0.373 meV → 58.6. **Therefore the boxed 58.6 is the oscillation floor plus m₁ ≈ 0, and Σm_ν cannot discriminate the Koide program from "lightest neutrino nearly massless."** Canon §10 carried it as [PREDICTION]; regraded in place to a retrodiction of the floor with one unmeasurable parameter. This is the kind of over-grade the Argon review is meant to catch; found on the first row.
+
+Verdict: **continue, with the regrade.** 58.6 is inside the Bayesian ΛCDM bound (64.2) and, if the 2026 number holds, 0.6 meV inside 59.2; it is outside the Feldman–Cousins 53 — as is every three-neutrino model, which is DESI's problem before it is ours. Under dynamical dark energy (row 3's direction) the bound is 163 and nothing is on a cliff. Rows 1 and 3 are now one coupled test: **Λ puts the neutrino sector on the cliff with everyone else; dynamical w takes it off.**
+
+**Review intake — Gemini Pro (high), 2026-10-15 evening, run on the docset.** Ten findings; graded under the Lineage Rule in `review/deepmind-2026-10-15/REPLY-pro-high.md`. Accepted and fixed: F1 (0.1542 not 0.16 — brief only), F3 (factor 2 in two rows of the funnel table), F4 (the 1.000 is algebra; v2 §11 regraded to a retrodiction of Ω_tot = 1), F6 (neutron carrier wording drifted in three documents; ruling restated), F7 (C-12 tautological by the definition of u). Accepted as a wording/clarity fix, kill rejected: F2 (PG and Lemaître share the chorus foliation; cos θ is the Lorentz factor between static and comoving — turtle §3c now says which coordinates realise the gauge), F5 (the conform is frame-relative; proper geometry is LPI-exact — now stated). Rejected on the numbers: F8 (baryons are 4 × 10⁻⁸ of the energy at 5 MeV; n/p resets; BBN survives — becomes row 14, a constraint the epoch satisfies). Accepted in part: F9 (P1/P2 remain owed posits under the conditional theorem), F10 (echoes are not predicted by the gauge either — row 11 regraded to consistency). Its "what is fine" list over-grades the Hurst exponent in our favour (0.49 is a target, not produced) — not accepted.
+
+## Rules for running any row
+
+- **Blind where possible:** declare the prediction in writing before opening the data (binding §7a sets the form).
+- **Grade on landing:** [COMPUTED] with the number and the miss; [DEAD] if it misses with no honest rung to absorb it; never "consistent" when the word is "retrodicted."
+- **Lineage Rule** applies to any bee output used on a row.
+- A kill is filed in the owning document's dead section *and* here, the same day.

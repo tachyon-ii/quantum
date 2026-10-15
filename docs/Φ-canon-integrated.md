@@ -209,7 +209,7 @@ Every nucleon is a **capsid** — a truncated octahedron, the Kelvin cell — wi
 - **Proton:** one carrier ($e^+$), governor $n = 2$, **tetrahedral**.
 - **Neutron:** two carriers ($e^+$, $e^-$), governor $n = 3$, **octahedral** — the third unit exists to hold the second carrier. **$n = \text{carriers} + 1$.**
 
-The carriers ride the third unit: $e^+$ and $e^-$ sit at opposite vertices of the octahedron, the two ends of one axis; the other two axes are the Majorana pair.
+The carriers ride the third unit: $e^+$ and $e^-$ circulate as **balanced, counter-rotating carriers** coupled to the two members of the spinor (ν̄ with e⁺, ν with e⁻ — James, 10 Oct), neutral in Coulomb and balanced in angular momentum; the other two axes are the Majorana pair. *Superseded wording struck 15 Oct (review F6):* "sit at opposite vertices" and binding §7b's "positive core, negative skin." The neutron's negative $\langle r^2\rangle_{\rm ch} = -0.116$ fm² is carried almost entirely by the **Foldy term**, $-0.127$ fm² (computed; `todo/schrodinger-salvage` §1), leaving ≈ +0.01 fm² for the rest-frame distribution — i.e. *nearly neutral and balanced*, which is what this architecture predicts and what a central-e⁺/outer-e⁻ lane would **over**-predict.
 
 **The mass differential.** The second carrier costs
 

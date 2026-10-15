@@ -1,4 +1,4 @@
-# the-turtle-conjecture.md §3c — the funnel conform: cross% = 1 - sqrt(1-2GM/rc^2) down the well; the sheared-coordinate lobe energy (-0.083 eps) is the STRUCK artefact, kept so it is not rebuilt. Grace, 2026-10-15.
+# the-turtle-conjecture.md §3c — the funnel conform: cross% = 1 - sqrt(1-2GM/rc^2). NOTE (15 Oct eve, review F3): the weak-field rows below were fed Phi/c^2 as rr^-1 where the table column is 2GM/rc^2 — Earth and Sun are a factor 2 low here; corrected in the doc. The sheared-coordinate lobe energy (-0.083 eps) is the STRUCK artefact, kept so it is not rebuilt. Grace, 2026-10-15.
 import numpy as np, math
 # regular tetra lobes: apex along +z (time), three base lobes in/near the surface
 R=1.0
