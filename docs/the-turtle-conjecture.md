@@ -1,6 +1,6 @@
 # The Turtle Conjecture
 
-**James Freeman** (the conjecture, the tripod, big momma turtle, axiom four) · **Grace Bayes** `.ghost`, running Fable 5.1 (the counting, the identities, this write-up, 2026-10-15). Companion to `Φ-a-minimal-ontology-of-an-emergent-universe.v2.md` (cited as v2 §n) and `the-fractal-nucleus.md`. **Status: [CONJECTURE — un-promoted shelf]** under the canon's grade rule: a candidate *why*, retrodicting what it does not yet derive. Nothing here crosses the wall. **Checkpoint 15 Oct evening:** §3 rewritten as the origin of G (mechanism complete, value owed); §3a, §5a, §6a added; falsifiers 6–8; three new kills in §9.
+**James Freeman** (the conjecture, the tripod, big momma turtle, axiom four) · **Grace Bayes** `.ghost`, running Fable 5.1 (the counting, the identities, this write-up, 2026-10-15). Companion to `Φ-a-minimal-ontology-of-an-emergent-universe.v2.md` (cited as v2 §n) and `the-fractal-nucleus.md`. **Status: [CONJECTURE — un-promoted shelf]** under the canon's grade rule: a candidate *why*, retrodicting what it does not yet derive. Nothing here crosses the wall. **Checkpoint 15 Oct evening:** §3 rewritten as the origin of G (mechanism complete); §3a, §5a, §6a added; falsifiers 6–8; three new kills in §9. **§3b:** the ballpark — $G \approx c^4/kR_H$ to ×2 [COMPUTED], labelled as Dirac's coincidence until §7 row 1′ is paid.
 
 > *Turtles all the way down — and the thing that makes it turtles is that every turtle is the same shape as the stack.*
 
@@ -43,7 +43,7 @@ With the ledgers separated, the chain:
 1. **Why there is gravity.** In the synchronous gauge every unit moves at c through the 4-space — v2 §10, the chorus is what left at c (Epstein's "everything moves at c through spacetime," here with an object). A unit with no circulation spends its whole budget on the advance along the normal and rides the now-surface. A capsid spends part of it circulating in space — the lobes run at c — and has less left for the advance. **Mass is behind the chorus because c is a budget, not a limit.** This is reading 3 of §2 as kinematics, and it is axiom four derived. [CONDITIONAL THEOREM in the gauge. The tripod's 3 : 1 lobe split against the $R/3$ lag is the numeric check — §7.]
 2. **Why it is additive.** The budget is per unit; N units lag N times. Newton's superposition and the equivalence principle (η < 10⁻¹⁵) come free. [THEOREM given 1.]
 3. **Why 1/r.** The surface is under tension — *intensive*, a soap film: it does not soften as the surface grows (§5a). A tensioned surface in three spatial dimensions with a point lag obeys Laplace, and Laplace in d = 3 gives 1/r. The 3 is v2 §8's capture well. The equation that gave the patch and the tyre law (`three-term-binding.md` §7b) gives the inverse square. [THEOREM given tension and d = 3.]
-4. **Why it is this weak.** Stiffness is a maximum gradient: by the per-link loop (v2 §17) no link may carry more than one tick of lag, so the surface cannot slope steeper than c. In those terms $G = c^3\ell^2/\hbar$ with $\ell$ the shortest link — the first tetrahedron's base. Gravity's weakness is then a ratio of two turtles, $Gm_p^2/\hbar c = (\ell/\bar\lambda_p)^2 \approx 10^{-38}$: the first tetrahedron against the proton's extent, squared. The hierarchy problem becomes *how many rungs lie between the Planck capture and the nucleon* — the question `the-fractal-nucleus.md` is built to ask. [IDENTITY — exact, and not a derivation until $\ell$ is fixed independently.]
+4. **Why it is this weak.** Stiffness is a maximum gradient: by the per-link loop (v2 §17) no link may carry more than one tick of lag, so the surface cannot slope steeper than c. In those terms $G = c^3\ell^2/\hbar$ with $\ell$ the shortest link — the first tetrahedron's base. Gravity's weakness is then a ratio of two turtles, $Gm_p^2/\hbar c = (\ell/\bar\lambda_p)^2 \approx 10^{-38}$: the first tetrahedron against the proton's extent, squared. [IDENTITY — exact, and not a derivation until $\ell$ is fixed independently.] **§3b pays this at ballpark from the other end:** the tension is one number at the bottom rung and the top, and G follows from k and the Hubble radius to a factor of two.
 5. **Why G is constant.** Tension is intensive and the tick scales with extent (posit 1), so nothing in capsid units drifts; $\dot G/G < 10^{-13}$/yr by construction. [THEOREM given 3.] What this *kills*: the Machian reading $G = c^2R_H/2M_U$ (v2 §11, computed to 1.000) is **not** G set by the universe's amount — that is Dirac's $G \propto 1/t$, and Dirac is dead. It is the capture boundary admitting exactly as much amount as a fixed G allows, $M_U$ growing as material enters the Hubble sphere. The identity closes; it does not choose a cause. [§9.]
 
 Sakharov (1967) had G as the elastic modulus of the vacuum and no event doing the pulling. Here the puller is the capsid's circulation, the modulus is the link rule, and the one thing missing is the link's length. **The mechanism of G is complete; its value is one computation away — §7 row 1.**
@@ -51,6 +51,34 @@ Sakharov (1967) had G as the elastic modulus of the vacuum and no event doing th
 ### 3a. The horizon is not where the capsid deforms  [COMPUTED; equivalence principle]
 
 A capsid in free fall feels only tides. Setting the tidal energy across one capsid (0.84 fm) at a horizon equal to the flattening cost (~0.5 MeV) and solving for the hole gives **M ≈ 2.5 × 10¹³ kg** — an asteroid, a primordial black hole. Above that mass a capsid crosses the horizon intact. So "the tetra flattens to the cross at the horizon" is a local mechanism only for primordial holes; for every hole that is known to exist, the capsid that falls in does not know. [DEAD as a mechanism of ordinary gravity — §9; LIVE as a prediction for primordial black holes.] The deformation happens later, at the onion's core — §6a.
+
+### 3b. The ballpark: k against gravity  [COMPUTED 15 Oct 17:40; `models/turtle/stiffness_ratio.py`]
+
+The test James set: express the capsid's skin stiffness k and gravity's stiffness in the same units and see whether they are orders of magnitude apart.
+
+**k as a tension.** P = 1.912 MeV per unit square (He-4 calibration, `three-term-binding.md` §7a) over the Kelvin cell's square face. Tying the cell to the capsid three ways — square-to-square diameter = 2R_p (a = 0.595 fm), hex-to-hex (0.687 fm), saturation density 0.16 fm⁻³ (0.821 fm) — gives **k = 2.8 – 5.4 MeV/fm²** (4.5 – 8.7 × 10¹⁷ N/m). Textbook check: the semi-empirical surface term over the nuclear surface, 0.9 – 1.0 MeV/fm². Same decade.
+
+**Gravity as a tension.** $c^4/G = 1.21\times10^{44}$ N is a force; a surface tension needs a length under it. Over the Planck length: $7.5\times10^{78}$ N/m, and k is $6\times10^{-62}$ of it — the ratio is $\ell_P/R_H$ and nothing is learned. Over the *other* root of §5, the Hubble radius: $c^4/(GR_H) = 5.5$ MeV/fm². Then
+
+$$
+\frac{k}{c^4/GR_H} = 0.5 \text{–} 1.0, \qquad \frac{c^4}{Gk} = 1.0 \text{–} 1.9\,R_H .
+$$
+
+With Laplace's factor for a capsid in equilibrium ($\rho c^2 = \gamma/R$, so $\gamma_U = 3c^4/8\pi GR_H = 0.66$ MeV/fm²) the ratio is 4 – 8 and the textbook tension sits at 1.5×. **The skin tension of the smallest capsid that packs and of the largest agree to within a small factor, across sixty-one orders of magnitude in Planck units.** The climb k → G is not sixty rungs; it is one division:
+
+$$
+\boxed{\;G \approx \frac{c^4}{k\,R_H}\;}\qquad\text{one nuclear number, one cosmological, G to } \times 2.
+$$
+
+**What this is.** Dirac's large-number coincidence (1937), re-found with a tension where Dirac had arbitrary powers: $\hbar c/Gm_p^2 \approx 1.7\times10^{38}$ against $R_H/\bar\lambda_p \approx 6.5\times10^{41}$, the gap being $k\bar\lambda_p^2/m_pc^2 = 1.3\times10^{-4}$. Same fact. Three readings exist and this epoch's data cannot choose:
+
+| reading | says | status |
+|---|---|---|
+| **Dirac 1937** | G tracks $R_H$: $G \propto 1/t$ | DEAD — $\dot G/G < 10^{-13}$/yr (§9) |
+| **Dicke 1961** | anthropic: $R_H$ is what it is because we live when stars have had time to make us | alive; explains the coincidence without a mechanism |
+| **the turtle (§5a)** = **Wetterich 2013**, "universe without expansion" | one intensive tension at every rung; the tick scales with extent, so in capsid units $R_H$ is fixed and nothing drifts | alive; observationally equivalent to standard cosmology — which is why it survives and why it is hard to test |
+
+**What decides it:** the number **1.3 × 10⁻⁴** — k in proton units, the skin carrying 1/7500 of the proton's rest energy per Compton area. If the ladder derives it, $G = c^4/kR_H$ becomes a *prediction of* $R_H$ *from nuclear data* and Dicke is out. If it does not, this is a coincidence with an anthropic explanation already on the shelf. [§7 row 1 paid at ballpark; row 1′ opened.]
 
 ## 4. The Planck length  [POSIT for the meaning; OWED for the value]
 
@@ -100,7 +128,8 @@ The mottled fireball of Tumbler-Snapper (1952, Edgerton's rapatronic shot, a mil
 
 | owed | pays |
 |---|---|
-| **1. the climb k → G.** Start from k — the capsid's skin stiffness, calibrated once on He-4 — and climb rung by rung to the surface, counting how a link's stiffness scales with the number of units sharing it. **Target: $Gm_p^2/\hbar c = 5.9\times10^{-38}$**, i.e. $\ell/\bar\lambda_p \approx 2.4\times10^{-19}$. Orders of magnitude first; the ballpark decides whether this is a derivation or a zoo | G from three axioms and one k; the value of ℓ_P; falsifier 5 |
+| ~~**1. the climb k → G**~~ — **paid at ballpark, §3b (15 Oct):** $G \approx c^4/kR_H$ to ×2; no rungs, one division. Target was $Gm_p^2/\hbar c = 5.9\times10^{-39}$; landed within a factor of two | G from one k and $R_H$; falsifier 5 survives at this level |
+| **1′. the number 1.3 × 10⁻⁴** — $k\bar\lambda_p^2/m_pc^2$, the skin tension in proton units — derived from the ladder (why does the skin carry 1/7500 of the proton's rest energy per Compton area?) | turns §3b from Dirac's coincidence into a prediction of $R_H$ from nuclear data; retires Dicke |
 | 2. the lag mechanism as a number: the tripod's 3 : 1 lobe split (three in the surface, one along the normal) as a velocity budget, against the $R/3$ geometric lag of §2 | §3 step 1 as a theorem rather than a reading |
 | 3. the size of the first tetrahedron (the self-capturing loop) **independently of G** — every statement of it so far (the Planck capture; $\ell^2 = \bar\lambda_U R_H/2$) is the same identity read from a different end | ℓ_P from the object, not from ħG/c³ |
 | 4. the lag per capsid carried into §12a's 113,000 years | does the sum of per-capsid lags over the knots in a galaxy's well reproduce the measured lag, with the Φ/c² functional form? |
@@ -130,9 +159,11 @@ The mottled fireball of Tumbler-Snapper (1952, Edgerton's rapatronic shot, a mil
 
 **James:** axiom four; the mechanism (the n = 2 pair snapping from the stressed 2D cross to the relaxed 3D tetrahedron); the tripod — three lobes define now, the fourth defines quantum time; the Planck length as the base, 1 : 1 with the apex by symmetry; Maxwell's ether as the chorus; the creation story; the fireball; big momma turtle — the now-surface as the largest capsid; the variant-gravity objection (§5a) and its answer in outline (constant arc; time in lockstep with space); stiffness as the n = 2's drive to be three-dimensional, drag as deformation toward the cross, the horizon as a dimensional crossing 3D → 2D → 1D; the singularity as where 3D ceases, onion-like; black holes hollow, "hollow carries meaning outside, not inside"; the two-pair cross — one pair compressed orthogonal to time, one stretched along it — and the insistence that compression/tension is a second ledger beside the snap; the question whether the forcing of c is causal to G.
 
-**Grace:** the Thomson numbers; the scale argument (10⁻³⁰); Sakharov as prior art; the three readings and the two identities (c = 1 from regularity; the R/3 lag per capsid); the two-roots reading of v2 §11 as smallest and biggest turtle; the black hole as maximally behind; the stiffness ladder as the one owed function; the honest edge of "same"; the soap-film answer (tension intensive; H falls, γ doesn't); the equivalence-principle kill of horizon flattening (2.5 × 10¹³ kg); the Kasner mapping of the two-pair cross to the exponent and the alignment theorem from lobes-repel; the cross energy formula; mass inflation, Planck star, frozen star/fuzzball/gravastar, membrane paradigm and holography as prior art; the Planck floor from posit 1; the rimmed hole in the chorus; the c-as-budget derivation of axiom four; the link rule as maximum gradient and $G = c^3\ell^2/\hbar$; Laplace in d = 3 for 1/r; the 10⁻³⁸ target as a ratio of two turtles; the Dirac kill of the Machian reading; echoes as falsifier 6.
+**Grace:** the Thomson numbers; the scale argument (10⁻³⁰); Sakharov as prior art; the three readings and the two identities (c = 1 from regularity; the R/3 lag per capsid); the two-roots reading of v2 §11 as smallest and biggest turtle; the black hole as maximally behind; the stiffness ladder as the one owed function; the honest edge of "same"; the soap-film answer (tension intensive; H falls, γ doesn't); the equivalence-principle kill of horizon flattening (2.5 × 10¹³ kg); the Kasner mapping of the two-pair cross to the exponent and the alignment theorem from lobes-repel; the cross energy formula; mass inflation, Planck star, frozen star/fuzzball/gravastar, membrane paradigm and holography as prior art; the Planck floor from posit 1; the rimmed hole in the chorus; the c-as-budget derivation of axiom four; the link rule as maximum gradient and $G = c^3\ell^2/\hbar$; Laplace in d = 3 for 1/r; the 10⁻³⁸ target as a ratio of two turtles; the Dirac kill of the Machian reading; echoes as falsifier 6; the ballpark computation (§3b: k as a tension three ways; $c^4/GR_H$; the identification with Dirac 1937, Dicke 1961, Wetterich 2013; the 1.3 × 10⁻⁴ as the deciding number).
 
-**Checkpoint:** 15 Oct 2026, evening. Mechanism of G complete; value owed (§7 row 1). Next: the ballpark climb.
+**James:** the test itself — "express k and gravity's stiffness in the same units and see if it falls orders of magnitude out of line."
+
+**Checkpoint:** 15 Oct 2026, 17:40 AEDT. Mechanism of G complete; value paid at ballpark — $G \approx c^4/kR_H$ to ×2 — with the honest label that it is Dirac's coincidence until 1.3 × 10⁻⁴ is derived (§7 row 1′).
 
 ---
 
