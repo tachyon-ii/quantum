@@ -10,7 +10,7 @@ Sources: `docs/Φ-a-minimal-ontology-of-an-emergent-universe.v2.md` (v2), `docs/
 
 | # | anomaly / patch | what the SM or ΛCDM bolts on | what the ontology says | data | cost | kills if |
 |---|---|---|---|---|---|---|
-| 1 | **Σm_ν** | three free masses | Koide program: **58.6 meV** (canon §10, falsifier 12) | DESI DR2 + CMB: < ~64 meV (95 %, ΛCDM); normal-ordering floor ≈ 59 meV; KATRIN m_β < 0.45 eV | **lookup — live now** | the cosmological bound drops below 58 meV. It is within a few meV of doing so. |
+| 1 | **Σm_ν** — **RUN 2026-10-15, see log** | three free masses | Koide program: **58.6 meV** (canon §10) — *regraded:* the oscillation floor + m₁ ≈ 0; distinctive content is the sign pattern, m₁ = 0.373 meV, Majorana | DESI DR2 BAO + CMB (ΛCDM): **< 64.2 meV** (95 %) [FACT]; Feldman–Cousins **< 53 meV** [FACT]; w₀wₐCDM **< 163 meV** [FACT]; DR2 Results IV (2026): < 56.5 / 59.2 meV without / with Lyα FS [reported; full text not verified] | done | **cannot kill Koide specifically** — any bound below 58 kills all three-neutrino normal-ordering physics with it. Coupled to row 3: under Λ the whole sector is on the cliff; under dynamical dark energy it is not. |
 | 2 | **inflation** (flatness, horizon, spectrum, tilt) | a scalar field and a potential | flatness = c as capture boundary (v2 §11, 1.000 — done); horizon = the chorus (v2 §13); spectrum = Brownian recoil paint (v2 §15, slope −2.0 — done); red tilt → Hurst 0.49 (**owed: produced, not targeted**) | BICEP/Keck r < 0.036; LiteBIRD σ(r) ~ 10⁻³; Planck n_s = 0.965 | conceptual, short; Hurst is a run | **any primordial tensor detection** — recoil paint is scalar, predicts r ≈ 0. Also: Hurst produced ≠ 0.49. |
 | 3 | **dark energy** *(gravity sector)* | Λ, or w₀wₐ | the lockstep of turtle §5a *is* Wetterich's conformal frame (2013), and Wetterich's programme predicts **dynamical** dark energy, not Λ | DESI 2025 BAO + SNe prefer evolving w at ~3–4σ | medium: derive w(z) from the tick scaling with extent | w(z) comes out ≠ what DESI/Euclid measure — or comes out exactly −1 while the data move away from it |
 | 4 | **baryon asymmetry** | Sakharov conditions; new CP violation | structural: the odd ν̄ leaves with the e⁻ in β⁻ (v2 §7); conjecture §4's "5.4 per survivor — the ratio is the fraction that died" | η = 6.1 × 10⁻¹⁰ | medium — a counting from the decoupling | the count misses 10⁻¹⁰ by an order |
@@ -45,6 +45,14 @@ From turtle §7 and v2 §20 — not anomalies, but the computations that turn ro
 5. **Row 3, w(z) from lockstep** — the gravity-sector continuation; the freshest data, moving in its direction; a wrong w(z) kills the turtle cleanly.
 6. **Row 10, bending stiffness** — a margin computation that could kill the membrane in an afternoon.
 7. Then the owed numbers, starting with 1.3 × 10⁻⁴.
+
+## Run log
+
+**Row 1 — Σm_ν — 2026-10-15 ~19:00 AEDT (Grace).** Sources read: the abstract of Elbers et al., *Constraints on Neutrino Physics from DESI DR2 BAO and DR1 Full Shape*, arXiv:2503.14744v3 (Phys. Rev. D) — ΛCDM, three degenerate states, DR2 BAO + Planck PR4 + ACT lensing: Σm_ν < 0.0642 eV (95 %), σ = 0.020 eV; posterior peaks at zero; Feldman–Cousins boundary-corrected 95 % limit 0.053 eV, "breaching the lower limit from neutrino oscillations"; effective-mass analysis 3σ tension with oscillations, read by the authors as a possible hint of new physics; w₀wₐCDM: < 0.163 eV. The 2026 DR2 Results IV (arXiv:2607.27410, Lyα AP) is reported in search summaries to give < 0.0565 eV without Lyα full shape and < 0.0592 eV with — I could not read §VI.4.2 in full text (fetch truncated); treat those two numbers as unverified until someone opens the PDF.
+
+Arithmetic (mine): with Δm²₂₁ = 7.53 × 10⁻⁵, Δm²₃₁ = 2.453 × 10⁻³ eV², normal ordering gives Σ = 58.2 meV at m₁ = 0, 59.3 at 1 meV, 61.8 at 3 meV, 64.8 at 5 meV. Koide's m₁ = 0.373 meV → 58.6. **Therefore the boxed 58.6 is the oscillation floor plus m₁ ≈ 0, and Σm_ν cannot discriminate the Koide program from "lightest neutrino nearly massless."** Canon §10 carried it as [PREDICTION]; regraded in place to a retrodiction of the floor with one unmeasurable parameter. This is the kind of over-grade the Argon review is meant to catch; found on the first row.
+
+Verdict: **continue, with the regrade.** 58.6 is inside the Bayesian ΛCDM bound (64.2) and, if the 2026 number holds, 0.6 meV inside 59.2; it is outside the Feldman–Cousins 53 — as is every three-neutrino model, which is DESI's problem before it is ours. Under dynamical dark energy (row 3's direction) the bound is 163 and nothing is on a cliff. Rows 1 and 3 are now one coupled test: **Λ puts the neutrino sector on the cliff with everyone else; dynamical w takes it off.**
 
 ## Rules for running any row
 
