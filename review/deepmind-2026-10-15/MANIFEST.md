@@ -1,0 +1,22 @@
+# Manifest — docset for the DeepMind review, 2026-10-15
+
+Order is reading order. Paths are relative to `QUANTUM/`. The bundle `docset.md` is **generated** by `build.sh`; edit the sources, not the bundle.
+
+| # | file | role |
+|---|---|---|
+| 0 | `review/deepmind-2026-10-15/BRIEF.md` | the ask |
+| 1 | `docs/README.md` | the map |
+| 2 | `docs/Φ-a-minimal-ontology-of-an-emergent-universe.v2.md` | the parent; §24 is the dependency graph |
+| 3 | `docs/Φ-canon-integrated.md` | the integrated canon (reconciled to v2; carries the owed ledger and the two named tensions) |
+| 4 | `docs/three-term-binding.md` | the nuclear binding construct; §7a calibrations; §7b tyre law; the Li-7 blind |
+| 5 | `docs/the-fractal-nucleus.md` | the packing programme; fe56_star; the three accretion classes |
+| 6 | `docs/the-turtle-conjecture.md` | gravity: origin of G, ballpark, funnel conform, the onion |
+| 7 | `docs/fable-freeman-fractal-conjecture.md` | governor, flutter, the scar; the 1928 agenda |
+| 8 | `todo/falsifiers-2026-10-15.md` | the test list this review is meant to protect |
+| 9 | `todo/docs-review-2026-10-10.md` | the authors' own audit of the shelf against v2 |
+| 10 | `todo/schrodinger-salvage-2026-10-10.md` | what was salvaged and what was killed from the archive |
+| 11 | `models/turtle/stiffness_ratio.py` | the ballpark computation (turtle §3b) |
+| 12 | `models/turtle/funnel_conform.py` | the funnel table and the struck artefact (turtle §3c) |
+| 13 | `scripts/paintball.pl` | the integer spray (resonance vs coprime) |
+
+Not included, available on request: `models/nuclear_to_assembly/` (the `toasm` library and `fe56_star.json`), `models/three_term_binding.py`, `docs/archive/` (v1, `now.md`, the schrödinger checkpoints), `docs/background/` (priors — cite nothing from there as a result), `paintball.html`.
