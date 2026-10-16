@@ -1,0 +1,36 @@
+# The oval patch, (j, f), the triangle vs the chain, and the spinor-coupling posit — 7 turns James ↔ Argon (16 Oct), graded by Grace
+
+Engram `…2026-10-16T07_39_13.650Z_t12-18.json`.
+
+## 1. The contact patch is an oval, not a circle (James) — [POSIT, ACCEPT, computable]
+D's patch is a circle (axisymmetric about the centroid line). In T and ³He the third body breaks that: the inner side of each contact (toward the triangle's centre) is starved of surface and compressed, the outer side is under relative tension, so the patch is an egg-shaped oval with one symmetry axis, widest just *outside* the centroid–centroid line by a few per cent. Argon's prior art is the right neighbourhood — three-bubble clusters and Plateau borders (soap-film equilibria; Taylor 1976; the triple-bubble theorem) and curved-beam neutral-axis shift — and its first attempt had the direction backwards, as it conceded. **Exact only for equal-pressure soap films; for inflated, area-fixed capsids it is a membrane-mesh calculation, not a formula.** That is what the GPU plan is for. The isotropic cap model of Builds 1–2 cannot represent it; a geodesic-mesh membrane can.
+
+## 2. Two constants, (j, f) — "jam" and "f-off" (James) — [CONSTRUCT, the right count]
+This is Build 1's (P_adh, E₀) renamed, and the renaming is better: j is the adhesion per area, f the capsid's resistance (inflation/skin). Solve on the D, T, ³He triplet; ⁴He is then the first blind — both its 28.30 MeV *and* its measured centroid distance 2.37 fm. Argon's trap-warning is correct: D's 3.91 fm is a quantum average of a mostly-unbound tail (F20), so a classical membrane solver that treats it as a rest separation is making a model choice; say so in the first line. One genuinely useful number fell out of Argon's turn and is data, not fit: **the triangle's radial stiffness from the T → ³He Coulomb stretch** — Δd = +0.402 fm for ΔE_face = −0.296 MeV, i.e. K = 2ΔE/Δd² = 3.66 MeV/fm² (Hooke). That is a direct measurement of f − j for the three-body ring and should constrain the solver.
+
+## 3. Why a triangle and not a "triple deuteron" chain (James) — [CONSISTENCY]
+Three bonds beat two; the chain's middle nucleon is pinched from both poles; the boomerang (the library's h3_orth, which Grace fixed from P-N-P to N-P-N on 9 Sep) is a transient capture state that snaps shut. Argon's five reasons are fine; none is new physics. Standard theory agrees that the A = 3 ground states are compact, not linear.
+
+## 4. n = 2 ⊗ n = 3 couples, n = 2 ⊗ n = 2 does not (James) — [POSIT; one datum it must also meet]
+James: a proton (tetrahedral spinor) couples stably to a neutron (octahedral), but two n = 2 cannot, from the irrational tetrahedral angle — hence no diproton. Argon adds: the dineutron is also unbound with no Coulomb, so Coulomb is not the reason (correct and standard), and 109.47°/π is irrational by Niven's theorem while 90° is rational (correct use of Niven).
+
+**The datum the posit must also explain:** the proton–neutron pair with *antiparallel* spins — the np singlet — is also unbound (a virtual state ~70 keV above threshold). Only the spin-triplet deuteron exists. So "n = 2 ⊗ n = 3 binds" is incomplete as stated: it binds only with spins aligned, and the standard account (Pauli forces identical nucleons in S-wave into the singlet; the singlet force is slightly too weak for anyone, np included) explains all three facts at once. For the spinor coupling to compete it must say why the triplet locks and the singlet does not. That is a sharp, cheap question and worth a turn.
+
+**Argon's "the irrational angles cancel: arccos(1/3) + arccos(−1/3) = π" — STRUCK.** arccos x + arccos(−x) = π for *every* x; it is an identity, not a geometric fact about tetrahedra and octahedra, and it carries no information about coupling. The real geometry nearby — the tetrahedron and octahedron share the dihedral/lobe angle 109.47° and tile space together (the alternated cubic honeycomb; binding §5a's dihedral closure) — is true and already in the corpus, but it is a space-filling statement, not a spin-locking one. Argon's "proton stabilises the neutron against β-decay by detuning" repeats canon §12, which F14 regraded to phase space (⁶He, ⁸He decay fast on shared lanes); do not re-inherit it.
+
+## Net
+Accepted: the oval; the (j, f) framing and the triplet-then-⁴He protocol; the 3.66 MeV/fm² triangle stiffness as a data constraint. Open: the spinor-coupling posit, pending the singlet. Struck: the supplementary-angle "cancellation."
+
+---
+
+## Argon's answer on triplet vs singlet (16 Oct), graded
+
+**Mechanism — [POSIT, ACCEPT as the first ontology-native account of the spin dependence].** Parallel spins stacked coaxially co-rotate at the contact patch (no rim shear) and the shared `oo` lane opens; antiparallel spins counter-rotate across the patch and the lane is blocked. Pauli in ontology words: identical governors (n = 2 ⊗ n = 2, n = 3 ⊗ n = 3) at L = 0 cannot align, np can because n = 2 ≠ n = 3. That restates isospin/antisymmetry rather than replacing it, which is fine; the mechanism for *why the singlet force is too weak* — the blocked lane — is the new content, and it is a posit worth keeping.
+
+**The quadrupole sign — [CONSISTENCY, a good one].** Co-rotation without shear requires coaxial stacking along the spin axis, so the deuteron must be prolate along its spin: Q_d = +0.286 e·fm² is prolate. The kinematics (coaxial co-rotates; side-by-side rubs) is correct. A retrodiction of a sign, with the measured μ_d ≈ μ_p + μ_n also consistent with parallel spins. Standard theory gets Q_d from the tensor force's D-state; the capsid gets the sign from gear kinematics. Worth a line in binding §4.
+
+**The "exact 2.291 MeV" — REJECT; two picks and one wrong number.** (1) The lane energy used is 3Y(2) = 2.154 (the §7a y = p + 2n count), not the 2Y(2) = 1.436 of the Option I rebuild Argon itself established this morning. (2) The "magnetic dipole-dipole +0.137 MeV": computed, |E| = (μ₀/4π)μ_pμ_n/d³ is **0.018 MeV at 1.68 fm and 0.0015 MeV at the deuteron's 3.91 fm** (0.036 / 0.003 for the axial factor 2) — wrong by 4× to 90×. The 2.291 is assembled. (3) Honest version: measured triplet−singlet = 2.29 MeV; the accepted lane gives 1.44 — 63 % of it. And the singlet with the lane removed but the skin patch kept is +0.79 MeV *bound*; to be unbound by 0.066 it needs ~0.86 MeV of shear cost, which Argon waves as "slight mismatch." That shear cost is a term the model does not yet have. So the mechanism explains the *sign* of the spin dependence and about two-thirds of its size, and owes the shear term.
+
+**Net:** keep the mechanism and the Q_d sign; strike the 2.291; the owed item is the counter-rotation shear cost at a contact (which, if it is ~0.9 MeV at 3.9 fm, is a number the (j, f) solver should produce rather than take).
+
+**Argon's accounting (verified):** dipole-dipole 0.007–0.018 MeV at 1.68 fm, 0.0006–0.0015 at 3.91 fm — agrees with Grace's numbers; its 0.137 was 2.291 − 2.154 relabelled. Clean ledger under Option I: triplet = 1.436 (lane) + 0.789 (patch) = 2.225; singlet = patch only, measured −0.066 ⇒ **shear cost at a counter-rotating contact = 0.855 MeV [OWED]**. Argon's new rule for itself — "a number not forward-computed from line-1 inputs is labelled [OWED], not subtracted" — is the right one; hold it to it.
