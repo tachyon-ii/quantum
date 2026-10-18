@@ -11,11 +11,12 @@ def topo(n):
     return _TOPO[n]
 
 class System:
-    def __init__(self,species,centres,e0,E0,delta,subdiv=K.SUBDIV,fade=K.FADE,kbend_fac=K.K_BEND_FAC,karea_fac=K.K_AREA_FAC,E1=0.0,singlet_np=False):
+    def __init__(self,species,centres,e0,E0,delta,subdiv=K.SUBDIV,fade=K.FADE,kbend_fac=K.K_BEND_FAC,karea_fac=K.K_AREA_FAC,E1=0.0,singlet_np=False,lam=0.0,lane_mode='triplet',lane_form='linear'):
         self.T=topo(subdiv); self.sp=list(species); self.C=len(species)
         self.R=np.array([K.RP if s=='p' else K.RN for s in species])
         self.e0,self.E0,self.delta,self.fade=e0,E0,delta,fade
         self.E1=E1; self.singlet_np=singlet_np   # v2 §3 cooperative constant; F4 singlet flag
+        self.lam=lam; self.lane_mode=lane_mode; self.lane_form=lane_form   # v3: lane/graph cooperativity f_ij = 1 + lam*phi(c_ij)
         U=self.T.V; F=self.T.F
         a,b,c,n,nn=face_geom(U,F); self.Af0_unit=0.5*nn          # unit-sphere mesh face areas
         self.V0=4/3*np.pi*self.R**3; self.A0=4*np.pi*self.R**2
@@ -85,6 +86,16 @@ class System:
                 idx,f,g,P=self.gaps(X,i,j,cache)
                 if len(idx)==0: continue
                 s,ds=self.s(g); PR[(i,j)]=(idx,f,g,P,s,ds)
+        # ---- v3: contact graph and lane factor per pair (piecewise constant in x; exact gradient within a branch) ----
+        con=set()
+        for (i,j),(idx,f,g,P,s,ds) in PR.items():
+            if (s>K.CONTACT_FRAC).any(): con.add((min(i,j),max(i,j)))
+        nbr={i:{b if a==i else a for (a,b) in con if i in (a,b)} for i in range(self.C)}
+        self._fac={}
+        for (i,j) in con:
+            c=len(nbr[i]&nbr[j]); phi=c if self.lane_form=='linear' else min(c,2)/2.0
+            trip=((i,j) not in self.mesh_pairs)
+            self._fac[(i,j)]=1.0+self.lam*phi*(1.0 if (self.lane_mode=='all' or trip) else 0.0)
         # ---- per-vertex sums for the cooperative term: S_v = sum_j s_j(v) ----
         Ssum=[np.zeros(self.T.nv) for _ in range(self.C)]; Ssq=[np.zeros(self.T.nv) for _ in range(self.C)]
         for (i,j),(idx,f,g,P,s,ds) in PR.items():
@@ -95,11 +106,11 @@ class System:
             W[i]+=-self.E1*coop; Ecp+=(-self.E1*coop*Av[i]).sum()
         # ---- pass 2: energies and gradients ----
         for (i,j),(idx,f,g,P,s,ds) in PR.items():
-                pen=np.maximum(0,-g)
-                wv=-self.e0*s+self.Kpen*pen**2; dw=-self.e0*ds-2*self.Kpen*pen
+                pen=np.maximum(0,-g); fij=self._fac.get((min(i,j),max(i,j)),1.0)
+                wv=-fij*self.e0*s+self.Kpen*pen**2; dw=-fij*self.e0*ds-2*self.Kpen*pen
                 dw=dw-self.E1*(Ssum[i][idx]-s)*ds          # d/dg of the coop density: -E1 (S - s_j) ds_j
                 W[i][idx]+=wv
-                Ead+=(-self.e0*s*Av[i][idx]).sum(); Epe+=(self.Kpen*pen**2*Av[i][idx]).sum()
+                Ead+=(-fij*self.e0*s*Av[i][idx]).sum(); Epe+=(self.Kpen*pen**2*Av[i][idx]).sum()
                 coef=Av[i][idx]*dw                                   # dE/dg  (m,)
                 nh,w,gk,pk,h=P['nh'],P['w'],P['gk'],P['pk'],P['h']; far=P['far']; near=~far
                 cf=np.where(near,coef,0.0); cr=np.where(far,coef,0.0)
@@ -177,7 +188,7 @@ class System:
         trip=[any(((a,b) not in self.mesh_pairs) for (a,b) in con if i in (a,b)) for i in range(self.C)]
         Esl=-self.C*K.Y(K.SLING_N) if (connected and all(trip)) else 0.0
         Emesh=nmesh*E_MESH()
-        return -(p['cont']+Emesh+Esl),dict(p,mesh=Emesh,sling=Esl,contacts=con,connected=connected,all_triplet=all(trip))
+        return -(p['cont']+Emesh+Esl),dict(p,mesh=Emesh,sling=Esl,contacts=con,connected=connected,all_triplet=all(trip),lane_factors={f'{a}{b}':v for (a,b),v in self._fac.items()})
 
 _REF={}
 def _ref(self,s):

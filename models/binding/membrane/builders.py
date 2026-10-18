@@ -11,8 +11,8 @@ def geom(name,a=None):
         sp=['p','n','n'] if name=='T' else ['p','p','n']
         return sp,[[0,0,0],[a,0,0],[a/2,a*np.sqrt(3)/2,0]]
 def nucleus(name,r,E0,delta,a=None,subdiv=K.SUBDIV,fade=K.FADE,kbend_fac=K.K_BEND_FAC,karea_fac=K.K_AREA_FAC,
-            fext=None,tether=None,fixed=None,shift=None,E1=0.0,singlet_np=False):
-    sp,cs=geom(name,a); S=System(sp,cs,r*E0/A0P,E0,delta,subdiv=subdiv,fade=fade,kbend_fac=kbend_fac,karea_fac=karea_fac,E1=E1,singlet_np=singlet_np)
+            fext=None,tether=None,fixed=None,shift=None,E1=0.0,singlet_np=False,lam=0.0,lane_mode='triplet',lane_form='linear'):
+    sp,cs=geom(name,a); S=System(sp,cs,r*E0/A0P,E0,delta,subdiv=subdiv,fade=fade,kbend_fac=kbend_fac,karea_fac=karea_fac,E1=E1,singlet_np=singlet_np,lam=lam,lane_mode=lane_mode,lane_form=lane_form)
     if fext: S.Fext={int(k):np.array(v) for k,v in fext.items()}
     if tether: S.tether={int(k):np.array(v) for k,v in tether.items()}
     if fixed: S.fixed[list(fixed)]=True
