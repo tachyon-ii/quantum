@@ -1,0 +1,21 @@
+[build-system]
+# Implementer: OpenAI ChatGPT — GPT-6 Astra Pro
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "capsid-membrane-solver"
+version = "0.1.0"
+description = "Literal graded-well capsid membrane functional with reproducible acceptance gates"
+requires-python = ">=3.11"
+dependencies = ["numpy", "scipy", "torch", "pytest"]
+
+[project.scripts]
+membrane-solver = "models.binding.membrane.run_all:main"
+
+[tool.setuptools.packages.find]
+include = ["models*"]
+
+[tool.pytest.ini_options]
+testpaths = ["models/binding/membrane/tests"]
+addopts = "-ra"
