@@ -31,3 +31,6 @@ FADE_EPS     = 0.05       # softplus rounding of the fade corners, in units of d
 CONTACT_FRAC = 0.5        # a pair is 'in contact' if any vertex has g < 0.5 delta
 SLING_N      = 2          # v2 ruling: slingshot at /2 everywhere
 R_GRID       = [1, 3, 10]  # v2: e0*A0p/E0 scan (scanned, not fitted)
+A_REF        = 0.30       # fm^2: raw weighted np patch area (both skins) of the calibrated v3 He-4 np contact; w = tanh(2 W/A_REF) (v4 A1 fix)
+SMAX_EPS     = 0.2        # smooth-max width between plane gap and floor gap, in units of delta (v4)
+Z_CAP        = 3.0        # v4 A2: a nucleon's lane threads at most 3 boosted contacts (capacity min(1, 3/z_i, 3/z_j) on the lane factor)

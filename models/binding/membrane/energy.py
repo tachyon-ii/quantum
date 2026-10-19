@@ -64,9 +64,11 @@ class System:
         h=K.GAP_H*self.edge0[j]; rho2=(w*w).sum(-1)
         Wk=np.exp(-(rho2-rho2.min(1,keepdims=True))/h**2); Z=Wk.sum(1,keepdims=True); pk=Wk/Z
         gpl=(pk*gk).sum(1)
-        rho=np.sqrt(rho2[:,0]); gfar=rho-self.edge0[j]           # Euclidean floor: nearest-centroid distance - 1 rest edge
-        far=gfar>gpl; g=np.where(far,gfar,gpl)
-        return idx,f,g,dict(nh=nh,w=w,gk=gk,pk=pk,h=h,nn=nn[f],a=a,b=b,c=c,far=far,rho=rho)
+        rhok=np.sqrt(np.maximum(rho2,1e-24)); uk=w/rhok[...,None]              # distances and unit vectors to the K centroids
+        rhos=(pk*rhok).sum(1); gfar=rhos-self.edge0[j]                             # SMOOTH floor (v4): blended centroid distance - 1 rest edge
+        eps=K.SMAX_EPS*self.delta; D=np.sqrt((gpl-gfar)**2+eps*eps)
+        g=0.5*(gpl+gfar+D); apl=0.5*(1+(gpl-gfar)/D); afar=1-apl                   # smooth max weights
+        return idx,f,g,dict(nh=nh,w=w,gk=gk,pk=pk,h=h,nn=nn[f],a=a,b=b,c=c,rhok=rhok,uk=uk,gpl=gpl,gfar=gfar,apl=apl,afar=afar,rho=rhok[:,0])
     def energy(self,x,parts=False):
         X=x.reshape(self.C,self.T.nv,3); F=self.T.F; G=np.zeros_like(X)
         Ein=Ear=Ebe=Ead=Epe=Eco=Eext=Ete=0.0
@@ -86,16 +88,38 @@ class System:
                 idx,f,g,P=self.gaps(X,i,j,cache)
                 if len(idx)==0: continue
                 s,ds=self.s(g); PR[(i,j)]=(idx,f,g,P,s,ds)
-        # ---- v3: contact graph and lane factor per pair (piecewise constant in x; exact gradient within a branch) ----
-        con=set()
+        # ---- v4 (A1 fix): CONTINUOUS contact graph. w_ij = tanh(2 W_ij / A_REF), W_ij = raw weighted patch area (both skins);
+        #      f_ij = 1 + lam * T_ij * sum_k w_ik w_jk  (T_ij = 1 for triplet pairs; or all).  Exact gradient through w.
+        Wraw={}
         for (i,j),(idx,f,g,P,s,ds) in PR.items():
-            if (s>K.CONTACT_FRAC).any(): con.add((min(i,j),max(i,j)))
-        nbr={i:{b if a==i else a for (a,b) in con if i in (a,b)} for i in range(self.C)}
-        self._fac={}
-        for (i,j) in con:
-            c=len(nbr[i]&nbr[j]); phi=c if self.lane_form=='linear' else min(c,2)/2.0
-            trip=((i,j) not in self.mesh_pairs)
-            self._fac[(i,j)]=1.0+self.lam*phi*(1.0 if (self.lane_mode=='all' or trip) else 0.0)
+            key=(min(i,j),max(i,j)); Wraw[key]=Wraw.get(key,0.0)+(Av[i][idx]*s).sum()
+        xw={k:2*v/K.A_REF for k,v in Wraw.items()}
+        wgt={k:np.tanh(x) for k,x in xw.items()}; dwgt={k:(1-np.tanh(x)**2)*2/K.A_REF for k,x in xw.items()}
+        def W_(a,b): return wgt.get((min(a,b),max(a,b)),0.0)
+        Graw={k:0.0 for k in Wraw}
+        for (i,j),(idx,f,g,P,s,ds) in PR.items():
+            key=(min(i,j),max(i,j)); Graw[key]+=-self.e0*(Av[i][idx]*s).sum()
+        pairs=list(Wraw)
+        def factors(wv):
+            """lane factors from a dict of contact weights. forms: linear 1+lam c; sat 1+lam min(c,2)/2; cap3 = sat x capacity min(1,3/z_i,3/z_j)."""
+            Wf=lambda a,b: wv.get((min(a,b),max(a,b)),0.0)
+            z=[sum(Wf(i,k) for k in range(self.C) if k!=i) for i in range(self.C)]
+            F={}
+            for (i,j) in pairs:
+                trip=((i,j) not in self.mesh_pairs); T_=1.0 if (self.lane_mode=='all' or trip) else 0.0
+                c=sum(Wf(i,k)*Wf(j,k) for k in range(self.C) if k not in (i,j))
+                if self.lane_form=='linear': phi=c
+                else: phi=min(c,2.0)/2.0 if c<2.0 else 1.0
+                if self.lane_form=='cap3': phi*=min(1.0,K.Z_CAP/max(z[i],1e-9),K.Z_CAP/max(z[j],1e-9))
+                F[(i,j)]=1.0+self.lam*T_*phi
+            return F
+        self._fac=factors(wgt)
+        # Lam_ab = dE_lane/dw_ab = sum_ij G_ij dF_ij/dw_ab   (central differences on the tiny w-vector; exact to O(h^2))
+        Lam={}
+        for ab in pairs:
+            wp=dict(wgt); wm=dict(wgt); hh=1e-5; wp[ab]+=hh; wm[ab]-=hh; Fp=factors(wp); Fm=factors(wm)
+            Lam[ab]=sum(Graw[ij]*(Fp[ij]-Fm[ij])/(2*hh) for ij in pairs)
+        self._Lam=Lam; self._dw=dwgt
         # ---- per-vertex sums for the cooperative term: S_v = sum_j s_j(v) ----
         Ssum=[np.zeros(self.T.nv) for _ in range(self.C)]; Ssq=[np.zeros(self.T.nv) for _ in range(self.C)]
         for (i,j),(idx,f,g,P,s,ds) in PR.items():
@@ -106,25 +130,25 @@ class System:
             W[i]+=-self.E1*coop; Ecp+=(-self.E1*coop*Av[i]).sum()
         # ---- pass 2: energies and gradients ----
         for (i,j),(idx,f,g,P,s,ds) in PR.items():
-                pen=np.maximum(0,-g); fij=self._fac.get((min(i,j),max(i,j)),1.0)
-                wv=-fij*self.e0*s+self.Kpen*pen**2; dw=-fij*self.e0*ds-2*self.Kpen*pen
+                pen=np.maximum(0,-g); key=(min(i,j),max(i,j)); fij=self._fac.get(key,1.0)
+                lamw=self._Lam.get(key,0.0)*self._dw.get(key,0.0)          # dE/dW_ij  (through the lane factors of neighbouring pairs)
+                wv=-fij*self.e0*s+lamw*s+self.Kpen*pen**2; dw=-fij*self.e0*ds+lamw*ds-2*self.Kpen*pen
                 dw=dw-self.E1*(Ssum[i][idx]-s)*ds          # d/dg of the coop density: -E1 (S - s_j) ds_j
                 W[i][idx]+=wv
                 Ead+=(-fij*self.e0*s*Av[i][idx]).sum(); Epe+=(self.Kpen*pen**2*Av[i][idx]).sum()
                 coef=Av[i][idx]*dw                                   # dE/dg  (m,)
-                nh,w,gk,pk,h=P['nh'],P['w'],P['gk'],P['pk'],P['h']; far=P['far']; near=~far
-                cf=np.where(near,coef,0.0); cr=np.where(far,coef,0.0)
-                wbar=(pk[...,None]*w).sum(1)
-                dpk_dx=pk[...,None]*(-2*(w-wbar[:,None,:])/h**2)
-                dg_dx=(pk[...,None]*nh).sum(1)+((gk-g[:,None])[...,None]*dpk_dx).sum(1)
-                u0=w[:,0,:]/np.maximum(P['rho'],1e-12)[:,None]
-                G[i][idx]+=cf[:,None]*dg_dx+cr[:,None]*u0
-                ck=(cf[:,None]*pk)
+                nh,w,gk,pk,h=P['nh'],P['w'],P['gk'],P['pk'],P['h']; rhok,uk,gpl,gfar,apl,afar=P['rhok'],P['uk'],P['gpl'],P['gfar'],P['apl'],P['afar']
+                cpl=coef*apl; cfr=coef*afar                                        # dE/dgpl, dE/dgfar
+                wbar=(pk[...,None]*w).sum(1); dpk_dx=pk[...,None]*(-2*(w-wbar[:,None,:])/h**2)
+                dgpl_dx=(pk[...,None]*nh).sum(1)+((gk-gpl[:,None])[...,None]*dpk_dx).sum(1)
+                dgfar_dx=(pk[...,None]*uk).sum(1)+((rhok-rhos_(gfar,self.edge0[j])[:,None])[...,None]*dpk_dx).sum(1)
+                G[i][idx]+=cpl[:,None]*dgpl_dx+cfr[:,None]*dgfar_dx
+                ck=(cpl[:,None]*pk)
                 q=(w-nh*gk[...,None])/P['nn'][...,None]*ck[...,None]
                 A_,B_,C_=P['a'][f],P['b'][f],P['c'][f]
                 ga,gb,gc=tri_grad(A_,B_,C_,q)
-                dcen=-ck[...,None]*nh + (cf[:,None]*pk*(gk-g[:,None]))[...,None]*2*w/h**2
-                dcen[:,0,:]+=-cr[:,None]*u0
+                dcen=-ck[...,None]*nh + (cpl[:,None]*pk*(gk-gpl[:,None]))[...,None]*2*w/h**2 \
+                     -(cfr[:,None]*pk)[...,None]*uk + (cfr[:,None]*pk*(rhok-rhos_(gfar,self.edge0[j])[:,None]))[...,None]*2*w/h**2
                 m=dcen/3
                 nvj=self.T.nv
                 for corner,gg in ((0,ga),(1,gb),(2,gc)):
@@ -200,6 +224,8 @@ def _ref(self,s):
         x,_=relax(one); _REF[key]=one.energy(x,True)[2]['cont']
     return _REF[key]
 System.ref_energy=_ref
+
+def rhos_(gfar,e0): return gfar+e0
 
 def E_MESH():
     """BUILD-SPEC §4.2 closed form: E_patch(D) - E_SINGLET."""
