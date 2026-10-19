@@ -90,6 +90,20 @@ No table of any size fits ⁴He, ¹⁶O and ⁵²Fe together with the same Coulo
 5. The backronym pass, separate, after T1–T5.
 Order: rung 0 end to end (an afternoon) → rung 1 (the ladder and the pockets) → rung 2 (kissing) → backronym. Membrane microscope afterwards.
 
+## 10a. Compute plan — the box (declared 19 Oct)
+
+One node: **A100-SXM4 40 GB** (CUDA 13.0), **2 × 18-core Xeon E5-2697 v4** (72 threads), **251 GB RAM**, 880 GB free on `/data2000`. No process-time limit (the sandbox's 180 s kill goes away). Grace cannot reach the box; James runs, results come back as `results/` + `report.md`, Grace re-runs the cheap parts in the sandbox to confirm (R4′).
+
+| stage | where | why | wall time (est.) |
+|---|---|---|---|
+| §2 data, §4 seating enumeration (rung 0 lattice to A ≈ 9; rung 1 alpha packings) | CPU, 72 threads via `multiprocessing` | combinatorial, embarrassingly parallel, small | minutes |
+| §4 table fit (LP/MDL), complexity ladder, standing tests | CPU, single thread (`scipy.optimize.linprog`/HiGHS) | problem is tiny: ≤ 50 unknowns, ≤ 3,000 constraints | seconds per iteration |
+| §4 Monte Carlo jiggle beyond enumeration (continuous positions, many seeds × many nuclei) | **GPU** — batched replicas in PyTorch (float32 for MC, float64 for final energies) | 10⁴–10⁵ replicas of A ≤ 60 bodies evaluated per step; the only part that needs the A100 | rung 1 to A = 60: ~1 h; full chart: a day |
+| membrane microscope (v3/v4 code, SUBDIV 3–4 relaxations) | CPU, 36 parallel relaxations, `OMP_NUM_THREADS=1` | 10 ms/eval, 10⁴ iterations each; the 18 Oct grids that took three sandbox-hours take ~20 min here; SUBDIV 4 for the egg's sign becomes affordable | tens of minutes per grid |
+| backronym (symbolic regression over the table, PySR) | CPU | small search space, MDL-scored | minutes |
+
+Software: Python ≥ 3.10, numpy, scipy ≥ 1.11 (HiGHS), torch with a CUDA 12.x wheel (driver 580 supports it), PySR optional. The kernel stays numpy/scipy so every result except the GPU jiggle is reproducible in the sandbox. Every long run is resumable (state on `/data2000`), writes its report by code, and names caches by energy version and base (R10). Entry points: `python3 -m kernel.run rung0`, `rung1`, `rung2`, `backronym`; `--gpu` switches the jiggle to torch.
+
 ## 11. Lineage
 
 The three anchors and their rungs, "let the solution define the rules and backronym the math," the jiggler, the fractal assembly, the kissing shell: James. The holes as inequalities, the Tjon line and Wigner energy as standing tests, reachability as a rule, the MDL ladder with the ×0.7 admission, the open-bond observation (17 % vs 0) as the first backronym target, and the membrane's demotion to microscope: Grace. Prior art: Faddeev 1961 / Fujita–Miyazawa 1957 (the three-body wall); Tjon 1975; UNEDF (functionals fit to masses); GAP/MACE (learned potentials); PySR / AI Feynman (symbolic regression); Rissanen (MDL).
