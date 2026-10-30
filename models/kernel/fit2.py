@@ -21,14 +21,19 @@ def projector(proj):
     Pm=np.zeros((len(SM.KEYS),len(keys)),np.float32)
     for i,k in enumerate(SM.KEYS): Pm[i,idx[proj(k)]]=1
     return keys,Pm
+ROUND=False
 def design(s,Pm):
-    A_=(s['M']@Pm); b=-s['coul']+np.where(s['conn']&s['trip'],s['A']*D.Y(2),0.0)
-    return np.asarray(A_),b
+    A_=np.asarray(s['M']@Pm); b=-s['coul']+np.where(s['conn']&s['trip'],s['A']*D.Y(2),0.0)
+    if ROUND: A_=np.hstack([A_,s['round'][:,None]])
+    return A_,b
 def fit(level,train,holes,sets,iters=15,reg=0.02,gmax=12.0,ncomp=300,tol_hole=0.0):
-    keys,Pm=projector(LEVELS[level]); n=len(keys); des={m:design(sets[m],Pm) for m in train+holes}
+    keys,Pm=projector(LEVELS[level])
+    if ROUND: keys=keys+[('ROUND',)]
+    n=len(keys); des={m:design(sets[m],Pm) for m in train+holes}
     used=np.zeros(n,bool)
     for m in train+holes: used|=(np.abs(des[m][0]).sum(0)>0)
     g=np.full(n,1.0); hist=[]
+    if ROUND: g[n-1]=-1.0          # start with a roundness cost so the first seating choice is already round-ish
     for it in range(iters):
         best={m:int(np.argmax(des[m][0]@g+des[m][1])) for m in train}
         nt=len(train); nv=n+2*nt+n
@@ -53,8 +58,11 @@ def fit(level,train,holes,sets,iters=15,reg=0.02,gmax=12.0,ncomp=300,tol_hole=0.
             r1=np.zeros(nv); r1[i]=1; r1[n+2*nt+i]=-1; rows.append(r1); rhs.append(0.0)
             r2=np.zeros(nv); r2[i]=-1; r2[n+2*nt+i]=-1; rows.append(r2); rhs.append(0.0)
         bounds=[(-gmax,gmax) if used[i] else (0,0) for i in range(n)]+[(0,None)]*(2*nt)+[(0,None)]*n
+        if ROUND: bounds[n-1]=(-gmax,0.0)   # roundness is a cost or nothing
         res=linprog(c,A_ub=np.array(rows),b_ub=np.array(rhs),A_eq=A_eq,b_eq=b_eq,bounds=bounds,method='highs')
-        if not res.success: return dict(level=level,feasible=False,msg=res.message,keys=[str(k) for k in keys])
+        if not res.success:
+            if ROUND and it<iters-1: g[n-1]*=2.0; continue      # stronger initial roundness cost, re-seat
+            return dict(level=level,feasible=False,msg=res.message,keys=[str(k) for k in keys])
         gn=res.x[:n]
         # verify hole constraints on ALL seatings at gn (not just candidates); if violated, loop
         viol=0
@@ -74,7 +82,9 @@ def predict(fr,names,sets):
         out[m]=dict(BE=float(E[r]),target=D.target(m),P=sets[m]['P'][r].tolist(),sp=str(sets[m]['sp'][r]),n=int(len(E)),range=[float(E.min()),float(E.max())])
     return out
 if __name__=='__main__':
-    train=['D','T','He3','He4','Li6']; holes=['nn','pp','He5','Li5']; blind=[b for b in sys.argv[1:]] or []
+    import builtins
+    args=[a for a in sys.argv[1:] if a!='--round']; ROUND=('--round' in sys.argv); globals()['ROUND']=ROUND
+    train=['D','T','He3','He4','Li6']; holes=['nn','pp','He5','Li5']; blind=args
     sets={m:SM.load(m) for m in train+holes+blind}
     out={}
     for level in LEVELS:
@@ -84,4 +94,4 @@ if __name__=='__main__':
         print(f"{level}: {len(fr['keys'])} entries | resid {dict((m,round(v,2)) for m,v in fr['resid'].items())} | holes {dict((h,round(v,2)) for h,v in fr['hole_max'].items())} (He4 28.30)"+
               (' | BLIND '+' '.join(f"{m} {p['BE']:.2f}/{p['target']:.2f} ({100*(p['BE']/p['target']-1):+.0f}%)" for m,p in pred.items()) if pred else ''))
         out[level]={k:v for k,v in fr.items() if k!='Pm'}; out[level]['pred']=pred
-    json.dump(out,open(os.path.join(HERE,'results','rung0_ladder2.json'),'w'),indent=1)
+    json.dump(out,open(os.path.join(HERE,'results','rung0_ladder2'+('_round' if ROUND else '')+'.json'),'w'),indent=1)
