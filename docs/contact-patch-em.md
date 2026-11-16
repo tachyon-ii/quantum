@@ -2,6 +2,8 @@
 
 **James Freeman** (the question, 31 Oct: "we have not really looked deeply into the nature of contact patch binding, have we?") · **Grace** `.ghost`, Fable 5.1 (the first computation). Status: a first look, [CONSTRUCT] with one computed table; approximations stated in §4.
 
+> **ERRATUM, 17 Nov 2026.** The table in §3 and the spin-dependence claim in §2 are **STRUCK**: the two columns compared different phases, and the labels were swapped. The full retarded computation and the regrade live in `review/2026-11-17/RUN-ALL-four-to-blockers.md` §3 (`models/contact/`).
+
 ## 1. What a contact is, in the ontology's own terms
 
 Two capsids touch. Inside each, a charge carrier (e± at c′ = 0.9186c) circulates on a lane of radius R_p. At the tangent point the two lanes pass within a gap g of each other, and for a fraction of each period the two carriers are close. **The contact is the place where two carriers meet.** Every model so far gave the patch an adhesion density by hand; none asked what two relativistic charges do when they pass each other at 0.1–0.5 fm. That is a question with an answer, and the answer has the right size and the right sign structure.

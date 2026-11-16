@@ -59,6 +59,8 @@ Each Nα: global minimum of Σ_pairs [hard core below 3.139 fm; −q(1 − x²) 
 | Ni56 | | 87.86 | -0.6 % | 97.25 (+10.7 %) | 40.3 (18+23) | 87.73 (-0.1 %) |
 | Zn60 | | 90.55 | — | 106.32 (+17.4 %) | 43.9 (27+17) | 94.71 (+4.6 %) |
 
+> **17 Nov 2026:** the κ question below is decided — screening is DEAD (mirror pairs give κ_eff = 0.97 ± 0.04); the bonds strengthen instead. See `review/2026-11-17/RUN-ALL-four-to-blockers.md` §2 (`nz_test.py`).
+
 Readings (Grace, 20 Oct):
 - **Stretch fixes the two the rigid ladder missed:** Si-28 −5.4 % → +0.2 %, S-32 −3.9 % → +0.9 % (column A), exactly where the deltahedra have unequal edges. [COMPUTED; blind for Si, S]
 - **But the free optimum over-binds from Ar-36 on (+5 … +17 %):** the soft well's global minimum is denser than the icosahedral kissing shell (Fe-52: 21 exact + 15 stretched = 35.9 effective bonds vs the shell's 33.3 and the measured 32.9). Real alphas do not pack as densely as the well alone allows. The excess tracks the extra point-charge Coulomb beyond the per-bond share at a constant **κ ≈ 0.16–0.20** from Mg to Ni. [COMPUTED]

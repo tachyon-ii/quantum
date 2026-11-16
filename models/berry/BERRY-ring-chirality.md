@@ -36,6 +36,8 @@ For a closed path r(t), the tangent T(t) traces a closed curve on the unit spher
 
 ## 5. Owed
 
+> **17 Nov 2026:** the massive-carrier item is discharged — exact for magnetic bending with g = 2, false otherwise. See `review/2026-11-17/RUN-ALL-four-to-blockers.md` §4 (`bmt.py`).
+
 The phase s·Ω is the photon's (Rytov) law; its use for a massive spin-½ carrier is an analogy to Fermi–Walker/Thomas transport that has to be made exact. The quantisation of the twist (why k = 1 and small, what sets the amplitude) is the dynamics, not the geometry, and is the same owed item as "what makes the mutual term 2" in the C² dive. Numerics: Ω is determined mod 4π by the fan method; the torsion integral is unreliable near inflection points (the (3,1) a = 0.1 row was discarded for that reason).
 
 ## 6. Lineage
