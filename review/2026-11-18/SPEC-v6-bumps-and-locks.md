@@ -4,9 +4,15 @@
 
 Supersedes the *framing* of SPEC v5 (jiggler kernel). v5's machinery (seatings, anchors, holes as inequalities, held-back blinds) is kept; its object — round bodies at rest, scored on binding energy — is replaced.
 
+## Governing statement
+
+> **The universe is emergent: self-assembling, fractal, recursive, resonant, self-repairing geometry in motion.** — Keystone 000, the Zeroth Law (James; written more than a year before this work and not for nuclei).
+
+Standing: a **prior prediction**. Read as physics it rules out five things — a static answer, an isolated system, a perfect starting shape, a structure that cannot mend, a rule that holds at one scale only. Each was an assumption of the models run on 17 Nov, and each of those runs located a hole. It has predicted which approaches cannot pass; it has not yet predicted a number. v6 is the test of that.
+
 ## 0. Why v6
 
-On 17 Nov four queue items were run one at a time, each in its own model, each to its own wall (`review/2026-11-17/RUN-ALL-four-to-blockers.md`). That was the wrong reading of the instruction. The instruction is the Swiss-cheese model run backwards: every body of data is a slice with a hole in it, and nature's answer is the one line through all the holes at once. A kill says where a hole is. An exception is a key.
+On 17 Nov four queue items were run one at a time, each in its own model, each to its own wall (`review/2026-11-17/RUN-ALL-four-to-blockers.md`). Those runs did their job — each located a hole — but running them as a queue was the wrong reading of the instruction. The instruction is the Swiss-cheese model run backwards: every body of data is a slice with a hole in it, and nature's answer is the one line through all the holes at once. A kill says where a hole is. An exception is a key.
 
 ## 1. The postulates
 
@@ -36,6 +42,18 @@ Grades: [POSIT] James's, untested · [FACT] established physics or measured · [
 - **P14. Stability is not depth.** It is how rarely the turning parts line up to let something out. A half-life counts how many things must coincide. [POSIT; "not depth" is FACT — deuteron vs ⁸Be vs ⁵⁶Ni] Intrinsic unit: turns of the internal motion (~10⁻²² s). Scaling: the wait for *n* unrelated phases to agree to within a fraction ε grows as (1/ε)ⁿ. [THEOREM]
 - **P15. Icarus and Daedalus, both readings.** Survival lies on a middle course (the bell); a failure sheds the excess and leaves the balanced body. Instability is not a defect in the parts but a body in a region where its locks cannot hold. [POSIT]
 - **P16. The devil is the bath.** No nucleus is isolated: the microwave background and cosmic rays interfere constantly. Over cosmic time what survives must self-assemble and self-repair. [POSIT; see §4]
+
+**Added 18 Nov, later in the same conversation**
+
+- **P18. The capsid is not strong; it reassembles.** It bends, breaks and re-forms, as a lipid bilayer does. [POSIT; that collisions yield only whole units, re-formed within ~10⁻²³ s, is FACT]
+- **P19. Binding is the missing piece.** A capsid that has lost a piece cannot close alone and survives only by sharing with neighbours. The missing mass of a bound nucleus is that piece; it is seen leaving at light speed when the nucleus forms. A lemniscate path needs a hole. [POSIT; that free nucleons are never found short and bound ones always are is FACT] Must produce 2.22, 8.48, 28.30 MeV for 2, 3, 4 bodies.
+- **P20. Neutrinos (n = 1) are the brick and the flux is the supply chain for repair.** [POSIT, untested. Neutrinos are the measured currency of nuclear rebalancing, but the measured flow is outward; the posit needs the inward direction to matter. Proposed test: does a damaged nucleus recover at a rate that depends on the neutrino flux it sits in?]
+- **P21. Failure to bind may be dark matter.** [POSIT. Against: standard accounting puts ordinary matter at about a sixth of the total, fixed before atoms formed. For: the neutron-lifetime discrepancy, bottle vs beam, ~9 s, unexplained.]
+- **P22. Repair is fractal: rate against repair time decides, not total dose.** [FACT at four scales — DNA, lattice, nucleus (slow vs rapid neutron capture), nucleon.] The chart is what survived a particular history of rates.
+- **P23. Forgetting goes deep enough to make a brick.** A settled unit keeps only its counts, so all units of a kind are identical and can build the next level. Under P1 the record is exported, not destroyed; it leaves along i. [FACT for identical particles; CONSTRUCT for the rest] Exceptions (keys): nuclei that hold an excitation.
+- **P24. The second law holds between units and is absent within them**, at every level. It is a half-life with a very large count. [THEOREM for the scaling; FACT that small systems step backward; CONSTRUCT for the fractal statement]
+- **P25. c is an asymptote**, approached so closely that no variance is detectable now. [POSIT; measured limits put any approach essentially complete very early]
+- **P26. Emergent {µ, i} created spacetime, and in so doing created clumping. Clumping is fractal. Within a clump, at proton scale or galactic, i can meet i.** Heat death — i unable to reach i — is the condition between clumps and has been from nearly the start; it never applied within one. Locks, repair and cooperation are possible only inside clumps. [POSIT; that bound systems do not stretch with space, and that an even spread of gravitating matter must clump, are FACT] The time for i to cross a clump is that level's turn.
 
 ## 2. What the data already say (the slices)
 
@@ -89,7 +107,7 @@ These are the acceptance tests. Each is an inequality the answer must satisfy (R
 
 **What is deliberately not specified.** The force law. The form of the lock energy. P17 below.
 
-- **P17 (method). Pattern first, mechanism last** (R17, the backronym rule). The 17 Nov run died four times by supplying a mechanism — a counting rule, a screening constant, classical EM between carriers, a twist — and evaluating it in a flat, static frame. v6 searches for the arrangement of bumps and locks that passes the slices and only then asks what law it implies.
+- **P17 (method). Pattern first, mechanism last** (R17, the backronym rule). A run that shows where a model cannot pass has located a hole; that is the method working, not a failure. A *claim* can still be false and is marked so. The 17 Nov run located four holes by supplying a mechanism — a counting rule, a screening constant, classical EM between carriers, a twist — and evaluating it in a flat, static frame. v6 searches for the arrangement of bumps and locks that passes the slices and only then asks what law it implies.
 
 **Frame.** Phases and rates, not positions and a static energy. Every model in this repo to date is positions-plus-energy; that is the base the answer does not come out clean in.
 
@@ -155,4 +173,4 @@ Standing: screening DEAD; α–α bonds strengthen ×1.25 with coordination; lin
 
 ## 10. Lineage
 
-Every postulate, the Swiss-cheese inversion, the toroidal frame, turtles, bumpy spacetime, the iron gedanken, the bell, stability as inverse probability of catastrophe, Icarus and Daedalus, the devil: James. The theorems cited, the AME checks (even–odd scan, alpha gains, decay energies), the exceptions list and its grouping, the cautions, the build order and kill conditions: Grace. Prior art: Reason 1990 (Swiss cheese); Liouville–Arnold; Kolmogorov–Arnold–Moser; Heisenberg 1932; Mayer and Jensen 1949; Bohr–Mottelson; Pound–Rebka 1960; Greisen, Zatsepin, Kuzmin 1966; Reeves, Fowler, Hoyle 1970 (spallation origin of Li, Be, B).
+The governing statement (Keystone 000, predating this work) and every postulate; the Swiss-cheese inversion, the toroidal frame, turtles, bumpy spacetime, the iron gedanken, the bell, stability as inverse probability of catastrophe, Icarus and Daedalus, the devil, the reassembling capsid and the missing piece, fractal repair, c as asymptote, clumps as where i meets i: James. The theorems cited, the AME checks (even–odd scan, alpha gains, decay energies), the exceptions list and its grouping, the cautions, the build order and kill conditions: Grace. Prior art: Reason 1990 (Swiss cheese); Liouville–Arnold; Kolmogorov–Arnold–Moser; Heisenberg 1932; Mayer and Jensen 1949; Bohr–Mottelson; Pound–Rebka 1960; Greisen, Zatsepin, Kuzmin 1966; Reeves, Fowler, Hoyle 1970 (spallation origin of Li, Be, B).
