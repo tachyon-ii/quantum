@@ -53,3 +53,6 @@ models/nuclear_to_assembly.zip
 
 # desks are symlinks to AGENTIC canon; never a real dir, never a key
 home/*/.ssh/
+
+# kernel seating caches (regenerable, >100 MB)
+models/kernel/results/seat_*.pkl
