@@ -30,7 +30,7 @@ Grades: [POSIT] James's, untested · [FACT] established physics or measured · [
 **The nucleus**
 
 - **P7. Identical walls, different cores.** Neutron decay ejects nothing from the capsid, so the capsids are the same. The proton's core is a balanced pair; the neutron's has one left over. [POSIT; consistent with the kernel's 30 Oct finding that like and unlike contacts in a closed group are worth the same 3.16 MeV — COMPUTED]
-- **P8. The neutron is bumpy three ways**: shape, gravity, charge. Free, the bump precesses. Bound, it is phase-locked, and each lock removes a freedom. [POSIT; the uneven charge is FACT; 3N − 6 freedoms matching the contact counts 1, 3, 6 and the alpha ladder is COMPUTED, 17 Oct]
+- **P8. The neutron is bumpy three ways**: shape, gravity, charge. Free, the bump precesses. Bound, it is phase-locked, and each lock removes a freedom. [POSIT; the uneven charge is FACT; the alpha ladder's leftover binding is 2.42 MeV × (3n − 6) from ⁸Be to ⁵⁶Ni within 6 %, Ne-20 apart, COMPUTED 19 Nov. **Correction 19 Nov:** 3n − 6 is 0, 3, 6 for two, three, four bodies — not 1, 3, 6 as Grace said on 18 Nov. Two bodies have no freedom to remove on this count: true of ⁸Be (leftover −0.09 MeV), false of the deuteron, which is therefore a key, and is the cross-kind pair of P11.]
 - **P9. A pocket is a phase, not a place.** Geometry says where a newcomer could sit; the cores say whether it is taken. A pocket accepts only its complement. When every bump is taken the outside is smooth and the next arrival is refused or discounted. That is the root of shell closure. [POSIT]
 - **P10. An attachment to symmetry is an orbit.** Where sites are copies of each other the newcomer belongs to all of them. [THEOREM for the symmetry; CONSTRUCT]
 - **P11. Even pairs off; odd leaves one over** — unless an odd one of the other kind is in the matching place. [COMPUTED: §2.1]
@@ -49,7 +49,7 @@ Grades: [POSIT] James's, untested · [FACT] established physics or measured · [
 - **P19. Binding is the missing piece.** A capsid that has lost a piece cannot close alone and survives only by sharing with neighbours. The missing mass of a bound nucleus is that piece; it is seen leaving at light speed when the nucleus forms. A lemniscate path needs a hole. [POSIT; that free nucleons are never found short and bound ones always are is FACT] Must produce 2.22, 8.48, 28.30 MeV for 2, 3, 4 bodies.
 - **P20. Neutrinos (n = 1) are the brick and the flux is the supply chain for repair.** [POSIT, untested. Neutrinos are the measured currency of nuclear rebalancing, but the measured flow is outward; the posit needs the inward direction to matter. Proposed test: does a damaged nucleus recover at a rate that depends on the neutrino flux it sits in?]
 - **P21. Failure to bind may be dark matter.** [POSIT. Against: standard accounting puts ordinary matter at about a sixth of the total, fixed before atoms formed. For: the neutron-lifetime discrepancy, bottle vs beam, ~9 s, unexplained.]
-- **P22. Repair is fractal: rate against repair time decides, not total dose.** [FACT at four scales — DNA, lattice, nucleus (slow vs rapid neutron capture), nucleon.] The chart is what survived a particular history of rates.
+- **P22. Repair is fractal: rate against repair time decides, not total dose.** [FACT at four scales — DNA, lattice, nucleus (slow vs rapid neutron capture), nucleon. Counter-slice: at extreme dose rates tissue is spared more, the reverse of the rule (FLASH); a key, not to be cited as the same effect.] The chart is what survived a particular history of rates.
 - **P23. Forgetting goes deep enough to make a brick.** A settled unit keeps only its counts, so all units of a kind are identical and can build the next level. Under P1 the record is exported, not destroyed; it leaves along i. [FACT for identical particles; CONSTRUCT for the rest] Exceptions (keys): nuclei that hold an excitation.
 - **P24. The second law holds between units and is absent within them**, at every level. It is a half-life with a very large count. [THEOREM for the scaling; FACT that small systems step backward; CONSTRUCT for the fractal statement]
 - **P25. c is an asymptote**, approached so closely that no variance is detectable now. [POSIT; measured limits put any approach essentially complete very early]
@@ -75,7 +75,7 @@ These are the acceptance tests. Each is an inequality the answer must satisfy (R
 
 **A leftover can partner across kinds**
 - the seven N = Z odd-odd nuclei above;
-- the only four stable doubly-odd nuclei are of the same kind: ²H, ⁶Li, ¹⁰B, ¹⁴N;
+- the only four doubly-odd nuclei stable in their ground states are of the same kind: ²H, ⁶Li, ¹⁰B, ¹⁴N [COMPUTED 19 Nov: exactly these four have no exit open]. One further doubly-odd nuclide is observed stable — ¹⁸⁰ᵐTa, an excited state that has never been seen to decay (a nucleus that fails to forget; a key);
 - np binds with spins alike and just fails with spins opposed (2.22 MeV vs −0.07);
 - ⁴He + 3 neutrons is unbound; ⁴He + 2n + p is ⁷Li, stable.
 
@@ -92,8 +92,8 @@ These are the acceptance tests. Each is an inequality the answer must satisfy (R
 
 **The pattern changes form**
 - closures 2, 8, 20 are pyramids (1, 4, 10 alphas); 28, 50, 82, 126 are a pyramid plus one ring of 8, 10, 12, 14;
-- Fe-57: the odd neutron costs 14.4 keV to move and the state lasts ~10¹⁴ turns;
-- per-contact worth by closure: 1 : 4.0 : 8.3 among nucleons; 1 : 2.4–3.4 among alphas.
+- Fe-57: the odd neutron costs 14.4 keV to move and the state lasts ~10¹⁵ turns (corrected 19 Nov);
+- per-contact worth by closure: 1 : 4.0 : 8.3 among nucleons; 1 : 2.4–2.7 among alphas (corrected 19 Nov; the earlier 3.4 compared unlike geometries). The two rungs' ratios are not shown to be related.
 
 **Standing contradiction to resolve, not to hide:** the alpha rung reads "2 bad, 3 good" in bodies while obeying "even good" in nucleons. What counts as one body at each level is part of the answer.
 
@@ -118,7 +118,7 @@ The system is not isolated. Facts to design against [FACT, from memory; to be ch
 - Today's microwave background photon carries about 10⁻³ eV, ten orders below nuclear energies. It cannot excite a nucleus at rest.
 - It was not always so. In the first minutes the bath was hot enough to break the deuteron as fast as it formed; nuclei could assemble only once it cooled. What exists is what the bath of the time permitted.
 - Stability is frame-relative here too: a proton moving fast enough sees the same cold photons as hard gamma rays and is broken by them (the cut-off in the highest-energy cosmic rays).
-- Cosmic rays strike any one nucleus rarely — of order one chance in ten million over the age of the universe in open space [estimate, Grace] — but collectively they make most of the lithium, beryllium and boron that exists, by breaking carbon, nitrogen and oxygen. The A = 6–11 region, where our models are worst, is populated by the devil.
+- Cosmic rays strike any one nucleus rarely — of order one chance in a million to ten million over the age of the universe in open space [estimate, Grace; checked 19 Nov] — but collectively they make almost all the beryllium and boron and the ⁶Li that exists, by breaking carbon, nitrogen and oxygen. (Most lithium is ⁷Li, which comes from the first minutes and from stars — corrected 19 Nov.) Much of the A = 6–11 region, where our models are worst, is populated by the devil.
 - Nuclei do self-repair: a disturbed nucleus sheds the disturbance as a gamma ray and returns to its ground state, typically within 10⁻¹² s.
 
 **What P16 adds to the test.** An arrangement passes only if, when kicked, it returns. A lock that holds only when undisturbed is not a survivor. Self-repair requires a way to shed excess, which in this frame is ejection along the tangent.
@@ -169,7 +169,20 @@ Compute: rungs 0–2 fit the sandbox (4 cores, processes killed at ~180 s; resum
 
 ## 9. Carried from 17 Nov
 
-Standing: screening DEAD; α–α bonds strengthen ×1.25 with coordination; linear attachment rule DEAD; Rytov phase exact for a g = 2 carrier bent magnetically, false otherwise. **Softened:** the two-carrier contact picture was run only for flat rings and a neutron layout that was Grace's, not James's; it shows the flat static frame failing, not the picture. The 31 Oct gear/belt table stays STRUCK.
+Standing: screening DEAD (independently confirmed 19 Nov); the bond the data require rises ×1.25 from C-12 to Ni-56, but *why* is open — coordination, or a constant bond plus a weaker second-neighbour term, which fits better; the five attachment counts tested do not pass (two untested counts remain); Rytov phase exact for a g = 2 carrier bent magnetically, false otherwise. **Softened:** the two-carrier contact picture was run only for flat rings and a neutron layout that was Grace's, not James's; it shows the flat static frame failing, not the picture. The 31 Oct gear/belt table stays STRUCK.
+
+## 9a. Checks run overnight, 18–19 Nov (while James slept)
+
+Three files, each the single home of its content:
+
+- **`FACTCHECK-spec-v6.md`** — every from-memory fact in this spec and the conversation checked against sources by an independent instance. 105 claims: 94 correct, 6 imprecise, 1 wrong, 4 not verifiable. The wrong one (lithium) and the imprecise ones are corrected in place above and marked.
+- **`FEYNMAN-run-all-17nov.md`** — adversarial recomputation of the 17 Nov run. 35 claims: 22 confirmed, 1 wrong, 7 over-claimed, 2 unsupported, 3 not checked. Regrades are recorded in `review/2026-11-17/RUN-ALL-four-to-blockers.md` §Regrade.
+- **`ATLAS-slices.md`** — the slices from the mass table alone, no model (`models/atlas/atlas.py`). New slices it adds to §2:
+  - the alpha after a closed number is discounted **chart-wide**, not only on the N = Z ladder: mean gain 5.0 MeV up to a closed neutron number, 2.7 MeV just past it (≈ 46 % off), over ~45 nuclides at each step; the same by proton number, 4.3 → 1.7 MeV;
+  - **191 nuclides have no exit open** on energy (beta, capture, alpha, one nucleon); 114 even-even, 36 + 37 odd-A, and exactly four doubly-odd;
+  - **132 more are beta-stable with the alpha exit open** — and between ⁸Be and ¹⁴²Ce there is not one. ⁸Be takes its exit in 10⁻¹⁶ s; the heavy ones hold from decades to far longer than the age of the universe [half-lives from memory, not in `data/`]. Same exit, open in all of them: a clean family of survival slices;
+  - the odd-even gap by mass band (2.7 MeV for the lightest, 0.7 MeV for the heaviest);
+  - the bell for every element: floor and centre, the centre sliding from N − Z = 0 to +42 at lead.
 
 ## 10. Lineage
 

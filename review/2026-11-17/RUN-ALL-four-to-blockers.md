@@ -127,6 +127,31 @@ Generations (the 31 Oct thread): Koide Q = 0.666665; Brannen phase δ = 0.222239
 
 What survives and is now sharper: cooperation is the common finding at both rungs — a bond is worth more when it closes loops — and it is *not* one universal function (C² at the nucleon rung, ×1.25 per coordination range at the alpha rung).
 
+## Regrade, 19 Nov — after independent recomputation
+
+Full review: `review/2026-11-18/FEYNMAN-run-all-17nov.md` (35 claims: 22 confirmed, 1 wrong, 7 over-claimed, 2 unsupported, 3 not checked). Accepted in full. Language note (James, 18 Nov): a run that shows where a model cannot pass has *located a hole*; only individual claims are marked false.
+
+| claim in this note | review | regrade |
+|---|---|---|
+| all code and arithmetic in §1–§4 | reproduced independently (lane enumerator to two decimals; six retarded entries; three λ formulas to six decimals) | stands |
+| screening DEAD (§2) | confirmed and not circular: κ = 1 geometry gives 0.971; a uniform sphere at measured radii gives 1.00–1.02 | **stands** |
+| "κ_eff to 3 %" | ±0.042 is scatter about a trend (1.09 → 0.94); the model's radii run low | **reworded: κ_eff ≈ 1, not 0.18** |
+| "therefore the bond strengthens with coordination" [COMPUTED] | not forced: a constant 4.24 MeV bond plus 0.92 MeV per second-neighbour pair fits the same 13 nuclei better (rms 1.30 vs 2.80 MeV) | **downgraded to one of two readings; open** |
+| "κ = 0.18 was cooperative strengthening mis-booked" | depends on the line above | **unsupported; withdrawn** |
+| factor 3.4 per α–α pair, ⁸Be → ¹²C (§1) | compared a chain with a triangle; like for like it is 2.4–2.7 | **wrong; corrected to 2.4–2.7** |
+| match to the nucleon rung's 1 : 4.0 | not shown | **withdrawn** |
+| "linear attachment rule DEAD" | only five counts were run; a count per touching body pair leaves ⁸Be unbound, and a count of loops through three bodies was never tried | **narrowed: the five counts tested do not pass** |
+| required attachments "not integers" | with measured body energies ⁷Li is 4.00 and ⁷Be 3.89; only ⁶Li and ⁸Be are clearly non-integer | **narrowed** |
+| ⁵He at threshold [CONSISTENCY] | zero by construction; the same refusal puts ⁹Be and ⁸Li at zero against measured +1.66 and +2.03 MeV | **struck** |
+| "nn binds twice as deep as pn" (§3) | an identity of the neutron layout Grace declared, not a result | **struck as a finding; the layout was the assumption** |
+| pp row of the channel table | not a correlation energy as labelled; the true values are −0.11 and −0.17 MeV | **corrected** |
+| "scale: right" (§3) | it is e²/R_p with a chosen gap | **downgraded: order of magnitude only** |
+| Larmor 39.7 MeV per fm/c | correct per charge | stands |
+| look-elsewhere 8 % for the field coincidence (§4) | fair for the eight trials listed, but the family was chosen after the hit | **stays COINCIDENCE-LEVEL, weaker** |
+| Koide Q = 0.666665 | 0.6666645 | last digit corrected |
+
+Not checked by the review: the mean-force integral out to 60 fm, the twisted-ring result, and the scan for nuclei other than ⁸Be and ¹²C.
+
 ## Next, in order of what unblocks most
 
 1. **A closure law at the alpha rung with full Coulomb**: refit rung B with q(z) and κ = 1; two constants instead of three, and the mirror energies come free. Runnable now.
